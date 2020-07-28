@@ -8,28 +8,27 @@ print(paste("Script Atlas.R started: ", Sys.time()))
 
 # required libraries
   necessary <- c("PBSmapping","spatstat","zoo","classInt","RColorBrewer","gstat","maptools",
-                  "foreign","fields","spam","rgeos", "RODBC", "xtable", "MASS", "xlsx")
+                  "foreign","fields","spam","rgeos", "RODBC", 
+                 "xtable", "MASS", "xlsx")
   installed <- necessary %in% installed.packages()[, 'Package']
   if (length(necessary[!installed]) >=1)
     install.packages(necessary[!installed], repos='http://mirror.its.dal.ca/cran/')
 
 	# lapply(necessary, function(i){citation(i)})
 # set the correct path
-  #path.ATLAS=file.path("C:/ATLAS_poissons_SS")
-#  path.ATLAS=file.path("C:/Documents and Settings/RicardD/My Documents/Dropbox/ATLAS_poissons_SS") ## at BIO
-#  path.ATLAS=file.path("D:/Dropbox/ATLAS_poissons_SS") ## on my Acer notebook
-#  path.ATLAS=file.path("C:/Users/shackelln/Dropbox/ATLAS_poissons_SS") ## at BIO
   path.ATLAS=file.path("C:/RProjects/FishInverAtlas_Ricard")
-## open ODBC connection to Oracle database
+
+  ## open ODBC connection to Oracle database
 	require(RODBC, quietly=TRUE, warn.conflicts = FALSE)
   source("C:/RProjects/FishInverAtlas_Ricard/FunctionsR/chan.R")
   # chan <- odbcConnect(dsn='biobank', uid='', pwd='')
-	# source the code that defines the data extraction functions
+	
+  # source the code that defines the data extraction functions
 	source(file.path(path.ATLAS, "FunctionsR/data-extract.R"))
 
   # source the code that computes the survey summaries (e.g. number of sets per stratum per year, etc.) and generates the summary tables to appear at the front of the atlas
   #	The following line updates the file Report/species-list-final.csv
-  source(file.path(path.ATLAS, "FunctionsR/summaries.R"))
+  #source(file.path(path.ATLAS, "FunctionsR/summaries.R"))
   
   # source the code that defines the function for each figure
   source(file.path(path.ATLAS, "FunctionsR/figures.R"))
@@ -44,7 +43,8 @@ print(paste("Script Atlas.R started: ", Sys.time()))
 ## first call is to generate the data files for each species
 ## second call is to generate the figures for each species
   
-  # 2012-09-20: I'm turning the species list into the authoritative list by which the data extraction and the generation of figures in R is done
+  # 2012-09-20: I'm turning the species list into the authoritative list by which the data extraction and the generation of figures in R is done. 
+  # 2020-07-08: Note that every year the number of records will increase and the species available may also change.
   spec.list <- read.csv(file.path(path.ATLAS, "/Report/species-list-final.csv"),header=FALSE) # this list is itself generated from the above "summaries.R", which requires database connection and connection to WORMS to get AphiaID
   
   species.L <- spec.list[spec.list$V9=='L',]$V4 # long timeseries
@@ -59,6 +59,10 @@ print(paste("Script Atlas.R started: ", Sys.time()))
 	print(paste("Starting data extracts, L species: ", Sys.time()))
 	sapply(species.numbers, function(i){data.extract(extract.num=c(1,2,3,5,6,7), spec.num=i)})
 	print(paste("End data extract, starting figures, L species: ", Sys.time()))
+	
+	#TROUBLESHOOTING
+	sapply(species.numbers, function(i){figures(spec.num=i, fig=c(10))})
+	
 	sapply(species.numbers, function(i){figures(spec.num=i, fig=c(2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,18,19,20))})
 	#sapply(species.L, function(i){figures(spec.num=i, fig=c(15,20))})
 

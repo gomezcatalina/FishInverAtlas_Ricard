@@ -48,6 +48,8 @@ figures<-function(fig=c(1:10), spec.num=NA,
 	require(lattice, quietly=TRUE, warn.conflicts = FALSE) 
 	require(fields, quietly=TRUE, warn.conflicts = FALSE) 
 	require(spam, quietly=TRUE, warn.conflicts = FALSE) 
+	require(raster, quietly=TRUE, warn.conflicts = FALSE)
+
 
 	# base path
 	path.Base1=path.ATLAS

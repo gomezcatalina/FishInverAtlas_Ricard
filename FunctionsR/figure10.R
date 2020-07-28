@@ -2,7 +2,7 @@
 
 figure10.fct <- function(dat.in, cex.in, pos.ylabel=c(0,0)) {
 # dat.in <- read.csv("C:/ATLAS_poissons_SS/Data/SS10_catch.csv", header=TRUE)
-#dat.in <- read.csv("C:/Users/shackelln/Dropbox/ATLAS_poissons_SS/Data/SS10_catch.csv", header=TRUE)
+# dat.in <- read.csv("C:/RProjects/FishInverAtlas_Ricard/Data/SS10_catch.csv", header=TRUE)
 
 # logic to determine what scale to use
 logic.abundant <- quantile(subset(dat.in, totno.corr != 0)$totno.corr, probs=c(0.95))>50
@@ -23,8 +23,8 @@ ll <- layout(mat.layout2, widths=3*c(2,6.5,6.5,6.5,2), heights=3*c(2,4.8,4.8,4.8
 
 
 #yrs.labels <- c("1970-1974","1975-1979","1980-1984","1985-1989","1990-1994","1995-1999","2000-2004","2005-2009","2010-2014")
-yrs.labels <- c("1970-1974","1975-1979","1980-1984","1985-1989","1990-1994","1995-1999","2000-2004","2005-2009","2010-2013")
-my.cols.palette <- c('white','#FEF0D9', '#FDCC8A', '#FC8D59', '#E34A33', '#B30000')
+yrs.labels <- c("1970-1974","1975-1979","1980-1984","1985-1989","1990-1994","1995-1999","2000-2004","2005-2009","2010-2013", "2014-2019")
+my.cols.palette <- c('white','#FEF0D9', '#FDCC8A', '#FC8D59', '#E34A33', '#B30000', '#781212')
 
 ## layout and such, to allow for the axes
 # top left longitude axis
@@ -156,3 +156,4 @@ axis(side=1, at=xx.lon, line=-2.75, labels=paste(360-xx.lon,"\u{B0}O",sep=""))
 
 
 } # end function
+

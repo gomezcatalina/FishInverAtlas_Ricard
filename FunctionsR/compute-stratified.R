@@ -95,7 +95,7 @@ my.tt <- table(subset(catch.df, totno != 0)$Strata)
 my.st <- names(my.tt[my.tt >= 5])
 
 dd.for.fit <- subset(dd.for.fit.tt, stratum %in% my.st)
-dd.for.fit <- drop.levels(dd.for.fit) # drop unused levels, otherwise mean and variance will be computed for all strata 
+dd.for.fit <- droplevels(dd.for.fit) # drop unused levels, otherwise mean and variance will be computed for all strata 
 
 # remove years where the yearly estimate is zero
 tt <- subset(dd.for.fit, yearly.estimate != 0)

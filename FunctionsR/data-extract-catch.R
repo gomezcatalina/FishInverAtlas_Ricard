@@ -107,7 +107,7 @@ merged.df[is.na(merged.df$TOTWGTCORR),]$TOTWGTCORR <- 0
 names(merged.df) <- c("mission","setno","spec","scien","comm","totno","totwgt","totno.corr","totwgt.corr","Strata","YEAR","month","day","dmin","dmax","temperature","salinity","lon","lat","DEPTH","decade","dist")
 ##
 ##
-tt <- drop.levels(merged.df)
+tt <- droplevels(merged.df)
 merged.df <- tt
 
 

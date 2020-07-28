@@ -24,7 +24,7 @@ data.extract <- function(extract.num=c(1:10), spec.num, writexls=FALSE) {
 	require(xtable, quietly=TRUE, warn.conflicts = FALSE)
 	require(MASS, quietly=TRUE, warn.conflicts = FALSE)
 #	require(gdata, quietly=TRUE, warn.conflicts = FALSE)
-	
+
 	# base path
 	path.Base1=path.ATLAS
 	path.Base2=path.ATLAS

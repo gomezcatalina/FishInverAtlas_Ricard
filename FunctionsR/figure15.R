@@ -37,10 +37,10 @@ dat.in <- list.in[[1]]
 	ylabel2 = "Frequ\u{E9}nce par trait"	
 	ylabel1 = "Frequency per tow"
 	#leg.label = c("1970 - 1974", "1975 - 1979", "1980 - 1984", "1985 - 1989", "1990 - 1994", "1995 - 1999", "2000 - 2004", "2005 - 2009", "2010 - 2014")
-	leg.label = c("1970 - 1977", "1978 - 1985", "1986 - 1993", "1994 - 2001", "2002 - 2009", "2010 - 2013")
+	leg.label = c("1970 - 1977", "1978 - 1985", "1986 - 1993", "1994 - 2001", "2002 - 2009", "2010 - 2013", "2014 - 2019")
 	
 	#my.cols <- c("#000000","#FFEDA0","#FED976","#FEB24C","#FD8D3C","#FC4E2A","#E31A1C","#BD0026","#800026") # obtained from color brewer
-	my.cols <- c("#000000","#FED976","#FEB24C","#FD8D3C","#F03B20","#BD0026") # obtained from color brewer
+	my.cols <- c("#000000","#FED976","#FEB24C","#FD8D3C","#F03B20","#BD0026","#5c0012") # obtained from color brewer
 #FFFFCC
 	
 	plot(dat.in[,1], dat.in[,2], col=my.cols[1], axes=FALSE, xlim=x.range, ylim=y.range, type='l', lwd=2, ann=FALSE)

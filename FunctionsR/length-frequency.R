@@ -10,19 +10,19 @@ i.strat,
 TO_CHAR(i.sdate,'yyyy') YEAR,
 TO_CHAR(i.sdate,'mm') MONTH,
 TO_CHAR(i.sdate,'dd') DAY,
-s.scien,
+s.SPEC SCIEN,
 d.fshno,
 d.flen,
 d.clen
 FROM
 groundfish.gsinf i,
 groundfish.gsdet d,
-groundfish.gs_species s
+groundfish.GSSPECIES s
 WHERE
 i.mission = d.mission AND
 i.setno = d.setno AND
-d.spec=s.spec AND
-s.spec = '", spec.num, "'
+d.spec=s.CODE AND
+s.CODE = '", spec.num, "'
 order by year, month, day, setno,fshno
 ", sep="")
 

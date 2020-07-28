@@ -1,6 +1,6 @@
 ## extract tow-level catch data including catches of zero
 ##
-spec.num <- 10
+#spec.num <- 10
 extract.catch.short.fct <- function(spec.num) {
 
 # survey data
@@ -45,6 +45,7 @@ STRAT == '490' | STRAT == '491' | STRAT == '492' | STRAT == '493' | STRAT == '49
 )
 
 # species
+qu <- paste("
 SELECT 
 i.mission,
 i.setno,

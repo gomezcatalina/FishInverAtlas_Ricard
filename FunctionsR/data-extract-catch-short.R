@@ -1,5 +1,6 @@
 ## extract tow-level catch data including catches of zero
 ##
+spec.num <- 10
 extract.catch.short.fct <- function(spec.num) {
 
 # survey data
@@ -82,7 +83,9 @@ order by YEAR, i.mission, i.setno
 
 spec.df <- sqlQuery(chan, qu)
 
-merged.df <- merge(spec.df, summer.tows.df, by=c("MISSION", "SETNO"), all.y=TRUE)[,c(1,2,8,9,10,11,12,19,20,21,23,24,25,26,27,28,29,32,33,34,35,30)]
+merged.df <- merge(spec.df, summer.tows.df, 
+                   by=c("MISSION", "SETNO"), 
+                   all.y=TRUE)[,c(1,2,8,9,10,11,12,19,20,21,23,24,25,26,27,28,29,32,33,34,35,30)]
 
 merged.df[is.na(merged.df$SPEC),]$SPEC <- spec.num
 merged.df[is.na(merged.df$COMM),]$COMM <- unique(merged.df[!is.na(merged.df$COMM),]$COMM)

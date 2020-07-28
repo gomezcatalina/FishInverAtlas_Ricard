@@ -502,10 +502,15 @@ spec.xtable.df[spec.xtable.df$spec==704,]$ACCEPTED_SCIENT_NAME <- "Zenopsis conc
 classes.order <- c("Myxini","Cephalaspidomorphi","Actinopterygii","Chondrichthyes","Cephalopoda","Malacostraca")
 spec.xtable.df$taxoclass <- ordered(spec.xtable.df$CLASS_, levels=classes.order)
 
-oo <- order(spec.xtable.df$taxoclass, spec.xtable.df$ORDER_, spec.xtable.df$FAMILY_)
+oo <- order(spec.xtable.df$taxoclass, spec.xtable.df$ORDER_, 
+            spec.xtable.df$FAMILY_)
 spec.xtable.df.final <- spec.xtable.df[oo,]
 
-write.table(spec.xtable.df.final[,c(1:10)],file.path(path.Report, "species-list-final.csv"), row.names=FALSE, col.names=FALSE, sep=",")
+spec.xtable.df.final <- na.omit(spec.xtable.df.final)
+
+write.table(spec.xtable.df.final[,c(1:10)],
+            file.path(path.Report, "species-list-final.csv"), 
+            row.names=FALSE, col.names=FALSE, sep=",")
 
 
 #fn.tex1 <- "Atlas_speciessummary_table1.tex"

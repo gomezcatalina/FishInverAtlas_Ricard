@@ -8,7 +8,7 @@ print(paste("Script Atlas.R started: ", Sys.time()))
 
 # required libraries
   necessary <- c("PBSmapping","spatstat","zoo","classInt","RColorBrewer","gstat","maptools",
-                  "foreign","fields","spam","rgeos", "RODBC", "xtable", "MASS", "SSOAP")
+                  "foreign","fields","spam","rgeos", "RODBC", "xtable", "MASS", "xlsx")
   installed <- necessary %in% installed.packages()[, 'Package']
   if (length(necessary[!installed]) >=1)
     install.packages(necessary[!installed], repos='http://mirror.its.dal.ca/cran/')
@@ -27,19 +27,19 @@ print(paste("Script Atlas.R started: ", Sys.time()))
 	# source the code that defines the data extraction functions
 	source(file.path(path.ATLAS, "FunctionsR/data-extract.R"))
 
-# source the code that defines the function for each figure
+  # source the code that computes the survey summaries (e.g. number of sets per stratum per year, etc.) and generates the summary tables to appear at the front of the atlas
+  #	The following line updates the file Report/species-list-final.csv
+  source(file.path(path.ATLAS, "FunctionsR/summaries.R"))
+  
+  # source the code that defines the function for each figure
   source(file.path(path.ATLAS, "FunctionsR/figures.R"))
 
-# source the code that defines the function for habitat suitability
+  # source the code that defines the function for habitat suitability
   source(file.path(path.ATLAS, "FunctionsR/habitat-suitability.R"))
 
 # source the code that sets all the mapping functions and data requirements such as polygons and masks, this file also creates a survey map with strata polygons and NAFO divisions
 	source(file.path(path.ATLAS, "Mapping/SUMMER-strata.R"))
   
-# source the code that computes the survey summaries (e.g. number of sets per stratum per year, etc.) and generates the summary tables to appear at the front of the atlas
-#	The following line updates the file Report/species-list-final.csv
-	source(file.path(path.ATLAS, "FunctionsR/summaries.R"))
-
 ## actual function calls for species-level analyses
 ## first call is to generate the data files for each species
 ## second call is to generate the figures for each species

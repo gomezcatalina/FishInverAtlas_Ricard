@@ -66,7 +66,7 @@ TO_CHAR(i.sdate,'yyyy') YEAR,
 TO_CHAR(i.sdate,'mm') MONTH,
 TO_CHAR(i.sdate,'dd') DAY,
 c.spec,
-s.scien,
+s.CODE SCIEN,
 s.comm,
 c.totno,
 c.totwgt,
@@ -81,13 +81,13 @@ c.totwgt * (1.75/i.dist) as totwgtcorr
 FROM 
 groundfish.gsinf i,
 groundfish.gscat c,
-groundfish.gs_species s
+groundfish.GSSPECIES s
 where
 i.type=1 and
 i.mission = c.mission AND
 i.setno = c.setno AND
-s.spec=c.spec and
-s.spec='",spec.num,"'
+s.CODE=c.spec and
+s.CODE='",spec.num,"'
 order by YEAR, i.mission, i.setno
 ", sep="")
 

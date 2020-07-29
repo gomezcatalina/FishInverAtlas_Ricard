@@ -27,7 +27,7 @@
 
 figures<-function(fig=c(1:10), spec.num=NA,
 		path.Data=NA, path.Map=NA,
-		saveFormat="eps", save=TRUE, 
+		saveFormat="png", save=TRUE, 
 		qual="low", power=10, 
     mature=T, pos.leg.fl="R", pos.leg.prof="R", pos.leg.ln="R", pos.ylabel=c(0,0)){
 

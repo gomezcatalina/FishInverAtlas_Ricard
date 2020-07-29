@@ -23,7 +23,7 @@ ll <- layout(mat.layout2, widths=3*c(2,6.5,6.5,6.5,2), heights=3*c(2,4.8,4.8,4.8
 
 
 #yrs.labels <- c("1970-1974","1975-1979","1980-1984","1985-1989","1990-1994","1995-1999","2000-2004","2005-2009","2010-2014")
-yrs.labels <- c("1970-1974","1975-1979","1980-1984","1985-1989","1990-1994","1995-1999","2000-2004","2005-2009","2010-2013")
+yrs.labels <- c("1975-1979","1980-1984","1985-1989","1990-1994","1995-1999","2000-2004","2005-2009","2010-2013", "2014-2019")
 
 #my.cols.palette <- c('white','#FEF0D9', '#FDD49E', '#FDBB84', '#FC8D59', '#E34A33', '#B30000')
 my.cols.palette <- c('white','#FEF0D9', '#FDCC8A', '#FC8D59', '#E34A33', '#B30000')
@@ -81,11 +81,12 @@ D <- data.frame(	x=rep(seq(my.xlim[1],my.xlim[2],length.out=g.len), time=g.len),
 W <- owin(my.xlim, my.ylim)
 D <- as.ppp(D, W=W)
 D <- as(D, "SpatialPoints")
+crs(D) <- "+proj=longlat +ellps=WGS84 +no_defs"
 
 ## remove points that are outside the mask
 M=PolySet2SpatialPolygons(SS.strata.mask.LL)
 
-PtsNotInMask <-  which(!is.na(overlay(D, M)))
+PtsNotInMask <-  which(!is.na(over(D, M)))
 
 totno.idw$var1.pred[-PtsNotInMask]=0
 DD$z=matrix(as.vector(totno.idw$var1.pred), ncol=g.len, nrow=g.len)

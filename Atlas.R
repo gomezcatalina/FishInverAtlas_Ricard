@@ -1,7 +1,7 @@
 #--------------------------------------------------------------------------#
 ## main R script to generate the figures required in the DFO Maritimes groundfish survey atlas
 ## Daniel Ricard, started 2012-07-20 relying extensively on Hugo Bourdages' work on the NGSL atlas
-##
+## Catalina Gomez updated scripts in July 2020 and updated extractions and data up to 2020
 options(echo=FALSE)
 
 print(paste("Script Atlas.R started: ", Sys.time()))
@@ -57,11 +57,10 @@ print(paste("Script Atlas.R started: ", Sys.time()))
   species.numbers <- species.L # c(10,11,12,13,14,16,23,40,41,42,43,60,300,4511,320,220,640,400,200,201,202,203,204,50,30,304,62,160,70,304,112,15,31,241) #,114) 
   # extract all the data and plot all the figures for GROUP
 	print(paste("Starting data extracts, L species: ", Sys.time()))
-	sapply(species.numbers, function(i){data.extract(extract.num=c(1,2,3,5,6,7), spec.num=i)})
-	print(paste("End data extract, starting figures, L species: ", Sys.time()))
 	
-	#TROUBLESHOOTING
-	sapply(species.numbers, function(i){figures(spec.num=i, fig=c(11))})
+	sapply(species.numbers, function(i){data.extract(extract.num=c(1,2,3,5,6,7), spec.num=i)})
+	
+	print(paste("End data extract, starting figures, L species: ", Sys.time()))
 	
 	sapply(species.numbers, function(i){figures(spec.num=i, fig=c(2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,18,19,20))})
 	#sapply(species.L, function(i){figures(spec.num=i, fig=c(15,20))})

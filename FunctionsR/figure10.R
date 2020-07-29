@@ -23,7 +23,7 @@ ll <- layout(mat.layout2, widths=3*c(2,6.5,6.5,6.5,2), heights=3*c(2,4.8,4.8,4.8
 
 
 #yrs.labels <- c("1970-1974","1975-1979","1980-1984","1985-1989","1990-1994","1995-1999","2000-2004","2005-2009","2010-2014")
-yrs.labels <- c("1970-1974","1975-1979","1980-1984","1985-1989","1990-1994","1995-1999","2000-2004","2005-2009","2010-2013", "2014-2019")
+yrs.labels <- c("1975-1979","1980-1984","1985-1989","1990-1994","1995-1999","2000-2004","2005-2009","2010-2013", "2014-2019")
 my.cols.palette <- c('white','#FEF0D9', '#FDCC8A', '#FC8D59', '#E34A33', '#B30000', '#781212')
 
 ## layout and such, to allow for the axes
@@ -79,15 +79,16 @@ D <- data.frame(	x=rep(seq(my.xlim[1],my.xlim[2],length.out=g.len), time=g.len),
 W <- owin(my.xlim, my.ylim)
 D <- as.ppp(D, W=W)
 D <- as(D, "SpatialPoints")
+crs(D) <- "+proj=longlat +ellps=WGS84 +no_defs"
 
 ## remove points that are outside the mask
-M=PolySet2SpatialPolygons(SS.strata.mask.LL)
+M <- PolySet2SpatialPolygons(SS.strata.mask.LL)
 
-PtsNotInMask <-  which(!is.na(overlay(D, M)))
+#PtsNotInMask <-  which(!is.na(overlay(D, M)))
+PtsNotInMask <-  which(!is.na(over(D, M)))
 
 totno.idw$var1.pred[-PtsNotInMask]=0
 DD$z=matrix(as.vector(totno.idw$var1.pred), ncol=g.len, nrow=g.len)
-
 
 C <- contourLines(	x=seq(my.xlim[1],my.xlim[2], length.out=g.len), 
 					y=seq(my.ylim[1],my.ylim[2], length.out=g.len),
@@ -102,7 +103,8 @@ res <- lapply(getSpPpolygonsSlot(res), checkPolygonsHoles)
 
 R <- as.SpatialPolygons.PolygonsList(res)
 	
-plotMap(worldLLhigh, my.xlim, my.ylim, col=grey(0.9),plt=c(0.0,1.0,0.0,1.0),border=grey(0.7),axes=FALSE,tckLab=FALSE,xlab="",ylab="")
+plotMap(worldLLhigh, my.xlim, my.ylim, col=grey(0.9),
+        plt=c(0.0,1.0,0.0,1.0),border=grey(0.7),axes=FALSE,tckLab=FALSE,xlab="",ylab="")
 text(293.2,46.4,yrs.labels[i],bg='white',cex=1)
 text(293.2,45.9,paste("P(occ) = ",pr.occ,sep=""),cex=0.80)
 #addPolys(SUMMER.strata.mask)
@@ -122,7 +124,6 @@ addPolys(SS.strata.mask.LL)
 }
 
 #plotMap(worldLLhigh, my.xlim, my.ylim, col=grey(0.9),plt=c(0.0,1.0,0.0,1.0),border=grey(0.7),axes=FALSE,tckLab=FALSE,xlab="",ylab="")
-
 #addPolys(combinePolys(fixBound(SUMMER.strata.mask,tol=0.01)))
 
 if(i==1 | i==9) {

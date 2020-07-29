@@ -61,7 +61,7 @@ print(paste("Script Atlas.R started: ", Sys.time()))
 	print(paste("End data extract, starting figures, L species: ", Sys.time()))
 	
 	#TROUBLESHOOTING
-	sapply(species.numbers, function(i){figures(spec.num=i, fig=c(10))})
+	sapply(species.numbers, function(i){figures(spec.num=i, fig=c(11))})
 	
 	sapply(species.numbers, function(i){figures(spec.num=i, fig=c(2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,18,19,20))})
 	#sapply(species.L, function(i){figures(spec.num=i, fig=c(15,20))})

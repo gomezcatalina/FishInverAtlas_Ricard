@@ -17,8 +17,7 @@ yy.lat<-pretty(my.ylim, n=4)
 mat.layout2 <- matrix(c(0,2,0,0,1,3,5,0,0,4,6,8,0,0,7,0),nrow=4, ncol=4)
 ll <- layout(mat.layout2, widths=3*c(2,6.5,6.5,2), heights=3*c(2,4.8,4.8,2), respect=TRUE)
 
-
-yrs.labels <- c("1999-2002","2003-2006","2007-2010","2011-2013")
+yrs.labels <- c("1999-2002","2003-2006","2007-2010","2011-2013", "2014-2019")
 
 my.cols.palette <- c('white','#FEF0D9', '#FDCC8A', '#FC8D59', '#E34A33', '#B30000')
 
@@ -85,12 +84,12 @@ D <- data.frame(	x=rep(seq(my.xlim[1],my.xlim[2],length.out=g.len), time=g.len),
 W <- owin(my.xlim, my.ylim)
 D <- as.ppp(D, W=W)
 D <- as(D, "SpatialPoints")
+crs(D) <- "+proj=longlat +ellps=WGS84 +no_defs"
 
 ## remove points that are outside the mask
-M=PolySet2SpatialPolygons(SS.strata.mask.LL)
+M <- PolySet2SpatialPolygons(SS.strata.mask.LL)
 
-
-PtsNotInMask <-  which(!is.na(overlay(D, M)))
+PtsNotInMask <-  which(!is.na(over(D, M)))
 
 totno.idw$var1.pred[-PtsNotInMask]=0
 DD$z=matrix(as.vector(totno.idw$var1.pred), ncol=g.len, nrow=g.len)

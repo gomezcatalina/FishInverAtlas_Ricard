@@ -110,7 +110,6 @@ names(merged.df) <- c("mission","setno","spec","scien","comm","totno","totwgt","
 tt <- droplevels(merged.df)
 merged.df <- tt
 
-
 return(merged.df)
 
 } # end function

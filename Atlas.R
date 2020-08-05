@@ -55,16 +55,14 @@ print(paste("Script Atlas.R started: ", Sys.time()))
 
   # GROUP : well identified species with no DDHS fitting problems
   species.numbers <- species.L # c(10,11,12,13,14,16,23,40,41,42,43,60,300,4511,320,220,640,400,200,201,202,203,204,50,30,304,62,160,70,304,112,15,31,241) #,114) 
+  #species.numbers <- species.numbers[species.numbers != "610"]
   # extract all the data and plot all the figures for GROUP
-	print(paste("Starting data extracts, L species: ", Sys.time()))
-	
-	sapply(species.numbers, function(i){data.extract(extract.num=c(1,2,3,5,6,7), spec.num=i)})
-	
+  print(paste("Starting data extracts, L species: ", Sys.time()))
+  # extraction is done in folder 'Data' - make sure file DFO-strata-statistics.csv is in that folder
+  	sapply(species.numbers, function(i){data.extract(extract.num=c(1,2,3,5,6,7), spec.num=i)})
 	print(paste("End data extract, starting figures, L species: ", Sys.time()))
-	
-	sapply(species.numbers, function(i){figures(spec.num=i, fig=c(2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,18,19,20))})
-	#sapply(species.L, function(i){figures(spec.num=i, fig=c(15,20))})
-
+	  sapply(species.numbers, function(i){figures(spec.num=i, fig=c(2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,18,19,20))})
+	# sapply(species.L, function(i){figures(spec.num=i, fig=c(15,20))})
 	# sapply(species.numbers, function(i){figures(spec.num=i, fig=c(19))})
 	print(paste("End figures, L species: ", Sys.time()))
   
@@ -72,7 +70,7 @@ print(paste("Script Atlas.R started: ", Sys.time()))
   #species.numbers <- c(610,143)
   #sapply(species.numbers, function(i){data.extract(extract.num=c(1,2,3,4,6,7), spec.num=i)})
   #sapply(species.numbers, function(i){figures(spec.num=i, fig=c(2,3,4,5,6,7,8,9,10,11,12,13,14,17,18,19,20))})
-    
+	
   # GROUP : recorded since 1999, invertebrates
   species.numbers <- species.S # c(2526,2550,2511,2211,2527,2521,2513,4321,340,2523)
 	print(paste("Starting data extracts, S species: ", Sys.time()))

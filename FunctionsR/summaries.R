@@ -296,12 +296,12 @@ spec.xtable.df[spec.xtable.df$spec==10,]$FAO_F_COMMON_NAME <- "Morue franche"
 spec.xtable.df[spec.xtable.df$spec==11,]$FAO_F_COMMON_NAME <- "Aiglefin"
 spec.xtable.df[spec.xtable.df$spec==41,]$FAO_F_COMMON_NAME <- "Plie grise"
 
-spec.xtable.df[spec.xtable.df$spec==52,]$FAO_F_COMMON_NAME <- "Loup ? t?te large"
-spec.xtable.df[spec.xtable.df$spec==300,]$FAO_F_COMMON_NAME <- "Chaboisseau ? dix-huit ?pines"
-spec.xtable.df[spec.xtable.df$spec==304,]$FAO_F_COMMON_NAME <- "Faux-trigle arm?"
+spec.xtable.df[spec.xtable.df$spec==52,]$FAO_F_COMMON_NAME <- "Loup à tête large"
+spec.xtable.df[spec.xtable.df$spec==300,]$FAO_F_COMMON_NAME <- "Chaboisseau à dix-huit épines"
+spec.xtable.df[spec.xtable.df$spec==304,]$FAO_F_COMMON_NAME <- "Faux-trigle armé"
 spec.xtable.df[spec.xtable.df$spec==160,]$FAO_F_COMMON_NAME <- "Grande argentine"
-spec.xtable.df[spec.xtable.df$spec==400,]$FAO_F_COMMON_NAME <- "Baudroie d'Am?rique"
-spec.xtable.df[spec.xtable.df$spec==112,]$FAO_F_COMMON_NAME <- "Merluche ? longues nageoires"
+spec.xtable.df[spec.xtable.df$spec==400,]$FAO_F_COMMON_NAME <- "Baudroie d'Amérique"
+spec.xtable.df[spec.xtable.df$spec==112,]$FAO_F_COMMON_NAME <- "Merluche à longues nageoires"
 
 # fix english names
 spec.xtable.df[spec.xtable.df$spec==15,]$FAO_E_COMMON_NAME <- "Cusk"
@@ -314,31 +314,31 @@ spec.xtable.df[spec.xtable.df$spec==16,]$FAO_E_COMMON_NAME <- "Pollock"
 spec.xtable.df[spec.xtable.df$spec==16,]$FAO_F_COMMON_NAME <- "Goberge"
 
 spec.xtable.df[spec.xtable.df$spec==320,]$FAO_E_COMMON_NAME <- "Sea raven"
-spec.xtable.df[spec.xtable.df$spec==320,]$FAO_F_COMMON_NAME <- "H?mitript?re atlantique"
+spec.xtable.df[spec.xtable.df$spec==320,]$FAO_F_COMMON_NAME <- "Hémitriptère atlantique"
 
 spec.xtable.df[spec.xtable.df$spec==201,]$FAO_E_COMMON_NAME <- "Thorny skate"
-spec.xtable.df[spec.xtable.df$spec==201,]$FAO_F_COMMON_NAME <- "Raie ?pineuse"
+spec.xtable.df[spec.xtable.df$spec==201,]$FAO_F_COMMON_NAME <- "Raie épineuse"
 
 spec.xtable.df[spec.xtable.df$spec==202,]$FAO_E_COMMON_NAME <- "Smooth skate"
 spec.xtable.df[spec.xtable.df$spec==202,]$FAO_F_COMMON_NAME <- "Raie lisse"
 
 spec.xtable.df[spec.xtable.df$spec==203,]$FAO_E_COMMON_NAME <- "Little skate"
-spec.xtable.df[spec.xtable.df$spec==203,]$FAO_F_COMMON_NAME <- "Raie h?risson"
+spec.xtable.df[spec.xtable.df$spec==203,]$FAO_F_COMMON_NAME <- "Raie hérisson"
 
 spec.xtable.df[spec.xtable.df$spec==204,]$FAO_E_COMMON_NAME <- "Winter skate"
-spec.xtable.df[spec.xtable.df$spec==204,]$FAO_F_COMMON_NAME <- "Raie tachet?e"
+spec.xtable.df[spec.xtable.df$spec==204,]$FAO_F_COMMON_NAME <- "Raie tachetée"
 
 spec.xtable.df[spec.xtable.df$spec==241,]$FAO_E_COMMON_NAME <- "Atlantic hagfish"
 spec.xtable.df[spec.xtable.df$spec==241,]$FAO_F_COMMON_NAME <- "Myxine du nord"
 
 spec.xtable.df[spec.xtable.df$spec==610,]$FAO_E_COMMON_NAME <- "Sand lance"
-spec.xtable.df[spec.xtable.df$spec==610,]$FAO_F_COMMON_NAME <- "Lan?on"
+spec.xtable.df[spec.xtable.df$spec==610,]$FAO_F_COMMON_NAME <- "Lançon"
 
 spec.xtable.df[spec.xtable.df$spec==340,]$FAO_E_COMMON_NAME <- "Alligatorfish"
 spec.xtable.df[spec.xtable.df$spec==340,]$FAO_F_COMMON_NAME <- "Poisson-alligator atlantique"
 
 spec.xtable.df[spec.xtable.df$spec==647,]$FAO_E_COMMON_NAME <- "Vahl's eelpout"
-spec.xtable.df[spec.xtable.df$spec==647,]$FAO_F_COMMON_NAME <- "Lycode ? carreaux"
+spec.xtable.df[spec.xtable.df$spec==647,]$FAO_F_COMMON_NAME <- "Lycode à carreaux"
 
 spec.xtable.df[spec.xtable.df$spec==410,]$FAO_E_COMMON_NAME <- "Marlin-spike grenadier"
 spec.xtable.df[spec.xtable.df$spec==410,]$FAO_F_COMMON_NAME <- "Grenadier du Grand Banc"
@@ -346,7 +346,7 @@ spec.xtable.df[spec.xtable.df$spec==410,]$FAO_F_COMMON_NAME <- "Grenadier du Gra
 spec.xtable.df[spec.xtable.df$spec==712,]$FAO_E_COMMON_NAME <- "White barracudina"
 spec.xtable.df[spec.xtable.df$spec==712,]$FAO_F_COMMON_NAME <- "Lussion blanc"
 
-spec.xtable.df[spec.xtable.df$spec==2527,]$FAO_F_COMMON_NAME <- "Araign?e nordique"
+spec.xtable.df[spec.xtable.df$spec==2527,]$FAO_F_COMMON_NAME <- "Crabe lyre araignée"
 spec.xtable.df[spec.xtable.df$spec==2527,]$FAO_E_COMMON_NAME <- "Great spider crab"
 
 spec.xtable.df[spec.xtable.df$spec==2521,]$FAO_F_COMMON_NAME <- "Crabe Hyas coarctatus"
@@ -367,13 +367,13 @@ spec.xtable.df[spec.xtable.df$spec==620,]$FAO_E_COMMON_NAME <- "Newfoundland eel
 spec.xtable.df[spec.xtable.df$spec==620,]$FAO_F_COMMON_NAME <- "Lycode du Labrador"
 
 spec.xtable.df[spec.xtable.df$spec==142,]$FAO_E_COMMON_NAME <- "Fourspot flounder"
-spec.xtable.df[spec.xtable.df$spec==142,]$FAO_F_COMMON_NAME <- "Cardeau ? quatre ocelles"
+spec.xtable.df[spec.xtable.df$spec==142,]$FAO_F_COMMON_NAME <- "Cardeau à quatre ocelles"
 
 spec.xtable.df[spec.xtable.df$spec==156,]$FAO_E_COMMON_NAME <- "Shortnose greeneye"
-spec.xtable.df[spec.xtable.df$spec==156,]$FAO_F_COMMON_NAME <- "?perlan du large"
+spec.xtable.df[spec.xtable.df$spec==156,]$FAO_F_COMMON_NAME <- "Éperlan du large"
 
 spec.xtable.df[spec.xtable.df$spec==149,]$FAO_E_COMMON_NAME <- "Longnose greeneye"
-spec.xtable.df[spec.xtable.df$spec==149,]$FAO_F_COMMON_NAME <- "Oeil-vert ? long nez"
+spec.xtable.df[spec.xtable.df$spec==149,]$FAO_F_COMMON_NAME <- "Oeil-vert à long nez"
 
 spec.xtable.df[spec.xtable.df$spec==412,]$FAO_E_COMMON_NAME <- "Roughnose grenadier"
 spec.xtable.df[spec.xtable.df$spec==412,]$FAO_F_COMMON_NAME <- "Grenadier-scie"
@@ -386,21 +386,21 @@ spec.xtable.df[spec.xtable.df$spec==742,]$FAO_F_COMMON_NAME <- "Malthe atlantiqu
 spec.xtable.df[spec.xtable.df$spec==150,]$FAO_E_COMMON_NAME <- "Lanternfishes"
 spec.xtable.df[spec.xtable.df$spec==150,]$FAO_F_COMMON_NAME <- "Poissons-lanternes"
 
-spec.xtable.df[spec.xtable.df$spec==63,]$FAO_F_COMMON_NAME <- "?perlan arc-en-ciel"
+spec.xtable.df[spec.xtable.df$spec==63,]$FAO_F_COMMON_NAME <- "Éperlan arc-en-ciel"
 
 spec.xtable.df[spec.xtable.df$spec==637,]$FAO_E_COMMON_NAME <- "Spotfin dragonet"
-spec.xtable.df[spec.xtable.df$spec==637,]$FAO_F_COMMON_NAME <- "Dragonnet tachet?"
+spec.xtable.df[spec.xtable.df$spec==637,]$FAO_F_COMMON_NAME <- "Dragonnet tacheté"
 
 spec.xtable.df[spec.xtable.df$spec==630,]$FAO_E_COMMON_NAME <- "Wrymouth"
-spec.xtable.df[spec.xtable.df$spec==630,]$FAO_F_COMMON_NAME <- "Terrassier tachet?"
+spec.xtable.df[spec.xtable.df$spec==630,]$FAO_F_COMMON_NAME <- "Terrassier tacheté"
 
 spec.xtable.df[spec.xtable.df$spec==621,]$FAO_F_COMMON_NAME <- "Sigouine de roche"
 
 spec.xtable.df[spec.xtable.df$spec==623,]$FAO_E_COMMON_NAME <- "Daubed shanny"
-spec.xtable.df[spec.xtable.df$spec==623,]$FAO_F_COMMON_NAME <- "Lomp?nie tachet?e"
+spec.xtable.df[spec.xtable.df$spec==623,]$FAO_F_COMMON_NAME <- "Lompénie tachetée"
 
 spec.xtable.df[spec.xtable.df$spec==622,]$FAO_E_COMMON_NAME <- "Snakeblenny"
-spec.xtable.df[spec.xtable.df$spec==622,]$FAO_F_COMMON_NAME <- "Lomp?nie serpent"
+spec.xtable.df[spec.xtable.df$spec==622,]$FAO_F_COMMON_NAME <- "Lompénie-serpent"
 
 spec.xtable.df[spec.xtable.df$spec==816,]$FAO_E_COMMON_NAME <- "Spottedfin tonguefish"
 spec.xtable.df[spec.xtable.df$spec==816,]$FAO_F_COMMON_NAME <- "Langue fil noir"
@@ -410,16 +410,16 @@ spec.xtable.df[spec.xtable.df$spec==350,]$FAO_F_COMMON_NAME <- "Agone atlantique
 spec.xtable.df[spec.xtable.df$spec==341,]$FAO_F_COMMON_NAME <- "Poisson-alligator arctique"
 
 spec.xtable.df[spec.xtable.df$spec==306,]$FAO_E_COMMON_NAME <- "Arctic hookear sculpin"
-spec.xtable.df[spec.xtable.df$spec==306,]$FAO_F_COMMON_NAME <- "Hame?on neigeux"
+spec.xtable.df[spec.xtable.df$spec==306,]$FAO_F_COMMON_NAME <- "Hameçon neigeux"
 
 spec.xtable.df[spec.xtable.df$spec==880,]$FAO_E_COMMON_NAME <- "Atlantic hookear sculpin"
-spec.xtable.df[spec.xtable.df$spec==880,]$FAO_F_COMMON_NAME <- "Hame?on atlantique"
+spec.xtable.df[spec.xtable.df$spec==880,]$FAO_F_COMMON_NAME <- "Hameçon atlantique"
 
 spec.xtable.df[spec.xtable.df$spec==301,]$FAO_E_COMMON_NAME <- "Shorthorn sculpin"
-spec.xtable.df[spec.xtable.df$spec==301,]$FAO_F_COMMON_NAME <- "Chaboisseau ? ?pines courtes"
+spec.xtable.df[spec.xtable.df$spec==301,]$FAO_F_COMMON_NAME <- "Chaboisseau à épines courtes"
 
 spec.xtable.df[spec.xtable.df$spec==303,]$FAO_E_COMMON_NAME <- "Grubby"
-spec.xtable.df[spec.xtable.df$spec==303,]$FAO_F_COMMON_NAME <- "Chaboisseau bronz?"
+spec.xtable.df[spec.xtable.df$spec==303,]$FAO_F_COMMON_NAME <- "Chaboisseau bronzé"
 
 spec.xtable.df[spec.xtable.df$spec==501,]$FAO_E_COMMON_NAME <- "Lumpfish"
 
@@ -429,10 +429,10 @@ spec.xtable.df[spec.xtable.df$spec==502,]$FAO_F_COMMON_NAME <- "Petite poule de 
 spec.xtable.df[spec.xtable.df$spec==503,]$FAO_E_COMMON_NAME <- "Atlantic seasnail"
 spec.xtable.df[spec.xtable.df$spec==503,]$FAO_F_COMMON_NAME <- "Limace atlantique"
 
-spec.xtable.df[spec.xtable.df$spec==512,]$FAO_F_COMMON_NAME <- "Limace marb?e"
+spec.xtable.df[spec.xtable.df$spec==512,]$FAO_F_COMMON_NAME <- "Limace marbée"
 
 spec.xtable.df[spec.xtable.df$spec==505,]$FAO_E_COMMON_NAME <- "Gelatinous snailfish"
-spec.xtable.df[spec.xtable.df$spec==505,]$FAO_F_COMMON_NAME <- "Limace g?latineuse"
+spec.xtable.df[spec.xtable.df$spec==505,]$FAO_F_COMMON_NAME <- "Limace gélatineuse"
 
 spec.xtable.df[spec.xtable.df$spec==520,]$FAO_E_COMMON_NAME <- "Sea tadpole"
 spec.xtable.df[spec.xtable.df$spec==520,]$FAO_F_COMMON_NAME <- "Petite limace de mer"
@@ -440,14 +440,14 @@ spec.xtable.df[spec.xtable.df$spec==520,]$FAO_F_COMMON_NAME <- "Petite limace de
 spec.xtable.df[spec.xtable.df$spec==307,]$FAO_F_COMMON_NAME <- "Cotte polaire"
 
 spec.xtable.df[spec.xtable.df$spec==23,]$FAO_E_COMMON_NAME <- "Atlantic redfishes"
-spec.xtable.df[spec.xtable.df$spec==23,]$FAO_F_COMMON_NAME <- "S?bastes de l'Atlantique"
+spec.xtable.df[spec.xtable.df$spec==23,]$FAO_F_COMMON_NAME <- "Sébastes de l'Atlantique"
 
-spec.xtable.df[spec.xtable.df$spec==158,]$FAO_F_COMMON_NAME <- "Bross? am?thyste"
+spec.xtable.df[spec.xtable.df$spec==158,]$FAO_F_COMMON_NAME <- "Brossé améthyste"
 
 spec.xtable.df[spec.xtable.df$spec==159,]$FAO_F_COMMON_NAME <- "Dragon-boa"
 
 spec.xtable.df[spec.xtable.df$spec==704,]$FAO_E_COMMON_NAME <- "Silvery John dory"
-spec.xtable.df[spec.xtable.df$spec==704,]$FAO_F_COMMON_NAME <- "Saint Pierre argent?"
+spec.xtable.df[spec.xtable.df$spec==704,]$FAO_F_COMMON_NAME <- "Saint Pierre argenté"
 
 spec.xtable.df[spec.xtable.df$spec==200,]$FAO_E_COMMON_NAME <- "Barndoor skate"
 spec.xtable.df[spec.xtable.df$spec==200,]$FAO_F_COMMON_NAME <- "Grande raie"
@@ -459,7 +459,7 @@ spec.xtable.df[spec.xtable.df$spec==2532,]$FAO_E_COMMON_NAME <- "Red deepsea cra
 spec.xtable.df[spec.xtable.df$spec==2532,]$FAO_F_COMMON_NAME <- "Crabe rouge"
 
 spec.xtable.df[spec.xtable.df$spec==2523,]$FAO_E_COMMON_NAME <- "Atlantic king crab"
-spec.xtable.df[spec.xtable.df$spec==2523,]$FAO_F_COMMON_NAME <- "Crabe ?pineux du nord"
+spec.xtable.df[spec.xtable.df$spec==2523,]$FAO_F_COMMON_NAME <- "Crabe épineux du nord"
 
 spec.xtable.df[spec.xtable.df$spec==604,]$FAO_F_COMMON_NAME <- "Avocette ruban"
 
@@ -469,7 +469,7 @@ spec.xtable.df[spec.xtable.df$spec==641,]$FAO_F_COMMON_NAME <- "Lycode arctique"
 
 spec.xtable.df[spec.xtable.df$spec==646,]$FAO_F_COMMON_NAME <- "Molasse atlantique"
 
-spec.xtable.df[spec.xtable.df$spec==603,]$FAO_F_COMMON_NAME <- "Lycode ? t?te longue"
+spec.xtable.df[spec.xtable.df$spec==603,]$FAO_F_COMMON_NAME <- "Lycode à tête longue"
 
 spec.xtable.df[spec.xtable.df$spec==44,]$FAO_F_COMMON_NAME <- "Plie du Gulf Stream"
 
@@ -477,7 +477,10 @@ spec.xtable.df[spec.xtable.df$spec==351,]$FAO_E_COMMON_NAME <- "Alligatorfishes"
 spec.xtable.df[spec.xtable.df$spec==351,]$FAO_F_COMMON_NAME <- "Poissons-alligator"
 
 spec.xtable.df[spec.xtable.df$spec==314,]$FAO_E_COMMON_NAME <- "Spatulate sculpin"
-spec.xtable.df[spec.xtable.df$spec==314,]$FAO_F_COMMON_NAME <- "Ic?le spatul?e"
+spec.xtable.df[spec.xtable.df$spec==314,]$FAO_F_COMMON_NAME <- "Icèle spatulée"
+
+spec.xtable.df[spec.xtable.df$spec==640,]$FAO_E_COMMON_NAME <- "Ocean pout"
+spec.xtable.df[spec.xtable.df$spec==640,]$FAO_F_COMMON_NAME <- "Loquette d'Amérique"
 
 ## fix the species that have an "unaccepted" status on WoRMS
 # Loligo pealeii, 4512
@@ -493,8 +496,11 @@ spec.xtable.df[spec.xtable.df$spec==704,]$ACCEPTED_SCIENT_NAME <- "Zenopsis conc
 
 #spec.xtable.df$AphiaID <- unlist(my.aphia.ids)
 
-
-
+# spec.xtable.df[spec.xtable.df$spec==200,]$type <- "LR"
+# spec.xtable.df[spec.xtable.df$spec==340,]$type <- "I"
+# spec.xtable.df[spec.xtable.df$spec==501,]$type <- "LR"
+# spec.xtable.df[spec.xtable.df$spec==502,]$type <- "LR"
+ spec.xtable.df[spec.xtable.df$spec==610,]$type <- "I"
 
 
 ## now order by phylogenetic classification
@@ -506,19 +512,35 @@ oo <- order(spec.xtable.df$taxoclass, spec.xtable.df$ORDER_,
             spec.xtable.df$FAMILY_)
 spec.xtable.df.final <- spec.xtable.df[oo,]
 
-spec.xtable.df.final <- na.omit(spec.xtable.df.final)
+#spec.xtable.df.final <- na.omit(spec.xtable.df.final)
 
-write.table(spec.xtable.df.final[,c(1:10)],
-            file.path(path.Report, "species-list-final.csv"), 
-            row.names=FALSE, col.names=FALSE, sep=",")
+spec.xtable.df.final <- spec.xtable.df.final[spec.xtable.df.final$spec 
+                                             %in% c(241,240,604,156,149,712,720,60,62,61,10,11,12,16,13,112,15,114,17,410,412,414,14,19,400,742,150,160,64,63,610,50,51,52,637,630,122,621,70,623,622,625,626,701,640,647,641,619,620,646,603,816,44,142,40,41,42,43,30,31,143,340,350,351,341,300,304,306,880,301,314,303,501,502,320,503,512,505,520,307,23,123,158,741,159,704,201,202,204,203,200,221,220,4512,4511,2511,2513,2532,2523,2550,2526,2527,2521,2211), ]
 
+# write.table(spec.xtable.df.final[,c(1:9)],
+#             file.path(path.Report, "species-list-final.csv"),
+#             row.names=FALSE, col.names=FALSE, sep=",")
 
+source(file.path(path.ATLAS, "FunctionsR/write.unicode.csv.R")) 
+
+# to allow french names to remain in the csv file i had to add the following lines of code at encoding="UTF-8" did not work
+ 
+write.unicode.csv(spec.xtable.df.final[,c(1:9)],
+             file.path(path.Report, "species-list-final.csv"))
+
+AA <- read.csv(file.path(path.Report,"species-list-final.csv"),
+                       header=TRUE)[ ,2:10]
+
+write.table(AA[,c(1:9)],
+              file.path(path.Report, "species-list-final.csv"),
+              row.names=FALSE, col.names=FALSE, sep=",")
+ 
+ 
 #fn.tex1 <- "Atlas_speciessummary_table1.tex"
 #filename.tex1 <- file.path(path.Figures, fn.tex1)
 
 #spec.xtable1 <- xtable(spec.xtable.df, digits=0)
 #print.xtable(spec.xtable1, type='latex', file=filename.tex1, include.rownames=FALSE, size='scriptsize', booktabs=TRUE, tabular.environment="longtable", floating=FALSE)
-
 
 ## csv file 
 #df.for.csv <- merge(df.summary, itis.all, by.x="spec", by.y="GIVEN_SPEC_CODE")

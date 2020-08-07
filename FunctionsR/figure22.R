@@ -118,10 +118,10 @@ plot(R, border=my.cols.palette, col = my.cols.palette, add=TRUE)
 
 ######## save raster for FGP
 species=as.character(dat.in$spec[1])
-lname=paste0("SS",species,"_",yrs.labels[i],"_IDWmap")
+lname=paste0("SS",species,"_",yrs.labels[i],"_IDWmap-biomass")
 path.FGP <- file.path(path.ATLAS, "FGP")
 R_df <- as(R, "SpatialPolygonsDataFrame")
-writeOGR(R_df, dsn=file.path(path.FGP, "IDWMap-biomass"),
+writeOGR(R_df, dsn=file.path(path.FGP, "IDWMaps"),
          layer=lname, driver="ESRI Shapefile", overwrite_layer=TRUE)
 
 #points(360+tt$lon,tt$lat,pch=3,cex=0.05)

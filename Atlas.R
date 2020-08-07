@@ -9,7 +9,7 @@ print(paste("Script Atlas.R started: ", Sys.time()))
 # required libraries
   necessary <- c("PBSmapping","spatstat","zoo","classInt","RColorBrewer","gstat","maptools",
                   "foreign","fields","spam","rgeos", "RODBC", 
-                 "xtable", "MASS", "xlsx")
+                 "xtable", "MASS", "xlsx", "raster", "rgdal")
   installed <- necessary %in% installed.packages()[, 'Package']
   if (length(necessary[!installed]) >=1)
     install.packages(necessary[!installed], repos='http://mirror.its.dal.ca/cran/')

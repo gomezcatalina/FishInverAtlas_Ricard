@@ -18,7 +18,7 @@ mat.layout2 <- matrix(c(0,2,0,0,1,3,5,0,0,4,6,8,0,0,7,0),nrow=4, ncol=4)
 ll <- layout(mat.layout2, widths=3*c(2,6.5,6.5,2), heights=3*c(2,4.8,4.8,2), respect=TRUE)
 
 
-yrs.labels <- c("2003-2006","2007-2010","2011-2013", "2014-2019")
+yrs.labels <- c("1999-2002","2003-2006","2007-2010","2011-2013")
 #yrs.labels <- c("1999-2002","2003-2006","2007-2010","2011-2013", "2014-2019")
 
 my.cols.palette <- c('white','#FEF0D9', '#FDCC8A', '#FC8D59', '#E34A33', '#B30000')
@@ -100,6 +100,16 @@ text(293.2,45.9,paste("P(occ) = ",pr.occ,sep=""),cex=0.75)
 #addPolys(SUMMER.strata.mask)
 
 plot(R, border=my.cols.palette, col = my.cols.palette, add=TRUE, axes=FALSE)
+
+######## save raster for FGP
+species=as.character(dat.in$spec[1])
+lname=paste0("SS",species,"_",yrs.labels[i],"_IDWmap")
+path.FGP <- file.path(path.ATLAS, "FGP")
+R_df <- as(R, "SpatialPolygonsDataFrame")
+writeOGR(R_df, dsn=file.path(path.FGP, "IDWMap-abundance"),
+         layer=lname, driver="ESRI Shapefile", overwrite_layer=TRUE)
+
+
 #points(360+tt$lon,tt$lat,pch=3,cex=0.05)
 box()
 #addPolys(worldLLhigh)

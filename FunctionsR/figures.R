@@ -27,7 +27,7 @@
 
 figures<-function(fig=c(1:10), spec.num=NA,
 		path.Data=NA, path.Map=NA,
-		saveFormat="png", save=TRUE, 
+		saveFormat="pdf", save=TRUE, 
 		qual="low", power=10, 
     mature=T, pos.leg.fl="R", pos.leg.prof="R", pos.leg.ln="R", pos.ylabel=c(0,0)){
 
@@ -327,11 +327,11 @@ figures<-function(fig=c(1:10), spec.num=NA,
 						devOpen(devName, saveDir=path.Figures, fileName=paste("SS", j, "_", devName, sep=""), saveFormat=saveFormat, width=4, height=2+0.75)
 						
 						# graphics parameters
-						par(mfrow=c(1,1), omi=c(0,0,0,0), mai=c(0.35, 0.5+pos.ylabel[1], 0.1, 0.1), ps=12, cex=1, xpd=TRUE, lheight=0.5, xaxs="r", yaxs="r")
+						par(mfrow=c(1,1), omi=c(0,0,0,0), mai=c(0.45, 1+pos.ylabel[1], 0.1, 0.1), ps=10, cex=1, xpd=TRUE, lheight=0.5, xaxs="r", yaxs="r")
 						
 						# text parameters
 						#cexF=list(title=1, axis=0.8,labels=0.9,legend=1, unit="in")
-						cexF=list(title=1, axis=1.0,labels=1.0,legend=1, unit="in")
+						cexF=list(title=1, axis=0.9,labels=0.9,legend=0.8, unit="in")
 						
 						# call figure function
 						figure8.fct(lw.dat, cexF, pos.ylabel)

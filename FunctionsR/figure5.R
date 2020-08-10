@@ -46,8 +46,8 @@ a.occ <- dat.in[,c(1,2)]
 	
 if('D' %in% which.measure){
 ## D50, D75 and D95
-	ylabel2 = expression(paste("\u{C9}tendue g\u{E9}ographique  (", 10^3, " ", km^2,")", sep=""))	
-	ylabel1 = expression(paste("Geographic range (", 10^3, " ", km^2,")", sep=""))
+	ylabel2 = expression(paste("\u{C9}tendue g\u{E9}ographique  ( ", 10^3, " ", km^2,")", sep=""))	
+	ylabel1 = expression(paste("Geographic range ( ", 10^3, " ", km^2,")", sep=""))
 
 d.perc <- dat.in[,c(1,3,4)]
 

@@ -1,7 +1,7 @@
 
 species.numbers <- c(10,11)
 species.numbers <- 10
-sapply(species.numbers, function(i){figures(spec.num=i, fig=c(10))})
+sapply(species.numbers, function(i){figures(spec.num=i, fig=c(8))})
 
 
 species.numbers <- 2511

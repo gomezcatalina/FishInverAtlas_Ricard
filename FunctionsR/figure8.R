@@ -1,4 +1,4 @@
-## length-weight plot
+## LengthWeight plot
 
 figure8.fct <- function(dat.in, cex.in, pos.ylabel=c(0,0)) {
 # remove entries where weight is null
@@ -49,8 +49,8 @@ text(x.range[1],y.range[2], bty="n", (bquote(y == .(aa)*x^.(bb))),  col = "Black
 
   
   mtext(xlabel, side = 1, line = 0.5, cex=cex.in$labels)
-  mtext(ylabel1, side = 2, line = 1.75+pos.ylabel[2], cex=cex.in$labels)
-  mtext(ylabel2, side = 2, line = 1+pos.ylabel[2], cex=cex.in$labels)
+  mtext(ylabel1, side = 2, line = 2.75+pos.ylabel[2], cex=cex.in$labels)
+  mtext(ylabel2, side = 2, line = 2+pos.ylabel[2], cex=cex.in$labels)
 
 
 # yearly.cond <- tapply(dat.in$condition, dat.in$YEAR, mean)

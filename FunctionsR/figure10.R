@@ -17,12 +17,15 @@ my.ylim <- c(41,47.5)
 xx.lon<-c(290,292,294,296,298,300,302,304)
 yy.lat<-c(40,42,44,46,48)
 
-mat.layout2 <- matrix(c(0,2,0,0,0,1,3,6,9,0,0,4,7,10,0,0,5,8,11,13,0,0,0,12,0),nrow=5, ncol=5)
+mat.layout2 <- matrix(c(0,2,0,0,0,1,3,6,9,0,0,4,7,10,0,0,5,8,11,13,0,0,0,12,0),
+                      nrow=5, ncol=5)
 ll <- layout(mat.layout2, widths=3*c(2,6.5,6.5,6.5,2), heights=3*c(2,4.8,4.8,4.8,2), respect=TRUE)
 
+#Version 1.0 2013
+#yrs.labels <- c("1970-1974","1975-1979","1980-1984","1985-1989","1990-1994","1995-1999","2000-2004","2005-2009","2010-2013")
 
-yrs.labels <- c("1970-1974","1975-1979","1980-1984","1985-1989","1990-1994","1995-1999","2000-2004","2005-2009","2010-2013")
-#yrs.labels <- c("1970-1974", "1975-1979","1980-1984","1985-1989","1990-1994","1995-1999","2000-2004","2005-2009","2010-2013", "2014-2019")
+#Version 2.0 2020
+yrs.labels <- c("1970-1979","1980-1984","1985-1989","1990-1994","1995-1999","2000-2004","2005-2009","2010-2014","2015-2019")
 my.cols.palette <- c('white','#FEF0D9', '#FDCC8A', '#FC8D59', '#E34A33', '#B30000', '#781212')
 
 ## layout and such, to allow for the axes
@@ -38,11 +41,10 @@ par(mar=c(0,3,0,0),las=2)
 plot(rep(my.xlim[1],2),my.ylim,axes=FALSE,type='n')
 axis(side=2,at=yy.lat, line=-1.75, labels=paste(yy.lat,"\u{B0}N",sep=""))
 
-## loop over 5-year periods
+## loop over 6-year periods
 for (i in 1:9) {
 #dx=0.285
 #dy=0.225
-
 yy <- strsplit(yrs.labels[i],"-")
 tt <- subset(dat.in, YEAR >=as.numeric(yy[[1]][1]) & YEAR <= as.numeric(yy[[1]][2]) )
 
@@ -100,7 +102,6 @@ res <- PolySet2SpatialPolygons(res$PolySet)
 res <- lapply(getSpPpolygonsSlot(res), checkPolygonsHoles)
 
 R <- as.SpatialPolygons.PolygonsList(res)
-	
 plotMap(worldLLhigh, my.xlim, my.ylim, col=grey(0.9),
         plt=c(0.0,1.0,0.0,1.0),border=grey(0.7),axes=FALSE,tckLab=FALSE,xlab="",ylab="")
 text(293.2,46.4,yrs.labels[i],bg='white',cex=1)

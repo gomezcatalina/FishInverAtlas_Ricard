@@ -41,16 +41,16 @@ lines(dat.in[,1], yy, lty=1, col=grey(0.7), lwd=1.5)
 	ylabel1 = "Mean number per tow"
 	
 	# labels and such
-	
-	axis(side=1, at = pretty.x, cex.axis=cex.in$axis, labels=TRUE, tcl=-0.2, las=0, mgp=c(0,-0.2,0))
+	  # mgp adjusts the position of the labels of the x axis
+	axis(side=1, at = pretty.x, cex.axis=cex.in$axis, labels=TRUE, tcl=-0.2, las=0, mgp=c(0,0,0), tck = -0.006)
 	axis(side=1, seq(min(pretty.x), max(pretty.x), by=((pretty.x[2]-pretty.x[1])/2)), labels=F, tck = -0.015)
 	axis(side=2, at = pretty.y, cex.axis=cex.in$axis, labels=TRUE, tcl=-0.15, las=1, mgp=c(0,0.2,0))
 	axis(side=2, seq(min(pretty.y), max(pretty.y), by=((pretty.y[2]-pretty.y[1])/2)), labels=F, tck = -0.01)
 	
 	# Affichage du titre et des axes	
 	mtext(xlabel, side = 1, line = 0.5, cex=cex.in$labels)
-	mtext(ylabel1, side = 2, line = 1.75+pos.ylabel[2], cex=cex.in$labels)
-	mtext(ylabel2, side = 2, line = 1+pos.ylabel[2], cex=cex.in$labels)
+	mtext(ylabel1, side = 2, line = 2.75+pos.ylabel[2], cex=cex.in$labels)
+	mtext(ylabel2, side = 2, line = 2+pos.ylabel[2], cex=cex.in$labels)
 	
 
 #################

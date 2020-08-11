@@ -324,10 +324,11 @@ figures<-function(fig=c(1:10), spec.num=NA,
 						devName <- "LengthWeight"
 						
 						# open graphics device
+						    #0.7+pos.ylabel: distance y axis to left margin. 
 						devOpen(devName, saveDir=path.Figures, fileName=paste("SS", j, "_", devName, sep=""), saveFormat=saveFormat, width=4, height=2+0.75)
 						
 						# graphics parameters
-						par(mfrow=c(1,1), omi=c(0,0,0,0), mai=c(0.45, 1+pos.ylabel[1], 0.1, 0.1), ps=10, cex=1, xpd=TRUE, lheight=0.5, xaxs="r", yaxs="r")
+						par(mfrow=c(1,1), omi=c(0,0,0,0), mai=c(0.35, 0.7+pos.ylabel[1], 0.1, 0.1), ps=10, cex=1, xpd=TRUE, lheight=0.5, xaxs="r", yaxs="r")
 						
 						# text parameters
 						#cexF=list(title=1, axis=0.8,labels=0.9,legend=1, unit="in")

@@ -114,14 +114,22 @@ text(293.2,45.9,paste("P(occ) = ",pr.occ,sep=""),cex=0.80)
 
 plot(R, border=my.cols.palette, col = my.cols.palette, add=TRUE, axes=FALSE)
 
-######## save raster for FGP
+#### save shape files for FGP
 species=as.character(dat.in$spec[1])
 lname=paste0("SS",species,"_",yrs.labels[i],"_IDWmap-biomass")
 path.FGP <- file.path(path.ATLAS, "FGP")
 R_df <- as(R, "SpatialPolygonsDataFrame")
+proj4string(R_df) <- CRS("+proj=longlat +ellps=WGS84 +no_defs")
+names(R_df@data)="legend"
+if(my.legend=="abundant"){
+  R_df@data$legend=c("0","< 5","< 20","< 50","< 100",">= 100")
+}
+if(my.legend=="rare"){
+  R_df@data$legend=c("0","<0.1","<0.5","<1","<5",">=5")
+}
 writeOGR(R_df, dsn=file.path(path.FGP, "IDWMaps"),
          layer=lname, driver="ESRI Shapefile", overwrite_layer=TRUE)
-
+#### finish saving shape files for FGP
 
 #points(360+tt$lon,tt$lat,pch=3,cex=0.05)
 box()

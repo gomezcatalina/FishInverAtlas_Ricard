@@ -1,7 +1,7 @@
 #--------------------------------------------------------------------------#
 ## main R script to generate the figures required in the DFO Maritimes groundfish survey atlas
 ## Daniel Ricard, started 2012-07-20 relying extensively on Hugo Bourdages' work on the NGSL atlas
-## Catalina Gomez updated scripts in July 2020 and updated extractions and data up to 2020
+## Catalina Gomez and Gordana Lazin updated scripts in July 2020 and updated extractions and data up to 2020
 options(echo=FALSE)
 
 print(paste("Script Atlas.R started: ", Sys.time()))

@@ -251,9 +251,8 @@ figures<-function(fig=c(1:10), spec.num=NA,
 						# graphics parameters
 						#par(mfrow=c(1,3), omi=c(0,0,0,0), mai=c(0.35, 0.5+pos.ylabel[1], 0.1, 0.1), ps=8, cex=1, xpd=TRUE, lheight=0.5, xaxs="r", yaxs="r")
 						#par(mfrow=c(1,1), omi=c(0,0,0,0), mai=c(0.35, 0.5+pos.ylabel[1], 0.1, 0.1), ps=12, cex=1, xpd=TRUE, lheight=0.5, xaxs="r", yaxs="r")
-						par(mfrow=c(1,1), omi=c(0,0,0,0), mai=c(0.9, 1+pos.ylabel[1], 0.1, 1), ps=16, cex=1, xpd=TRUE, lheight=0.5, xaxs="r", yaxs="r")
+						par(mfrow=c(1,1), omi=c(0,0,0,0), mai=c(0.9, 1+pos.ylabel[1], 0.1, 1), ps=15, cex=1, xpd=TRUE, lheight=0.5, xaxs="r", yaxs="r")
 
-						
 						# text parameters
 						#cexF=list(title=1, axis=0.8,labels=0.9,legend=1, unit="in")
 						cexF=list(title=1, axis=1.0,labels=1.0,legend=1, unit="in")
@@ -277,11 +276,12 @@ figures<-function(fig=c(1:10), spec.num=NA,
 						devOpen(devName, saveDir=path.Figures, fileName=paste("SS", j, "_", devName, sep=""), saveFormat=saveFormat, width=12, height=4)
 						
 						# graphics parameters
-						par(mfrow=c(1,2), omi=c(0,0,0,0), mai=c(0.35, 0.5+pos.ylabel[1], 0.1, 0.1), ps=12, cex=1, xpd=TRUE, lheight=0.5, xaxs="r", yaxs="r")
+						#par(mfrow=c(1,2), omi=c(0,0,0,0), mai=c(0.35, 0.5+pos.ylabel[1], 0.1, 0.1), ps=12, cex=1, xpd=TRUE, lheight=0.5, xaxs="r", yaxs="r")
+						par(mfrow=c(1,2), omi=c(0,0,0,0), mai=c(0.35, 0.8+pos.ylabel[1], 0.1, 0.1), ps=11, cex=1, xpd=TRUE, lheight=0.5, xaxs="r", yaxs="r")
 						
 						# text parameters
 						#cexF=list(title=1, axis=0.8,labels=0.9,legend=1, unit="in")
-						cexF=list(title=1, axis=1.0,labels=1.0,legend=1, unit="in")
+						cexF=list(title=1, axis=1.0,labels=0.8,legend=1, unit="in")
 						
 						# call figure function
 						figure6.fct(stratified.dat, cexF, pos.ylabel)
@@ -302,7 +302,6 @@ figures<-function(fig=c(1:10), spec.num=NA,
 						devOpen(devName, saveDir=path.Figures, fileName=paste("SS", j, "_", devName, sep=""), saveFormat=saveFormat, width=4, height=2+0.75)
 						
 						# graphics parameters
-						# par(mfrow=c(1,1), omi=c(0,0,0,0), mai=c(0.35, 0.5+pos.ylabel[1], 0.1, 0.1), ps=12, cex=1, xpd=TRUE, lheight=0.5, xaxs="r", yaxs="r")
 						par(mfrow=c(1,1), omi=c(0,0,0,0), mai=c(0.35, 0.7+pos.ylabel[1], 0.1, 0.1), ps=10, cex=1, xpd=TRUE, lheight=0.5, xaxs="r", yaxs="r")
 						
 						# text parameters

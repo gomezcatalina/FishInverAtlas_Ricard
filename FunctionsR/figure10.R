@@ -45,6 +45,7 @@ axis(side=2,at=yy.lat, line=-1.75, labels=paste(yy.lat,"\u{B0}N",sep=""))
 for (i in 1:9) {
 #dx=0.285
 #dy=0.225
+#i=1
 yy <- strsplit(yrs.labels[i],"-")
 tt <- subset(dat.in, YEAR >=as.numeric(yy[[1]][1]) & YEAR <= as.numeric(yy[[1]][2]) )
 
@@ -56,7 +57,7 @@ my.df <- data.frame(x=tt$lon+360, y=tt$lat, z=tt$totno.corr)
 
 # define grid for IDW interpolation
 g.len <- 200
-D <- data.frame(	x=rep(seq(my.xlim[1],my.xlim[2],length.out=g.len), time=g.len),
+D <- data.frame(x=rep(seq(my.xlim[1],my.xlim[2],length.out=g.len), time=g.len),
 					y=rep(seq(my.ylim[1],my.ylim[2],length.out=g.len), each=g.len),
 					z=rep(0, g.len*g.len))
 DD <- data.frame(	x=seq(my.xlim[1],my.xlim[2],length.out=g.len),
@@ -114,6 +115,9 @@ species=as.character(dat.in$spec[1])
 lname=paste0("SS",species,"_",yrs.labels[i],"_IDWmap-abundance")
 path.FGP <- file.path(path.ATLAS, "FGP")
 R_df <- as(R, "SpatialPolygonsDataFrame")
+proj4string(R_df) <- CRS("+proj=longlat +ellps=WGS84 +no_defs")
+names(R_df@data)="legend"
+R_df@data$legend=c("0","< 5","< 20","< 50","< 100",">= 100")
 writeOGR(R_df, dsn=file.path(path.FGP, "IDWMaps"),
          layer=lname, driver="ESRI Shapefile", overwrite_layer=TRUE)
 

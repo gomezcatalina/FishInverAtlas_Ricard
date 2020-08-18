@@ -1,7 +1,7 @@
 ## maps of IDW interpolated abundance
 
 figure21.fct <- function(dat.in, cex.in, pos.ylabel=c(0,0)) {
-# dat.in <- read.csv(file.path(path.ATLAS, "/Data/SS2526_catch.csv"), header=TRUE)
+dat.in <- read.csv(file.path(path.ATLAS, "/Data/SS2526_catch.csv"), header=TRUE)
 
 logic.abundant <- quantile(subset(dat.in, totno.corr != 0)$totno.corr, probs=c(0.95))>50
 
@@ -19,10 +19,10 @@ ll <- layout(mat.layout2, widths=3*c(2,6.5,6.5,2), heights=3*c(2,4.8,4.8,2), res
 
 
 #Version 1.0 2013
-#yrs.labels <- c("1970-1974","1975-1979","1980-1984","1985-1989","1990-1994","1995-1999","2000-2004","2005-2009","2010-2013")
+#yrs.labels <- c("1999-2002","2003-2006","2007-2010","2011-2013")
 
 #Version 2.0 2020
-yrs.labels <- c("1970-1979","1980-1984","1985-1989","1990-1994","1995-1999","2000-2004","2005-2009","2010-2014","2015-2019")
+yrs.labels <- c("1999-2004","2005-2009","2010-2014","2015-2019")
 
 my.cols.palette <- c('white','#FEF0D9', '#FDCC8A', '#FC8D59', '#E34A33', '#B30000')
 
@@ -104,13 +104,22 @@ text(293.2,45.9,paste("P(occ) = ",pr.occ,sep=""),cex=0.75)
 
 plot(R, border=my.cols.palette, col = my.cols.palette, add=TRUE, axes=FALSE)
 
-######## save raster for FGP
+#### save shape files for FGP
 species=as.character(dat.in$spec[1])
 lname=paste0("SS",species,"_",yrs.labels[i],"_IDWmap-abundance")
 path.FGP <- file.path(path.ATLAS, "FGP")
 R_df <- as(R, "SpatialPolygonsDataFrame")
+proj4string(R_df) <- CRS("+proj=longlat +ellps=WGS84 +no_defs")
+ names(R_df@data)="legend"
+ if(my.legend=="abundant"){
+   R_df@data$legend=c("0","<5","<20","<50","<100",">=100")
+ }
+ if(my.legend=="rare"){
+   R_df@data$legend=c("0","<0.1","<0.5","<1","<5",">=5")
+ }
 writeOGR(R_df, dsn=file.path(path.FGP, "IDWMaps"),
          layer=lname, driver="ESRI Shapefile", overwrite_layer=TRUE)
+#### finish saving shape files for FGP
 
 
 #points(360+tt$lon,tt$lat,pch=3,cex=0.05)

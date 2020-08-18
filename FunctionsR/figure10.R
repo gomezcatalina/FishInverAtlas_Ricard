@@ -1,7 +1,7 @@
 ## maps of IDW interpolated abundance
 
 figure10.fct <- function(dat.in, cex.in, pos.ylabel=c(0,0)) {
-#dat.in <- read.csv("C:/RProjects/FishInverAtlas_Ricard/Data/SS10_catch.csv", header=TRUE)
+dat.in <- read.csv("C:/RProjects/FishInverAtlas_Ricard/Data/SS10_catch.csv", header=TRUE)
 
 # logic to determine what scale to use
 logic.abundant <- quantile(subset(dat.in, totno.corr != 0)$totno.corr, probs=c(0.95))>50
@@ -110,17 +110,6 @@ text(293.2,45.9,paste("P(occ) = ",pr.occ,sep=""),cex=0.80)
 #addPolys(SUMMER.strata.mask)
 plot(R, border=my.cols.palette, col = my.cols.palette, add=TRUE, axes=FALSE)
 
-######## save raster for FGP
-species=as.character(dat.in$spec[1])
-lname=paste0("SS",species,"_",yrs.labels[i],"_IDWmap-abundance")
-path.FGP <- file.path(path.ATLAS, "FGP")
-R_df <- as(R, "SpatialPolygonsDataFrame")
-proj4string(R_df) <- CRS("+proj=longlat +ellps=WGS84 +no_defs")
-names(R_df@data)="legend"
-R_df@data$legend=c("0","< 5","< 20","< 50","< 100",">= 100")
-writeOGR(R_df, dsn=file.path(path.FGP, "IDWMaps"),
-         layer=lname, driver="ESRI Shapefile", overwrite_layer=TRUE)
-
 #points(360+tt$lon,tt$lat,pch=3,cex=0.05)
 box()
 addPolys(SS.strata.mask.LL)
@@ -165,7 +154,15 @@ par(mar=c(2,0,0,0),las=1)
 plot(my.xlim,rep(my.ylim[2],2),axes=FALSE,type='n')
 axis(side=1, at=xx.lon, line=-2.75, labels=paste(360-xx.lon,"\u{B0}O",sep=""))
 
-
-
 } # end function
 
+######## save raster for FGP
+species=as.character(dat.in$spec[1])
+lname=paste0("SS",species,"_",yrs.labels[i],"_IDWmap-abundance")
+path.FGP <- file.path(path.ATLAS, "FGP")
+R_df <- as(R, "SpatialPolygonsDataFrame")
+proj4string(R_df) <- CRS("+proj=longlat +ellps=WGS84 +no_defs")
+names(R_df@data)="legend"
+R_df@data$legend=c("0","< 5","< 20","< 50","< 100",">= 100")
+writeOGR(R_df, dsn=file.path(path.FGP, "IDWMaps"),
+         layer=lname, driver="ESRI Shapefile", overwrite_layer=TRUE)

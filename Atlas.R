@@ -34,7 +34,7 @@ print(paste("Script Atlas.R started: ", Sys.time()))
   source(file.path(path.ATLAS, "FunctionsR/figures.R"))
 
   # source the code that defines the function for habitat suitability
-  source(file.path(path.ATLAS, "FunctionsR/habitat-suitability.R"))
+  #source(file.path(path.ATLAS, "FunctionsR/habitat-suitability.R"))
 
 # source the code that sets all the mapping functions and data requirements such as polygons and masks, this file also creates a survey map with strata polygons and NAFO divisions
 	source(file.path(path.ATLAS, "Mapping/SUMMER-strata.R"))

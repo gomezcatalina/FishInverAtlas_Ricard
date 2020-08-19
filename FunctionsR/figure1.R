@@ -1,8 +1,8 @@
 ## maps of stratum-level abundance
 
 figure1.fct <- function(dat.in, cex.in, pos.ylabel=c(0,0)) {
-# catch.dat <- read.csv("C:/ATLAS_poissons_SS/Data/SS10_catch.csv", header=TRUE)
-
+#dat.in <- read.csv("C:/RProjects/FishInverAtlas_Ricard/Data/SS10_catch.csv", header=TRUE)
+  
 my.xlim <- c(291.25,303.75)
 my.ylim <- c(41,47.5)
 

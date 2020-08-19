@@ -58,10 +58,13 @@ print(paste("Script Atlas.R started: ", Sys.time()))
   #species.numbers <- species.numbers[species.numbers != "610"]
   # extract all the data and plot all the figures for GROUP
   print(paste("Starting data extracts, L species: ", Sys.time()))
-  # extraction is done in folder 'Data' - make sure file DFO-strata-statistics.csv is in that folder
+  # The following extraction is done in folder 'Data'
+  # Make sure taht folder contains "DFO-strata-statistics.csv"
   	sapply(species.numbers, function(i){data.extract(extract.num=c(1,2,3,5,6,7), spec.num=i)})
-	print(paste("End data extract, starting figures, L species: ", Sys.time()))
-	  sapply(species.numbers, function(i){figures(spec.num=i, fig=c(2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,18,19,20))})
+  	print(paste("End data extract, starting figures, L species: ", Sys.time()))
+  	# The following extraction is done in folder 'Figures'
+  	# Figures 10,11,20,21 also create shape files in the folder 'FGP' (Federal Geospatial Platform')
+    sapply(species.numbers, function(i){figures(spec.num=i, fig=c(2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,18,19,20))})
 	# sapply(species.L, function(i){figures(spec.num=i, fig=c(15,20))})
 	# sapply(species.numbers, function(i){figures(spec.num=i, fig=c(19))})
 	print(paste("End figures, L species: ", Sys.time()))

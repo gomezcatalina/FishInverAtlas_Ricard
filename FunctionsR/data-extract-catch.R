@@ -54,8 +54,11 @@ STRAT == '460' | STRAT == '461' | STRAT == '462' | STRAT == '463' | STRAT == '46
  ) & (MONTH == 6 | MONTH == 7 | MONTH == 8)
 )
 }
-
+#in GSSPECIES the CODE field is the Maritime species code (e.g. 10 = COD), 
+#SPEC is the scientific name, and COMM is the common name.  
+#In GSCAT SPEC is the Maritime species code.
 # species
+# to troubleshoot e.g. spec.number =10
 qu <- paste("
 SELECT 
 i.mission,

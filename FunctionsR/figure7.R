@@ -1,7 +1,10 @@
 ## length frequency plot 
-
+#LengthFreq
+#First update length-frequency.R with new years. Updates should then match leg.label in this script.
+# This would then update all SSxx_lf.csv files.
 figure7.fct <- function(dat.in, cex.in, pos.ylabel=c(0,0)) {
-# dat.in <- read.csv("C:/ATLAS_poissons_SS/Data/SS10_lf.csv", header=TRUE)
+#dat.in <- read.csv("C:/RProjects/FishInverAtlas_Ricard/Data/SS10_lf.csv", header=TRUE)
+
 ## smooth the density first, it makes the plot look better
   #add 2 lines at the end for the smoother to work
   ncollf <- ncol(dat.in)
@@ -23,8 +26,8 @@ figure7.fct <- function(dat.in, cex.in, pos.ylabel=c(0,0)) {
 	ylabel2 = "Frequ\u{E9}nce par trait"	
 	ylabel1 = "Frequency per tow"
 	#leg.label = c("1970 - 1974", "1975 - 1979", "1980 - 1984", "1985 - 1989", "1990 - 1994", "1995 - 1999", "2000 - 2004", "2005 - 2009", "2010 - 2014")
-	leg.label = c("1970 - 1977", "1978 - 1985", "1986 - 1993", "1994 - 2001", "2002 - 2009", "2010 - 2013")
-		
+	#leg.label = c("1970 - 1977", "1978 - 1985", "1986 - 1993", "1994 - 2001", "2002 - 2009", "2010 - 2013")
+	leg.label = c("1970 - 1977", "1978 - 1985", "1986 - 1993", "1994 - 2001", "2002 - 2009", "2010 - 2020")
 	#my.cols <- c("#000000","#FFEDA0","#FED976","#FEB24C","#FD8D3C","#FC4E2A","#E31A1C","#BD0026","#800026") # obtained from color brewer
 	#FFFFCC
 	my.cols <- c("#000000","#FED976","#FEB24C","#FD8D3C","#F03B20","#BD0026") # obtained from color brewer
@@ -46,15 +49,15 @@ figure7.fct <- function(dat.in, cex.in, pos.ylabel=c(0,0)) {
 	pretty.x <- pretty(x.range)
 	pretty.y  <- pretty(y.range)
 	
-	axis(side=1, at = pretty.x, cex.axis=cex.in$axis, labels=TRUE, tcl=-0.2, las=0, mgp=c(0,-0.2,0), tck = -0.006)
-	axis(side=1, seq(min(pretty.x), max(pretty.x), by=((pretty.x[2]-pretty.x[1])/2)), labels=F, tck = -0.01)
+	axis(side=1, at = pretty.x, cex.axis=cex.in$axis, labels=TRUE, tcl=-0.2, las=0, mgp=c(0,-0.2,0))
+	axis(side=1, seq(min(pretty.x), max(pretty.x), by=((pretty.x[2]-pretty.x[1])/2)), labels=F, tck = -0.015)
 	axis(side=2, at = pretty.y, cex.axis=cex.in$axis, labels=TRUE, tcl=-0.15, las=1, mgp=c(0,0.2,0))
 	axis(side=2, seq(min(pretty.y), max(pretty.y), by=((pretty.y[2]-pretty.y[1])/2)), labels=F, tck = -0.01)
 	
 	# Affichage du titre et des axes	
 	mtext(xlabel, side = 1, line = 0.5, cex=cex.in$labels)
-	mtext(ylabel1, side = 2, line = 2.75+pos.ylabel[2], cex=cex.in$labels)
-	mtext(ylabel2, side = 2, line = 2+pos.ylabel[2], cex=cex.in$labels)
+	mtext(ylabel1, side = 2, line = 1.75+pos.ylabel[2], cex=cex.in$labels)
+	mtext(ylabel2, side = 2, line = 1+pos.ylabel[2], cex=cex.in$labels)
 	
 
 	# legend

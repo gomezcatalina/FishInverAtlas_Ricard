@@ -224,7 +224,7 @@ figures<-function(fig=c(1:10), spec.num=NA,
 						
 						# graphics parameters
 						#par(mfrow=c(1,1), omi=c(0,0,0,0), mai=c(0.35, 0.5+pos.ylabel[1], 0.1, 0.1), ps=8, cex=1, xpd=TRUE, lheight=0.5, xaxs="r", yaxs="r")
-						par(mfrow=c(1,1), omi=c(0,0,0,0), mai=c(0.5, 0.75+pos.ylabel[1], 0.1, 0.1), ps=12, cex=1, xpd=TRUE, lheight=0.5, xaxs="r", yaxs="r")
+						par(mfrow=c(1,1), omi=c(0,0,0,0.1), mai=c(0.5, 0.75+pos.ylabel[1], 0.1, 0.1), ps=11, cex=1, xpd=TRUE, lheight=0.5, xaxs="r", yaxs="r")
 						
 						# text parameters
 						#cexF=list(title=1, axis=0.8,labels=0.9,legend=1, unit="in")

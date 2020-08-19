@@ -1,5 +1,5 @@
 ## bottom salinity habitat preference
-
+#SalinityDist
 figure4.fct <- function(dat.in, cex.in, pos.ylabel=c(0,0)) {
 
 # trim the incoming data frame to remove 0% and 100%

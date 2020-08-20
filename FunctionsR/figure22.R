@@ -18,7 +18,7 @@ mat.layout2 <- matrix(c(0,2,0,0,1,3,5,0,0,4,6,8,0,0,7,0),nrow=4, ncol=4)
 ll <- layout(mat.layout2, widths=3*c(2,6.5,6.5,2), heights=3*c(2,4.8,4.8,2), respect=TRUE)
 
 #yrs.labels <- c("1999-2002","2003-2006","2007-2010","2011-2013")
-yrs.labels <- c("1999-2004","2005-2009","2010-2014","2015-2019")
+yrs.labels <- c("1999-2004","2005-2009","2010-2014","2015-2020")
 
 my.cols.palette <- c('white','#FEF0D9', '#FDCC8A', '#FC8D59', '#E34A33', '#B30000')
 

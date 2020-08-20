@@ -1,5 +1,5 @@
 ## average fish condition plot
-
+#Condition
 figure9.fct <- function(dat.in, cex.in, pos.ylabel=c(0,0)) {
 #dat.in <- read.csv("C:\\Documents and Settings\\RicardD\\My Documents\\Dropbox\\ATLAS_poissons_SS\\Data\\SS10_lw.csv", header=TRUE)
 #dat.in <- read.csv("D:\\Dropbox\\ATLAS_poissons_SS\\Data\\SS10_lw.csv", header=TRUE)
@@ -36,7 +36,7 @@ yearly.cond.upper50 <- tapply(subset(dat.in, FLEN>=l.50)$condition, subset(dat.i
 	lines(as.numeric(names(yearly.cond)), rep(1,nn), lty=2, col=grey(0.7), lwd=1.5)
 	
 	lines(as.numeric(names(yearly.cond.lower50)), yearly.cond.lower50, lty=1, col=grey(0.7), lwd=1.0)
-	lines(as.numeric(names(yearly.cond.upper50)), yearly.cond.upper50, lty=1, col=grey(0.7), lwd=3)
+	lines(as.numeric(names(yearly.cond.upper50)), yearly.cond.upper50, lty=1, col=grey(0.7), lwd=2)
 	
 	}
 	if(!data.1990) {
@@ -56,8 +56,8 @@ yearly.cond.upper50 <- tapply(subset(dat.in, FLEN>=l.50)$condition, subset(dat.i
 	ii.early <- as.numeric(names(yearly.cond.upper50))<1990
 	ii.late <- as.numeric(names(yearly.cond.upper50))>1990
 	
-	lines(as.numeric(names(yearly.cond.upper50[ii.early])), yearly.cond.upper50[ii.early], lty=1, col=grey(0.7), lwd=3)
-	lines(as.numeric(names(yearly.cond.upper50[ii.late])), yearly.cond.upper50[ii.late], lty=1, col=grey(0.7), lwd=3)
+	lines(as.numeric(names(yearly.cond.upper50[ii.early])), yearly.cond.upper50[ii.early], lty=1, col=grey(0.7), lwd=2)
+	lines(as.numeric(names(yearly.cond.upper50[ii.late])), yearly.cond.upper50[ii.late], lty=1, col=grey(0.7), lwd=2)
 	
 	}
 
@@ -67,9 +67,9 @@ yearly.cond.upper50 <- tapply(subset(dat.in, FLEN>=l.50)$condition, subset(dat.i
 	axis(side=2, seq(min(pretty.y), max(pretty.y), by=((pretty.y[2]-pretty.y[1])/2)), labels=F, tck = -0.01, line=1)
 	
 	# Affichage du titre et des axes	
-	mtext(xlabel, side = 1, line = 0.5, cex=cex.in$labels)
-	mtext(ylabel1, side = 2, line = 1.75+pos.ylabel[2], cex=cex.in$labels)
-	mtext(ylabel2, side = 2, line = 1+pos.ylabel[2], cex=cex.in$labels)
+	mtext(xlabel, side = 1, line = 1, cex=cex.in$labels)
+	mtext(ylabel1, side = 2, line = 3.25+pos.ylabel[2], cex=cex.in$labels)
+	mtext(ylabel2, side = 2, line = 2.5+pos.ylabel[2], cex=cex.in$labels)
 
 } # end function
 

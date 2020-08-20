@@ -29,8 +29,8 @@ bb4vw = round(coef(lw.fit4vw)[2],5)
 # for consistency, make sure that the y range is shared by both 4X and 4VW plots
 tt.dat <- subset(rbind(nafo4x,nafo4vw), !is.na(condition))
 yearly.cond.all <- tapply(tt.dat$condition, tt.dat$YEAR, mean)
-y.range  <- range(yearly.cond.all) # c(0.9,1.1) 
-
+#y.range  <- range(yearly.cond.all) # c(0.9,1.1) 
+y.range  <- c(0.93,1.1) 
 ## NAFO 4X
 dat.in <- nafo4x
 l.50 <- quantile(dat.in$FLEN)[3]

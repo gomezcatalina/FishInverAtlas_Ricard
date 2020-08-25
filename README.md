@@ -18,7 +18,7 @@ The file "data-and-stats.R" contains the code developed to perform data extracti
 
 The file "figures.R" contains the code developed to handle the generation of figures. The code associated with each figure is found in the folder "Figures-Rcode". The script uses data files from the "Figures-Data" folder and creates figures in the "Figures-Actual" folder.
 
-The folder "Mapping" contains R scripts to generate maps that won't change over time (e.g. annotated strata map).
+The folder "Mapping" contains R scripts to generate maps that won't change over time (e.g. annotated strata map), and also resources needed for maps (e.g. a mask for the survey area, strata polygons, etc).
 
 The folder "Report-generation" is the link between data extractions/analyses/figures and the generation of a Tech Report using csasdown.
 

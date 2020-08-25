@@ -80,7 +80,11 @@ print(paste("Script Atlas.R started: ", Sys.time()))
   # Make sure that folder contains "DFO-strata-statistics.csv"
   	sapply(species.numbers, function(i){data.extract(extract.num=c(1,2,3,5,6,7), spec.num=i)})
   	print(paste("End data extract, starting figures, L species: ", Sys.time()))
-  	
+
+  	## close ODBC connection that was opened when sourcing "chan.R"
+  	odbcClose(chan)
+
+  	  	
   	# The following extraction is done in folder 'Figures'
   	# Figures 10,11,20,21 also create shape files in the folder 'FGP' (Federal Geospatial Platform')
     sapply(species.numbers, function(i){figures(spec.num=i, fig=c(2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,18,19,20))})
@@ -121,8 +125,6 @@ print(paste("Script Atlas.R started: ", Sys.time()))
   #sapply(species.numbers, function(i){figures(spec.num=i, fig=c(5))})
   #
   
-	## close ODBC connection
-	odbcClose(chan)
 	
 print(paste("Script Atlas.R finished: ", Sys.time()))
 q("no")

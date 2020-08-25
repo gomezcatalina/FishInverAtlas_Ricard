@@ -4,18 +4,19 @@ year: 2020
 report_number: nnn
 author: |
   Daniel Ricard ^1^ 
-  Nancy L. Shackell ^2^ 
-  others?
-author_list: "Ricard, D., Shackell, N.L."
-region: Pacific Region
+  Catalina Gomez ^2^ 
+author_list: "Ricard, D., Gomez, C."
+region: Maritimes Region
 isbn: ""
 address: |
-  ^1,2^Science Branch\
+  ^1^Science Branch\
+     Gulf Region\
+     Fisheries and Oceans Canada\
+     Moncton, New Brunswick, E1C 5K4, Canada\
+  ^2^Science Branch\
      Maritimes Region\
      Fisheries and Oceans Canada\
      Dartmouth, Nova Scotia, B2Y 4A2, Canada\
-  ^2^Far, far away\
-     Another Galaxy
 phone: "(506) 851-6216"
 author_footnote: "Email: Daniel.Ricard@dfo-mpo.gc.ca | telephone: (506) 851-6216"
 abstract: |

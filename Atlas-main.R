@@ -72,7 +72,7 @@ print(paste("Script Atlas.R started: ", Sys.time()))
   
   # extract all the data and plot all the figures for GROUP
   print(paste("Starting data extracts, L species: ", Sys.time()))
-  # The following extraction is done in folder 'Data'
+  # The following extraction is done in folder 'Data-extraction'
   # Make sure that folder contains "DFO-strata-statistics.csv"
   	sapply(species.numbers, function(i){data.extract(extract.num=c(1,2,3,5,6,7), spec.num=i)})
   	print(paste("End data extract, starting figures, L species: ", Sys.time()))

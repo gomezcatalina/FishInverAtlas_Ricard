@@ -16,8 +16,8 @@ generate.cumul.dist <- function(catch.in, env.var) {
 
 # strata.stats.df <- sqlQuery(chan, qu)
 
-# write.csv(strata.stats.df, file=file.path(path.ATLAS, "Data/DFO-strata-statistics.csv"), row.names=FALSE)
-strata.stats.df <-read.csv(file=file.path(path.ATLAS, "Data/DFO-strata-statistics.csv")) ## static file, to do this outside of BIO
+# write.csv(strata.stats.df, file=file.path(main.path, "Figures-Data/DFO-strata-statistics.csv"), row.names=FALSE)
+strata.stats.df <-read.csv(file=file.path(main.path, "Figures-Data/DFO-strata-statistics.csv")) ## static file, to do this outside of BIO
 
 summer.strata.stats.df <- subset(
 strata.stats.df, 

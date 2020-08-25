@@ -1,7 +1,6 @@
 ## script to generate the all-important file "species-list-for-report.csv", as well as summary tables for the tech report
 ## 
 
-chan <- odbcConnect(dsn="PTRAN",uid="ricardd",pwd="1020wel99")
 qu <- paste("
 select 
 *
@@ -261,6 +260,7 @@ select * from
 groundfish.itis_gs_taxon
 ", sep="")
 itis.all <- sqlQuery(chan,qu, stringsAsFactors=FALSE)
+
 
 df.for.xtable <- merge(df.summary, itis.all, by.x="spec", 
                        by.y="GIVEN_SPEC_CODE")[,c(1,2,3,5,7,11,13,14:17,9,20,21)]

@@ -30,6 +30,8 @@ print(paste("Script Atlas.R started: ", Sys.time()))
   mapping.path <- file.path(main.path, "Mapping")## mapping folder for maps that won't change over time
   
 
+  source(file.path(main.path, "chan.R"))
+  
   ## generate the list of species that will be used to control what data extractions and figures will be generated
   ## this script will produce a file called "species-list-for-report.csv" which will determine the species that we will include, and what level of analysis they will receive
   ## this takes a while, so once it has run successfully, comment out and rely on the file "species-list-for-report.csv"
@@ -37,36 +39,27 @@ print(paste("Script Atlas.R started: ", Sys.time()))
   
   
   ## generate maps that won't change over time, e.g. strata maps
-  source(file.path(mapping.path, "Maritimes-strata-map.R")) ## strata map
-  
+  source(file.path(mapping.path, "Maritimes-SUMMER-strata-map.R")) ## strata map, nothing there yet
 	
   # source the code that defines the data extraction functions
-	source(file.path(path.ATLAS, "FunctionsR/data-extract.R"))
+	source(file.path(main.path, "data-and-stats.R"))
+  
+  # source the code that appropriately calls the function for each figure
+  source(file.path(main.path, "figures.R"))
 
-  
-  
-  
-  # source the code that computes the survey summaries (e.g. number of sets per stratum per year, etc.) and generates the summary tables to appear at the front of the atlas
-  #	The following line updates the file Report/species-list-final.csv
-  #source(file.path(path.ATLAS, "FunctionsR/summaries.R"))
-  
-  # source the code that defines the function for each figure
-  source(file.path(path.ATLAS, "FunctionsR/figures.R"))
-
-  # source the code that defines the function for habitat suitability
-  #source(file.path(path.ATLAS, "FunctionsR/habitat-suitability.R"))
-
-# source the code that sets all the mapping functions and data requirements such as polygons and masks, this file also creates a survey map with strata polygons and NAFO divisions
-	source(file.path(path.ATLAS, "Mapping/SUMMER-strata.R"))
-  
 ## actual function calls for species-level analyses
 ## first call is to generate the data files for each species
 ## second call is to generate the figures for each species
   
   # 2012-09-20: I'm turning the species list into the authoritative list by which the data extraction and the generation of figures in R is done. 
   # 2020-07-08: Note that every year the number of records will increase and the species available may also change.
-  spec.list <- read.csv(file.path(path.ATLAS, "/Report/species-list-final.csv"),header=FALSE) # this list is itself generated from the above "summaries.R", which requires database connection and connection to WORMS to get AphiaID
+  spec.list <- read.csv(file.path(main.path, "species-list-for-report.csv"),header=FALSE) # this list is itself generated from the above "summaries.R", which requires database connection and connection to WORMS to get AphiaID
+
+  ## test for cod
+  ## data.extract(4, 10)
+  ## figures(fig=6, spec.num=10)
   
+    
   species.L <- spec.list[spec.list$V9=='L',]$V4 # long timeseries
   species.S <- spec.list[spec.list$V9=='S',]$V4 # short timeseries
   species.LR <- spec.list[spec.list$V9=='LR',]$V4 # long timeseries rare
@@ -75,13 +68,15 @@ print(paste("Script Atlas.R started: ", Sys.time()))
 
   # GROUP : well identified species with no DDHS fitting problems
   species.numbers <- species.L # c(10,11,12,13,14,16,23,40,41,42,43,60,300,4511,320,220,640,400,200,201,202,203,204,50,30,304,62,160,70,304,112,15,31,241) #,114) 
-  #species.numbers <- species.numbers[species.numbers != "610"]
+
+  
   # extract all the data and plot all the figures for GROUP
   print(paste("Starting data extracts, L species: ", Sys.time()))
   # The following extraction is done in folder 'Data'
-  # Make sure taht folder contains "DFO-strata-statistics.csv"
+  # Make sure that folder contains "DFO-strata-statistics.csv"
   	sapply(species.numbers, function(i){data.extract(extract.num=c(1,2,3,5,6,7), spec.num=i)})
   	print(paste("End data extract, starting figures, L species: ", Sys.time()))
+  	
   	# The following extraction is done in folder 'Figures'
   	# Figures 10,11,20,21 also create shape files in the folder 'FGP' (Federal Geospatial Platform')
     sapply(species.numbers, function(i){figures(spec.num=i, fig=c(2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,18,19,20))})

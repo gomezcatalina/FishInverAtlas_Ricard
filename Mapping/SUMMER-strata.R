@@ -5,7 +5,7 @@ require(PBSmapping, quietly=TRUE, warn.conflicts = FALSE)
 data(worldLLhigh)
 
 # SS.strata <- importShapefile("/Mapping/ScotianShelfStrataUTM83F.shp", readDBF=TRUE, projection="UTM", zone=19)
-fn<-file.path(path.ATLAS, "/Mapping/ScotianShelfStrataUTM83F.shp")
+fn<-file.path(main.path, "/Mapping/ScotianShelfStrataUTM83F.shp")
 SS.strata <- importShapefile(fn, readDBF=TRUE, projection="UTM", zone=19)
 
 SS.strata.LL <- convUL(SS.strata, km=FALSE)
@@ -36,7 +36,7 @@ SUMMER.strata.mask$X <- SUMMER.strata.mask$X + 360
 SUMMER.strata.mask.fix <- fixBound(SUMMER.strata.mask, tol=0.1)
 
 
-fn<-file.path(path.ATLAS, "/Mapping/ScotianShelfStrataUTM83F_dissolve.shp")
+fn<-file.path(main.path, "/Mapping/ScotianShelfStrataUTM83F_dissolve.shp")
 SS.strata.mask <- importShapefile(fn, readDBF=TRUE, projection="UTM", zone=19)
 
 # SS.strata.mask <- importShapefile("C:/Documents and Settings/RicardD/My Documents/Dropbox/ATLAS_poissons_SS/Mapping/ScotianShelfStrataUTM83F_dissolve.shp", readDBF=TRUE, projection="UTM", zone=19)

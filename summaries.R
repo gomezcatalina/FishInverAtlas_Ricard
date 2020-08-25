@@ -1,19 +1,7 @@
-## survey summaries (e.g. number of sets per stratum per year, etc.) and generates the summary tables to appear at the front of the atlas
-## survey summaries (e.g. number of sets per stratum per year, etc.) and generates the summary tables to appear at the front of the atlas
+## script to generate the all-important file "species-list-for-report.csv", as well as summary tables for the tech report
+## 
 
-	require(xtable, quietly=TRUE, warn.conflicts = FALSE)
-		
-	# base path
-	path.Base1=path.ATLAS
-	path.Base2=path.ATLAS
-	# R functions path
-	path.R=file.path(path.Base1, "FunctionsR")
-	# path to store figures
-	path.Figures=file.path(path.Base2, "Figure")	
-	
-	path.Report=file.path(path.Base2, "Report")	
-
-	
+chan <- odbcConnect(dsn="PTRAN",uid="ricardd",pwd="1020wel99")
 qu <- paste("
 select 
 *
@@ -124,6 +112,7 @@ y.2016=summary.table.matrix[,47],
 y.2017=summary.table.matrix[,48],
 y.2018=summary.table.matrix[,49],
 y.2019=summary.table.matrix[,50],
+y.2020=summary.table.matrix[,51],
 stringsAsFactors=FALSE
 )
 
@@ -187,45 +176,46 @@ sum(summary.table.df$y.2015),
 sum(summary.table.df$y.2016),
 sum(summary.table.df$y.2017),
 sum(summary.table.df$y.2018),
-sum(summary.table.df$y.2019)
+sum(summary.table.df$y.2019),
+sum(summary.table.df$y.2020)
 ))
 
-summary.table.df$totals <- rowSums(summary.table.df[c(4:46)])
+summary.table.df$totals <- rowSums(summary.table.df[c(4:54)])
 
-summary.xtable <- xtable(summary.table.df)
+summary.xtable <- xtable::xtable(summary.table.df)
 	fn <- "Atlas_summary_table.html"
-	filename <- file.path(path.Figures, fn)
+	filename <- file.path(report.path, fn)
 	fn.tex <- "Atlas_summary_table.tex"
-	filename.tex <- file.path(path.Figures, fn.tex)
+	filename.tex <- file.path(report.path, fn.tex)
 
-print.xtable(summary.xtable, type='html', file=filename, html.table.attributes=c("border=0"), include.rownames=FALSE)
-print.xtable(summary.xtable, type='latex', file=filename.tex, include.rownames=FALSE, size='tiny')
+xtable::print.xtable(summary.xtable, type='html', file=filename, html.table.attributes=c("border=0"), include.rownames=FALSE)
+xtable::print.xtable(summary.xtable, type='latex', file=filename.tex, include.rownames=FALSE, size='tiny')
 
-## break into 3 tables each covering 15 years + Atlas update since publication
-summary.xtable1 <- xtable(summary.table.df[,c(1,2,3,4:18)], digits=0, caption="Number of tows conducted in each stratum during the period 1970 to 1984")
-summary.xtable2 <- xtable(summary.table.df[,c(1,2,3,19:33)], digits=0, caption="Number of tows conducted in each stratum during the period 1985 to 1999")
-summary.xtable3 <- xtable(summary.table.df[,c(1,2,3,34:48)], digits=0, caption="Number of tows conducted in each stratum during the period 2000 to 2013")
-summary.xtable4 <- xtable(summary.table.df[,c(1,2,3,48:53)], digits=0, caption="Number of tows conducted in each stratum during the period 2014 to 2019")
+## break into 4 tables each covering 15 years + Atlas update since publication
+summary.xtable1 <- xtable::xtable(summary.table.df[,c(1,2,3,4:18)], digits=0, caption="Number of tows conducted in each stratum during the period 1970 to 1984")
+summary.xtable2 <- xtable::xtable(summary.table.df[,c(1,2,3,19:33)], digits=0, caption="Number of tows conducted in each stratum during the period 1985 to 1999")
+summary.xtable3 <- xtable::xtable(summary.table.df[,c(1,2,3,34:48)], digits=0, caption="Number of tows conducted in each stratum during the period 2000 to 2013")
+summary.xtable4 <- xtable::xtable(summary.table.df[,c(1,2,3,49:54)], digits=0, caption="Number of tows conducted in each stratum during the period 2014 to 2020")
 
 fn.tex1 <- "Atlas_summary_table1.tex"
 fn.tex2 <- "Atlas_summary_table2.tex"
 fn.tex3 <- "Atlas_summary_table3.tex"
 fn.tex4 <- "Atlas_summary_table4.tex"
 
-filename.tex1 <- file.path(path.Figures, fn.tex1)
-filename.tex2 <- file.path(path.Figures, fn.tex2)
-filename.tex3 <- file.path(path.Figures, fn.tex3)
-filename.tex4 <- file.path(path.Figures, fn.tex4)
+filename.tex1 <- file.path(report.path, fn.tex1)
+filename.tex2 <- file.path(report.path, fn.tex2)
+filename.tex3 <- file.path(report.path, fn.tex3)
+filename.tex4 <- file.path(report.path, fn.tex4)
 
-print.xtable(summary.xtable1, type='latex', file=filename.tex1, include.rownames=FALSE, size='scriptsize', booktabs=TRUE, caption.placement='top')
-print.xtable(summary.xtable2, type='latex', file=filename.tex2, include.rownames=FALSE, size='scriptsize', booktabs=TRUE, caption.placement='top')
-print.xtable(summary.xtable3, type='latex', file=filename.tex3, include.rownames=FALSE, size='scriptsize', booktabs=TRUE, caption.placement='top')
-print.xtable(summary.xtable4, type='latex', file=filename.tex4, include.rownames=FALSE, size='scriptsize', booktabs=TRUE, caption.placement='top')
+xtable::print.xtable(summary.xtable1, type='latex', file=filename.tex1, include.rownames=FALSE, size='scriptsize', booktabs=TRUE, caption.placement='top')
+xtable::print.xtable(summary.xtable2, type='latex', file=filename.tex2, include.rownames=FALSE, size='scriptsize', booktabs=TRUE, caption.placement='top')
+xtable::print.xtable(summary.xtable3, type='latex', file=filename.tex3, include.rownames=FALSE, size='scriptsize', booktabs=TRUE, caption.placement='top')
+xtable::print.xtable(summary.xtable4, type='latex', file=filename.tex4, include.rownames=FALSE, size='scriptsize', booktabs=TRUE, caption.placement='top')
 
 ## taxonomic summary
 ## list of species 
 
-# catch records
+# catch records - this query returns a huge data frame, I guess some summaries could be done on the SQL side
 qu <- paste("
 select * from groundfish.gscat
 where spec < 9000
@@ -521,18 +511,18 @@ spec.xtable.df.final <- spec.xtable.df.final[spec.xtable.df.final$spec
 #             file.path(path.Report, "species-list-final.csv"),
 #             row.names=FALSE, col.names=FALSE, sep=",")
 
-source(file.path(path.ATLAS, "FunctionsR/write.unicode.csv.R")) 
+source(file.path(main.path, "messy-closet/write.unicode.csv.R")) 
 
-# to allow french names to remain in the csv file i had to add the following lines of code at encoding="UTF-8" did not work
+# to allow french names to remain in the csv file i had to add the following lines of code as encoding="UTF-8" did not work
  
 write.unicode.csv(spec.xtable.df.final[,c(1:9)],
-             file.path(path.Report, "species-list-final.csv"))
+             file.path(main.path, "species-list-for-report.csv"))
 
-AA <- read.csv(file.path(path.Report,"species-list-final.csv"),
+AA <- read.csv(file.path(main.path,"species-list-for-report.csv"),
                        header=TRUE)[ ,2:10]
 
 write.table(AA[,c(1:9)],
-              file.path(path.Report, "species-list-final.csv"),
+              file.path(main.path, "species-list-for-report.csv"),
               row.names=FALSE, col.names=FALSE, sep=",")
  
  

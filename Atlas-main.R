@@ -6,26 +6,46 @@ options(echo=FALSE)
 
 print(paste("Script Atlas.R started: ", Sys.time()))
 
-# required libraries
+# required libraries, and install if necessary
   necessary <- c("PBSmapping","spatstat","zoo","classInt","RColorBrewer","gstat","maptools",
                   "foreign","fields","spam","rgeos", "RODBC", 
-                 "xtable", "MASS", "xlsx", "raster", "rgdal")
+                 "xtable", "MASS", "xlsx", "raster", "rgdal",
+                 "here")
   installed <- necessary %in% installed.packages()[, 'Package']
-  if (length(necessary[!installed]) >=1)
-    install.packages(necessary[!installed], repos='http://mirror.its.dal.ca/cran/')
+  if (length(necessary[!installed]) >=1) install.packages(necessary[!installed], repos='http://mirror.its.dal.ca/cran/')
+  ## load required packages
+  
 
-	# lapply(necessary, function(i){citation(i)})
-# set the correct path
-  path.ATLAS=file.path("C:/RProjects/FishInverAtlas_Ricard")
+	# lapply(necessary, function(i){citation(i)}) ## citations for the different packages used
+  
+  
+  ## since we are likely working from a git repository, use the "here" library to set the paths relative to the root path of the git repo
+  main.path <- here::here()
+  
+  report.path <- file.path(main.path, "Report-generation")
+  
+  figdata.path <- file.path(main.path, "Figures-data") ## where to store data for figures
+  figcode.path <- file.path(main.path, "Figures-Rcode") ## where to find code for figures
+  fig.path <- file.path(main.path, "Figures-actual") ## where to store figures
+  mapping.path <- file.path(main.path, "Mapping")## mapping folder for maps that won't change over time
+  
 
-  ## open ODBC connection to Oracle database
-	require(RODBC, quietly=TRUE, warn.conflicts = FALSE)
-  source("C:/RProjects/FishInverAtlas_Ricard/FunctionsR/chan.R")
-  # chan <- odbcConnect(dsn='biobank', uid='', pwd='')
+  ## generate the list of species that will be used to control what data extractions and figures will be generated
+  ## this script will produce a file called "species-list-for-report.csv" which will determine the species that we will include, and what level of analysis they will receive
+  ## this takes a while, so once it has run successfully, comment out and rely on the file "species-list-for-report.csv"
+  source(file.path(main.path, "summaries.R"))
+  
+  
+  ## generate maps that won't change over time, e.g. strata maps
+  source(file.path(mapping.path, "Maritimes-strata-map.R")) ## strata map
+  
 	
   # source the code that defines the data extraction functions
 	source(file.path(path.ATLAS, "FunctionsR/data-extract.R"))
 
+  
+  
+  
   # source the code that computes the survey summaries (e.g. number of sets per stratum per year, etc.) and generates the summary tables to appear at the front of the atlas
   #	The following line updates the file Report/species-list-final.csv
   #source(file.path(path.ATLAS, "FunctionsR/summaries.R"))

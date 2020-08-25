@@ -32,7 +32,6 @@ log
 *.Rout
 
 *.rdata
-*.csv
 *.pptx
 
 *.dcf

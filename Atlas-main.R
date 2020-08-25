@@ -43,6 +43,10 @@ print(paste("Script Atlas.R started: ", Sys.time()))
 	
   # source the code that defines the data extraction functions
 	source(file.path(main.path, "data-and-stats.R"))
+
+  # source the code that computes the survey summaries (e.g. number of sets per stratum per year, etc.) and generates the summary tables to appear at the front of the atlas
+  #	The following line updates the file Report/species-list-final.csv
+  # source(file.path(path.ATLAS, "FunctionsR/summaries.R"))
   
   # source the code that appropriately calls the function for each figure
   source(file.path(main.path, "figures.R"))

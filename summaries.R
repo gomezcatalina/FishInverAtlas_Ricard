@@ -190,11 +190,19 @@ summary.xtable <- xtable::xtable(summary.table.df)
 xtable::print.xtable(summary.xtable, type='html', file=filename, html.table.attributes=c("border=0"), include.rownames=FALSE)
 xtable::print.xtable(summary.xtable, type='latex', file=filename.tex, include.rownames=FALSE, size='tiny')
 
+<<<<<<< HEAD:summaries.R
 ## break into 4 tables each covering 15 years + Atlas update since publication
 summary.xtable1 <- xtable::xtable(summary.table.df[,c(1,2,3,4:18)], digits=0, caption="Number of tows conducted in each stratum during the period 1970 to 1984")
 summary.xtable2 <- xtable::xtable(summary.table.df[,c(1,2,3,19:33)], digits=0, caption="Number of tows conducted in each stratum during the period 1985 to 1999")
 summary.xtable3 <- xtable::xtable(summary.table.df[,c(1,2,3,34:48)], digits=0, caption="Number of tows conducted in each stratum during the period 2000 to 2013")
 summary.xtable4 <- xtable::xtable(summary.table.df[,c(1,2,3,49:54)], digits=0, caption="Number of tows conducted in each stratum during the period 2014 to 2020")
+=======
+## break into 3 tables each covering 15 years + Atlas update since publication
+summary.xtable1 <- xtable(summary.table.df[,c(1,2,3,4:18)], digits=0, caption="Number of tows conducted in each stratum during the period 1970 to 1984")
+summary.xtable2 <- xtable(summary.table.df[,c(1,2,3,19:33)], digits=0, caption="Number of tows conducted in each stratum during the period 1985 to 1999")
+summary.xtable3 <- xtable(summary.table.df[,c(1,2,3,34:48)], digits=0, caption="Number of tows conducted in each stratum during the period 2000 to 2013")
+summary.xtable4 <- xtable(summary.table.df[,c(1,2,3,48:54)], digits=0, caption="Number of tows conducted in each stratum during the period 2014 to 2020")
+>>>>>>> 5b0445a96f4f29c098f1b4a0522c532ef09b29ab:FunctionsR/summaries.R
 
 fn.tex1 <- "Atlas_summary_table1.tex"
 fn.tex2 <- "Atlas_summary_table2.tex"
@@ -518,12 +526,21 @@ source(file.path(main.path, "messy-closet/write.unicode.csv.R"))
 write.unicode.csv(spec.xtable.df.final[,c(1:9)],
              file.path(main.path, "species-list-for-report.csv"))
 
+<<<<<<< HEAD:summaries.R
 AA <- read.csv(file.path(main.path,"species-list-for-report.csv"),
                        header=TRUE)[ ,2:10]
 
 write.table(AA[,c(1:9)],
               file.path(main.path, "species-list-for-report.csv"),
               row.names=FALSE, col.names=FALSE, sep=",")
+=======
+# AA <- read.csv(file.path(path.Report,"species-list-final.csv"),
+#                        header=TRUE)[ ,2:10]
+
+# write.table(AA[,c(1:9)],
+#               file.path(path.Report, "species-list-final.csv"),
+#               row.names=FALSE, col.names=FALSE, sep=",")
+>>>>>>> 5b0445a96f4f29c098f1b4a0522c532ef09b29ab:FunctionsR/summaries.R
  
  
 #fn.tex1 <- "Atlas_speciessummary_table1.tex"

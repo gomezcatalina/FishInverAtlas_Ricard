@@ -28,15 +28,16 @@ print(paste("Script Atlas.R started: ", Sys.time()))
 
   # source the code that computes the survey summaries (e.g. number of sets per stratum per year, etc.) and generates the summary tables to appear at the front of the atlas
   #	The following line updates the file Report/species-list-final.csv
-  #source(file.path(path.ATLAS, "FunctionsR/summaries.R"))
+  # source(file.path(path.ATLAS, "FunctionsR/summaries.R"))
   
   # source the code that defines the function for each figure
   source(file.path(path.ATLAS, "FunctionsR/figures.R"))
 
   # source the code that defines the function for habitat suitability
+  # habitat-suitability reads "Report/species-list-final.csv" and creates Figures / species-by-strata-with-criteria.pdf & species-by-strata.pdf & strata-by-species.pdf
   #source(file.path(path.ATLAS, "FunctionsR/habitat-suitability.R"))
 
-# source the code that sets all the mapping functions and data requirements such as polygons and masks, this file also creates a survey map with strata polygons and NAFO divisions
+  # source the code that sets all the mapping functions and data requirements such as polygons and masks, this file also creates a survey map with strata polygons and NAFO divisions
 	source(file.path(path.ATLAS, "Mapping/SUMMER-strata.R"))
   
 ## actual function calls for species-level analyses

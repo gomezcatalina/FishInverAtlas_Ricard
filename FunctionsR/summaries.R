@@ -124,6 +124,7 @@ y.2016=summary.table.matrix[,47],
 y.2017=summary.table.matrix[,48],
 y.2018=summary.table.matrix[,49],
 y.2019=summary.table.matrix[,50],
+y.2020=summary.table.matrix[,51],
 stringsAsFactors=FALSE
 )
 
@@ -187,7 +188,8 @@ sum(summary.table.df$y.2015),
 sum(summary.table.df$y.2016),
 sum(summary.table.df$y.2017),
 sum(summary.table.df$y.2018),
-sum(summary.table.df$y.2019)
+sum(summary.table.df$y.2019),
+sum(summary.table.df$y.2020)
 ))
 
 summary.table.df$totals <- rowSums(summary.table.df[c(4:46)])
@@ -205,7 +207,7 @@ print.xtable(summary.xtable, type='latex', file=filename.tex, include.rownames=F
 summary.xtable1 <- xtable(summary.table.df[,c(1,2,3,4:18)], digits=0, caption="Number of tows conducted in each stratum during the period 1970 to 1984")
 summary.xtable2 <- xtable(summary.table.df[,c(1,2,3,19:33)], digits=0, caption="Number of tows conducted in each stratum during the period 1985 to 1999")
 summary.xtable3 <- xtable(summary.table.df[,c(1,2,3,34:48)], digits=0, caption="Number of tows conducted in each stratum during the period 2000 to 2013")
-summary.xtable4 <- xtable(summary.table.df[,c(1,2,3,48:53)], digits=0, caption="Number of tows conducted in each stratum during the period 2014 to 2019")
+summary.xtable4 <- xtable(summary.table.df[,c(1,2,3,48:54)], digits=0, caption="Number of tows conducted in each stratum during the period 2014 to 2020")
 
 fn.tex1 <- "Atlas_summary_table1.tex"
 fn.tex2 <- "Atlas_summary_table2.tex"
@@ -528,12 +530,12 @@ source(file.path(path.ATLAS, "FunctionsR/write.unicode.csv.R"))
 write.unicode.csv(spec.xtable.df.final[,c(1:9)],
              file.path(path.Report, "species-list-final.csv"))
 
-AA <- read.csv(file.path(path.Report,"species-list-final.csv"),
-                       header=TRUE)[ ,2:10]
+# AA <- read.csv(file.path(path.Report,"species-list-final.csv"),
+#                        header=TRUE)[ ,2:10]
 
-write.table(AA[,c(1:9)],
-              file.path(path.Report, "species-list-final.csv"),
-              row.names=FALSE, col.names=FALSE, sep=",")
+# write.table(AA[,c(1:9)],
+#               file.path(path.Report, "species-list-final.csv"),
+#               row.names=FALSE, col.names=FALSE, sep=",")
  
  
 #fn.tex1 <- "Atlas_speciessummary_table1.tex"

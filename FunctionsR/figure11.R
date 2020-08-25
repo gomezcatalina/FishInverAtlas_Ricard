@@ -121,12 +121,12 @@ path.FGP <- file.path(path.ATLAS, "FGP")
 R_df <- as(R, "SpatialPolygonsDataFrame")
 proj4string(R_df) <- CRS("+proj=longlat +ellps=WGS84 +no_defs")
 names(R_df@data)="legend"
-if(my.legend=="abundant"){
-  R_df@data$legend=c("0","< 5","< 20","< 50","< 100",">= 100")
-}
-if(my.legend=="rare"){
-  R_df@data$legend=c("0","<0.1","<0.5","<1","<5",">=5")
-}
+# if(my.legend=="abundant"){
+#   R_df@data$legend=c("0","< 5","< 20","< 50","< 100",">= 100")
+# }
+# if(my.legend=="rare"){
+#   R_df@data$legend=c("0","<0.1","<0.5","<1","<5",">=5")
+# }
 writeOGR(R_df, dsn=file.path(path.FGP, "IDWMaps"),
          layer=lname, driver="ESRI Shapefile", overwrite_layer=TRUE)
 #### finish saving shape files for FGP

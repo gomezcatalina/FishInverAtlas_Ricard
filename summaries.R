@@ -182,7 +182,7 @@ sum(summary.table.df$y.2020)
 summary.table.df$totals <- rowSums(summary.table.df[c(4:54)])
 
 
-csv.fn <- file.path(report.path, "Atlas-summary-table-tows-by-year-stratum.csv")
+csv.fn <- file.path(report.path, "Atlas-summary-table-tows-by-year-stratum.csv") ## to use in csasdown
 write.csv(summary.table.df, file=csv.fn)
 
 

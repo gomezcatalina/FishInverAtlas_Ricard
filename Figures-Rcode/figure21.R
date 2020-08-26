@@ -1,7 +1,7 @@
 ## maps of IDW interpolated abundance
 
 figure21.fct <- function(dat.in, cex.in, pos.ylabel=c(0,0)) {
-  dat.in <- read.csv(file.path(path.ATLAS, "/Data/SS2550_catch.csv"), header=TRUE)
+  ## dat.in <- read.csv(file.path(main.path, "/Figures-Data/SS2550_catch.csv"), header=TRUE)
 
 logic.abundant <- quantile(subset(dat.in, totno.corr != 0)$totno.corr, probs=c(0.95))>50
 
@@ -103,7 +103,7 @@ plot(R, border=my.cols.palette, col = my.cols.palette, add=TRUE, axes=FALSE)
 #### save shape files for FGP
 species=as.character(dat.in$spec[1])
 lname=paste0("SS",species,"_",yrs.labels[i],"_IDWmap-abundance")
-path.FGP <- file.path(path.ATLAS, "FGP")
+path.FGP <- file.path(main.path, "FGP")
 R_df <- as(R, "SpatialPolygonsDataFrame")
 proj4string(R_df) <- CRS("+proj=longlat +ellps=WGS84 +no_defs")
 names(R_df@data)="legend"

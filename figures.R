@@ -53,17 +53,17 @@ figures<-function(fig=c(1:10), spec.num=NA,
 	
 
 	# base path
-	path.Base1=path.ATLAS
-	path.Base2=path.ATLAS
+	path.Base1=main.path
+	path.Base2=main.path
 	# R functions path
-	path.R=file.path(path.Base1, "FunctionsR")
+	path.R=file.path(path.Base1, "Figures-Rcode")
 	# data path
-	path.Data=file.path(path.Base2,"Data")
+	path.Data=file.path(path.Base2,"Figures-Data")
 	# mapping path
 	path.Map=file.path(path.Base2, "Mapping")
 	# path to store figures
-	path.Figures=file.path(path.Base2, "Figure")	
-	dir.create(path.Figures, showWarnings = FALSE)
+	path.Figures=file.path(path.Base2, "Figures-Actual")
+	#dir.create(path.Figures, showWarnings = FALSE)
 
 	if(!file.exists(path.Base1)) stop(paste(path.Base1, "doesn't exist!\n"))
 	if(!file.exists(path.Base2)) stop(paste(path.Base2, "doesn't exist!\n"))
@@ -99,7 +99,7 @@ figures<-function(fig=c(1:10), spec.num=NA,
 	source(file.path(path.R, "figure22.R")) 
 	source(file.path(path.R, "devOpen.R"))
 	source(file.path(path.R, "devSave.R"))
-	source(file.path(path.Map, "SUMMER-strata.R"))
+	#source(file.path(path.Map, "SUMMER-strata.R"))
 	
 #--------------------------------------------------------------------------#
 # load all the necessary resources for mapping routines

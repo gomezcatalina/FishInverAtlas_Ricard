@@ -26,12 +26,12 @@ data.extract <- function(extract.num=c(1:10), spec.num, writexls=FALSE) {
 #	require(gdata, quietly=TRUE, warn.conflicts = FALSE)
 
 	# base path
-	path.Base1=path.ATLAS
-	path.Base2=path.ATLAS
+	path.Base1=main.path
+	path.Base2=main.path
 	# R functions path
-	path.R=file.path(path.Base1, "FunctionsR")
+	path.R=file.path(path.Base1, "Data-extraction")
 	# data path
-	path.Data=file.path(path.Base2,"Data")
+	path.Data=file.path(path.Base2,"Figures-Data")
 
 	if(!file.exists(path.Base1)) stop(paste(path.Base1, "doesn't exist!\n"))
 	if(!file.exists(path.Base2)) stop(paste(path.Base2, "doesn't exist!\n"))

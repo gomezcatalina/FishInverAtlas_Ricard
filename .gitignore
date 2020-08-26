@@ -1,5 +1,7 @@
 chan.R
 
+Figures-Data/
+
 .Rproj.user
 .Rhistory
 .RData
@@ -32,7 +34,6 @@ log
 *.Rout
 
 *.rdata
-*.csv
 *.pptx
 
 *.dcf

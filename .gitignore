@@ -27,6 +27,7 @@ FGP/
 .Ink
 
 *~
+*.csv
 *.pdf
 *.tiff
 *.tif

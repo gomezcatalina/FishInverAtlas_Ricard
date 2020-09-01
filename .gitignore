@@ -1,23 +1,10 @@
 #Ignore specific files & folders
 chan.R
 
-Figures-Data/
-FGP/
-
-!Mapping/ScotianShelfStrataUTM83F.shp
-!Mapping/ScotianShelfStrataUTM83F.prj
-!Mapping/ScotianShelfStrataUTM83F.shf
-
-!Mapping/ScotianShelfStrataUTM83F_dissolve.shp
-!Mapping/ScotianShelfStrataUTM83F_dissolve.prj
-!Mapping/ScotianShelfStrataUTM83F_dissolve.shp.xml
-!Mapping/ScotianShelfStrataUTM83F_dissolve.dbf
-!Mapping/ScotianShelfStrataUTM83F_dissolve.sbn
-!Mapping/ScotianShelfStrataUTM83F_dissolve.sbx
-!Mapping/ScotianShelfStrataUTM83F_dissolve.shx
+Figures-data/
+Figures-FGP/
 
 !Mapping/SUMMER-strata-multi-SABS.dat
-
 
 .Rproj.user
 .Rhistory
@@ -27,12 +14,11 @@ FGP/
 .Ink
 
 *~
-*.csv
 *.pdf
 *.tiff
 *.tif
 *.png
-*.dat
+#*.dat
 *.doc
 *.docx
 *.tfw
@@ -68,17 +54,6 @@ log
 
 
 ## shape files:
-*.dbf
-*.prj
-*.shp
-*.shx
-*.cpg
-*.sbn
-*.sbx
-*.xml
-*.shp.xml
-*.ovr
-*.lock
 *.xyz
 
 ## Intermediate documents:

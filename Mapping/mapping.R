@@ -1,15 +1,15 @@
 ## mapping functions and data requirements such as polygons and masks, this file also creates a survey map with strata polygons and NAFO divisions
 	# base path
-	path.Base1=path.ATLAS
-	path.Base2=path.ATLAS
+	path.Base1=main.path
+	path.Base2=main.path
 	# R functions path
-	path.R=file.path(path.Base1, "FunctionsR")
+	path.R=file.path(path.Base1, "Figures-Rcode")
 	# data path
 	path.Data=file.path(path.Base2,"Data")
 	# mapping path
 	path.Map=file.path(path.Base2, "Mapping")
 	# path to store figures
-	path.Figures=file.path(path.Base2, "Figure")	
+	path.Figures=file.path(path.Base2, "Figures-actual")	
 
 ## DFO SUMMER
 info<-sqlQuery(chan,paste("select substr(featureid,18,3),featureseq, xp,yp from mflib.mwacon_mapobjects where featureid like 'GF_SUMMER_STRATA%' "))
@@ -48,8 +48,9 @@ dfo.summer2 <- dfo.summer2[oo,]
 	devOpen(devName, saveDir=path.Figures, fileName=paste("SS", "_", devName, sep=""), saveFormat="eps", width=4, height=2+0.75)
 	
 	# graphics parameters
-	par(mfrow=c(1,1), omi=c(0,0,0,0), mai=c(0.35, 0.5+pos.ylabel[1], 0.1, 0.1), ps=8, cex=1, xpd=TRUE, lheight=0.5, xaxs="r", yaxs="r")
-	
+	#par(mfrow=c(1,1), omi=c(0,0,0,0), mai=c(0.35, 0.5+pos.ylabel[1], 0.1, 0.1), ps=8, cex=1, xpd=TRUE, lheight=0.5, xaxs="r", yaxs="r")
+	par(mfrow=c(1,1), omi=c(0,0,0,0), 
+	    ps=8, cex=1, xpd=TRUE, lheight=0.5, xaxs="r", yaxs="r")
 	# text parameters
 	cexF=list(title=1, axis=0.8,labels=0.9,legend=1, unit="in")
 	

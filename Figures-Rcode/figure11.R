@@ -117,7 +117,6 @@ plot(R, border=my.cols.palette, col = my.cols.palette, add=TRUE, axes=FALSE)
 #### save shape files for FGP
 species=as.character(dat.in$spec[1])
 lname=paste0("SS",species,"_",yrs.labels[i],"_IDWmap-biomass")
-path.FGP <- file.path(main.path, "FGP")
 R_df <- as(R, "SpatialPolygonsDataFrame")
 proj4string(R_df) <- CRS("+proj=longlat +ellps=WGS84 +no_defs")
 names(R_df@data)="legend"

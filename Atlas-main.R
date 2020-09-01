@@ -23,19 +23,21 @@ print(paste("Script Atlas.R started: ", Sys.time()))
   main.path <- here::here()
   
   report.path <- file.path(main.path, "Report-generation")
-  
   figdata.path <- file.path(main.path, "Figures-data") ## where to store data for figures
   figcode.path <- file.path(main.path, "Figures-Rcode") ## where to find code for figures
-  fig.path <- file.path(main.path, "Figures-actual") ## where to store figures
+  fig.path <- file.path(main.path, "Figures-actual") ## where to store figures (for report)
+  path.FGP <- file.path(main.path, "FGP") # where to store figures 10, 11, 20 , 21 as shape files for publication in the Federal Geospatial Platform
   mapping.path <- file.path(main.path, "Mapping")## mapping folder for maps that won't change over time
   
-
+  ## open ODBC connection to Oracle database
+  require(RODBC, quietly=TRUE, warn.conflicts = FALSE)
   source(file.path(main.path, "chan.R"))
+  # chan.R has my pwds - altenratively use yours: chan <- odbcConnect(dsn='biobank', uid='', pwd='')
   
   ## generate the list of species that will be used to control what data extractions and figures will be generated
   ## this script will produce a file called "species-list-for-report.csv" which will determine the species that we will include, and what level of analysis they will receive
   ## this takes a while, so once it has run successfully, comment out and rely on the file "species-list-for-report.csv"
-  source(file.path(main.path, "summaries.R"))
+  #source(file.path(main.path, "summaries.R"))
   
   
   ## generate maps that won't change over time, e.g. strata maps
@@ -44,10 +46,6 @@ print(paste("Script Atlas.R started: ", Sys.time()))
   # source the code that defines the data extraction functions
 	source(file.path(main.path, "data-and-stats.R"))
 
-  # source the code that computes the survey summaries (e.g. number of sets per stratum per year, etc.) and generates the summary tables to appear at the front of the atlas
-  #	The following line updates the file Report/species-list-final.csv
-  # source(file.path(path.ATLAS, "FunctionsR/summaries.R"))
-  
   # source the code that appropriately calls the function for each figure
   source(file.path(main.path, "figures.R"))
 
@@ -62,7 +60,7 @@ print(paste("Script Atlas.R started: ", Sys.time()))
   ## test for cod
   ## data.extract(4, 10)
   ## figures(fig=6, spec.num=10)
-  
+
     
   species.L <- spec.list[spec.list$V9=='L',]$V4 # long timeseries
   species.S <- spec.list[spec.list$V9=='S',]$V4 # short timeseries
@@ -77,7 +75,7 @@ print(paste("Script Atlas.R started: ", Sys.time()))
   # extract all the data and plot all the figures for GROUP
   print(paste("Starting data extracts, L species: ", Sys.time()))
   # The following extraction is done in folder 'Data-extraction'
-  # Make sure that folder contains "DFO-strata-statistics.csv"
+  # Make sure folder FishInverAtlas_Ricard/Figures-Data/ contains "DFO-strata-statistics.csv"
   	sapply(species.numbers, function(i){data.extract(extract.num=c(1,2,3,5,6,7), spec.num=i)})
   	print(paste("End data extract, starting figures, L species: ", Sys.time()))
 

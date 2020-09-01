@@ -31,7 +31,7 @@ data.extract <- function(extract.num=c(1:10), spec.num, writexls=FALSE) {
 	# R functions path
 	path.R=file.path(path.Base1, "Data-extraction")
 	# data path
-	path.Data=file.path(path.Base2,"Figures-Data")
+	path.Data=file.path(path.Base2,"Figures-data")
 
 	if(!file.exists(path.Base1)) stop(paste(path.Base1, "doesn't exist!\n"))
 	if(!file.exists(path.Base2)) stop(paste(path.Base2, "doesn't exist!\n"))

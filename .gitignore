@@ -1,6 +1,22 @@
 chan.R
 
 Figures-Data/
+FGP/
+
+!Mapping/ScotianShelfStrataUTM83F.shp
+!Mapping/ScotianShelfStrataUTM83F.prj
+!Mapping/ScotianShelfStrataUTM83F.shf
+
+!Mapping/ScotianShelfStrataUTM83F_dissolve.shp
+!Mapping/ScotianShelfStrataUTM83F_dissolve.prj
+!Mapping/ScotianShelfStrataUTM83F_dissolve.shp.xml
+!Mapping/ScotianShelfStrataUTM83F_dissolve.dbf
+!Mapping/ScotianShelfStrataUTM83F_dissolve.sbn
+!Mapping/ScotianShelfStrataUTM83F_dissolve.sbx
+!Mapping/ScotianShelfStrataUTM83F_dissolve.shx
+
+!Mapping/SUMMER-strata-multi-SABS.dat
+
 
 .Rproj.user
 .Rhistory

@@ -18,7 +18,6 @@ Figures-FGP/
 *.tiff
 *.tif
 *.png
-#*.dat
 *.doc
 *.docx
 *.tfw
@@ -114,7 +113,6 @@ log
 *.vrb
 *.ini
 *.vrb
-*.dat
 *.log
 *.bbl
 *.bib

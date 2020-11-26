@@ -31,12 +31,21 @@ temp <- lapply(taxo.final$species.code, function(x) {
 
   out <- list()
   ## figure files 
-  spp_file1 <- paste0("SS",x,"BDcorrelations.pdf")
-  spp_file2 <- paste0("SS",x,"Condition.pdf")
-  spp_file3 <- paste0("SS",x,"Condition4X4VW.pdf")
-  spp_file4 <- paste0("SS",x,"DDHSslopes.pdf")
-  spp_file5 <- paste0("SS",x,"DepthDist.pdf")
-  spp_file6 <- paste0("SS",x,"Distribution.pdf")
+  spp_file1 <- paste0("SS",x,"IDWMap-biomass.pdf")
+  
+  spp_file2 <- paste0("SS",x,"Stratified-biomass.pdf")
+  spp_file3 <- paste0("SS",x,"Distribution-usingbiomass.pdf")
+  spp_file4 <- paste0("SS",x,"BDcorrelations.pdf")
+  
+  spp_file5 <- paste0("SS",x,"LengthFreq-NAFO.pdf")
+  spp_file6 <- paste0("SS",x,"Condition4X4VW.pdf")
+  
+  spp_file7 <- paste0("SS",x,"DepthDist.pdf")
+  spp_file8 <- paste0("SS",x,"TemperatureDist.pdf")
+  spp_file9 <- paste0("SS",x,"SalinityDist.pdf")
+  spp_file10 <- paste0("SS",x,"DDHSslopes.pdf")
+  
+  
   ##spp_file4 <- paste0("RV-4T-",x,"-RVkgpertowcutoff-to-",current.year,".pdf")
 
   latin_name <- taxo.final$scientificname[taxo.final$species.code == x]
@@ -85,7 +94,7 @@ temp <- lapply(taxo.final$species.code, function(x) {
   out[[i]] <- "\\begin{minipage}{1.0 \\textwidth}"
   i <- i + 1
   out[[i]] <- paste0("\\includegraphics[width=5.7in]{../Figures-actual/",
-    spp_file1, "}\\\\")
+              spp_file1, "}\\\\")
   i <- i + 1
   out[[i]] <- paste0("\\captionof{figure}{Time series of log catch biomass (kg/tow) of ", english_name, " for each stratum.} ")
   i <- i + 1
@@ -101,7 +110,7 @@ temp <- lapply(taxo.final$species.code, function(x) {
   out[[i]] <- "\\begin{minipage}{1.0 \\textwidth}"
   i <- i + 1
   out[[i]] <- paste0("\\includegraphics[width=5.7in]{../Figures-actual/",
-    spp_file4, "}\\\\")
+              spp_file4, "}\\\\")
   i <- i + 1
   out[[i]] <- paste0("\\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for ", english_name,".}")
   i <- i + 1

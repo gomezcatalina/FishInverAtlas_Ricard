@@ -4,7 +4,7 @@
 ## - highly influenced by Sean Anderson's approach for his groundfish synoptic report
  
 ## generate a single .Rmd file containing all the bits and pieces required to generate the Appendix of the Atlas, 
-## i.e. where all the figures appear
+## i.e. where all the figures appear: plot-pages.Rmd
 library(tidyverse)
 
 # First we need to create taxo.final using species-list-for-report.csv and info from Gulf-RV-Atlas-species-list.csv
@@ -31,13 +31,12 @@ temp <- lapply(taxo.final$species.code, function(x) {
 
   out <- list()
   ## figure files 
-  spp_file1 <- paste0("RV-4T-",x,"-RVlogkgpertowbystratum-to-",current.year,".pdf")
-  spp_file2 <- paste0("RV-4T-",x,"-RVD75D95-to-",current.year,".pdf")
-  spp_file3 <- paste0("RV-4T-",x,"-BDcorr-",current.year,".pdf")
-
-  spp_file4 <- paste0("RV-4T-",x,"-RVkgIDW-to-",current.year,".pdf")
-  spp_file5 <- paste0("RV-4T-",x,"-RVNpertow-to-",current.year,".pdf")
-  spp_file6 <- paste0("RV-4T-",x,"-RVkgpertow-to-",current.year,".pdf")
+  spp_file1 <- paste0("SS",x,"BDcorrelations.pdf")
+  spp_file2 <- paste0("SS",x,"Condition.pdf")
+  spp_file3 <- paste0("SS",x,"Condition4X4VW.pdf")
+  spp_file4 <- paste0("SS",x,"DDHSslopes.pdf")
+  spp_file5 <- paste0("SS",x,"DepthDist.pdf")
+  spp_file6 <- paste0("SS",x,"Distribution.pdf")
   ##spp_file4 <- paste0("RV-4T-",x,"-RVkgpertowcutoff-to-",current.year,".pdf")
 
   latin_name <- taxo.final$scientificname[taxo.final$species.code == x]
@@ -118,7 +117,7 @@ temp <- lapply(temp, function(x) paste(x, collapse = "\n"))
 temp <- paste(temp, collapse = "\n")
 temp <- c("# Appendix\n<!-- This page has been automatically generated: do not edit by hand -->\n", temp)
 if (!exists("N"))
-  writeLines(temp, con = file.path("TechReport2020-EN","plot-pages.Rmd"), useBytes=T)
+  writeLines(temp, con = file.path("report-EN","plot-pages.Rmd"), useBytes=T)
 
 ## French Tech Report
 
@@ -135,15 +134,15 @@ ff <- unique(taxo.final$family)
 
 vars <- c("class","order","family","scientificname","comm.english","comm.fr","species.code","aphia.id")
 oo <- order(taxo.final$class, taxo.final$order, taxo.final$family)
-con<-file(file.path("TechReport2020-EN","species-table2.csv"), encoding="UTF-8")
+con<-file(file.path("report2020-EN","species-table2.csv"), encoding="UTF-8")
 write.csv(taxo.final[oo,vars], con, row.names = FALSE)
 
-con<-file(file.path("TechReport2020-FR","species-table2.csv"), encoding="UTF-8")
+con<-file(file.path("report2020-FR","species-table2.csv"), encoding="UTF-8")
 write.csv(taxo.final[oo,vars], con, row.names = FALSE)
 
 
 
-con <- file(file.path("TechReport2020-EN","species-table.csv"), open = "wt", encoding = "UTF-8")
+con <- file(file.path("report2020-EN","species-table.csv"), open = "wt", encoding = "UTF-8")
 sink(con)
 cat(c("Scientific name,","English name,","French name,","Species code,","AphiaID"))
 cat("\n")

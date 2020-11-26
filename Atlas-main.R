@@ -61,7 +61,6 @@ print(paste("Script Atlas.R started: ", Sys.time()))
   ## data.extract(4, 10)
   ## figures(fig=6, spec.num=10)
 
-    
   species.L <- spec.list[spec.list$V9=='L',]$V4 # long timeseries
   species.S <- spec.list[spec.list$V9=='S',]$V4 # short timeseries
   species.LR <- spec.list[spec.list$V9=='LR',]$V4 # long timeseries rare
@@ -71,7 +70,6 @@ print(paste("Script Atlas.R started: ", Sys.time()))
   # GROUP : well identified species with no DDHS fitting problems
   species.numbers <- species.L # c(10,11,12,13,14,16,23,40,41,42,43,60,300,4511,320,220,640,400,200,201,202,203,204,50,30,304,62,160,70,304,112,15,31,241) #,114) 
 
-  
   # extract all the data and plot all the figures for GROUP
   print(paste("Starting data extracts, L species: ", Sys.time()))
   # The following extraction is done in folder 'Data-extraction'
@@ -131,4 +129,6 @@ q("no")
 	## identification of "core habitats"
 	# habitat.suitability(species.num=species.numbers)
 
-	## blah blah
+	## Once all the plots are reproduced, next step is to pur together the Tech Report
+# create-techreport-appendix.R will be used to assmeble all plots 
+# an important file in that script called taxo.final will be created 

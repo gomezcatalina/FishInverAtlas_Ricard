@@ -12,11 +12,18 @@ library(tidyverse)
 main.path <- here::here()
 species.in <- read.csv(file.path(main.path, "species-list-for-report.csv"), stringsAsFactors=FALSE, encoding="UTF-8", quote = '"')
 colnames(species.in) <- c("scientificname", "comm.english", "comm.fr", "species.code", "other", "class", "order", "family", "taxo.group")
-species.in <- species.in %>% select(class, order, family, scientificname, species.code)
+species.in <- species.in %>% 
+                        filter(taxo.group == "L") %>%
+                        select(class, order, family, scientificname, species.code, taxo.group)
 load("C:/RProjects/FishInverAtlas_Ricard/messy-closet/taxo-final-Gulf.Rdata") # loads taxo.final.Gulf that file was created D. Ricard using “taxonomic-classification-APHIA-ID.R”
-taxo.final_Gulf <- taxo.final %>% select(phylum, class, order, family, scientificname, comm.english, comm.fr, aphia.id, aphia.url)  %>%
+
+taxo.final_Gulf <- taxo.final %>% 
+                        select(phylum, class, order, family, scientificname, comm.english, comm.fr, aphia.id, aphia.url) %>%   
+                        mutate(taxo.group="Gulf")
+
 taxo.final <- species.in %>% left_join(taxo.final) %>% 
-                         select(phylum, class, order, family, scientificname, comm.english, comm.fr, species.code, aphia.id, aphia.url)
+                         select(phylum, class, order, family, scientificname, comm.english, comm.fr, species.code, aphia.id, aphia.url) 
+
 taxo.final$phylum <- factor(taxo.final$phylum, levels=c("Chordata","Mollusca","Arthropoda"), ordered=TRUE)
 taxo.final$class <- factor(taxo.final$class, levels=c("Myxini","Actinopterygii","Elasmobranchii","Cephalopoda","Malacostraca"), ordered=TRUE)
 oo1 <- order(taxo.final$phylum)
@@ -44,7 +51,6 @@ temp <- lapply(taxo.final$species.code, function(x) {
   spp_file8 <- paste0("SS",x,"TemperatureDist.pdf")
   spp_file9 <- paste0("SS",x,"SalinityDist.pdf")
   spp_file10 <- paste0("SS",x,"DDHSslopes.pdf")
-  
   
   ##spp_file4 <- paste0("RV-4T-",x,"-RVkgpertowcutoff-to-",current.year,".pdf")
 

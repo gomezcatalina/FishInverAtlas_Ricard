@@ -1,81 +1,15 @@
 # Appendix
 <!-- This page has been automatically generated: do not edit by hand -->
 
-## White barracudina (Lussion blanc) - species code 712 {#sec:712} 
-
-Scientific name: [Arctozenus risso](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126352) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS712Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS712Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS712Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for White barracudina.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS712BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of White barracudina for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS712DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for White barracudina.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## Alewife (Gaspereau) - species code 62 {#sec:62} 
-
-Scientific name: [Alosa pseudoharengus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=158669) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS62Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS62Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS62Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Alewife.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS62BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of Alewife for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS62DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Alewife.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
 ## Haddock (Aiglefin) - species code 11 {#sec:11} 
 
 Scientific name: [Melanogrammus aeglefinus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126437) 
  \newline
 \begin{minipage}{0.9\textwidth}
  \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS11Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS11Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS11Condition4X4VW.pdf} \\
+\includegraphics[width=1.8in]{../Figures-actual/SS11Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS11Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS11Distribution-usingbiomass.pdf} \\
 \end{tabular} 
 \captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Haddock.}
 \end{minipage} 
@@ -84,7 +18,7 @@ Scientific name: [Melanogrammus aeglefinus](http://www.marinespecies.org/aphia.p
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS11BDcorrelations.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS11IDWMap-biomass.pdf}\\
 \captionof{figure}{Time series of log catch biomass (kg/tow) of Haddock for each stratum.} 
 \end{minipage} 
 
@@ -93,7 +27,7 @@ Scientific name: [Melanogrammus aeglefinus](http://www.marinespecies.org/aphia.p
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS11DDHSslopes.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS11BDcorrelations.pdf}\\
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Haddock.}
 \end{minipage} 
 
@@ -106,9 +40,9 @@ Scientific name: [Gadus morhua](http://www.marinespecies.org/aphia.php?p=taxdeta
  \newline
 \begin{minipage}{0.9\textwidth}
  \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS10Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS10Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS10Condition4X4VW.pdf} \\
+\includegraphics[width=1.8in]{../Figures-actual/SS10Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS10Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS10Distribution-usingbiomass.pdf} \\
 \end{tabular} 
 \captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Atlantic cod.}
 \end{minipage} 
@@ -117,7 +51,7 @@ Scientific name: [Gadus morhua](http://www.marinespecies.org/aphia.php?p=taxdeta
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS10BDcorrelations.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS10IDWMap-biomass.pdf}\\
 \captionof{figure}{Time series of log catch biomass (kg/tow) of Atlantic cod for each stratum.} 
 \end{minipage} 
 
@@ -126,7 +60,7 @@ Scientific name: [Gadus morhua](http://www.marinespecies.org/aphia.php?p=taxdeta
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS10DDHSslopes.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS10BDcorrelations.pdf}\\
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic cod.}
 \end{minipage} 
 
@@ -139,9 +73,9 @@ Scientific name: [Pollachius virens](http://www.marinespecies.org/aphia.php?p=ta
  \newline
 \begin{minipage}{0.9\textwidth}
  \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS16Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS16Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS16Condition4X4VW.pdf} \\
+\includegraphics[width=1.8in]{../Figures-actual/SS16Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS16Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS16Distribution-usingbiomass.pdf} \\
 \end{tabular} 
 \captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Pollock.}
 \end{minipage} 
@@ -150,7 +84,7 @@ Scientific name: [Pollachius virens](http://www.marinespecies.org/aphia.php?p=ta
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS16BDcorrelations.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS16IDWMap-biomass.pdf}\\
 \captionof{figure}{Time series of log catch biomass (kg/tow) of Pollock for each stratum.} 
 \end{minipage} 
 
@@ -159,41 +93,8 @@ Scientific name: [Pollachius virens](http://www.marinespecies.org/aphia.php?p=ta
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS16DDHSslopes.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS16BDcorrelations.pdf}\\
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Pollock.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## Marlin-Spike grenadier (Grenadier du grand banc) - species code 410 {#sec:410} 
-
-Scientific name: [Nezumia bairdii](http://www.marinespecies.org/aphia.php?p=taxdetails&id=183289) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS410Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS410Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS410Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Marlin-Spike grenadier.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS410BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of Marlin-Spike grenadier for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS410DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Marlin-Spike grenadier.}
 \end{minipage} 
 
 \end{tabular}
@@ -205,9 +106,9 @@ Scientific name: [Merluccius bilinearis](http://www.marinespecies.org/aphia.php?
  \newline
 \begin{minipage}{0.9\textwidth}
  \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS14Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS14Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS14Condition4X4VW.pdf} \\
+\includegraphics[width=1.8in]{../Figures-actual/SS14Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS14Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS14Distribution-usingbiomass.pdf} \\
 \end{tabular} 
 \captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Silver hake.}
 \end{minipage} 
@@ -216,7 +117,7 @@ Scientific name: [Merluccius bilinearis](http://www.marinespecies.org/aphia.php?
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS14BDcorrelations.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS14IDWMap-biomass.pdf}\\
 \captionof{figure}{Time series of log catch biomass (kg/tow) of Silver hake for each stratum.} 
 \end{minipage} 
 
@@ -225,74 +126,8 @@ Scientific name: [Merluccius bilinearis](http://www.marinespecies.org/aphia.php?
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS14DDHSslopes.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS14BDcorrelations.pdf}\\
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Silver hake.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## Capelin (Capelan) - species code 64 {#sec:64} 
-
-Scientific name: [Mallotus villosus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126735) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS64Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS64Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS64Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Capelin.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS64BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of Capelin for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS64DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Capelin.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## Northern sand lance (Lançon du nord) - species code 610 {#sec:610} 
-
-Scientific name: [Ammodytes dubius](http://www.marinespecies.org/aphia.php?p=taxdetails&id=151520) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS610Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS610Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS610Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Northern sand lance.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS610BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of Northern sand lance for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS610DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Northern sand lance.}
 \end{minipage} 
 
 \end{tabular}
@@ -304,9 +139,9 @@ Scientific name: [Anarhichas lupus](http://www.marinespecies.org/aphia.php?p=tax
  \newline
 \begin{minipage}{0.9\textwidth}
  \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS50Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS50Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS50Condition4X4VW.pdf} \\
+\includegraphics[width=1.8in]{../Figures-actual/SS50Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS50Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS50Distribution-usingbiomass.pdf} \\
 \end{tabular} 
 \captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Atlantic wolffish.}
 \end{minipage} 
@@ -315,7 +150,7 @@ Scientific name: [Anarhichas lupus](http://www.marinespecies.org/aphia.php?p=tax
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS50BDcorrelations.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS50IDWMap-biomass.pdf}\\
 \captionof{figure}{Time series of log catch biomass (kg/tow) of Atlantic wolffish for each stratum.} 
 \end{minipage} 
 
@@ -324,206 +159,8 @@ Scientific name: [Anarhichas lupus](http://www.marinespecies.org/aphia.php?p=tax
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS50DDHSslopes.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS50BDcorrelations.pdf}\\
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic wolffish.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## Cunner (Tanche-tautogue) - species code 122 {#sec:122} 
-
-Scientific name: [Tautogolabrus adspersus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=159785) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS122Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS122Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS122Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Cunner.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS122BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of Cunner for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS122DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Cunner.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## Atlantic mackerel (Maquereau bleu) - species code 70 {#sec:70} 
-
-Scientific name: [Scomber scombrus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127023) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS70Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS70Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS70Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Atlantic mackerel.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS70BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of Atlantic mackerel for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS70DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic mackerel.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## Daubed shanny (Lompénie tachetée) - species code 623 {#sec:623} 
-
-Scientific name: [Leptoclinus maculatus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127072) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS623Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS623Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS623Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Daubed shanny.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS623BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of Daubed shanny for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS623DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Daubed shanny.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## Snake blenny (Lompénie serpent) - species code 622 {#sec:622} 
-
-Scientific name: [Lumpenus lampretaeformis](http://www.marinespecies.org/aphia.php?p=taxdetails&id=154675) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS622Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS622Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS622Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Snake blenny.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS622BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of Snake blenny for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS622DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Snake blenny.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## Fourline snakeblenny (Quatre-lignes atlantique) - species code 626 {#sec:626} 
-
-Scientific name: [Eumesogrammus praecisus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=159817) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS626Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS626Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS626Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Fourline snakeblenny.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS626BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of Fourline snakeblenny for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS626DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Fourline snakeblenny.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## Butterfish (Stromatée à fossette) - species code 701 {#sec:701} 
-
-Scientific name: [Peprilus triacanthus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=159828) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS701Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS701Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS701Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Butterfish.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS701BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of Butterfish for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS701DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Butterfish.}
 \end{minipage} 
 
 \end{tabular}
@@ -535,9 +172,9 @@ Scientific name: [Zoarces americanus](http://www.marinespecies.org/aphia.php?p=t
  \newline
 \begin{minipage}{0.9\textwidth}
  \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS640Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS640Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS640Condition4X4VW.pdf} \\
+\includegraphics[width=1.8in]{../Figures-actual/SS640Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS640Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS640Distribution-usingbiomass.pdf} \\
 \end{tabular} 
 \captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Ocean pout.}
 \end{minipage} 
@@ -546,7 +183,7 @@ Scientific name: [Zoarces americanus](http://www.marinespecies.org/aphia.php?p=t
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS640BDcorrelations.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS640IDWMap-biomass.pdf}\\
 \captionof{figure}{Time series of log catch biomass (kg/tow) of Ocean pout for each stratum.} 
 \end{minipage} 
 
@@ -555,41 +192,8 @@ Scientific name: [Zoarces americanus](http://www.marinespecies.org/aphia.php?p=t
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS640DDHSslopes.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS640BDcorrelations.pdf}\\
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Ocean pout.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## Atlantic soft pout (Molasse atlantique) - species code 646 {#sec:646} 
-
-Scientific name: [Melanostigma atlanticum](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127120) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS646Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS646Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS646Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Atlantic soft pout.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS646BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of Atlantic soft pout for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS646DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic soft pout.}
 \end{minipage} 
 
 \end{tabular}
@@ -601,9 +205,9 @@ Scientific name: [Hippoglossoides platessoides](http://www.marinespecies.org/aph
  \newline
 \begin{minipage}{0.9\textwidth}
  \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS40Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS40Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS40Condition4X4VW.pdf} \\
+\includegraphics[width=1.8in]{../Figures-actual/SS40Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS40Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS40Distribution-usingbiomass.pdf} \\
 \end{tabular} 
 \captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for American plaice.}
 \end{minipage} 
@@ -612,7 +216,7 @@ Scientific name: [Hippoglossoides platessoides](http://www.marinespecies.org/aph
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS40BDcorrelations.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS40IDWMap-biomass.pdf}\\
 \captionof{figure}{Time series of log catch biomass (kg/tow) of American plaice for each stratum.} 
 \end{minipage} 
 
@@ -621,7 +225,7 @@ Scientific name: [Hippoglossoides platessoides](http://www.marinespecies.org/aph
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS40DDHSslopes.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS40BDcorrelations.pdf}\\
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for American plaice.}
 \end{minipage} 
 
@@ -634,9 +238,9 @@ Scientific name: [Glyptocephalus cynoglossus](http://www.marinespecies.org/aphia
  \newline
 \begin{minipage}{0.9\textwidth}
  \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS41Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS41Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS41Condition4X4VW.pdf} \\
+\includegraphics[width=1.8in]{../Figures-actual/SS41Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS41Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS41Distribution-usingbiomass.pdf} \\
 \end{tabular} 
 \captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Witch flounder.}
 \end{minipage} 
@@ -645,7 +249,7 @@ Scientific name: [Glyptocephalus cynoglossus](http://www.marinespecies.org/aphia
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS41BDcorrelations.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS41IDWMap-biomass.pdf}\\
 \captionof{figure}{Time series of log catch biomass (kg/tow) of Witch flounder for each stratum.} 
 \end{minipage} 
 
@@ -654,7 +258,7 @@ Scientific name: [Glyptocephalus cynoglossus](http://www.marinespecies.org/aphia
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS41DDHSslopes.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS41BDcorrelations.pdf}\\
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Witch flounder.}
 \end{minipage} 
 
@@ -667,9 +271,9 @@ Scientific name: [Limanda ferruginea](http://www.marinespecies.org/aphia.php?p=t
  \newline
 \begin{minipage}{0.9\textwidth}
  \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS42Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS42Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS42Condition4X4VW.pdf} \\
+\includegraphics[width=1.8in]{../Figures-actual/SS42Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS42Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS42Distribution-usingbiomass.pdf} \\
 \end{tabular} 
 \captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Yellowtail flounder.}
 \end{minipage} 
@@ -678,7 +282,7 @@ Scientific name: [Limanda ferruginea](http://www.marinespecies.org/aphia.php?p=t
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS42BDcorrelations.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS42IDWMap-biomass.pdf}\\
 \captionof{figure}{Time series of log catch biomass (kg/tow) of Yellowtail flounder for each stratum.} 
 \end{minipage} 
 
@@ -687,7 +291,7 @@ Scientific name: [Limanda ferruginea](http://www.marinespecies.org/aphia.php?p=t
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS42DDHSslopes.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS42BDcorrelations.pdf}\\
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Yellowtail flounder.}
 \end{minipage} 
 
@@ -700,9 +304,9 @@ Scientific name: [Hippoglossus hippoglossus](http://www.marinespecies.org/aphia.
  \newline
 \begin{minipage}{0.9\textwidth}
  \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS30Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS30Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS30Condition4X4VW.pdf} \\
+\includegraphics[width=1.8in]{../Figures-actual/SS30Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS30Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS30Distribution-usingbiomass.pdf} \\
 \end{tabular} 
 \captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Atlantic halibut.}
 \end{minipage} 
@@ -711,7 +315,7 @@ Scientific name: [Hippoglossus hippoglossus](http://www.marinespecies.org/aphia.
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS30BDcorrelations.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS30IDWMap-biomass.pdf}\\
 \captionof{figure}{Time series of log catch biomass (kg/tow) of Atlantic halibut for each stratum.} 
 \end{minipage} 
 
@@ -720,7 +324,7 @@ Scientific name: [Hippoglossus hippoglossus](http://www.marinespecies.org/aphia.
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS30DDHSslopes.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS30BDcorrelations.pdf}\\
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic halibut.}
 \end{minipage} 
 
@@ -733,9 +337,9 @@ Scientific name: [Pseudopleuronectes americanus](http://www.marinespecies.org/ap
  \newline
 \begin{minipage}{0.9\textwidth}
  \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS43Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS43Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS43Condition4X4VW.pdf} \\
+\includegraphics[width=1.8in]{../Figures-actual/SS43Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS43Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS43Distribution-usingbiomass.pdf} \\
 \end{tabular} 
 \captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Winter flounder.}
 \end{minipage} 
@@ -744,7 +348,7 @@ Scientific name: [Pseudopleuronectes americanus](http://www.marinespecies.org/ap
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS43BDcorrelations.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS43IDWMap-biomass.pdf}\\
 \captionof{figure}{Time series of log catch biomass (kg/tow) of Winter flounder for each stratum.} 
 \end{minipage} 
 
@@ -753,74 +357,8 @@ Scientific name: [Pseudopleuronectes americanus](http://www.marinespecies.org/ap
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS43DDHSslopes.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS43BDcorrelations.pdf}\\
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Winter flounder.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## Greenland halibut (Flétan du Groenland) - species code 31 {#sec:31} 
-
-Scientific name: [Reinhardtius hippoglossoides](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127144) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS31Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS31Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS31Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Greenland halibut.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS31BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of Greenland halibut for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS31DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Greenland halibut.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## Windowpane (Turbot de sable) - species code 143 {#sec:143} 
-
-Scientific name: [Scophthalmus aquosus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=158907) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS143Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS143Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS143Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Windowpane.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS143BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of Windowpane for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS143DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Windowpane.}
 \end{minipage} 
 
 \end{tabular}
@@ -832,9 +370,9 @@ Scientific name: [Aspidophoroides monopterygius](http://www.marinespecies.org/ap
  \newline
 \begin{minipage}{0.9\textwidth}
  \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS340Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS340Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS340Condition4X4VW.pdf} \\
+\includegraphics[width=1.8in]{../Figures-actual/SS340Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS340Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS340Distribution-usingbiomass.pdf} \\
 \end{tabular} 
 \captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Alligatorfish.}
 \end{minipage} 
@@ -843,7 +381,7 @@ Scientific name: [Aspidophoroides monopterygius](http://www.marinespecies.org/ap
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS340BDcorrelations.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS340IDWMap-biomass.pdf}\\
 \captionof{figure}{Time series of log catch biomass (kg/tow) of Alligatorfish for each stratum.} 
 \end{minipage} 
 
@@ -852,41 +390,8 @@ Scientific name: [Aspidophoroides monopterygius](http://www.marinespecies.org/ap
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS340DDHSslopes.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS340BDcorrelations.pdf}\\
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Alligatorfish.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## Atlantic sea poacher (Agone atlantique) - species code 350 {#sec:350} 
-
-Scientific name: [Leptagonus decagonus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127191) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS350Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS350Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS350Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Atlantic sea poacher.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS350BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of Atlantic sea poacher for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS350DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic sea poacher.}
 \end{minipage} 
 
 \end{tabular}
@@ -898,9 +403,9 @@ Scientific name: [Myoxocephalus octodecemspinosus](http://www.marinespecies.org/
  \newline
 \begin{minipage}{0.9\textwidth}
  \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS300Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS300Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS300Condition4X4VW.pdf} \\
+\includegraphics[width=1.8in]{../Figures-actual/SS300Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS300Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS300Distribution-usingbiomass.pdf} \\
 \end{tabular} 
 \captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Longhorn sculpin.}
 \end{minipage} 
@@ -909,7 +414,7 @@ Scientific name: [Myoxocephalus octodecemspinosus](http://www.marinespecies.org/
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS300BDcorrelations.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS300IDWMap-biomass.pdf}\\
 \captionof{figure}{Time series of log catch biomass (kg/tow) of Longhorn sculpin for each stratum.} 
 \end{minipage} 
 
@@ -918,7 +423,7 @@ Scientific name: [Myoxocephalus octodecemspinosus](http://www.marinespecies.org/
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS300DDHSslopes.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS300BDcorrelations.pdf}\\
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Longhorn sculpin.}
 \end{minipage} 
 
@@ -931,9 +436,9 @@ Scientific name: [Triglops murrayi](http://www.marinespecies.org/aphia.php?p=tax
  \newline
 \begin{minipage}{0.9\textwidth}
  \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS304Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS304Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS304Condition4X4VW.pdf} \\
+\includegraphics[width=1.8in]{../Figures-actual/SS304Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS304Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS304Distribution-usingbiomass.pdf} \\
 \end{tabular} 
 \captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Mailed sculpin.}
 \end{minipage} 
@@ -942,7 +447,7 @@ Scientific name: [Triglops murrayi](http://www.marinespecies.org/aphia.php?p=tax
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS304BDcorrelations.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS304IDWMap-biomass.pdf}\\
 \captionof{figure}{Time series of log catch biomass (kg/tow) of Mailed sculpin for each stratum.} 
 \end{minipage} 
 
@@ -951,173 +456,8 @@ Scientific name: [Triglops murrayi](http://www.marinespecies.org/aphia.php?p=tax
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS304DDHSslopes.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS304BDcorrelations.pdf}\\
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Mailed sculpin.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## Snowflake hookear sculpin (Hameçon neigeux) - species code 306 {#sec:306} 
-
-Scientific name: [Artediellus uncinatus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127195) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS306Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS306Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS306Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Snowflake hookear sculpin.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS306BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of Snowflake hookear sculpin for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS306DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Snowflake hookear sculpin.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## Shorthorn sculpin (Chaboisseau à épines courtes) - species code 301 {#sec:301} 
-
-Scientific name: [Myoxocephalus scorpius](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127203) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS301Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS301Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS301Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Shorthorn sculpin.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS301BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of Shorthorn sculpin for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS301DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Shorthorn sculpin.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## Spatulate sculpin (Icèle saptulée) - species code 314 {#sec:314} 
-
-Scientific name: [Icelus spatula](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127200) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS314Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS314Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS314Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Spatulate sculpin.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS314BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of Spatulate sculpin for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS314DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Spatulate sculpin.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## Atlantic spiny lumpfish (Petite poule de mer atlantique) - species code 502 {#sec:502} 
-
-Scientific name: [Eumicrotremus spinosus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127217) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS502Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS502Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS502Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Atlantic spiny lumpfish.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS502BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of Atlantic spiny lumpfish for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS502DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic spiny lumpfish.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## Lumpfish (Grosse poule de mer) - species code 501 {#sec:501} 
-
-Scientific name: [Cyclopterus lumpus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127214) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS501Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS501Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS501Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Lumpfish.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS501BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of Lumpfish for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS501DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Lumpfish.}
 \end{minipage} 
 
 \end{tabular}
@@ -1129,9 +469,9 @@ Scientific name: [Hemitripterus americanus](http://www.marinespecies.org/aphia.p
  \newline
 \begin{minipage}{0.9\textwidth}
  \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS320Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS320Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS320Condition4X4VW.pdf} \\
+\includegraphics[width=1.8in]{../Figures-actual/SS320Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS320Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS320Distribution-usingbiomass.pdf} \\
 \end{tabular} 
 \captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Sea raven.}
 \end{minipage} 
@@ -1140,7 +480,7 @@ Scientific name: [Hemitripterus americanus](http://www.marinespecies.org/aphia.p
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS320BDcorrelations.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS320IDWMap-biomass.pdf}\\
 \captionof{figure}{Time series of log catch biomass (kg/tow) of Sea raven for each stratum.} 
 \end{minipage} 
 
@@ -1149,173 +489,8 @@ Scientific name: [Hemitripterus americanus](http://www.marinespecies.org/aphia.p
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS320DDHSslopes.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS320BDcorrelations.pdf}\\
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Sea raven.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## Polar sculpin (Cotte polaire) - species code 307 {#sec:307} 
-
-Scientific name: [Cottunculus microps](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127235) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS307Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS307Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS307Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Polar sculpin.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS307BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of Polar sculpin for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS307DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Polar sculpin.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 604 {#sec:604} 
-
-Scientific name: [Nemichthys scolopaceus](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS604Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS604Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS604Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS604BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS604DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 156 {#sec:156} 
-
-Scientific name: [Chlorophthalmus agassizi](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS156Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS156Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS156Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS156BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS156DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 149 {#sec:149} 
-
-Scientific name: [Parasudis truculenta](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS149Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS149Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS149Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS149BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS149DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 720 {#sec:720} 
-
-Scientific name: [Scomberesox saurus](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS720Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS720Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS720Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS720BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS720DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
 \end{minipage} 
 
 \end{tabular}
@@ -1327,60 +502,27 @@ Scientific name: [Clupea harengus](NA)
  \newline
 \begin{minipage}{0.9\textwidth}
  \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS60Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS60Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS60Condition4X4VW.pdf} \\
+\includegraphics[width=1.8in]{../Figures-actual/SS60Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS60Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS60Distribution-usingbiomass.pdf} \\
 \end{tabular} 
 \captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
 \end{minipage} 
 
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS60IDWMap-biomass.pdf}\\
+\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
+\end{minipage} 
+
+\end{tabular}
 
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
 \includegraphics[width=5.7in]{../Figures-actual/SS60BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS60DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 61 {#sec:61} 
-
-Scientific name: [Alosa sapidissima](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS61Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS61Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS61Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS61BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS61DDHSslopes.pdf}\\
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
 \end{minipage} 
 
@@ -1393,9 +535,9 @@ Scientific name: [Urophycis tenuis](NA)
  \newline
 \begin{minipage}{0.9\textwidth}
  \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS12Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS12Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS12Condition4X4VW.pdf} \\
+\includegraphics[width=1.8in]{../Figures-actual/SS12Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS12Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS12Distribution-usingbiomass.pdf} \\
 \end{tabular} 
 \captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
 \end{minipage} 
@@ -1404,7 +546,7 @@ Scientific name: [Urophycis tenuis](NA)
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS12BDcorrelations.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS12IDWMap-biomass.pdf}\\
 \captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
 \end{minipage} 
 
@@ -1413,7 +555,7 @@ Scientific name: [Urophycis tenuis](NA)
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS12DDHSslopes.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS12BDcorrelations.pdf}\\
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
 \end{minipage} 
 
@@ -1426,258 +568,27 @@ Scientific name: [Urophycis chuss](NA)
  \newline
 \begin{minipage}{0.9\textwidth}
  \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS13Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS13Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS13Condition4X4VW.pdf} \\
+\includegraphics[width=1.8in]{../Figures-actual/SS13Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS13Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS13Distribution-usingbiomass.pdf} \\
 \end{tabular} 
 \captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
 \end{minipage} 
 
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS13IDWMap-biomass.pdf}\\
+\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
+\end{minipage} 
+
+\end{tabular}
 
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
 \includegraphics[width=5.7in]{../Figures-actual/SS13BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS13DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 112 {#sec:112} 
-
-Scientific name: [Phycis chesteri](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS112Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS112Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS112Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS112BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS112DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 114 {#sec:114} 
-
-Scientific name: [Enchelyopus cimbrius](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS114Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS114Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS114Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS114BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS114DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 15 {#sec:15} 
-
-Scientific name: [Brosme brosme](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS15Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS15Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS15Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS15BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS15DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 17 {#sec:17} 
-
-Scientific name: [Microgadus tomcod](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS17Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS17Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS17Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS17BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS17DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 412 {#sec:412} 
-
-Scientific name: [Trachyrincus murrayi](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS412Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS412Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS412Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS412BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS412DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 414 {#sec:414} 
-
-Scientific name: [Coryphaenoides rupestris](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS414Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS414Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS414Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS414BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS414DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 19 {#sec:19} 
-
-Scientific name: [Merluccius albidus](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS19Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS19Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS19Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS19BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS19DDHSslopes.pdf}\\
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
 \end{minipage} 
 
@@ -1690,885 +601,27 @@ Scientific name: [Lophius americanus](NA)
  \newline
 \begin{minipage}{0.9\textwidth}
  \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS400Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS400Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS400Condition4X4VW.pdf} \\
+\includegraphics[width=1.8in]{../Figures-actual/SS400Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS400Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS400Distribution-usingbiomass.pdf} \\
 \end{tabular} 
 \captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
 \end{minipage} 
 
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS400IDWMap-biomass.pdf}\\
+\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
+\end{minipage} 
+
+\end{tabular}
 
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
 \includegraphics[width=5.7in]{../Figures-actual/SS400BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS400DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 742 {#sec:742} 
-
-Scientific name: [Dibranchus atlanticus](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS742Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS742Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS742Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS742BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS742DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 150 {#sec:150} 
-
-Scientific name: [Myctophidae](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS150Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS150Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS150Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS150BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS150DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 160 {#sec:160} 
-
-Scientific name: [Argentina silus](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS160Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS160Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS160Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS160BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS160DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 63 {#sec:63} 
-
-Scientific name: [Osmerus mordax](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS63Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS63Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS63Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS63BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS63DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 51 {#sec:51} 
-
-Scientific name: [Anarhichas minor](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS51Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS51Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS51Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS51BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS51DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 52 {#sec:52} 
-
-Scientific name: [Anarhichas denticulatus](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS52Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS52Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS52Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS52BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS52DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 637 {#sec:637} 
-
-Scientific name: [Foetorepus agassizii](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS637Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS637Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS637Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS637BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS637DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 630 {#sec:630} 
-
-Scientific name: [Cryptacanthodes maculatus](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS630Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS630Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS630Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS630BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS630DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 621 {#sec:621} 
-
-Scientific name: [Pholis gunnellus](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS621Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS621Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS621Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS621BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS621DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 625 {#sec:625} 
-
-Scientific name: [Ulvaria subbifurcata](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS625Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS625Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS625Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS625BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS625DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 647 {#sec:647} 
-
-Scientific name: [Lycodes vahlii](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS647Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS647Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS647Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS647BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS647DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 620 {#sec:620} 
-
-Scientific name: [Lycodes lavalaei](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS620Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS620Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS620Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS620BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS620DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 641 {#sec:641} 
-
-Scientific name: [Lycodes reticulatus](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS641Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS641Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS641Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS641BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS641DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 619 {#sec:619} 
-
-Scientific name: [Lycodes terraenovae](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS619Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS619Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS619Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS619BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS619DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 603 {#sec:603} 
-
-Scientific name: [Lycenchelys verrillii](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS603Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS603Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS603Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS603BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS603DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 816 {#sec:816} 
-
-Scientific name: [Symphurus diomedeanus](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS816Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS816Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS816Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS816BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS816DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 44 {#sec:44} 
-
-Scientific name: [Citharichthys arctifrons](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS44Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS44Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS44Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS44BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS44DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 142 {#sec:142} 
-
-Scientific name: [Hippoglossina oblonga](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS142Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS142Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS142Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS142BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS142DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 351 {#sec:351} 
-
-Scientific name: [Agonidae](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS351Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS351Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS351Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS351BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS351DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 341 {#sec:341} 
-
-Scientific name: [Ulcina olrikii](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS341Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS341Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS341Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS341BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS341DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 880 {#sec:880} 
-
-Scientific name: [Artediellus atlanticus](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS880Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS880Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS880Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS880BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS880DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 303 {#sec:303} 
-
-Scientific name: [Myoxocephalus aenaeus](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS303Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS303Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS303Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS303BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS303DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 512 {#sec:512} 
-
-Scientific name: [Liparis gibbus](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS512Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS512Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS512Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS512BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS512DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 503 {#sec:503} 
-
-Scientific name: [Liparis atlanticus](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS503Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS503Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS503Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS503BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS503DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 505 {#sec:505} 
-
-Scientific name: [Liparis fabricii](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS505Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS505Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS505Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS505BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS505DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 520 {#sec:520} 
-
-Scientific name: [Careproctus reinhardti](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS520Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS520Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS520Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS520BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS520DDHSslopes.pdf}\\
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
 \end{minipage} 
 
@@ -2581,225 +634,27 @@ Scientific name: [Sebastes](NA)
  \newline
 \begin{minipage}{0.9\textwidth}
  \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS23Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS23Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS23Condition4X4VW.pdf} \\
+\includegraphics[width=1.8in]{../Figures-actual/SS23Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS23Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS23Distribution-usingbiomass.pdf} \\
 \end{tabular} 
 \captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
 \end{minipage} 
 
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS23IDWMap-biomass.pdf}\\
+\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
+\end{minipage} 
+
+\end{tabular}
 
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
 \includegraphics[width=5.7in]{../Figures-actual/SS23BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS23DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 123 {#sec:123} 
-
-Scientific name: [Helicolenus dactylopterus](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS123Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS123Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS123Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS123BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS123DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 158 {#sec:158} 
-
-Scientific name: [Maurolicus muelleri](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS158Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS158Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS158Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS158BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS158DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 741 {#sec:741} 
-
-Scientific name: [Sternoptychidae](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS741Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS741Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS741Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS741BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS741DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 159 {#sec:159} 
-
-Scientific name: [Stomias boa](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS159Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS159Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS159Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS159BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS159DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 704 {#sec:704} 
-
-Scientific name: [Zenopsis conchifer](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS704Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS704Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS704Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS704BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS704DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 4512 {#sec:4512} 
-
-Scientific name: [Doryteuthis pealeii](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS4512Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS4512Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS4512Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS4512BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS4512DDHSslopes.pdf}\\
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
 \end{minipage} 
 
@@ -2812,386 +667,27 @@ Scientific name: [Illex illecebrosus](NA)
  \newline
 \begin{minipage}{0.9\textwidth}
  \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS4511Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS4511Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS4511Condition4X4VW.pdf} \\
+\includegraphics[width=1.8in]{../Figures-actual/SS4511Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS4511Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS4511Distribution-usingbiomass.pdf} \\
 \end{tabular} 
 \captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
 \end{minipage} 
 
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS4511IDWMap-biomass.pdf}\\
+\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
+\end{minipage} 
+
+\end{tabular}
 
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
 \includegraphics[width=5.7in]{../Figures-actual/SS4511BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS4511DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-c("## Lobster (Homard) - species code 2550 {#sec:2550} \n", "## Sponge (Eponge) - species code 2550 {#sec:2550} \n")
-c("Scientific name: [Homarus americanus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=156134) \n \\newline", "Scientific name: [Homarus americanus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=156134) \n \\newline")
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS2550Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS2550Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS2550Condition4X4VW.pdf} \\
-\end{tabular} 
-c("\\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Lobster.}", "\\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Sponge.}")
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS2550BDcorrelations.pdf}\\
-c("\\captionof{figure}{Time series of log catch biomass (kg/tow) of Lobster for each stratum.} ", "\\captionof{figure}{Time series of log catch biomass (kg/tow) of Sponge for each stratum.} ")
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS2550DDHSslopes.pdf}\\
-c("\\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Lobster.}", "\\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Sponge.}")
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-c("## Lobster (Homard) - species code 2550 {#sec:2550} \n", "## Sponge (Eponge) - species code 2550 {#sec:2550} \n")
-c("Scientific name: [Homarus americanus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=156134) \n \\newline", "Scientific name: [Homarus americanus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=156134) \n \\newline")
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS2550Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS2550Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS2550Condition4X4VW.pdf} \\
-\end{tabular} 
-c("\\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Lobster.}", "\\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Sponge.}")
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS2550BDcorrelations.pdf}\\
-c("\\captionof{figure}{Time series of log catch biomass (kg/tow) of Lobster for each stratum.} ", "\\captionof{figure}{Time series of log catch biomass (kg/tow) of Sponge for each stratum.} ")
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS2550DDHSslopes.pdf}\\
-c("\\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Lobster.}", "\\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Sponge.}")
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## Snow crab (Crabe des neiges) - species code 2526 {#sec:2526} 
-
-Scientific name: [Chionoecetes opilio](http://www.marinespecies.org/aphia.php?p=taxdetails&id=107315) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS2526Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS2526Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS2526Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Snow crab.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS2526BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of Snow crab for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS2526DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Snow crab.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## Hyas coarctatus (Hyas coarctatus) - species code 2521 {#sec:2521} 
-
-Scientific name: [Hyas coarctatus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=107323) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS2521Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS2521Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS2521Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Hyas coarctatus.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS2521BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of Hyas coarctatus for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS2521DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Hyas coarctatus.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 2511 {#sec:2511} 
-
-Scientific name: [Cancer borealis](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS2511Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS2511Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS2511Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS2511BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS2511DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 2513 {#sec:2513} 
-
-Scientific name: [Cancer irroratus](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS2513Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS2513Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS2513Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS2513BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS2513DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 2532 {#sec:2532} 
-
-Scientific name: [Chaceon quinquedens](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS2532Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS2532Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS2532Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS2532BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS2532DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 2523 {#sec:2523} 
-
-Scientific name: [Lithodes maja](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS2523Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS2523Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS2523Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS2523BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS2523DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 2527 {#sec:2527} 
-
-Scientific name: [Hyas araneus](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS2527Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS2527Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS2527Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS2527BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS2527DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 2211 {#sec:2211} 
-
-Scientific name: [Pandalus borealis](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS2211Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS2211Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS2211Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS2211BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS2211DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 240 {#sec:240} 
-
-Scientific name: [Petromyzon marinus](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS240Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS240Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS240Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS240BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS240DDHSslopes.pdf}\\
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
 \end{minipage} 
 
@@ -3204,9 +700,9 @@ Scientific name: [Amblyraja radiata](NA)
  \newline
 \begin{minipage}{0.9\textwidth}
  \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS201Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS201Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS201Condition4X4VW.pdf} \\
+\includegraphics[width=1.8in]{../Figures-actual/SS201Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS201Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS201Distribution-usingbiomass.pdf} \\
 \end{tabular} 
 \captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
 \end{minipage} 
@@ -3215,7 +711,7 @@ Scientific name: [Amblyraja radiata](NA)
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS201BDcorrelations.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS201IDWMap-biomass.pdf}\\
 \captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
 \end{minipage} 
 
@@ -3224,7 +720,7 @@ Scientific name: [Amblyraja radiata](NA)
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS201DDHSslopes.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS201BDcorrelations.pdf}\\
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
 \end{minipage} 
 
@@ -3237,9 +733,9 @@ Scientific name: [Malacoraja senta](NA)
  \newline
 \begin{minipage}{0.9\textwidth}
  \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS202Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS202Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS202Condition4X4VW.pdf} \\
+\includegraphics[width=1.8in]{../Figures-actual/SS202Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS202Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS202Distribution-usingbiomass.pdf} \\
 \end{tabular} 
 \captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
 \end{minipage} 
@@ -3248,7 +744,7 @@ Scientific name: [Malacoraja senta](NA)
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS202BDcorrelations.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS202IDWMap-biomass.pdf}\\
 \captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
 \end{minipage} 
 
@@ -3257,7 +753,7 @@ Scientific name: [Malacoraja senta](NA)
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS202DDHSslopes.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS202BDcorrelations.pdf}\\
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
 \end{minipage} 
 
@@ -3270,126 +766,27 @@ Scientific name: [Leucoraja ocellata](NA)
  \newline
 \begin{minipage}{0.9\textwidth}
  \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS204Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS204Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS204Condition4X4VW.pdf} \\
+\includegraphics[width=1.8in]{../Figures-actual/SS204Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS204Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS204Distribution-usingbiomass.pdf} \\
 \end{tabular} 
 \captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
 \end{minipage} 
 
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS204IDWMap-biomass.pdf}\\
+\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
+\end{minipage} 
+
+\end{tabular}
 
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
 \includegraphics[width=5.7in]{../Figures-actual/SS204BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS204DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 203 {#sec:203} 
-
-Scientific name: [Leucoraja erinacea](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS203Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS203Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS203Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS203BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS203DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 200 {#sec:200} 
-
-Scientific name: [Dipturus laevis](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS200Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS200Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS200Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS200BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS200DDHSslopes.pdf}\\
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-\end{tabular}
-\clearpage
-
-## NA (NA) - species code 221 {#sec:221} 
-
-Scientific name: [Centroscyllium fabricii](NA) 
- \newline
-\begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS221Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS221Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS221Condition4X4VW.pdf} \\
-\end{tabular} 
-\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
-\end{minipage} 
-
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS221BDcorrelations.pdf}\\
-\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
-\end{minipage} 
-
-\end{tabular}
-
-
-\begin{tabular}{c}
-\begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS221DDHSslopes.pdf}\\
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
 \end{minipage} 
 
@@ -3402,9 +799,9 @@ Scientific name: [Squalus acanthias](NA)
  \newline
 \begin{minipage}{0.9\textwidth}
  \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-actual/SS220Distribution.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS220Condition.pdf} & 
-\includegraphics[width=1.8in]{../Figures-actual/SS220Condition4X4VW.pdf} \\
+\includegraphics[width=1.8in]{../Figures-actual/SS220Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS220Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS220Distribution-usingbiomass.pdf} \\
 \end{tabular} 
 \captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
 \end{minipage} 
@@ -3413,7 +810,7 @@ Scientific name: [Squalus acanthias](NA)
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS220BDcorrelations.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS220IDWMap-biomass.pdf}\\
 \captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
 \end{minipage} 
 
@@ -3422,7 +819,7 @@ Scientific name: [Squalus acanthias](NA)
 
 \begin{tabular}{c}
 \begin{minipage}{1.0 \textwidth}
-\includegraphics[width=5.7in]{../Figures-actual/SS220DDHSslopes.pdf}\\
+\includegraphics[width=5.7in]{../Figures-actual/SS220BDcorrelations.pdf}\\
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
 \end{minipage} 
 

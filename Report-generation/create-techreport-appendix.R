@@ -75,13 +75,13 @@ temp <- lapply(taxo.final$species.code, function(x) {
   i <- i + 1
   out[[i]] <- " \\begin{tabular}{ccc}"
   i <- i + 1
-  out[[i]] <- paste0("\\includegraphics[width=1.8in]{../Figures-actual/",
+  out[[i]] <- paste0("\\includegraphics[width=1.8in]{../Figures-Actual/",
                      spp_file6, "} & ")
   i <- i + 1
-  out[[i]] <- paste0("\\includegraphics[width=1.8in]{../Figures-actual/",
+  out[[i]] <- paste0("\\includegraphics[width=1.8in]{../Figures-Actual/",
                      spp_file2, "} & ")
   i <- i + 1
-  out[[i]] <- paste0("\\includegraphics[width=1.8in]{../Figures-actual/",
+  out[[i]] <- paste0("\\includegraphics[width=1.8in]{../Figures-Actual/",
                      spp_file3, "} \\\\")
   i <- i + 1
   out[[i]] <- "\\end{tabular} "
@@ -99,7 +99,7 @@ temp <- lapply(taxo.final$species.code, function(x) {
   i <- i + 1
   out[[i]] <- "\\begin{minipage}{1.0 \\textwidth}"
   i <- i + 1
-  out[[i]] <- paste0("\\includegraphics[width=5.7in]{../Figures-actual/",
+  out[[i]] <- paste0("\\includegraphics[width=5.7in]{../Figures-Actual/",
               spp_file1, "}\\\\")
   i <- i + 1
   out[[i]] <- paste0("\\captionof{figure}{Time series of log catch biomass (kg/tow) of ", english_name, " for each stratum.} ")
@@ -115,7 +115,7 @@ temp <- lapply(taxo.final$species.code, function(x) {
   i <- i + 1
   out[[i]] <- "\\begin{minipage}{1.0 \\textwidth}"
   i <- i + 1
-  out[[i]] <- paste0("\\includegraphics[width=5.7in]{../Figures-actual/",
+  out[[i]] <- paste0("\\includegraphics[width=5.7in]{../Figures-Actual/",
               spp_file4, "}\\\\")
   i <- i + 1
   out[[i]] <- paste0("\\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for ", english_name,".}")
@@ -132,8 +132,7 @@ temp <- lapply(temp, function(x) paste(x, collapse = "\n"))
 temp <- paste(temp, collapse = "\n")
 temp <- c("# Appendix\n<!-- This page has been automatically generated: do not edit by hand -->\n", temp)
 if (!exists("N"))
-  writeLines(temp, con = file.path("report-EN","plot-pages.Rmd"), useBytes=T)
-
+  writeLines(temp, con = file.path("plot-pages.Rmd"), useBytes=T)
 ## French Tech Report
 
 

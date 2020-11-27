@@ -1,0 +1,1223 @@
+---
+title: "Marine Fish and Invertebrate Atlas: Summarizing Geographic Distribution and Population Indices in the Scotian Shelf and Bay of Fundy (1970-2020)"
+year: 2020
+report_number: nnn
+author: |
+  Daniel Ricard ^1^ 
+  Catalina Gomez ^2^ 
+author_list: "Ricard, D., Gomez, C."
+region: Maritimes Region
+isbn: ""
+address: |
+  ^1^Science Branch\
+     Gulf Region\
+     Fisheries and Oceans Canada\
+     Moncton, New Brunswick, E1C 5K4, Canada\
+  ^2^Science Branch\
+     Maritimes Region\
+     Fisheries and Oceans Canada\
+     Dartmouth, Nova Scotia, B2Y 4A2, Canada\
+phone: "(506) 851-6216"
+author_footnote: "Email: Daniel.Ricard@dfo-mpo.gc.ca | telephone: (506) 851-6216"
+abstract: |
+  The summer groundfish research vessel survey on the Scotian Shelf and in the Bay of Fundy started in 1970 and was designed to measure the distribution and abundance of major commercial fish species. Over time, information on non-commercial species was collected, and allowed considerable insight into ecosystem function and structure, as documented in many primary publications. The groundfish survey database has also been used to produce species status reports and atlases of species distribution. This report builds on previous work and former atlases by updating a comprehensive suite of indices to assess population status and environmental preferences of 104 species using the computer code developed at Fisheries and Oceans Maritimes which allowed us to extract and reproduce results. For each species, trends in geographic distribution and biomass or abundance were plotted. The spatial extent of distribution was plotted over time to gauge how the area occupied has changed. The relationship between abundance or biomass and spatial extent reflected whether the species distribution expands when abundance or biomass increases. Length frequencies over time depicted any changes in mean size. The plots of condition over time revealed whether individual fish are fatter or thinner than their long term mean. Depth, temperature and salinity preferences were estimated to gauge the range of suitable environmental parameters for each species. Finally, for each stratum, the slope describing how local density varies with regional abundance was estimated. These slopes were then plotted against a habitat suitability index to identify important strata for each species.Healthy widespread populations that tolerate a wide range of environmental parameters are likely to with-stand climate change better than depleted narrowly distributed ones. This atlas helps identify productive habitat for each species and serves to continue to examine a species response to climate change in general, and warming in particular.
+abstract_other: |
+  Voici le résumé. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+output:
+ csasdown::techreport_pdf:
+   french: false
+   copy_sty: true
+type:
+  techreport
+# ------------
+# End of options to set
+knit: bookdown::render_book
+site: bookdown::bookdown_site
+link-citations: true
+bibliography: bib/refs.bib
+csl: csl/csas.csl
+lot: true
+lof: true
+# Any extra LaTeX code for the header:
+header-includes:
+ - \usepackage{float}
+---
+
+```{r setup, echo=FALSE, cache=FALSE, message=FALSE, results='hide', warning=FALSE}
+library(knitr)
+if (is_latex_output()) {
+  knitr_figs_dir <- "knitr-figs-pdf/"
+  knitr_cache_dir <- "knitr-cache-pdf/"
+  fig_out_type <- "png"
+} else {
+  knitr_figs_dir <- "knitr-figs-docx/"
+  knitr_cache_dir <- "knitr-cache-docx/"
+  fig_out_type <- "png"
+}
+fig_asp <- 0.618
+fig_width <- 9
+fig_out_width <- "6in"
+fig_dpi <- 180
+fig_align <- "center"
+fig_pos <- "htb"
+opts_chunk$set(
+  collapse = TRUE,
+  warning = FALSE,
+  message = FALSE,
+  comment = "#>",
+  fig.path = knitr_figs_dir,
+  cache.path = knitr_cache_dir,
+  fig.asp = fig_asp,
+  fig.width = fig_width,
+  out.width = fig_out_width,
+  echo = FALSE,
+  #  autodep = TRUE,
+  #  cache = TRUE,
+  cache.comments = FALSE,
+  dev = fig_out_type,
+  dpi = fig_dpi,
+  fig.align = fig_align,
+  fig.pos = fig_pos
+)
+options(xtable.comment = FALSE)
+options(kableExtra.latex.load_packages = FALSE)
+```
+
+```{r load-libraries, cache=FALSE}
+# `french` and `prepub` variables are extracted from the YAML headers above and
+#  are used throughout the document. To make the document all in french, change
+#  the line in the YAML header above to `french: true`
+meta <- rmarkdown::metadata$output
+if(length(grep("pdf", names(meta)))){
+  french <- meta$`csasdown::techreport_pdf`$french
+  prepub <- meta$`csasdown::techreport_pdf`$prepub
+}else if(length(grep("word", names(meta)))){
+  french <- meta$`csasdown::techreport_word`$french
+  prepub <- meta$`csasdown::techreport_word`$prepub
+}
+if(french){
+  options(OutDec =  ",")
+}
+
+# add other packages here:
+library(dplyr)
+library(ggplot2)
+library(readr)
+library(rosettafish)
+library(tibble)
+library(csasdown)
+
+```
+
+<!--chapter:end:index.Rmd-->
+
+# Introduction {#sec:introduction}
+
+The summer (July-August) groundfish research vessel survey on the Scotian Shelf and in the Bay of Fundy was started in 1970 by Fisheries and Oceans Canada Maritimes Region. The survey was originally designed to measure the distribution and abundance of major commercial fish species. Over time, information on non-commercial species was also collected. The groundfish survey database has also been used to produce species status reports and atlases of species distribution. 
+This is an update of an earlier reproducible report [@Ricard:MARatlas:2013] that built on former atlases by updating a comprehensive suite of derived indices of 104 species to assess population status and environmental preferences. The R statistical code (R Core Team, 2013) is archived at Fisheries and Oceans Maritimes Region and in a GitHub repository to extract, update and reproduce results. The survey results are stored in a relational database management system which contains detailed information about the sampling locations and the associated catch. Tow-level survey data is also publicly available from the Ocean Biogeographic Information System (OBIS, UNESCO/IOC (2012)). The present atlas follows on the work done by Fisheries and Oceans colleagues from the northern Gulf of St. Lawrence  @Bourdages:NGatlas:2012], southern Gulf of St. Lawrence [@Benoit:etal:2003:techreport] and on earlier work in the Scotian Shelf [@Simon:Comeau:1994; @Horsman:atlas:2009].
+
+The survey area covers three major Northwest Atlantic Fisheries Organization (NAFO) zones that divide the shelf into the colder east 4V and 4W (strata 440-466) and warmer west 4X (strata 470-495). Temporal trends are plotted by NAFO regions for several species. For each species, trends in geographic distribution and biomass or abundance are plotted. Some caution is required in interpreting the results obtained for several taxa due to low sample size as explained later in the text. The spatial extent of distribution is plotted over time to gauge how the area occupied has changed. The relationship between biomass and spatial extent reflects whether the species distribution expands when biomass increases. For each strata, the slope describing how local density varies with regional abundance was estimated (Myers and Stokes, 1989). These slopes were then plotted against a habitat suitability index to identified each species important strata. Then, length frequencies over time depicted any changes in mean size. The plots of condition over time revealed whether individual fish are fatter or thinner than their long term mean. Finally, depth, temperature and salinity preferences were estimated to gauge the range of environmental parameters (Perry and Smith, 1994). A full ecological interpretation of trends is beyond the scope of this report. Further descriptions of spatio-temporal trends in diﬀerent indicators are reported in more detail for common species in Clark and Emberley (2011). Nonetheless, robust widespread populations that tolerate a wide range of environmental parameters are likely to withstand climate change better than depleted, narrowly distributed ones. 
+
+Mapping the distribution of species is critical for the implementation of spatial management and as a first step in Marine Spatial Planning (MSP). MSP is a process aiming at balancing the compatibility of multiple activities and to minimize impacts on the marine ecosystem (Ehler and Douvere 2009). Mapping species distribution can help to identify important sites for a given species or areas of high richness and diversity, which in turn can be used to inform siting decisions of new activities such as Marine Protected Areas (MPA), aquaculture sites or wind turbines. In the Scotian Shelf bioregion, mapping species distributions has been used to highlight areas of high biological diversity to support the identification of Ecologically or Biologically Significant Areas (EBSAs) (Ward-Paige and Bundy 2016), to distinguish important and persistent habitat of significant species and functional groups to support MPA and conservation planning (Horsman et al. 2011, Smith et al. 2015, Bundy et al. 2017, Serdynska et al. In press), to identify important habitat for Species at Risk (SAR) (Harris et al. 2018) and to highlight reserves for data-poor invertebrate fisheries (Shackell et al. 2009). Mapping species distribution has also been used to illustrate multi-decadal scale projections of changes in species distribution in the context of climate change and adaption (Stanley et al. 2018, Greenan et al. 2019). 
+
+This atlas is used as a starting point to examine a species response to climate change in general, and to warming in particular. In support of MSP, a public web-based atlas with relevant geospatial information is being developed to support decision-making. This technical report developed spatial indices of key fish and invertebrate species that may be used in the MSP atlas.
+
+
+
+
+<!--chapter:end:01_introduction.Rmd-->
+
+# Methods
+## Survey Description
+The survey is conducted annually in July-August. It normally involves two separate two-week trips on board a trawl fishing vessel from the Canadian Coast Guard.
+
+A number of changes in fishing gear type and vessels used occurred since the onset of sampling activities, described in details in Clark and Emberley (2011).
+
+## Sampling Design
+The summer survey covers divisions 4V, 4W and 4X of the Northwest Atlantic Fisheries Organization (NAFO) which includes the Scotian Shelf and the Bay of Fundy. The eastern limit of the survey is the Laurentian Channel and the western limit is the Fundian Channel (Figure 1).
+
+The survey follows a stratified random design (Doubleday et Rivard, 1981; Lohr, 1999). The number of tows conducted in each stratum is approximately proportional to its surface area.
+
+The basic sampling unit of the survey is a 30-minute fishing tow conducted at a speed of 3.5 knots. This yields a distance towed of 1.75 nautical miles.
+
+After each tow the catch is sorted by species and weighed. Each fish caught is then measured, and further sampling of individual fish weight, maturity status and age are performed for diﬀerent length classes. When catches exceed 300 individuals, a random sub-sample is used to obtain the length and weight measurements.
+
+##Taxonomic Levels
+
+Fish species caught during the surveys are identified by trained scientific personnel and their scientific name is determined. An internal species code used in the relational database is reported for each species (Losier and Waite, 1989).
+
+By its nature as a bottom trawl, the fishing gear used in the survey catches certain species better than others. To ensure that meaningful ecological information can be extracted from catch samples, we re-port the catch records for the subset of species that are caught reliably by the gear. To appear in this atlas, a species must have had a minimum of 10 observations over the duration of the survey activities. While both catch abundance and weight are recorded, the weight of species that appear at low abundances is often recorded as zero in the earlier parts of the survey when scales of appropriate precision were not available.
+
+We divided the species caught into five categories based on 1) their taxonomic classification, 2) the number of recorded observations, and 3) their period of valid identification. Category ”L”, for ”long”, was assigned to species that have more than 1000 records since 1970 and have been consistently identified since the onset of the survey. Category ”S”, for ”short”, was assigned to invertebrate species that were consistently sampled only since 1999, as discussed in Tremblay et al. (2007)). Category ”I”, for ”intermediate”, was assigned to species that had been 1000 and 200 catch records. Rare and elusive species (those with less than 200 catch records over the du-ration of the survey) are also reported but to a lower level of analytical details (Category ”LR”, for ”long rare”, and category ”SR”, for ”short rare”).
+
+The list of taxa covered in this document is presented in phylogenetic order (Nelson et al., 2004) in Table 4. To ensure concordance with authoritative taxonomic information, the AphiaID from the World Register of Marine Species is also provided in Table 4 (Appeltans et al., 2012).
+
+##Analyses
+
+The Oracle relational database where all data are stored was accessible from the Bedford Institute of Oceanography in Dartmouth, Nova Scotia. Structured Query Language (SQL) is used to extract the data from the production server and to create the data products used in all subsequent analyses. Catch records classified as ”valid” (i.e. a representative tow without damage to the net) are used in the current analyses. To make the available samples comparable, catch number and weight for each species was standardized for the distance towed.
+
+All data processing and analyses were conducted using the R software (R Core Team, 2013) using packages RODBC (Ripley and Lapsley, 2012), PBSmapping (Schnute et al., 2012), spatstat (Baddeley and Turner, 2005), gstat (Pebesma, 2004), maptools (Lewin-Koh et al., 2012), rgeos (Bivand and Rundel, 2012), xtable (Dahl, 2012) and MASS (Venables and Ripley, 2002). Figures 1, 2 and 3 were produced using the Generic Mapping Tools (Wessel and Smith, 1991).
+
+###Geographic distribution of catches
+
+Spatial interpolation of catch biomass (kg/tow) or abundance (number/tow) was done using a weighting inversely proportional to the distance, using function ”idw” of the spatstat R package (Baddeley and Turner, 2005).
+
+###Abundance and biomass indices
+
+For each species, stratified random estimates of catch abundance and biomass (Smith, 1996) are computed for each year. Yearly estimates of the standard error were also computed.
+
+###Distribution indices
+
+For each Category L, I and S fish species, the minimum area required to account for 75% and 95% of the total biomass or abundance were computed (D75% and D95%). These measures of distributions were computed for each year by using the Lorenz curve of mean stratum-level catch estimates and the area of occupied strata, using methods described in Swain and Sinclair (1994) and Swain and Morin (1996).
+
+###Length frequencies
+
+The length frequency distribution of catch is tabulated for each seven-year period (1970-2009), and last ten-year period (2010-2020).
+
+###Length-weight relationship and condition factor
+
+The relationship between the weight and the length of fish was estimated using the following non-linear isometric relationship:
+
+\begin{eqnarray*}\label{eqLengthWeight}
+W = \alpha L ^\beta  
+\\
+\end{eqnarray*}
+
+where W is the total weight (g), L is the length (cm), and, $\alpha$ and $\beta$ are the parameters to be estimated. 
+
+Average fish condition (C) is computed as:
+
+\begin{eqnarray*}\label{eqCondition}
+C = \frac{W}{\alpha L ^\beta}  
+\\
+\end{eqnarray*}
+
+###Depth, temperature and salinity distribution of catches
+
+For each category L species, We followed the methods developed by Perry and Smith (1994) and generated cumulative frequency distributions of depth, temperature and salinity of survey catches.
+
+###Density-dependent habitat selection
+
+We follow the methods of Myers and Stokes (1989) to evaluate how fish abundance in each stra-tum varied with overall temporal fluctuations of pop-ulation abundance.
+
+For each category L species, we fitted a model of the relationship between stratum-level density and overall abundance (the yearly stratified random esti-mate of abundance, defined above). To properly use the observations of zero catch while accounting for the logarithmic distribution of catch abundance, we implemented the model as a generalised linear using a log link and a Poisson error distribution:
+
+\begin{eqnarray*}\label{eqHabitat Selection}
+Y_{h,i} = \alpha_{h} Y_{i}^{\beta_h}
+\\
+\end{eqnarray*}
+
+where, $y_{h,i}$ is the average abundance of stratum $h$ in year $i$, and $\alpha_{h,i}$ and  $\beta_{h,i}$ are the fitted parameters. The estimated parameter $\beta_{h,i}$ is referred to as the "slope parameter" and indicates whether stratum-level density is positively ($\beta_{h,i} <= 0$), negatively ($\beta_{h,i} >= 0$) or negligibly ($\beta_{h,i} \approx 0$) related to population abundance.
+
+To estimate the suitability of each stratum, the median abundance observed during the years that are in the top 25% of yearly estimates is used. We com-bine the slope parameter estimates from the above model with the median abundance to identify strata that have consistently high abundance and whose local density is weakly related to fluctuation in population abundance ($\beta_{h,i} \approx 0$). Preferred strata are identified for each category L species.
+
+<!--chapter:end:02_methods.Rmd-->
+
+# Results
+
+The plots generated for each species are presented in the Appendix.
+
+## Description of Figures
+
+### Type A
+For Category L and S species: 
+
+Spatial distribution of catch-per unit of eﬀort, (CPUE, kilograms per tow) in July-August for the Bay of Fundy and Scotian Shelf in five-year periods. Spatial interpolation between tows was done using Inverse Distance Weight (IDW). The probability of occurrence (proportion of tows with catch records for a	given species) was also reported for each five-year period.
+
+For Category LR and SR:
+
+Location of tows with catch over the period 1970-2012 (Type LR) or the period 1999-2012 (Type SR). Location of tows with catch over the period 1970-2012 (Type LR) or the period 1999-2012 (Type SR).
+
+### Type B
+For Category L, S and I species:
+
+Stratified random estimate of CPUE (left panel), distribution indices (D75% and D95%, the minimum area containing 75% and 95% of biomass, middle panel), and distribution vs. weight per tow (right panel). The stratified random mean is plotted as a solid line with the 95% confidence region indicated by the solid grey line. The overall mean is plotted as a grey horizontal line and the overall mean plus or minus 50% of the standard deviation appear as horizontal dashed lines. In all three panels, the early years appear in blue and the last years appear in red. The predictions from a loess estimator are overlaid on the distribution indices (middle panel). The Pearson correlation coeffcient between D75% and biomass, and its statistical significance, are also reported in the right panel.
+
+### Type C.
+Length frequency distribution for NAFO divisions 4X and 4VW. A smoothed length frequency distribution is shown for each 7-year periods covered by the surveys.
+
+### Type D.
+Average fish condition for all fish lengths (black dots and black line), large fish (thick gray line), and small fish (thin gray line). Fish condition is presented for NAFO divisions 4VW (right panel) and 4X (left panel).
+
+### Type E.
+Cumulative frequency distributions of depth, temperature and salinity at all sampled locations (thick solid line) and at fishing locations with catch records (thin dashed line). The depth, temperature and salinity associated with 5%, 25%, 50%, 75% and 95% of the cumulative catch is shown in tabular fashion on the bottom right panel.
+
+### Type F.
+Slopes estimates from the density-dependent habitat selection model (y axis) plotted versus the median abundance during the top 25% of years. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25% of median abundance. Each stratum is identified on the plot by the last two digits of its number.
+
+## Summary of successful tows by year and stratum
+There is something weird going on here, there are 2 tows with NAs for stratum, (HAM1980042 set 62 and HAM1982072 set 13).
+
+<!-- Number of tows by stratum-year -->
+```{r tabtowstratumyear1, results="asis"}
+## set working directories
+  main.path <- "../" ##here::here()
+  
+  report.path <- file.path(main.path, "Report-generation")
+  
+  figdata.path <- file.path(main.path, "Figures-data") ## where to store data for figures
+  figcode.path <- file.path(main.path, "Figures-Rcode") ## where to find code for figures
+  fig.path <- file.path(main.path, "Figures-actual") ## where to store figures
+  mapping.path <- file.path(main.path, "Mapping")## mapping folder for maps that won't change over time
+
+
+tows.strata.year <- read.csv(file.path(report.path, "Atlas-summary-table-tows-by-year-stratum.csv"))
+
+yrs <- 1970:1984
+ii <- which(substring(names(tows.strata.year),3,6) %in% as.character(yrs))
+tows.strata.year.1 <- tows.strata.year[,c(1,2,3,ii)]
+nr <- nrow(tows.strata.year.1)
+## blank the first two columns of the last row
+
+csas_table(tows.strata.year.1,
+  col.names=c("Stratum","NAFO Div.","Area (km2)",as.character(yrs)),
+  caption = paste0("Number of representative tows conducted in each stratum during the period ",yrs[1]," to ",yrs[length(yrs)]),
+  format = "latex", align=c("c",rep("r",15))
+  ) %>%
+  kableExtra::landscape() %>%
+  ## kableExtra::kable_styling(font_size = 10, latex_options = "repeat_header", repeat_header_text = "", repeat_header_method = "replace") %>% 
+  sub("\\caption\\[\\]\\{\\}", "\\caption*{}", .) 
+```
+
+<!--chapter:end:03_results.Rmd-->
+
+# Discussion
+
+
+
+<!--chapter:end:04_discussion.Rmd-->
+
+<!-- The following code should appear at the beginning of the first appendix.
+(if you have one)
+After that, all subsequent sections will be turned into appendices. -->
+
+`r if(knitr:::is_latex_output()) '% begin csasdown appendix'`
+`r if(!knitr:::is_latex_output()) '# (APPENDIX) Appendix {-}'`
+
+\clearpage
+
+# THE FIRST APPENDIX {#app:first-appendix}
+
+Appendices can be in one file, or if they are larger than a couple of pages you should add a new file for each new appendix. In the first appendix, you **must** include two special lines of code at the top to tell `csasdown` that you are now numbering sections as appendices. Look in `05_appendices.Rmd` to see these. The last line of your last appendix **must** be another special line of code which tells `csasdown` to end the appendices sections. In this document it can be found at the end of `05_appendices.Rmd`.
+
+Figures and tables will now be prepended with the appendix letter:
+
+(ref:test1) English version of the test1 figure caption
+
+(ref:test1-french) French goes here
+
+```{r test1, fig.cap=ifelse(french, "(ref:test1-french)", "(ref:test1)")}
+plot(1)
+```
+
+```{r test2, results='asis'}
+csasdown::csas_table(data.frame(x = c("a", "a", "b"),
+                                y = c(1, 2, 3)),
+                     caption = ifelse(french,
+                                      "French goes here",
+                                      "English verion of the test2 table caption"))
+```
+
+Here's an equation. Note that it is automatically given a label on the right side of the page as in the main document, but it has the appendix letter before it. Each appendix will have its own set of equations starting at 1.
+
+\begin{equation}
+  1 + 1
+  \label{eq:test2}
+\end{equation}
+
+See Equation \@ref(eq:test2) for the example equation.
+
+See Figure \@ref(fig:test1) for the example appendix figure.
+
+See Table \@ref(tab:test2) for the example appendix table.
+
+\clearpage
+
+# THE SECOND APPENDIX, FOR FUN {#app:second-appendix}
+
+The label `#app:` in the appendix section headers tell `csasdown` to start a new appendix, and the next letter in the alphabet will be used for the appendix, and prepended to figure and table names. For example, this appendix's whole section header looks like:
+
+`# THE SECOND APPENDIX, FOR FUN {#app:second-appendix}`
+
+
+To illustrate the new labeling of appendices, here are a table and figure:
+
+(ref:test1b) English version of the test1b figure caption
+
+(ref:test1b-french) French goes here
+
+```{r test1b, fig.cap=ifelse(french, "(ref:test1b-french)", "(ref:test1b)")}
+plot(1)
+```
+
+```{r test2b, results='asis'}
+csasdown::csas_table(data.frame(x = c("a", "a", "b"),
+                                y = c(1, 2, 3)),
+                     caption = ifelse(french,
+                                      "French goes here",
+                                      "English verion of the test2b table caption"))
+```
+
+And references to them...
+
+See Figure \@ref(fig:test1b) for the example appendix figure.
+
+See Table \@ref(tab:test2b) for the example appendix table.
+
+
+<!-- At the end of your appendices add: -->
+`r if(knitr:::is_latex_output()) '% end csasdown appendix'`
+
+<!--chapter:end:05_appendix.Rmd-->
+
+<!-- If you want to references to appear somewhere before the end, add: -->
+<!-- <div id="refs"></div> -->
+<!-- where you want it to appear -->
+
+<!-- In general, you shouldn't need to edit this file with the exception of
+the following French/English translation. For a French document, set the following header to: # Références Citées  {-} -->
+
+\clearpage
+
+# References
+
+<!-- The following sets the appropriate indentation for the references -->
+\noindent
+\vspace{-2em}
+\setlength{\parindent}{-0.2in}
+\setlength{\leftskip}{0.2in}
+\setlength{\parskip}{8pt}
+
+<!--chapter:end:06_bibliography.Rmd-->
+
+# Appendix
+<!-- This page has been automatically generated: do not edit by hand -->
+
+## Haddock (Aiglefin) - species code 11 {#sec:11} 
+
+Scientific name: [Melanogrammus aeglefinus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126437) 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-actual/SS11Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS11Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS11Distribution-usingbiomass.pdf} \\
+\end{tabular} 
+\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Haddock.}
+\end{minipage} 
+
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS11IDWMap-biomass.pdf}\\
+\captionof{figure}{Time series of log catch biomass (kg/tow) of Haddock for each stratum.} 
+\end{minipage} 
+
+\end{tabular}
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS11BDcorrelations.pdf}\\
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Haddock.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Atlantic cod (Morue franche) - species code 10 {#sec:10} 
+
+Scientific name: [Gadus morhua](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126436) 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-actual/SS10Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS10Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS10Distribution-usingbiomass.pdf} \\
+\end{tabular} 
+\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Atlantic cod.}
+\end{minipage} 
+
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS10IDWMap-biomass.pdf}\\
+\captionof{figure}{Time series of log catch biomass (kg/tow) of Atlantic cod for each stratum.} 
+\end{minipage} 
+
+\end{tabular}
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS10BDcorrelations.pdf}\\
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic cod.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Pollock (Goberge) - species code 16 {#sec:16} 
+
+Scientific name: [Pollachius virens](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126441) 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-actual/SS16Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS16Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS16Distribution-usingbiomass.pdf} \\
+\end{tabular} 
+\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Pollock.}
+\end{minipage} 
+
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS16IDWMap-biomass.pdf}\\
+\captionof{figure}{Time series of log catch biomass (kg/tow) of Pollock for each stratum.} 
+\end{minipage} 
+
+\end{tabular}
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS16BDcorrelations.pdf}\\
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Pollock.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Silver hake (Merluche argentée) - species code 14 {#sec:14} 
+
+Scientific name: [Merluccius bilinearis](http://www.marinespecies.org/aphia.php?p=taxdetails&id=158962) 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-actual/SS14Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS14Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS14Distribution-usingbiomass.pdf} \\
+\end{tabular} 
+\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Silver hake.}
+\end{minipage} 
+
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS14IDWMap-biomass.pdf}\\
+\captionof{figure}{Time series of log catch biomass (kg/tow) of Silver hake for each stratum.} 
+\end{minipage} 
+
+\end{tabular}
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS14BDcorrelations.pdf}\\
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Silver hake.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Atlantic wolffish (Loup atlantique) - species code 50 {#sec:50} 
+
+Scientific name: [Anarhichas lupus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126758) 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-actual/SS50Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS50Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS50Distribution-usingbiomass.pdf} \\
+\end{tabular} 
+\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Atlantic wolffish.}
+\end{minipage} 
+
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS50IDWMap-biomass.pdf}\\
+\captionof{figure}{Time series of log catch biomass (kg/tow) of Atlantic wolffish for each stratum.} 
+\end{minipage} 
+
+\end{tabular}
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS50BDcorrelations.pdf}\\
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic wolffish.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Ocean pout (Loquette atlantique) - species code 640 {#sec:640} 
+
+Scientific name: [Zoarces americanus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=159267) 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-actual/SS640Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS640Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS640Distribution-usingbiomass.pdf} \\
+\end{tabular} 
+\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Ocean pout.}
+\end{minipage} 
+
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS640IDWMap-biomass.pdf}\\
+\captionof{figure}{Time series of log catch biomass (kg/tow) of Ocean pout for each stratum.} 
+\end{minipage} 
+
+\end{tabular}
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS640BDcorrelations.pdf}\\
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Ocean pout.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## American plaice (Plie canadienne) - species code 40 {#sec:40} 
+
+Scientific name: [Hippoglossoides platessoides](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127137) 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-actual/SS40Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS40Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS40Distribution-usingbiomass.pdf} \\
+\end{tabular} 
+\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for American plaice.}
+\end{minipage} 
+
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS40IDWMap-biomass.pdf}\\
+\captionof{figure}{Time series of log catch biomass (kg/tow) of American plaice for each stratum.} 
+\end{minipage} 
+
+\end{tabular}
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS40BDcorrelations.pdf}\\
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for American plaice.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Witch flounder ( Plie grise) - species code 41 {#sec:41} 
+
+Scientific name: [Glyptocephalus cynoglossus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127136) 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-actual/SS41Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS41Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS41Distribution-usingbiomass.pdf} \\
+\end{tabular} 
+\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Witch flounder.}
+\end{minipage} 
+
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS41IDWMap-biomass.pdf}\\
+\captionof{figure}{Time series of log catch biomass (kg/tow) of Witch flounder for each stratum.} 
+\end{minipage} 
+
+\end{tabular}
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS41BDcorrelations.pdf}\\
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Witch flounder.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Yellowtail flounder (Limande à queue jaune) - species code 42 {#sec:42} 
+
+Scientific name: [Limanda ferruginea](http://www.marinespecies.org/aphia.php?p=taxdetails&id=158879) 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-actual/SS42Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS42Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS42Distribution-usingbiomass.pdf} \\
+\end{tabular} 
+\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Yellowtail flounder.}
+\end{minipage} 
+
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS42IDWMap-biomass.pdf}\\
+\captionof{figure}{Time series of log catch biomass (kg/tow) of Yellowtail flounder for each stratum.} 
+\end{minipage} 
+
+\end{tabular}
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS42BDcorrelations.pdf}\\
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Yellowtail flounder.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Atlantic halibut (Flétan atlantique) - species code 30 {#sec:30} 
+
+Scientific name: [Hippoglossus hippoglossus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127138) 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-actual/SS30Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS30Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS30Distribution-usingbiomass.pdf} \\
+\end{tabular} 
+\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Atlantic halibut.}
+\end{minipage} 
+
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS30IDWMap-biomass.pdf}\\
+\captionof{figure}{Time series of log catch biomass (kg/tow) of Atlantic halibut for each stratum.} 
+\end{minipage} 
+
+\end{tabular}
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS30BDcorrelations.pdf}\\
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic halibut.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Winter flounder (Plie rouge) - species code 43 {#sec:43} 
+
+Scientific name: [Pseudopleuronectes americanus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=158885) 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-actual/SS43Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS43Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS43Distribution-usingbiomass.pdf} \\
+\end{tabular} 
+\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Winter flounder.}
+\end{minipage} 
+
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS43IDWMap-biomass.pdf}\\
+\captionof{figure}{Time series of log catch biomass (kg/tow) of Winter flounder for each stratum.} 
+\end{minipage} 
+
+\end{tabular}
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS43BDcorrelations.pdf}\\
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Winter flounder.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Alligatorfish (Poisson-alligator atlantique) - species code 340 {#sec:340} 
+
+Scientific name: [Aspidophoroides monopterygius](http://www.marinespecies.org/aphia.php?p=taxdetails&id=159459) 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-actual/SS340Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS340Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS340Distribution-usingbiomass.pdf} \\
+\end{tabular} 
+\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Alligatorfish.}
+\end{minipage} 
+
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS340IDWMap-biomass.pdf}\\
+\captionof{figure}{Time series of log catch biomass (kg/tow) of Alligatorfish for each stratum.} 
+\end{minipage} 
+
+\end{tabular}
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS340BDcorrelations.pdf}\\
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Alligatorfish.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Longhorn sculpin (Chaboisseau à dix-huit épines) - species code 300 {#sec:300} 
+
+Scientific name: [Myoxocephalus octodecemspinosus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=159520) 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-actual/SS300Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS300Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS300Distribution-usingbiomass.pdf} \\
+\end{tabular} 
+\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Longhorn sculpin.}
+\end{minipage} 
+
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS300IDWMap-biomass.pdf}\\
+\captionof{figure}{Time series of log catch biomass (kg/tow) of Longhorn sculpin for each stratum.} 
+\end{minipage} 
+
+\end{tabular}
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS300BDcorrelations.pdf}\\
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Longhorn sculpin.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Mailed sculpin (Faux-trigle armé) - species code 304 {#sec:304} 
+
+Scientific name: [Triglops murrayi](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127205) 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-actual/SS304Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS304Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS304Distribution-usingbiomass.pdf} \\
+\end{tabular} 
+\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Mailed sculpin.}
+\end{minipage} 
+
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS304IDWMap-biomass.pdf}\\
+\captionof{figure}{Time series of log catch biomass (kg/tow) of Mailed sculpin for each stratum.} 
+\end{minipage} 
+
+\end{tabular}
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS304BDcorrelations.pdf}\\
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Mailed sculpin.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Sea raven (Hémitriptère atlantique) - species code 320 {#sec:320} 
+
+Scientific name: [Hemitripterus americanus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=159518) 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-actual/SS320Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS320Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS320Distribution-usingbiomass.pdf} \\
+\end{tabular} 
+\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for Sea raven.}
+\end{minipage} 
+
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS320IDWMap-biomass.pdf}\\
+\captionof{figure}{Time series of log catch biomass (kg/tow) of Sea raven for each stratum.} 
+\end{minipage} 
+
+\end{tabular}
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS320BDcorrelations.pdf}\\
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Sea raven.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## NA (NA) - species code 60 {#sec:60} 
+
+Scientific name: [Clupea harengus](NA) 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-actual/SS60Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS60Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS60Distribution-usingbiomass.pdf} \\
+\end{tabular} 
+\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
+\end{minipage} 
+
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS60IDWMap-biomass.pdf}\\
+\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
+\end{minipage} 
+
+\end{tabular}
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS60BDcorrelations.pdf}\\
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## NA (NA) - species code 12 {#sec:12} 
+
+Scientific name: [Urophycis tenuis](NA) 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-actual/SS12Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS12Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS12Distribution-usingbiomass.pdf} \\
+\end{tabular} 
+\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
+\end{minipage} 
+
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS12IDWMap-biomass.pdf}\\
+\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
+\end{minipage} 
+
+\end{tabular}
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS12BDcorrelations.pdf}\\
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## NA (NA) - species code 13 {#sec:13} 
+
+Scientific name: [Urophycis chuss](NA) 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-actual/SS13Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS13Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS13Distribution-usingbiomass.pdf} \\
+\end{tabular} 
+\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
+\end{minipage} 
+
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS13IDWMap-biomass.pdf}\\
+\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
+\end{minipage} 
+
+\end{tabular}
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS13BDcorrelations.pdf}\\
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## NA (NA) - species code 400 {#sec:400} 
+
+Scientific name: [Lophius americanus](NA) 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-actual/SS400Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS400Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS400Distribution-usingbiomass.pdf} \\
+\end{tabular} 
+\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
+\end{minipage} 
+
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS400IDWMap-biomass.pdf}\\
+\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
+\end{minipage} 
+
+\end{tabular}
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS400BDcorrelations.pdf}\\
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## NA (NA) - species code 23 {#sec:23} 
+
+Scientific name: [Sebastes](NA) 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-actual/SS23Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS23Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS23Distribution-usingbiomass.pdf} \\
+\end{tabular} 
+\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
+\end{minipage} 
+
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS23IDWMap-biomass.pdf}\\
+\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
+\end{minipage} 
+
+\end{tabular}
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS23BDcorrelations.pdf}\\
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## NA (NA) - species code 4511 {#sec:4511} 
+
+Scientific name: [Illex illecebrosus](NA) 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-actual/SS4511Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS4511Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS4511Distribution-usingbiomass.pdf} \\
+\end{tabular} 
+\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
+\end{minipage} 
+
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS4511IDWMap-biomass.pdf}\\
+\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
+\end{minipage} 
+
+\end{tabular}
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS4511BDcorrelations.pdf}\\
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## NA (NA) - species code 201 {#sec:201} 
+
+Scientific name: [Amblyraja radiata](NA) 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-actual/SS201Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS201Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS201Distribution-usingbiomass.pdf} \\
+\end{tabular} 
+\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
+\end{minipage} 
+
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS201IDWMap-biomass.pdf}\\
+\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
+\end{minipage} 
+
+\end{tabular}
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS201BDcorrelations.pdf}\\
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## NA (NA) - species code 202 {#sec:202} 
+
+Scientific name: [Malacoraja senta](NA) 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-actual/SS202Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS202Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS202Distribution-usingbiomass.pdf} \\
+\end{tabular} 
+\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
+\end{minipage} 
+
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS202IDWMap-biomass.pdf}\\
+\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
+\end{minipage} 
+
+\end{tabular}
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS202BDcorrelations.pdf}\\
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## NA (NA) - species code 204 {#sec:204} 
+
+Scientific name: [Leucoraja ocellata](NA) 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-actual/SS204Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS204Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS204Distribution-usingbiomass.pdf} \\
+\end{tabular} 
+\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
+\end{minipage} 
+
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS204IDWMap-biomass.pdf}\\
+\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
+\end{minipage} 
+
+\end{tabular}
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS204BDcorrelations.pdf}\\
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## NA (NA) - species code 220 {#sec:220} 
+
+Scientific name: [Squalus acanthias](NA) 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-actual/SS220Condition4X4VW.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS220Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-actual/SS220Distribution-usingbiomass.pdf} \\
+\end{tabular} 
+\captionof{figure}{Catch biomass (kg/tow), distribution indices (DWAO, D75 and D95), and D75 as a function of catch biomass (kg/tow) for NA.}
+\end{minipage} 
+
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS220IDWMap-biomass.pdf}\\
+\captionof{figure}{Time series of log catch biomass (kg/tow) of NA for each stratum.} 
+\end{minipage} 
+
+\end{tabular}
+
+
+\begin{tabular}{c}
+\begin{minipage}{1.0 \textwidth}
+\includegraphics[width=5.7in]{../Figures-actual/SS220BDcorrelations.pdf}\\
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for NA.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+
+<!--chapter:end:plot-pages.Rmd-->
+

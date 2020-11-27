@@ -6,5 +6,6 @@ rmd_files: ["index.Rmd",
             "04_discussion.Rmd",
             "05_appendix.Rmd",
             "06_bibliography.Rmd",
-            "plot-pages.Rmd"]
+            "plot-pages.Rmd"
+            ]
 delete_merged_file: true

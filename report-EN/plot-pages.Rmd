@@ -1,18 +1,351 @@
 # Appendix
 <!-- This page has been automatically generated: do not edit by hand -->
 
-# Appendix
-<!-- This page has been automatically generated: do not edit by hand -->
+## American plaice (Plie canadienne) - species code 40 {#sec:40} 
 
-## Northern hagfish (Myxine du nord) - species code 241 {#sec:241} 
-
-Scientific name: [Myxine glutinosa](http://www.marinespecies.org/aphia.php?p=taxdetails&id=101170) 
+Scientific name: [Hippoglossoides platessoides]() 
  \newline
 \begin{minipage}{0.9\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-Actual/SS241IDWMap-abundance.pdf} \\
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/SS40_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{to be edited for Northern hagfish.}
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for American plaice.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Haddock (Aiglefin) - species code 11 {#sec:11} 
+
+Scientific name: [Melanogrammus aeglefinus]() 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/SS11_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Haddock.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Atlantic cod (Morue franche) - species code 10 {#sec:10} 
+
+Scientific name: [Gadus morhua]() 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/SS10_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic cod.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Silver hake (Merlu argenté) - species code 14 {#sec:14} 
+
+Scientific name: [Merluccius bilinearis]() 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/SS14_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Silver hake.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Northern shortfin squid (Encornet rouge nordique) - species code 4511 {#sec:4511} 
+
+Scientific name: [Illex illecebrosus]() 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/SS4511_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Northern shortfin squid.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Witch flounder (Plie grise) - species code 41 {#sec:41} 
+
+Scientific name: [Glyptocephalus cynoglossus]() 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/SS41_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Witch flounder.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Atlantic redfishes (Sébastes de l'Atlantique) - species code 23 {#sec:23} 
+
+Scientific name: [Sebastes]() 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/SS23_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic redfishes.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Thorny skate (Raie épineuse) - species code 201 {#sec:201} 
+
+Scientific name: [Amblyraja radiata]() 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/SS201_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Thorny skate.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## White hake (Merluche blanche) - species code 12 {#sec:12} 
+
+Scientific name: [Urophycis tenuis]() 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/SS12_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for White hake.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Atlantic herring (Hareng de l'Atlantique) - species code 60 {#sec:60} 
+
+Scientific name: [Clupea harengus]() 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/SS60_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic herring.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Longhorn sculpin (Chaboisseau à dix-huit épines) - species code 300 {#sec:300} 
+
+Scientific name: [Myoxocephalus octodecemspinosus]() 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/SS300_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Longhorn sculpin.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Yellowtail flounder (Limande à queue jaune) - species code 42 {#sec:42} 
+
+Scientific name: [Limanda ferruginea]() 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/SS42_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Yellowtail flounder.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Pollock (Goberge) - species code 16 {#sec:16} 
+
+Scientific name: [Pollachius virens]() 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/SS16_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Pollock.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Red hake (Merluche écureuil) - species code 13 {#sec:13} 
+
+Scientific name: [Urophycis chuss]() 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/SS13_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Red hake.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Sea raven (Hémitriptère atlantique) - species code 320 {#sec:320} 
+
+Scientific name: [Hemitripterus americanus]() 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/SS320_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Sea raven.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Picked dogfish (Aiguillat commun) - species code 220 {#sec:220} 
+
+Scientific name: [Squalus acanthias]() 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/SS220_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Picked dogfish.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Monkfish (Baudroie d'Amérique) - species code 400 {#sec:400} 
+
+Scientific name: [Lophius americanus]() 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/SS400_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Monkfish.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Smooth skate (Raie lisse) - species code 202 {#sec:202} 
+
+Scientific name: [Malacoraja senta]() 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/SS202_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Smooth skate.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Atlantic halibut (Flétan de l'Atlantique) - species code 30 {#sec:30} 
+
+Scientific name: [Hippoglossus hippoglossus]() 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/SS30_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic halibut.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Winter flounder (Limande-plie rouge) - species code 43 {#sec:43} 
+
+Scientific name: [Pseudopleuronectes americanus]() 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/SS43_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Winter flounder.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Atlantic wolffish (Loup atlantique) - species code 50 {#sec:50} 
+
+Scientific name: [Anarhichas lupus]() 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/SS50_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic wolffish.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Ocean pout (Loquette d'Amérique) - species code 640 {#sec:640} 
+
+Scientific name: [Zoarces americanus]() 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/SS640_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Ocean pout.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Moustache sculpin (Faux-trigle armé) - species code 304 {#sec:304} 
+
+Scientific name: [Triglops murrayi]() 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/SS304_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Moustache sculpin.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Winter skate (Raie tachetée) - species code 204 {#sec:204} 
+
+Scientific name: [Leucoraja ocellata]() 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/SS204_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Winter skate.}
+\end{minipage} 
+
+\end{tabular}
+\clearpage
+
+## Alligatorfish (Poisson-alligator atlantique) - species code 340 {#sec:340} 
+
+Scientific name: [Aspidophoroides monopterygius]() 
+ \newline
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/SS340_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Alligatorfish.}
 \end{minipage} 
 
 \end{tabular}

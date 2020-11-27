@@ -126,8 +126,8 @@ names(R_df@data)="legend"
 # if(my.legend=="rare"){
 #   R_df@data$legend=c("0","<0.1","<0.5","<1","<5",">=5")
 # }
-writeOGR(R_df, dsn=file.path(path.FGP, "IDWMaps"),
-         layer=lname, driver="ESRI Shapefile", overwrite_layer=TRUE)
+#writeOGR(R_df, dsn=file.path(path.FGP, "IDWMaps"),
+#         layer=lname, driver="ESRI Shapefile", overwrite_layer=TRUE)
 #### finish saving shape files for FGP
 
 #points(360+tt$lon,tt$lat,pch=3,cex=0.05)

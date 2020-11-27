@@ -10,10 +10,12 @@ print(paste("Script Atlas.R started: ", Sys.time()))
   necessary <- c("PBSmapping","spatstat","zoo","classInt","RColorBrewer","gstat","maptools",
                   "foreign","fields","spam","rgeos", "RODBC", 
                  "xtable", "MASS", "xlsx", "raster", "rgdal",
-                 "here")
+                 "here","worms")
   installed <- necessary %in% installed.packages()[, 'Package']
   if (length(necessary[!installed]) >=1) install.packages(necessary[!installed], repos='http://mirror.its.dal.ca/cran/')
-  ## load required packages
+  
+  ## now load required packages
+  lapply(necessary, require, character.only=TRUE)
   
 
 	# lapply(necessary, function(i){citation(i)}) ## citations for the different packages used
@@ -42,7 +44,10 @@ print(paste("Script Atlas.R started: ", Sys.time()))
   
   ## generate maps that won't change over time, e.g. strata maps
   source(file.path(mapping.path, "Maritimes-SUMMER-strata-map.R")) ## strata map, nothing there yet
-	
+
+  # source the file that defines the strata mask used in the IDW maps
+  source(file.path(mapping.path, "SUMMER-strata.R"))
+  
   # source the code that defines the data extraction functions
 	source(file.path(main.path, "data-and-stats.R"))
 
@@ -55,7 +60,7 @@ print(paste("Script Atlas.R started: ", Sys.time()))
   
   # 2012-09-20: I'm turning the species list into the authoritative list by which the data extraction and the generation of figures in R is done. 
   # 2020-07-08: Note that every year the number of records will increase and the species available may also change.
-  spec.list <- read.csv(file.path(main.path, "species-list-for-report.csv"),header=FALSE) # this list is itself generated from the above "summaries.R", which requires database connection and connection to WORMS to get AphiaID
+  spec.list <- read.csv(file.path(main.path, "species-list-for-report.csv"),header=TRUE) # this list is itself generated from the above "summaries.R", which requires database connection and connection to WORMS to get AphiaID
 
   ## test for cod
   ## data.extract(4, 10)
@@ -83,6 +88,7 @@ print(paste("Script Atlas.R started: ", Sys.time()))
   	  	
   	# The following extraction is done in folder 'Figures'
   	# Figures 10,11,20,21 also create shape files in the folder 'FGP' (Federal Geospatial Platform')
+  	## DR: actually, I commented out the generation of shapefiles, I really don't think that's what should be published on FGP
     sapply(species.numbers, function(i){figures(spec.num=i, fig=c(2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,18,19,20))})
 	# sapply(species.L, function(i){figures(spec.num=i, fig=c(15,20))})
 	# sapply(species.numbers, function(i){figures(spec.num=i, fig=c(19))})
@@ -125,10 +131,15 @@ print(paste("Script Atlas.R started: ", Sys.time()))
 print(paste("Script Atlas.R finished: ", Sys.time()))
 q("no")
 
-	## now run analyses for multiple species and trophic groups
-	## identification of "core habitats"
-	# habitat.suitability(species.num=species.numbers)
 
 	## Once all the plots are reproduced, next step is to pur together the Tech Report
-# create-techreport-appendix.R will be used to assmeble all plots 
-# an important file in that script called taxo.final will be created 
+# the script "create-techreport-appendix.R" will be used to assemble all the plots into a single file called plot-pages.Rmd (which will included in the TechReport knit) 
+taxo.final <- spec.list[spec.list$spec %in% c(as.numeric(species.L)),]
+names(taxo.final)[1:4] <- c("scientificname", "comm.english", "comm.fr", "species.code")
+
+source(file.path(report.path, "create-techreport-appendix.R"))
+
+### and also generate a test file for the species table in the report
+# an important data frame for that script to work is called taxo.final, which includes all the information necessary for the species table in the report, and the assembly of plotpages.Rmd
+## species.L
+

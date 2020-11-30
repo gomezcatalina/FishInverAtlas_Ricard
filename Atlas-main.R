@@ -2,7 +2,7 @@
 ## main R script to generate the figures required in the DFO Maritimes groundfish survey atlas
 ## Daniel Ricard, started 2012-07-20 relying extensively on Hugo Bourdages' work on the NGSL atlas
 ## Catalina Gomez and Gordana Lazin updated scripts in July 2020 and updated extractions and data up to 2020
-options(echo=FALSE)
+# options(echo=FALSE) ## uncomment once everything works
 
 print(paste("Script Atlas.R started: ", Sys.time()))
 
@@ -34,11 +34,16 @@ print(paste("Script Atlas.R started: ", Sys.time()))
   ## open ODBC connection to Oracle database
   require(RODBC, quietly=TRUE, warn.conflicts = FALSE)
   source(file.path(main.path, "chan.R"))
-  # chan.R has my pwds - altenratively use yours: chan <- odbcConnect(dsn='biobank', uid='', pwd='')
+  # chan.R edit to reflect database credentials, or alternatively use yours: chan <- odbcConnect(dsn='biobank', uid='', pwd='')
   
   ## generate the list of species that will be used to control what data extractions and figures will be generated
   ## this script will produce a file called "species-list-for-report.csv" which will determine the species that we will include, and what level of analysis they will receive
   ## this takes a while, so once it has run successfully, comment out and rely on the file "species-list-for-report.csv"
+  
+  ## DR 2020: this script churns the contents of the RV database and identifies and ranks the species based on the number of records
+  ## - this file should be run if the species list that appears in the file "" is to be updated, for example when a new year of data is available, otherwise the list should be fine and the script can be ignored
+  ## - there is still a nagging problem with the way accented characters are treated, the text file produced now has mangled characters
+  
   #source(file.path(main.path, "summaries.R"))
   
   

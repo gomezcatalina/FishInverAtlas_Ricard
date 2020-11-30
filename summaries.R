@@ -185,39 +185,5 @@ summary.table.df$totals <- rowSums(summary.table.df[c(4:54)])
 ##########################################################################################################
 ## first all important file, will be the table showing the number of tows for each year-stratum 
 csv.fn <- file.path(report.path, "Atlas-summary-table-tows-by-year-stratum.csv") ## to use in csasdown
-write.csv(summary.table.df, file=csv.fn)
+write.csv(summary.table.df, file=csv.fn, row.names = F)
 
-## same data frame in HTML and tex
-summary.xtable <- xtable::xtable(summary.table.df)
-
-	fn <- "Atlas_summary_table.html"
-	filename <- file.path(report.path, fn)
-	fn.tex <- "Atlas_summary_table.tex"
-	filename.tex <- file.path(report.path, fn.tex)
-
-xtable::print.xtable(summary.xtable, type='html', file=filename, html.table.attributes=c("border=0"), include.rownames=FALSE)
-xtable::print.xtable(summary.xtable, type='latex', file=filename.tex, include.rownames=FALSE, size='tiny')
-
-
-## break into 4 tables each covering 15 years + Atlas update since publication
-summary.xtable1 <- xtable::xtable(summary.table.df[,c(1,2,3,4:18)], digits=0, caption="Number of tows conducted in each stratum during the period 1970 to 1984")
-summary.xtable2 <- xtable::xtable(summary.table.df[,c(1,2,3,19:33)], digits=0, caption="Number of tows conducted in each stratum during the period 1985 to 1999")
-summary.xtable3 <- xtable::xtable(summary.table.df[,c(1,2,3,34:48)], digits=0, caption="Number of tows conducted in each stratum during the period 2000 to 2013")
-summary.xtable4 <- xtable::xtable(summary.table.df[,c(1,2,3,49:54)], digits=0, caption="Number of tows conducted in each stratum during the period 2014 to 2020")
-
-fn.tex1 <- "Atlas_summary_table1.tex"
-fn.tex2 <- "Atlas_summary_table2.tex"
-fn.tex3 <- "Atlas_summary_table3.tex"
-fn.tex4 <- "Atlas_summary_table4.tex"
-
-filename.tex1 <- file.path(report.path, fn.tex1)
-filename.tex2 <- file.path(report.path, fn.tex2)
-filename.tex3 <- file.path(report.path, fn.tex3)
-filename.tex4 <- file.path(report.path, fn.tex4)
-
-xtable::print.xtable(summary.xtable1, type='latex', file=filename.tex1, include.rownames=FALSE, size='scriptsize', booktabs=TRUE, caption.placement='top')
-xtable::print.xtable(summary.xtable2, type='latex', file=filename.tex2, include.rownames=FALSE, size='scriptsize', booktabs=TRUE, caption.placement='top')
-xtable::print.xtable(summary.xtable3, type='latex', file=filename.tex3, include.rownames=FALSE, size='scriptsize', booktabs=TRUE, caption.placement='top')
-xtable::print.xtable(summary.xtable4, type='latex', file=filename.tex4, include.rownames=FALSE, size='scriptsize', booktabs=TRUE, caption.placement='top')
-
-## these 4 .tex files can now be added in the csasdown document, or perhaps more elegantly handled as multi-page tables in csasdown

@@ -48,7 +48,7 @@ print(paste("Script Atlas.R started: ", Sys.time()))
   #source(file.path(main.path, "summaries.R")) ## summaries of tows
   #source(file.path(main.path, "summaries-catch-records.R")) ## summaries of catch
   
-  #source(file.path(main.path, "taxonomic-classification-APHIA-ID.R.R")) ## this creates "species-list-for-report-APHIA.csv"
+  #source(file.path(main.path, "taxonomic-classification-APHIA-ID.R")) ## this creates "species-list-for-report-APHIA.csv"
   
   ## generate maps that won't change over time, e.g. strata maps
   source(file.path(mapping.path, "Maritimes-SUMMER-strata-map.R")) ## strata map, nothing there yet

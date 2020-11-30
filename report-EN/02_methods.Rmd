@@ -23,6 +23,27 @@ We divided the species caught into five categories based on 1) their taxonomic c
 
 The list of taxa covered in this document is presented in phylogenetic order (Nelson et al., 2004) in Table 4. To ensure concordance with authoritative taxonomic information, the AphiaID from the World Register of Marine Species is also provided in Table 4 (Appeltans et al., 2012).
 
+
+(ref:spec-fig-cap) List of species included in the Atlas. The species reported here are listed in phylogenetic order as per @page:etal:7thedition.
+
+```{r tabspecies}
+spec.tab <- read.csv("../species-list-for-report.csv", encoding = "UTF-8")
+
+vars <- c("CLASS_","ORDER_","FAMILY_","ACCEPTED_SCIENT_NAME","FAO_E_COMMON_NAME","FAO_F_COMMON_NAME","spec","nrecords","type")
+knitr::kable(spec.tab[,vars], "latex", booktabs = TRUE, longtable = TRUE, align = "c", col.names = c("Class","Order","Family","Scientific name","English name","French name","Species code","Num. records","Ticket class"), caption = "(ref:spec-fig-cap)") %>%
+  kableExtra::landscape() %>%
+  kableExtra::collapse_rows(1:3, row_group_label_position = 'stack') %>% 
+  kableExtra::column_spec(4, italic=T, width="3cm") %>% 
+  kableExtra::column_spec(5, italic=T, width="3cm") %>% 
+  kableExtra::column_spec(6, italic=T, width="3cm") %>% 
+##  kableExtra::column_spec(7, link=sections) %>% 
+##  kableExtra::column_spec(8, link=urls) %>% 
+  kableExtra::kable_styling(font_size = 9, latex_options = "repeat_header", repeat_header_text = "", repeat_header_method = "replace") %>%  
+  sub("\\caption\\[\\]\\{\\}", "\\caption*{}", .) 
+
+```
+
+
 ## Analyses
 
 The Oracle relational database where all data are stored was accessible from the Bedford Institute of Oceanography in Dartmouth, Nova Scotia. Structured Query Language (SQL) is used to extract the data from the production server and to create the data products used in all subsequent analyses. Catch records classified as ”valid” (i.e. a representative tow without damage to the net) are used in the current analyses. To make the available samples comparable, catch number and weight for each species was standardized for the distance towed.

@@ -40,12 +40,15 @@ print(paste("Script Atlas.R started: ", Sys.time()))
   ## this script will produce a file called "species-list-for-report.csv" which will determine the species that we will include, and what level of analysis they will receive
   ## this takes a while, so once it has run successfully, comment out and rely on the file "species-list-for-report.csv"
   
-  ## DR 2020: this script churns the contents of the RV database and identifies and ranks the species based on the number of records
-  ## - this file should be run if the species list that appears in the file "" is to be updated, for example when a new year of data is available, otherwise the list should be fine and the script can be ignored
+  ## DR 2020: these scripts churn the contents of the RV database, summarise tows, and identifies and ranks the species based on the number of records
+  ## - these files should be run only when a new year of data is available, 
+  ## otherwise the all-important text files "Report-generation/Atlas-summary-table-tows-by-year-stratum.csv" and "species-list-for-report.csv" should be fine and the scripts can be ignored
   ## - there is still a nagging problem with the way accented characters are treated, the text file produced now has mangled characters
   
-  #source(file.path(main.path, "summaries.R"))
+  #source(file.path(main.path, "summaries.R")) ## summaries of tows
+  #source(file.path(main.path, "summaries-catch-records.R")) ## summaries of catch
   
+  #source(file.path(main.path, "taxonomic-classification-APHIA-ID.R.R")) ## this creates "species-list-for-report-APHIA.csv"
   
   ## generate maps that won't change over time, e.g. strata maps
   source(file.path(mapping.path, "Maritimes-SUMMER-strata-map.R")) ## strata map, nothing there yet

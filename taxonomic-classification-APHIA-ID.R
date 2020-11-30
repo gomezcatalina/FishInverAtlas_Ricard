@@ -1,30 +1,38 @@
 
-taxo.tree.fct <- function(aphia.id, spec.code){
-  my.df <- wormsbyid(aphia.id)
-  vars <- c("kingdom","phylum","class","order","family","scientificname")
+library(worms)
+
+taxo.tree.fct <- function(spec.code, sci.name){
+  my.df <- wormsbynames(sci.name)
+  vars <- c("AphiaID", "url","kingdom","phylum","class","order","family","scientificname")
   return(cbind(spec.code, my.df[,vars]))
 }## end function
 
 
-## read in the list of species which is the starting point for assembling the document
-## start by making the table that contains the taxonomic classification, which will establish the order in which the different species will appear in the Atlas  -> now done in "create-techreport-appendix.R"
+## use the scientific name in the species list to obtain the APHIA ID from the World Registry of marine species
+spec.tab <- read.csv("./species-list-for-report.csv", encoding = "UTF-8")
 
-taxo.list.out <- lapply(1:nrow(species.L), function(ss){aa1<-species.in[ss,c("aphia.id")];aa2<-species.in[ss,c("species.code")];taxo.tree.fct(aa1,aa2)})
+taxo.list.out <- lapply(1:nrow(spec.tab), function(ii){aa1<-spec.tab[ii,"spec"];aa2<-spec.tab[ii,"ACCEPTED_SCIENT_NAME"];taxo.tree.fct(aa1,aa2)})
 taxo.t <- do.call(rbind, taxo.list.out)
-vars <- c("species.code","comm.english","comm.fr","aphia.id","taxo.group")
-taxo.df.out <- merge(species.in[,vars], taxo.t, by.x="species.code", by.y="spec.code")
 
-taxo.df.out$aphia.url <- paste("http://www.marinespecies.org/aphia.php?p=taxdetails&id=", taxo.df.out$aphia.id, sep="")
+vars <- c("spec","FAO_E_COMMON_NAME","FAO_F_COMMON_NAME","nrecords","type")
+taxo.df.out <- merge(spec.tab[,vars], taxo.t, by.x="spec", by.y="spec.code")
+
 
 ## order the taxonomic tree phylogenetically
 ##
-taxo.final <- taxo.df.out[,c("phylum","class","order","family","scientificname","comm.english","comm.fr","species.code","aphia.id","aphia.url","taxo.group")]
-taxo.final$phylum <- factor(taxo.final$phylum, levels=c("Chordata","Mollusca","Arthropoda","Echinodermata"), ordered=TRUE) ## this is used to order the table of species
-taxo.final$class <- factor(taxo.final$class, levels=c("Ascidiacea","Myxini","Actinopterygii","Elasmobranchii","Cephalopoda","Malacostraca","Echinoidea","Asteroidea"), ordered=TRUE) ## this is used to order the table of species
+taxo.final <- taxo.df.out
+taxo.final$phylum <- factor(taxo.final$phylum, levels=c("Chordata","Mollusca","Arthropoda"), ordered=TRUE) ## this is used to order the table of species
+taxo.final$class <- factor(taxo.final$class, levels=c("Myxini","Petromyzonti","Actinopterygii","Elasmobranchii","Cephalopoda","Malacostraca"), ordered=TRUE) ## this is used to order the table of species
 oo1 <- order(taxo.final$phylum)
 taxo.final <- taxo.final[oo1,]
 oo2 <- order(taxo.final$class)
 taxo.final <- taxo.final[oo2,]
 
 
-## generate a table with list of species with associated taxonomic information -> now done in "create-techreport-appendix.R"
+## write to a file
+
+readr::write_csv(taxo.final,
+                 file=file.path(main.path, "species-list-for-report-APHIA.csv"),
+                 col_names=T
+)
+

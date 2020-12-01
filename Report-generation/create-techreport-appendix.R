@@ -7,6 +7,14 @@
 ## i.e. where all the figures appear: plot-pages.Rmd
 library(tidyverse)
 
+in.df <- readr::read_csv("species-list-for-report-APHIA.csv")
+taxo.final <- in.df
+names(taxo.final)[1:3] <- c("species.code","comm.english","comm.fr")
+
+## first class tickets
+taxo.final <- taxo.final[taxo.final$type %in% c("L"),]
+## 
+
 temp <- lapply(taxo.final$species.code, function(x) {
   
   out <- list()
@@ -16,8 +24,8 @@ temp <- lapply(taxo.final$species.code, function(x) {
   latin_name <- taxo.final$scientificname[taxo.final$species.code == x]
   english_name <- taxo.final$comm.english[taxo.final$species.code == x]
   french_name <- taxo.final$comm.fr[taxo.final$species.code == x]
-  worms_id <- taxo.final$aphia.id[taxo.final$species.code == x]
-  worms_link <- taxo.final$aphia.url[taxo.final$species.code == x]
+  worms_id <- taxo.final$AphiaID[taxo.final$species.code == x]
+  worms_link <- taxo.final$url[taxo.final$species.code == x]
   
   i <- 1
   
@@ -39,8 +47,6 @@ temp <- lapply(taxo.final$species.code, function(x) {
   out[[i]] <- paste0("\\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for ", english_name,".}")
   i <- i + 1
   out[[i]] <- "\\end{minipage} \n"
-  i <- i + 1
-  out[[i]] <- "\\end{tabular}"
   i <- i + 1
   out[[i]] <- "\\clearpage\n"
   out

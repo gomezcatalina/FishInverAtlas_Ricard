@@ -39,16 +39,18 @@ print(paste("Script Atlas.R started: ", Sys.time()))
   ## generate the list of species that will be used to control what data extractions and figures will be generated
   ## this script will produce a file called "species-list-for-report.csv" which will determine the species that we will include, and what level of analysis they will receive
   ## this takes a while, so once it has run successfully, comment out and rely on the file "species-list-for-report.csv"
-  
+
+  #####################################################################################################################################################  
   ## DR 2020: these scripts churn the contents of the RV database, summarise tows, and identifies and ranks the species based on the number of records
   ## - these files should be run only when a new year of data is available, 
-  ## otherwise the all-important text files "Report-generation/Atlas-summary-table-tows-by-year-stratum.csv" and "species-list-for-report.csv" should be fine and the scripts can be ignored
+  ## the all-important text files "Report-generation/Atlas-summary-table-tows-by-year-stratum.csv" and "species-list-for-report.csv" should be fine and the scripts can be ignored
   ## - there is still a nagging problem with the way accented characters are treated, the text file produced now has mangled characters
   
   #source(file.path(main.path, "summaries.R")) ## summaries of tows
   #source(file.path(main.path, "summaries-catch-records.R")) ## summaries of catch
   
   #source(file.path(main.path, "taxonomic-classification-APHIA-ID.R")) ## this creates "species-list-for-report-APHIA.csv"
+  
   
   ## generate maps that won't change over time, e.g. strata maps
   source(file.path(mapping.path, "Maritimes-SUMMER-strata-map.R")) ## strata map, nothing there yet
@@ -62,6 +64,8 @@ print(paste("Script Atlas.R started: ", Sys.time()))
   # source the code that appropriately calls the function for each figure
   source(file.path(main.path, "figures.R"))
 
+  
+  
 ## actual function calls for species-level analyses
 ## first call is to generate the data files for each species
 ## second call is to generate the figures for each species
@@ -141,13 +145,8 @@ q("no")
 
 
 	## Once all the plots are reproduced, next step is to pur together the Tech Report
-# the script "create-techreport-appendix.R" will be used to assemble all the plots into a single file called plot-pages.Rmd (which will included in the TechReport knit) 
-taxo.final <- spec.list[spec.list$spec %in% c(as.numeric(species.L)),]
-names(taxo.final)[1:4] <- c("scientificname", "comm.english", "comm.fr", "species.code")
-
+# the script "create-techreport-appendix.R" will be used to assemble all the plots into a single file called plot-pages.Rmd (which will be included in the TechReport knit) 
+## taxo.final <- spec.list[spec.list$spec %in% c(as.numeric(species.L)),]
+## the information needed to produce plot-pages.Rmd come from the file "species-list-for-report-APHIA.csv"
 source(file.path(report.path, "create-techreport-appendix.R"))
-
-### and also generate a test file for the species table in the report
-# an important data frame for that script to work is called taxo.final, which includes all the information necessary for the species table in the report, and the assembly of plotpages.Rmd
-## species.L
 

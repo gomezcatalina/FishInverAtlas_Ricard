@@ -7,7 +7,7 @@
 ## i.e. where all the figures appear: plot-pages.Rmd
 library(tidyverse)
 
-in.df <- readr::read_csv("../species-list-for-report-APHIA.csv")
+in.df <- readr::read_csv(file.path(here::here(), "species-list-for-report-APHIA.csv"))
 taxo.final <- in.df
 names(taxo.final)[1:3] <- c("species.code","comm.english","comm.fr")
 
@@ -36,18 +36,20 @@ temp <- lapply(taxo.final$species.code, function(x) {
   latin_name <- taxo.final$scientificname[taxo.final$species.code == x]
   english_name <- taxo.final$comm.english[taxo.final$species.code == x]
   french_name <- taxo.final$comm.fr[taxo.final$species.code == x]
+  family_name <- taxo.final$family[taxo.final$species.code == x]
   worms_id <- taxo.final$AphiaID[taxo.final$species.code == x]
   worms_link <- taxo.final$url[taxo.final$species.code == x]
   
   i <- 1
-  
   out[[i]] <- paste0("## ", english_name, " (", french_name, ") - species code ", x," {#sec:", x, "} \n")
+  i <- 1
+  out[[i]] <- paste0("\\index{", french_name, "} ",  "\\index{", english_name, "} ",  "\\index{", latin_name, "} \n")
   i <- i + 1
-  
-    out[[i]] <- paste0(
+  out[[i]] <- paste0("\\index{", family_name, "!", latin_name, "} \n")
+  i <- i + 1
+  out[[i]] <- paste0(
     "Scientific name: [", latin_name, "](",worms_link,") \n \\newline")
   i <- i + 1
-  #Figure 1
   out[[i]] <- "\\begin{minipage}{1.0\\textwidth}"
   i <- i + 1
   out[[i]] <- " \\begin{tabular}{c}"
@@ -86,10 +88,10 @@ temp <- lapply(taxo.final$species.code, function(x) {
 
 temp <- lapply(temp, function(x) paste(x, collapse = "\n"))
 temp <- paste(temp, collapse = "\n")
-temp <- c("# Appendix\n<!-- This page has been automatically generated: do not edit by hand -->\n", temp)
+temp <- c("# Appendix\n<!-- This page has been automatically generated: do not edit by hand -->\n", temp, "\\printindex \n")
 if (!exists("N"))
-  #writeLines(temp, con = file.path("report-EN", "plot-pages.Rmd"), useBytes=T)
-  writeLines(temp, "plot-pages.Rmd", useBytes=T)
+  writeLines(temp, con = file.path("report-EN", "plot-pages.Rmd"), useBytes=T)
+  #writeLines(temp, "plot-pages.Rmd", useBytes=T)
 ## French Tech Report
 
 

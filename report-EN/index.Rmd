@@ -41,6 +41,8 @@ lof: true
 # Any extra LaTeX code for the header:
 header-includes:
  - \usepackage{float}
+ - \usepackage{makeidx}
+ - \makeindex
 ---
 
 ```{r setup, echo=FALSE, cache=FALSE, message=FALSE, results='hide', warning=FALSE}

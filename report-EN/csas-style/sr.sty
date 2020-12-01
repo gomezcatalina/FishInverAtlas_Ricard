@@ -42,7 +42,7 @@
 
 %% ------------------------------------------------------------------------------
 %% If you want to show line numbers in the document
-\usepackage[pagewise]
+\usepackage[running]
            {lineno}
 %% Page margins
 \usepackage[top=0.25in,
@@ -555,7 +555,7 @@
     \textbf{\rdRegion{}}}
     \rhead{\textbf{Canadian Science Advisory Secretariat}\\
     \textbf{Science Response \rdYear{}/\rdNumber{}}}
-    \lfoot{\rdMonth{} \rdYear{}}
+    \lfoot{\rdWorkDoneMonth{} \rdWorkDoneYear{}}
     \rfoot{\includegraphics[width=3.54cm]{\locRepo/images/canada_bw.png}}
     \afterpage{\cfoot{\thepage}}
     \afterpage{\restoregeometry}
@@ -649,3 +649,15 @@ DFO Can.\ Sci.\ Advis.\ Sec.\ Sci.\ Resp.
 \emph{MPO. \rdYear{}. \rdTitleFr{}.
 Secr.\ can.\ de consult.\ sci.\ du MPO, R\'{e}p.\ des Sci.\
 #1.}}
+
+\newenvironment{CSLReferences}[3] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1 \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces\fi
+  % set entry spacing
+  \ifnum #2 > 0
+  \setlength{\parskip}{#2\baselineskip}
+  \fi
+ }%
+ {}

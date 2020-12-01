@@ -78,11 +78,11 @@ print(paste("Script Atlas.R started: ", Sys.time()))
   ## data.extract(4, 10)
   ## figures(fig=6, spec.num=10)
 
-  species.L <- spec.list[spec.list$V9=='L',]$V4 # long timeseries
-  species.S <- spec.list[spec.list$V9=='S',]$V4 # short timeseries
-  species.LR <- spec.list[spec.list$V9=='LR',]$V4 # long timeseries rare
-  species.SR <- spec.list[spec.list$V9=='SR',]$V4 # short timeseries rare
-  species.I <- spec.list[spec.list$V9=='I',]$V4 # intermediate species
+  species.L <- spec.list[spec.list$type=='L',]$spec # long timeseries
+  species.S <- spec.list[spec.list$type=='S',]$spec # short timeseries
+  species.LR <- spec.list[spec.list$type=='LR',]$spec # long timeseries rare
+  species.SR <- spec.list[spec.list$type=='SR',]$spec # short timeseries rare
+  species.I <- spec.list[spec.list$type=='I',]$spec # intermediate species
 
   # GROUP : well identified species with no DDHS fitting problems
   species.numbers <- species.L # c(10,11,12,13,14,16,23,40,41,42,43,60,300,4511,320,220,640,400,200,201,202,203,204,50,30,304,62,160,70,304,112,15,31,241) #,114) 

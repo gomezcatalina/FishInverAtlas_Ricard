@@ -35,7 +35,7 @@ temp <- lapply(taxo.final$species.code, function(x) {
     
     "Scientific name: [", latin_name, "](",worms_link,") \n \\newline")
   i <- i + 1
-  out[[i]] <- "\\begin{minipage}{0.9\\textwidth}"
+  out[[i]] <- "\\begin{minipage}{1.0\\textwidth}"
   i <- i + 1
   out[[i]] <- " \\begin{tabular}{c}"
   i <- i + 1

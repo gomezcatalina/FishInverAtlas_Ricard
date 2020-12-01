@@ -5,7 +5,7 @@
 
 Scientific name: [Gadus morhua](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126436) 
  \newline
-\begin{minipage}{0.9\textwidth}
+\begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS10_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
@@ -18,7 +18,7 @@ Scientific name: [Gadus morhua](http://www.marinespecies.org/aphia.php?p=taxdeta
 
 Scientific name: [Melanogrammus aeglefinus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126437) 
  \newline
-\begin{minipage}{0.9\textwidth}
+\begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS11_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
@@ -31,7 +31,7 @@ Scientific name: [Melanogrammus aeglefinus](http://www.marinespecies.org/aphia.p
 
 Scientific name: [Urophycis tenuis](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126504) 
  \newline
-\begin{minipage}{0.9\textwidth}
+\begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS12_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
@@ -44,7 +44,7 @@ Scientific name: [Urophycis tenuis](http://www.marinespecies.org/aphia.php?p=tax
 
 Scientific name: [Urophycis chuss](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126503) 
  \newline
-\begin{minipage}{0.9\textwidth}
+\begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS13_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
@@ -57,7 +57,7 @@ Scientific name: [Urophycis chuss](http://www.marinespecies.org/aphia.php?p=taxd
 
 Scientific name: [Merluccius bilinearis](http://www.marinespecies.org/aphia.php?p=taxdetails&id=158962) 
  \newline
-\begin{minipage}{0.9\textwidth}
+\begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS14_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
@@ -70,7 +70,7 @@ Scientific name: [Merluccius bilinearis](http://www.marinespecies.org/aphia.php?
 
 Scientific name: [Pollachius virens](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126441) 
  \newline
-\begin{minipage}{0.9\textwidth}
+\begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS16_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
@@ -83,7 +83,7 @@ Scientific name: [Pollachius virens](http://www.marinespecies.org/aphia.php?p=ta
 
 Scientific name: [Sebastes](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126175) 
  \newline
-\begin{minipage}{0.9\textwidth}
+\begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS23_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
@@ -96,7 +96,7 @@ Scientific name: [Sebastes](http://www.marinespecies.org/aphia.php?p=taxdetails&
 
 Scientific name: [Hippoglossus hippoglossus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127138) 
  \newline
-\begin{minipage}{0.9\textwidth}
+\begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS30_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
@@ -109,7 +109,7 @@ Scientific name: [Hippoglossus hippoglossus](http://www.marinespecies.org/aphia.
 
 Scientific name: [Hippoglossoides platessoides](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127137) 
  \newline
-\begin{minipage}{0.9\textwidth}
+\begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS40_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
@@ -122,7 +122,7 @@ Scientific name: [Hippoglossoides platessoides](http://www.marinespecies.org/aph
 
 Scientific name: [Glyptocephalus cynoglossus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127136) 
  \newline
-\begin{minipage}{0.9\textwidth}
+\begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS41_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
@@ -135,7 +135,7 @@ Scientific name: [Glyptocephalus cynoglossus](http://www.marinespecies.org/aphia
 
 Scientific name: [Limanda ferruginea](http://www.marinespecies.org/aphia.php?p=taxdetails&id=158879) 
  \newline
-\begin{minipage}{0.9\textwidth}
+\begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS42_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
@@ -148,7 +148,7 @@ Scientific name: [Limanda ferruginea](http://www.marinespecies.org/aphia.php?p=t
 
 Scientific name: [Pseudopleuronectes americanus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=158885) 
  \newline
-\begin{minipage}{0.9\textwidth}
+\begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS43_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
@@ -161,7 +161,7 @@ Scientific name: [Pseudopleuronectes americanus](http://www.marinespecies.org/ap
 
 Scientific name: [Anarhichas lupus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126758) 
  \newline
-\begin{minipage}{0.9\textwidth}
+\begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS50_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
@@ -174,7 +174,7 @@ Scientific name: [Anarhichas lupus](http://www.marinespecies.org/aphia.php?p=tax
 
 Scientific name: [Clupea harengus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126417) 
  \newline
-\begin{minipage}{0.9\textwidth}
+\begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS60_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
@@ -187,7 +187,7 @@ Scientific name: [Clupea harengus](http://www.marinespecies.org/aphia.php?p=taxd
 
 Scientific name: [Myoxocephalus octodecemspinosus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=159520) 
  \newline
-\begin{minipage}{0.9\textwidth}
+\begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS300_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
@@ -200,7 +200,7 @@ Scientific name: [Myoxocephalus octodecemspinosus](http://www.marinespecies.org/
 
 Scientific name: [Triglops murrayi](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127205) 
  \newline
-\begin{minipage}{0.9\textwidth}
+\begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS304_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
@@ -213,7 +213,7 @@ Scientific name: [Triglops murrayi](http://www.marinespecies.org/aphia.php?p=tax
 
 Scientific name: [Hemitripterus americanus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=159518) 
  \newline
-\begin{minipage}{0.9\textwidth}
+\begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS320_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
@@ -226,7 +226,7 @@ Scientific name: [Hemitripterus americanus](http://www.marinespecies.org/aphia.p
 
 Scientific name: [Aspidophoroides monopterygius](http://www.marinespecies.org/aphia.php?p=taxdetails&id=159459) 
  \newline
-\begin{minipage}{0.9\textwidth}
+\begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS340_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
@@ -239,7 +239,7 @@ Scientific name: [Aspidophoroides monopterygius](http://www.marinespecies.org/ap
 
 Scientific name: [Lophius americanus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=159184) 
  \newline
-\begin{minipage}{0.9\textwidth}
+\begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS400_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
@@ -252,7 +252,7 @@ Scientific name: [Lophius americanus](http://www.marinespecies.org/aphia.php?p=t
 
 Scientific name: [Zoarces americanus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=159267) 
  \newline
-\begin{minipage}{0.9\textwidth}
+\begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS640_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
@@ -265,7 +265,7 @@ Scientific name: [Zoarces americanus](http://www.marinespecies.org/aphia.php?p=t
 
 Scientific name: [Amblyraja radiata](http://www.marinespecies.org/aphia.php?p=taxdetails&id=105865) 
  \newline
-\begin{minipage}{0.9\textwidth}
+\begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS201_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
@@ -278,7 +278,7 @@ Scientific name: [Amblyraja radiata](http://www.marinespecies.org/aphia.php?p=ta
 
 Scientific name: [Malacoraja senta](http://www.marinespecies.org/aphia.php?p=taxdetails&id=158554) 
  \newline
-\begin{minipage}{0.9\textwidth}
+\begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS202_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
@@ -291,7 +291,7 @@ Scientific name: [Malacoraja senta](http://www.marinespecies.org/aphia.php?p=tax
 
 Scientific name: [Leucoraja ocellata](http://www.marinespecies.org/aphia.php?p=taxdetails&id=158553) 
  \newline
-\begin{minipage}{0.9\textwidth}
+\begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS204_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
@@ -304,7 +304,7 @@ Scientific name: [Leucoraja ocellata](http://www.marinespecies.org/aphia.php?p=t
 
 Scientific name: [Squalus acanthias](http://www.marinespecies.org/aphia.php?p=taxdetails&id=105923) 
  \newline
-\begin{minipage}{0.9\textwidth}
+\begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS220_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
@@ -317,7 +317,7 @@ Scientific name: [Squalus acanthias](http://www.marinespecies.org/aphia.php?p=ta
 
 Scientific name: [Illex illecebrosus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=153087) 
  \newline
-\begin{minipage}{0.9\textwidth}
+\begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS4511_IDWMap-biomass.pdf} \\ 
 \end{tabular} 

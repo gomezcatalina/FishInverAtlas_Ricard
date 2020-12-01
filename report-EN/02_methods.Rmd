@@ -51,7 +51,7 @@ knitr::kable(spec.tab[,vars], "latex", booktabs = TRUE, longtable = TRUE, align 
 
 The Oracle relational database where all data are stored was accessible from the Bedford Institute of Oceanography in Dartmouth, Nova Scotia. Structured Query Language (SQL) is used to extract the data from the production server and to create the data products used in all subsequent analyses. Catch records classified as ”valid” (i.e. a representative tow without damage to the net) are used in the current analyses. To make the available samples comparable, catch number and weight for each species was standardized for the distance towed.
 
-All data processing and analyses were conducted using the R software [@R:2013] using packages RODBC [@R:package:RODBC], PBSmapping [@R:package:PBSmapping], spatstat [@R:package:spatstat], gstat [@R:package:gstat), maptools [@R:package:maptools], rgeos [@R:package:rgeos], xtable [@R:package:xtable], MASS [@R:package:MASS] and [@R:Tidyverse]. 
+All data processing and analyses were conducted using the R software [@R:2013] using packages gstat [@R:package:gstat), PBSmapping [@R:package:PBSmapping], RODBC [@R:package:RODBC], spatstat [@R:package:spatstat],  maptools [@R:package:maptools], rgeos [@R:package:rgeos],classInt[@R:package:classInt],RColorBrewer[@R:package:RColorBrewer], xtable [@R:package:xtable], MASS [@R:package:MASS], worms [@R:package:worms], and [@R:Tidyverse]. 
 
 ### Geographic distribution of catches
 
@@ -59,11 +59,11 @@ Spatial interpolation of catch biomass (kg/tow) or abundance (number/tow) was do
 
 ### Abundance and biomass indices
 
-For each species, stratified random estimates of catch abundance and biomass (Smith, 1996) are computed for each year. Yearly estimates of the standard error were also computed.
+For each species, stratified random estimates of catch abundance and biomass [@Smith:1996] are computed for each year. Yearly estimates of the standard error were also computed.
 
 ### Distribution indices
 
-For each Category L, I and S fish species, the minimum area required to account for 75% and 95% of the total biomass or abundance were computed (D75% and D95%). These measures of distributions were computed for each year by using the Lorenz curve of mean stratum-level catch estimates and the area of occupied strata, using methods described in Swain and Sinclair (1994) and Swain and Morin (1996).
+For each Category L, I and S fish species, the minimum area required to account for 75% and 95% of the total biomass or abundance were computed (D75% and D95%). These measures of distributions were computed for each year by using the Lorenz curve of mean stratum-level catch estimates and the area of occupied strata [@Swain:Sinclair:1994:cjfas, @Swain:Morin:1996:cjfas].
 
 ### Length frequencies
 
@@ -89,11 +89,11 @@ C = \frac{W}{\alpha L ^\beta}
 
 ### Depth, temperature and salinity distribution of catches
 
-For each category L species, We followed the methods developed by Perry and Smith (1994) and generated cumulative frequency distributions of depth, temperature and salinity of survey catches.
+For each category L species, We followed the methods developed by [@Perry:Smith:1994:cjfas] and generated cumulative frequency distributions of depth, temperature and salinity of survey catches.
 
 ### Density-dependent habitat selection
 
-We follow the methods of Myers and Stokes (1989) to evaluate how fish abundance in each stratum varied with overall temporal fluctuations of population abundance.
+We follow the methods of [@Myers:Stokes:1989] to evaluate how fish abundance in each stratum varied with overall temporal fluctuations of population abundance.
 
 For each category L species, we fitted a model of the relationship between stratum-level density and overall abundance (the yearly stratified random estimate of abundance, defined above). To properly use the observations of zero catch while accounting for the logarithmic distribution of catch abundance, we implemented the model as a generalised linear using a log link and a Poisson error distribution:
 

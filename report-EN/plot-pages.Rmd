@@ -1,7 +1,9 @@
 # Appendix
 <!-- This page has been automatically generated: do not edit by hand -->
 
-## Atlantic cod (Morue franche) - species code 10 {#sec:10} 
+\index{Morue franche} \index{Atlantic cod} \index{Gadus morhua} 
+
+\index{Gadidae!Gadus morhua} 
 
 Scientific name: [Gadus morhua](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126436) 
  \newline
@@ -21,7 +23,9 @@ Scientific name: [Gadus morhua](http://www.marinespecies.org/aphia.php?p=taxdeta
 
 \clearpage
 
-## Haddock (Aiglefin) - species code 11 {#sec:11} 
+\index{Aiglefin} \index{Haddock} \index{Melanogrammus aeglefinus} 
+
+\index{Gadidae!Melanogrammus aeglefinus} 
 
 Scientific name: [Melanogrammus aeglefinus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126437) 
  \newline
@@ -41,7 +45,9 @@ Scientific name: [Melanogrammus aeglefinus](http://www.marinespecies.org/aphia.p
 
 \clearpage
 
-## White hake (Merluche blanche) - species code 12 {#sec:12} 
+\index{Merluche blanche} \index{White hake} \index{Urophycis tenuis} 
+
+\index{Phycidae!Urophycis tenuis} 
 
 Scientific name: [Urophycis tenuis](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126504) 
  \newline
@@ -61,7 +67,9 @@ Scientific name: [Urophycis tenuis](http://www.marinespecies.org/aphia.php?p=tax
 
 \clearpage
 
-## Red hake (Merluche écureuil) - species code 13 {#sec:13} 
+\index{Merluche écureuil} \index{Red hake} \index{Urophycis chuss} 
+
+\index{Phycidae!Urophycis chuss} 
 
 Scientific name: [Urophycis chuss](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126503) 
  \newline
@@ -81,7 +89,9 @@ Scientific name: [Urophycis chuss](http://www.marinespecies.org/aphia.php?p=taxd
 
 \clearpage
 
-## Silver hake (Merlu argenté) - species code 14 {#sec:14} 
+\index{Merlu argenté} \index{Silver hake} \index{Merluccius bilinearis} 
+
+\index{Merlucciidae!Merluccius bilinearis} 
 
 Scientific name: [Merluccius bilinearis](http://www.marinespecies.org/aphia.php?p=taxdetails&id=158962) 
  \newline
@@ -101,7 +111,9 @@ Scientific name: [Merluccius bilinearis](http://www.marinespecies.org/aphia.php?
 
 \clearpage
 
-## Pollock (Goberge) - species code 16 {#sec:16} 
+\index{Goberge} \index{Pollock} \index{Pollachius virens} 
+
+\index{Gadidae!Pollachius virens} 
 
 Scientific name: [Pollachius virens](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126441) 
  \newline
@@ -121,7 +133,9 @@ Scientific name: [Pollachius virens](http://www.marinespecies.org/aphia.php?p=ta
 
 \clearpage
 
-## Atlantic redfishes (Sébastes de l'Atlantique) - species code 23 {#sec:23} 
+\index{Sébastes de l'Atlantique} \index{Atlantic redfishes} \index{Sebastes} 
+
+\index{Sebastidae!Sebastes} 
 
 Scientific name: [Sebastes](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126175) 
  \newline
@@ -141,7 +155,9 @@ Scientific name: [Sebastes](http://www.marinespecies.org/aphia.php?p=taxdetails&
 
 \clearpage
 
-## Atlantic halibut (Flétan de l'Atlantique) - species code 30 {#sec:30} 
+\index{Flétan de l'Atlantique} \index{Atlantic halibut} \index{Hippoglossus hippoglossus} 
+
+\index{Pleuronectidae!Hippoglossus hippoglossus} 
 
 Scientific name: [Hippoglossus hippoglossus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127138) 
  \newline
@@ -161,7 +177,9 @@ Scientific name: [Hippoglossus hippoglossus](http://www.marinespecies.org/aphia.
 
 \clearpage
 
-## American plaice (Plie canadienne) - species code 40 {#sec:40} 
+\index{Plie canadienne} \index{American plaice} \index{Hippoglossoides platessoides} 
+
+\index{Pleuronectidae!Hippoglossoides platessoides} 
 
 Scientific name: [Hippoglossoides platessoides](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127137) 
  \newline
@@ -181,7 +199,9 @@ Scientific name: [Hippoglossoides platessoides](http://www.marinespecies.org/aph
 
 \clearpage
 
-## Witch flounder (Plie grise) - species code 41 {#sec:41} 
+\index{Plie grise} \index{Witch flounder} \index{Glyptocephalus cynoglossus} 
+
+\index{Pleuronectidae!Glyptocephalus cynoglossus} 
 
 Scientific name: [Glyptocephalus cynoglossus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127136) 
  \newline
@@ -201,7 +221,9 @@ Scientific name: [Glyptocephalus cynoglossus](http://www.marinespecies.org/aphia
 
 \clearpage
 
-## Yellowtail flounder (Limande à queue jaune) - species code 42 {#sec:42} 
+\index{Limande à queue jaune} \index{Yellowtail flounder} \index{Limanda ferruginea} 
+
+\index{Pleuronectidae!Limanda ferruginea} 
 
 Scientific name: [Limanda ferruginea](http://www.marinespecies.org/aphia.php?p=taxdetails&id=158879) 
  \newline
@@ -221,7 +243,9 @@ Scientific name: [Limanda ferruginea](http://www.marinespecies.org/aphia.php?p=t
 
 \clearpage
 
-## Winter flounder (Limande-plie rouge) - species code 43 {#sec:43} 
+\index{Limande-plie rouge} \index{Winter flounder} \index{Pseudopleuronectes americanus} 
+
+\index{Pleuronectidae!Pseudopleuronectes americanus} 
 
 Scientific name: [Pseudopleuronectes americanus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=158885) 
  \newline
@@ -241,7 +265,9 @@ Scientific name: [Pseudopleuronectes americanus](http://www.marinespecies.org/ap
 
 \clearpage
 
-## Atlantic wolffish (Loup atlantique) - species code 50 {#sec:50} 
+\index{Loup atlantique} \index{Atlantic wolffish} \index{Anarhichas lupus} 
+
+\index{Anarhichadidae!Anarhichas lupus} 
 
 Scientific name: [Anarhichas lupus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126758) 
  \newline
@@ -261,7 +287,9 @@ Scientific name: [Anarhichas lupus](http://www.marinespecies.org/aphia.php?p=tax
 
 \clearpage
 
-## Atlantic herring (Hareng de l'Atlantique) - species code 60 {#sec:60} 
+\index{Hareng de l'Atlantique} \index{Atlantic herring} \index{Clupea harengus} 
+
+\index{Clupeidae!Clupea harengus} 
 
 Scientific name: [Clupea harengus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126417) 
  \newline
@@ -281,7 +309,9 @@ Scientific name: [Clupea harengus](http://www.marinespecies.org/aphia.php?p=taxd
 
 \clearpage
 
-## Longhorn sculpin (Chaboisseau à dix-huit épines) - species code 300 {#sec:300} 
+\index{Chaboisseau à dix-huit épines} \index{Longhorn sculpin} \index{Myoxocephalus octodecemspinosus} 
+
+\index{Cottidae!Myoxocephalus octodecemspinosus} 
 
 Scientific name: [Myoxocephalus octodecemspinosus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=159520) 
  \newline
@@ -301,7 +331,9 @@ Scientific name: [Myoxocephalus octodecemspinosus](http://www.marinespecies.org/
 
 \clearpage
 
-## Moustache sculpin (Faux-trigle armé) - species code 304 {#sec:304} 
+\index{Faux-trigle armé} \index{Moustache sculpin} \index{Triglops murrayi} 
+
+\index{Cottidae!Triglops murrayi} 
 
 Scientific name: [Triglops murrayi](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127205) 
  \newline
@@ -321,7 +353,9 @@ Scientific name: [Triglops murrayi](http://www.marinespecies.org/aphia.php?p=tax
 
 \clearpage
 
-## Sea raven (Hémitriptère atlantique) - species code 320 {#sec:320} 
+\index{Hémitriptère atlantique} \index{Sea raven} \index{Hemitripterus americanus} 
+
+\index{Hemitripteridae!Hemitripterus americanus} 
 
 Scientific name: [Hemitripterus americanus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=159518) 
  \newline
@@ -341,7 +375,9 @@ Scientific name: [Hemitripterus americanus](http://www.marinespecies.org/aphia.p
 
 \clearpage
 
-## Alligatorfish (Poisson-alligator atlantique) - species code 340 {#sec:340} 
+\index{Poisson-alligator atlantique} \index{Alligatorfish} \index{Aspidophoroides monopterygius} 
+
+\index{Agonidae!Aspidophoroides monopterygius} 
 
 Scientific name: [Aspidophoroides monopterygius](http://www.marinespecies.org/aphia.php?p=taxdetails&id=159459) 
  \newline
@@ -361,7 +397,9 @@ Scientific name: [Aspidophoroides monopterygius](http://www.marinespecies.org/ap
 
 \clearpage
 
-## Monkfish (Baudroie d'Amérique) - species code 400 {#sec:400} 
+\index{Baudroie d'Amérique} \index{Monkfish} \index{Lophius americanus} 
+
+\index{Lophiidae!Lophius americanus} 
 
 Scientific name: [Lophius americanus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=159184) 
  \newline
@@ -381,7 +419,9 @@ Scientific name: [Lophius americanus](http://www.marinespecies.org/aphia.php?p=t
 
 \clearpage
 
-## Ocean pout (Loquette d'Amérique) - species code 640 {#sec:640} 
+\index{Loquette d'Amérique} \index{Ocean pout} \index{Zoarces americanus} 
+
+\index{Zoarcidae!Zoarces americanus} 
 
 Scientific name: [Zoarces americanus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=159267) 
  \newline
@@ -401,7 +441,9 @@ Scientific name: [Zoarces americanus](http://www.marinespecies.org/aphia.php?p=t
 
 \clearpage
 
-## Thorny skate (Raie épineuse) - species code 201 {#sec:201} 
+\index{Raie épineuse} \index{Thorny skate} \index{Amblyraja radiata} 
+
+\index{Rajidae!Amblyraja radiata} 
 
 Scientific name: [Amblyraja radiata](http://www.marinespecies.org/aphia.php?p=taxdetails&id=105865) 
  \newline
@@ -421,7 +463,9 @@ Scientific name: [Amblyraja radiata](http://www.marinespecies.org/aphia.php?p=ta
 
 \clearpage
 
-## Smooth skate (Raie lisse) - species code 202 {#sec:202} 
+\index{Raie lisse} \index{Smooth skate} \index{Malacoraja senta} 
+
+\index{Rajidae!Malacoraja senta} 
 
 Scientific name: [Malacoraja senta](http://www.marinespecies.org/aphia.php?p=taxdetails&id=158554) 
  \newline
@@ -441,7 +485,9 @@ Scientific name: [Malacoraja senta](http://www.marinespecies.org/aphia.php?p=tax
 
 \clearpage
 
-## Winter skate (Raie tachetée) - species code 204 {#sec:204} 
+\index{Raie tachetée} \index{Winter skate} \index{Leucoraja ocellata} 
+
+\index{Rajidae!Leucoraja ocellata} 
 
 Scientific name: [Leucoraja ocellata](http://www.marinespecies.org/aphia.php?p=taxdetails&id=158553) 
  \newline
@@ -461,7 +507,9 @@ Scientific name: [Leucoraja ocellata](http://www.marinespecies.org/aphia.php?p=t
 
 \clearpage
 
-## Picked dogfish (Aiguillat commun) - species code 220 {#sec:220} 
+\index{Aiguillat commun} \index{Picked dogfish} \index{Squalus acanthias} 
+
+\index{Squalidae!Squalus acanthias} 
 
 Scientific name: [Squalus acanthias](http://www.marinespecies.org/aphia.php?p=taxdetails&id=105923) 
  \newline
@@ -481,7 +529,9 @@ Scientific name: [Squalus acanthias](http://www.marinespecies.org/aphia.php?p=ta
 
 \clearpage
 
-## Northern shortfin squid (Encornet rouge nordique) - species code 4511 {#sec:4511} 
+\index{Encornet rouge nordique} \index{Northern shortfin squid} \index{Illex illecebrosus} 
+
+\index{Ommastrephidae!Illex illecebrosus} 
 
 Scientific name: [Illex illecebrosus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=153087) 
  \newline
@@ -500,4 +550,6 @@ Scientific name: [Illex illecebrosus](http://www.marinespecies.org/aphia.php?p=t
 \end{minipage} 
 
 \clearpage
+
+\printindex 
 

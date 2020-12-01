@@ -114,7 +114,7 @@ log
 *.vrb
 *.log
 *.bbl
-*.bib
+#*.bib
 *.bst
 *.dvi
 *.idx

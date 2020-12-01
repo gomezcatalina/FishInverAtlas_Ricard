@@ -12,6 +12,13 @@ Scientific name: [Gadus morhua](http://www.marinespecies.org/aphia.php?p=taxdeta
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic cod.}
 \end{minipage} 
 
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=1.8in]{../Figures-Actual/SS10_Stratified-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic cod.}
+\end{minipage} 
+
 \clearpage
 
 ## Haddock (Aiglefin) - species code 11 {#sec:11} 
@@ -21,6 +28,13 @@ Scientific name: [Melanogrammus aeglefinus](http://www.marinespecies.org/aphia.p
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS11_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Haddock.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=1.8in]{../Figures-Actual/SS11_Stratified-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Haddock.}
 \end{minipage} 
@@ -38,6 +52,13 @@ Scientific name: [Urophycis tenuis](http://www.marinespecies.org/aphia.php?p=tax
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for White hake.}
 \end{minipage} 
 
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=1.8in]{../Figures-Actual/SS12_Stratified-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for White hake.}
+\end{minipage} 
+
 \clearpage
 
 ## Red hake (Merluche écureuil) - species code 13 {#sec:13} 
@@ -47,6 +68,13 @@ Scientific name: [Urophycis chuss](http://www.marinespecies.org/aphia.php?p=taxd
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS13_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Red hake.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=1.8in]{../Figures-Actual/SS13_Stratified-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Red hake.}
 \end{minipage} 
@@ -64,6 +92,13 @@ Scientific name: [Merluccius bilinearis](http://www.marinespecies.org/aphia.php?
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Silver hake.}
 \end{minipage} 
 
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=1.8in]{../Figures-Actual/SS14_Stratified-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Silver hake.}
+\end{minipage} 
+
 \clearpage
 
 ## Pollock (Goberge) - species code 16 {#sec:16} 
@@ -73,6 +108,13 @@ Scientific name: [Pollachius virens](http://www.marinespecies.org/aphia.php?p=ta
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS16_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Pollock.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=1.8in]{../Figures-Actual/SS16_Stratified-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Pollock.}
 \end{minipage} 
@@ -90,6 +132,13 @@ Scientific name: [Sebastes](http://www.marinespecies.org/aphia.php?p=taxdetails&
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic redfishes.}
 \end{minipage} 
 
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=1.8in]{../Figures-Actual/SS23_Stratified-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic redfishes.}
+\end{minipage} 
+
 \clearpage
 
 ## Atlantic halibut (Flétan de l'Atlantique) - species code 30 {#sec:30} 
@@ -99,6 +148,13 @@ Scientific name: [Hippoglossus hippoglossus](http://www.marinespecies.org/aphia.
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS30_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic halibut.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=1.8in]{../Figures-Actual/SS30_Stratified-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic halibut.}
 \end{minipage} 
@@ -116,6 +172,13 @@ Scientific name: [Hippoglossoides platessoides](http://www.marinespecies.org/aph
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for American plaice.}
 \end{minipage} 
 
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=1.8in]{../Figures-Actual/SS40_Stratified-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for American plaice.}
+\end{minipage} 
+
 \clearpage
 
 ## Witch flounder (Plie grise) - species code 41 {#sec:41} 
@@ -125,6 +188,13 @@ Scientific name: [Glyptocephalus cynoglossus](http://www.marinespecies.org/aphia
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS41_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Witch flounder.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=1.8in]{../Figures-Actual/SS41_Stratified-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Witch flounder.}
 \end{minipage} 
@@ -142,6 +212,13 @@ Scientific name: [Limanda ferruginea](http://www.marinespecies.org/aphia.php?p=t
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Yellowtail flounder.}
 \end{minipage} 
 
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=1.8in]{../Figures-Actual/SS42_Stratified-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Yellowtail flounder.}
+\end{minipage} 
+
 \clearpage
 
 ## Winter flounder (Limande-plie rouge) - species code 43 {#sec:43} 
@@ -151,6 +228,13 @@ Scientific name: [Pseudopleuronectes americanus](http://www.marinespecies.org/ap
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS43_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Winter flounder.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=1.8in]{../Figures-Actual/SS43_Stratified-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Winter flounder.}
 \end{minipage} 
@@ -168,6 +252,13 @@ Scientific name: [Anarhichas lupus](http://www.marinespecies.org/aphia.php?p=tax
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic wolffish.}
 \end{minipage} 
 
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=1.8in]{../Figures-Actual/SS50_Stratified-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic wolffish.}
+\end{minipage} 
+
 \clearpage
 
 ## Atlantic herring (Hareng de l'Atlantique) - species code 60 {#sec:60} 
@@ -177,6 +268,13 @@ Scientific name: [Clupea harengus](http://www.marinespecies.org/aphia.php?p=taxd
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS60_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic herring.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=1.8in]{../Figures-Actual/SS60_Stratified-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic herring.}
 \end{minipage} 
@@ -194,6 +292,13 @@ Scientific name: [Myoxocephalus octodecemspinosus](http://www.marinespecies.org/
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Longhorn sculpin.}
 \end{minipage} 
 
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=1.8in]{../Figures-Actual/SS300_Stratified-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Longhorn sculpin.}
+\end{minipage} 
+
 \clearpage
 
 ## Moustache sculpin (Faux-trigle armé) - species code 304 {#sec:304} 
@@ -203,6 +308,13 @@ Scientific name: [Triglops murrayi](http://www.marinespecies.org/aphia.php?p=tax
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS304_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Moustache sculpin.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=1.8in]{../Figures-Actual/SS304_Stratified-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Moustache sculpin.}
 \end{minipage} 
@@ -220,6 +332,13 @@ Scientific name: [Hemitripterus americanus](http://www.marinespecies.org/aphia.p
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Sea raven.}
 \end{minipage} 
 
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=1.8in]{../Figures-Actual/SS320_Stratified-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Sea raven.}
+\end{minipage} 
+
 \clearpage
 
 ## Alligatorfish (Poisson-alligator atlantique) - species code 340 {#sec:340} 
@@ -229,6 +348,13 @@ Scientific name: [Aspidophoroides monopterygius](http://www.marinespecies.org/ap
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS340_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Alligatorfish.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=1.8in]{../Figures-Actual/SS340_Stratified-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Alligatorfish.}
 \end{minipage} 
@@ -246,6 +372,13 @@ Scientific name: [Lophius americanus](http://www.marinespecies.org/aphia.php?p=t
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Monkfish.}
 \end{minipage} 
 
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=1.8in]{../Figures-Actual/SS400_Stratified-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Monkfish.}
+\end{minipage} 
+
 \clearpage
 
 ## Ocean pout (Loquette d'Amérique) - species code 640 {#sec:640} 
@@ -255,6 +388,13 @@ Scientific name: [Zoarces americanus](http://www.marinespecies.org/aphia.php?p=t
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS640_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Ocean pout.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=1.8in]{../Figures-Actual/SS640_Stratified-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Ocean pout.}
 \end{minipage} 
@@ -272,6 +412,13 @@ Scientific name: [Amblyraja radiata](http://www.marinespecies.org/aphia.php?p=ta
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Thorny skate.}
 \end{minipage} 
 
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=1.8in]{../Figures-Actual/SS201_Stratified-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Thorny skate.}
+\end{minipage} 
+
 \clearpage
 
 ## Smooth skate (Raie lisse) - species code 202 {#sec:202} 
@@ -281,6 +428,13 @@ Scientific name: [Malacoraja senta](http://www.marinespecies.org/aphia.php?p=tax
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS202_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Smooth skate.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=1.8in]{../Figures-Actual/SS202_Stratified-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Smooth skate.}
 \end{minipage} 
@@ -298,6 +452,13 @@ Scientific name: [Leucoraja ocellata](http://www.marinespecies.org/aphia.php?p=t
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Winter skate.}
 \end{minipage} 
 
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=1.8in]{../Figures-Actual/SS204_Stratified-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Winter skate.}
+\end{minipage} 
+
 \clearpage
 
 ## Picked dogfish (Aiguillat commun) - species code 220 {#sec:220} 
@@ -311,6 +472,13 @@ Scientific name: [Squalus acanthias](http://www.marinespecies.org/aphia.php?p=ta
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Picked dogfish.}
 \end{minipage} 
 
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=1.8in]{../Figures-Actual/SS220_Stratified-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Picked dogfish.}
+\end{minipage} 
+
 \clearpage
 
 ## Northern shortfin squid (Encornet rouge nordique) - species code 4511 {#sec:4511} 
@@ -320,6 +488,13 @@ Scientific name: [Illex illecebrosus](http://www.marinespecies.org/aphia.php?p=t
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6in]{../Figures-Actual/SS4511_IDWMap-biomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Northern shortfin squid.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=1.8in]{../Figures-Actual/SS4511_Stratified-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Northern shortfin squid.}
 \end{minipage} 

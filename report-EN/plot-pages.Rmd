@@ -9,16 +9,50 @@ Scientific name: [Gadus morhua](http://www.marinespecies.org/aphia.php?p=taxdeta
  \newline
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/SS10_IDWMap-biomass.pdf} \\ 
+\includegraphics[width=5.5in]{../Figures-Actual/SS10_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic cod.}
 \end{minipage} 
 
 \begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=1.8in]{../Figures-Actual/SS10_Stratified-biomass.pdf} \\ 
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS10_Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS10_Distribution-usingbiomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS10_BDcorrelations.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic cod.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Atlantic cod.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS10_DepthDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS10_TemperatureDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS10_SalinityDist.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Atlantic cod.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS10_LengthFreq-NAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Atlantic cod.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS10_Condition4X4VW.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Atlantic cod.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS10_DDHSslopes.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Atlantic cod.}
 \end{minipage} 
 
 \clearpage
@@ -31,16 +65,50 @@ Scientific name: [Melanogrammus aeglefinus](http://www.marinespecies.org/aphia.p
  \newline
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/SS11_IDWMap-biomass.pdf} \\ 
+\includegraphics[width=5.5in]{../Figures-Actual/SS11_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Haddock.}
 \end{minipage} 
 
 \begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=1.8in]{../Figures-Actual/SS11_Stratified-biomass.pdf} \\ 
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS11_Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS11_Distribution-usingbiomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS11_BDcorrelations.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Haddock.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Haddock.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS11_DepthDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS11_TemperatureDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS11_SalinityDist.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Haddock.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS11_LengthFreq-NAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Haddock.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS11_Condition4X4VW.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Haddock.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS11_DDHSslopes.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Haddock.}
 \end{minipage} 
 
 \clearpage
@@ -53,16 +121,50 @@ Scientific name: [Urophycis tenuis](http://www.marinespecies.org/aphia.php?p=tax
  \newline
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/SS12_IDWMap-biomass.pdf} \\ 
+\includegraphics[width=5.5in]{../Figures-Actual/SS12_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for White hake.}
 \end{minipage} 
 
 \begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=1.8in]{../Figures-Actual/SS12_Stratified-biomass.pdf} \\ 
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS12_Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS12_Distribution-usingbiomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS12_BDcorrelations.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for White hake.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of White hake.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS12_DepthDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS12_TemperatureDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS12_SalinityDist.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of White hake.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS12_LengthFreq-NAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for White hake.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS12_Condition4X4VW.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for White hake.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS12_DDHSslopes.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for White hake.}
 \end{minipage} 
 
 \clearpage
@@ -75,16 +177,50 @@ Scientific name: [Urophycis chuss](http://www.marinespecies.org/aphia.php?p=taxd
  \newline
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/SS13_IDWMap-biomass.pdf} \\ 
+\includegraphics[width=5.5in]{../Figures-Actual/SS13_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Red hake.}
 \end{minipage} 
 
 \begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=1.8in]{../Figures-Actual/SS13_Stratified-biomass.pdf} \\ 
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS13_Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS13_Distribution-usingbiomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS13_BDcorrelations.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Red hake.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Red hake.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS13_DepthDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS13_TemperatureDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS13_SalinityDist.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Red hake.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS13_LengthFreq-NAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Red hake.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS13_Condition4X4VW.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Red hake.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS13_DDHSslopes.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Red hake.}
 \end{minipage} 
 
 \clearpage
@@ -97,16 +233,50 @@ Scientific name: [Merluccius bilinearis](http://www.marinespecies.org/aphia.php?
  \newline
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/SS14_IDWMap-biomass.pdf} \\ 
+\includegraphics[width=5.5in]{../Figures-Actual/SS14_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Silver hake.}
 \end{minipage} 
 
 \begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=1.8in]{../Figures-Actual/SS14_Stratified-biomass.pdf} \\ 
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS14_Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS14_Distribution-usingbiomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS14_BDcorrelations.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Silver hake.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Silver hake.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS14_DepthDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS14_TemperatureDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS14_SalinityDist.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Silver hake.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS14_LengthFreq-NAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Silver hake.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS14_Condition4X4VW.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Silver hake.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS14_DDHSslopes.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Silver hake.}
 \end{minipage} 
 
 \clearpage
@@ -119,16 +289,50 @@ Scientific name: [Pollachius virens](http://www.marinespecies.org/aphia.php?p=ta
  \newline
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/SS16_IDWMap-biomass.pdf} \\ 
+\includegraphics[width=5.5in]{../Figures-Actual/SS16_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Pollock.}
 \end{minipage} 
 
 \begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=1.8in]{../Figures-Actual/SS16_Stratified-biomass.pdf} \\ 
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS16_Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS16_Distribution-usingbiomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS16_BDcorrelations.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Pollock.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Pollock.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS16_DepthDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS16_TemperatureDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS16_SalinityDist.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Pollock.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS16_LengthFreq-NAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Pollock.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS16_Condition4X4VW.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Pollock.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS16_DDHSslopes.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Pollock.}
 \end{minipage} 
 
 \clearpage
@@ -141,16 +345,50 @@ Scientific name: [Sebastes](http://www.marinespecies.org/aphia.php?p=taxdetails&
  \newline
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/SS23_IDWMap-biomass.pdf} \\ 
+\includegraphics[width=5.5in]{../Figures-Actual/SS23_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic redfishes.}
 \end{minipage} 
 
 \begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=1.8in]{../Figures-Actual/SS23_Stratified-biomass.pdf} \\ 
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS23_Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS23_Distribution-usingbiomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS23_BDcorrelations.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic redfishes.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Atlantic redfishes.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS23_DepthDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS23_TemperatureDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS23_SalinityDist.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Atlantic redfishes.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS23_LengthFreq-NAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Atlantic redfishes.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS23_Condition4X4VW.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Atlantic redfishes.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS23_DDHSslopes.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Atlantic redfishes.}
 \end{minipage} 
 
 \clearpage
@@ -163,16 +401,50 @@ Scientific name: [Hippoglossus hippoglossus](http://www.marinespecies.org/aphia.
  \newline
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/SS30_IDWMap-biomass.pdf} \\ 
+\includegraphics[width=5.5in]{../Figures-Actual/SS30_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic halibut.}
 \end{minipage} 
 
 \begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=1.8in]{../Figures-Actual/SS30_Stratified-biomass.pdf} \\ 
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS30_Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS30_Distribution-usingbiomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS30_BDcorrelations.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic halibut.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Atlantic halibut.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS30_DepthDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS30_TemperatureDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS30_SalinityDist.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Atlantic halibut.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS30_LengthFreq-NAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Atlantic halibut.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS30_Condition4X4VW.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Atlantic halibut.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS30_DDHSslopes.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Atlantic halibut.}
 \end{minipage} 
 
 \clearpage
@@ -185,16 +457,50 @@ Scientific name: [Hippoglossoides platessoides](http://www.marinespecies.org/aph
  \newline
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/SS40_IDWMap-biomass.pdf} \\ 
+\includegraphics[width=5.5in]{../Figures-Actual/SS40_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for American plaice.}
 \end{minipage} 
 
 \begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=1.8in]{../Figures-Actual/SS40_Stratified-biomass.pdf} \\ 
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS40_Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS40_Distribution-usingbiomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS40_BDcorrelations.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for American plaice.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of American plaice.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS40_DepthDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS40_TemperatureDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS40_SalinityDist.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of American plaice.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS40_LengthFreq-NAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for American plaice.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS40_Condition4X4VW.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for American plaice.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS40_DDHSslopes.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for American plaice.}
 \end{minipage} 
 
 \clearpage
@@ -207,16 +513,50 @@ Scientific name: [Glyptocephalus cynoglossus](http://www.marinespecies.org/aphia
  \newline
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/SS41_IDWMap-biomass.pdf} \\ 
+\includegraphics[width=5.5in]{../Figures-Actual/SS41_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Witch flounder.}
 \end{minipage} 
 
 \begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=1.8in]{../Figures-Actual/SS41_Stratified-biomass.pdf} \\ 
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS41_Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS41_Distribution-usingbiomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS41_BDcorrelations.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Witch flounder.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Witch flounder.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS41_DepthDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS41_TemperatureDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS41_SalinityDist.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Witch flounder.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS41_LengthFreq-NAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Witch flounder.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS41_Condition4X4VW.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Witch flounder.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS41_DDHSslopes.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Witch flounder.}
 \end{minipage} 
 
 \clearpage
@@ -229,16 +569,50 @@ Scientific name: [Limanda ferruginea](http://www.marinespecies.org/aphia.php?p=t
  \newline
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/SS42_IDWMap-biomass.pdf} \\ 
+\includegraphics[width=5.5in]{../Figures-Actual/SS42_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Yellowtail flounder.}
 \end{minipage} 
 
 \begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=1.8in]{../Figures-Actual/SS42_Stratified-biomass.pdf} \\ 
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS42_Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS42_Distribution-usingbiomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS42_BDcorrelations.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Yellowtail flounder.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Yellowtail flounder.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS42_DepthDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS42_TemperatureDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS42_SalinityDist.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Yellowtail flounder.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS42_LengthFreq-NAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Yellowtail flounder.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS42_Condition4X4VW.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Yellowtail flounder.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS42_DDHSslopes.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Yellowtail flounder.}
 \end{minipage} 
 
 \clearpage
@@ -251,16 +625,50 @@ Scientific name: [Pseudopleuronectes americanus](http://www.marinespecies.org/ap
  \newline
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/SS43_IDWMap-biomass.pdf} \\ 
+\includegraphics[width=5.5in]{../Figures-Actual/SS43_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Winter flounder.}
 \end{minipage} 
 
 \begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=1.8in]{../Figures-Actual/SS43_Stratified-biomass.pdf} \\ 
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS43_Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS43_Distribution-usingbiomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS43_BDcorrelations.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Winter flounder.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Winter flounder.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS43_DepthDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS43_TemperatureDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS43_SalinityDist.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Winter flounder.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS43_LengthFreq-NAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Winter flounder.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS43_Condition4X4VW.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Winter flounder.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS43_DDHSslopes.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Winter flounder.}
 \end{minipage} 
 
 \clearpage
@@ -273,16 +681,50 @@ Scientific name: [Anarhichas lupus](http://www.marinespecies.org/aphia.php?p=tax
  \newline
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/SS50_IDWMap-biomass.pdf} \\ 
+\includegraphics[width=5.5in]{../Figures-Actual/SS50_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic wolffish.}
 \end{minipage} 
 
 \begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=1.8in]{../Figures-Actual/SS50_Stratified-biomass.pdf} \\ 
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS50_Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS50_Distribution-usingbiomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS50_BDcorrelations.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic wolffish.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Atlantic wolffish.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS50_DepthDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS50_TemperatureDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS50_SalinityDist.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Atlantic wolffish.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS50_LengthFreq-NAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Atlantic wolffish.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS50_Condition4X4VW.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Atlantic wolffish.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS50_DDHSslopes.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Atlantic wolffish.}
 \end{minipage} 
 
 \clearpage
@@ -295,16 +737,50 @@ Scientific name: [Clupea harengus](http://www.marinespecies.org/aphia.php?p=taxd
  \newline
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/SS60_IDWMap-biomass.pdf} \\ 
+\includegraphics[width=5.5in]{../Figures-Actual/SS60_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic herring.}
 \end{minipage} 
 
 \begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=1.8in]{../Figures-Actual/SS60_Stratified-biomass.pdf} \\ 
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS60_Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS60_Distribution-usingbiomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS60_BDcorrelations.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic herring.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Atlantic herring.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS60_DepthDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS60_TemperatureDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS60_SalinityDist.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Atlantic herring.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS60_LengthFreq-NAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Atlantic herring.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS60_Condition4X4VW.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Atlantic herring.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS60_DDHSslopes.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Atlantic herring.}
 \end{minipage} 
 
 \clearpage
@@ -317,16 +793,50 @@ Scientific name: [Myoxocephalus octodecemspinosus](http://www.marinespecies.org/
  \newline
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/SS300_IDWMap-biomass.pdf} \\ 
+\includegraphics[width=5.5in]{../Figures-Actual/SS300_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Longhorn sculpin.}
 \end{minipage} 
 
 \begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=1.8in]{../Figures-Actual/SS300_Stratified-biomass.pdf} \\ 
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS300_Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS300_Distribution-usingbiomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS300_BDcorrelations.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Longhorn sculpin.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Longhorn sculpin.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS300_DepthDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS300_TemperatureDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS300_SalinityDist.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Longhorn sculpin.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS300_LengthFreq-NAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Longhorn sculpin.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS300_Condition4X4VW.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Longhorn sculpin.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS300_DDHSslopes.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Longhorn sculpin.}
 \end{minipage} 
 
 \clearpage
@@ -339,16 +849,50 @@ Scientific name: [Triglops murrayi](http://www.marinespecies.org/aphia.php?p=tax
  \newline
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/SS304_IDWMap-biomass.pdf} \\ 
+\includegraphics[width=5.5in]{../Figures-Actual/SS304_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Moustache sculpin.}
 \end{minipage} 
 
 \begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=1.8in]{../Figures-Actual/SS304_Stratified-biomass.pdf} \\ 
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS304_Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS304_Distribution-usingbiomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS304_BDcorrelations.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Moustache sculpin.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Moustache sculpin.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS304_DepthDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS304_TemperatureDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS304_SalinityDist.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Moustache sculpin.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS304_LengthFreq-NAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Moustache sculpin.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS304_Condition4X4VW.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Moustache sculpin.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS304_DDHSslopes.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Moustache sculpin.}
 \end{minipage} 
 
 \clearpage
@@ -361,16 +905,50 @@ Scientific name: [Hemitripterus americanus](http://www.marinespecies.org/aphia.p
  \newline
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/SS320_IDWMap-biomass.pdf} \\ 
+\includegraphics[width=5.5in]{../Figures-Actual/SS320_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Sea raven.}
 \end{minipage} 
 
 \begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=1.8in]{../Figures-Actual/SS320_Stratified-biomass.pdf} \\ 
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS320_Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS320_Distribution-usingbiomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS320_BDcorrelations.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Sea raven.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Sea raven.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS320_DepthDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS320_TemperatureDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS320_SalinityDist.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Sea raven.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS320_LengthFreq-NAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Sea raven.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS320_Condition4X4VW.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Sea raven.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS320_DDHSslopes.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Sea raven.}
 \end{minipage} 
 
 \clearpage
@@ -383,16 +961,50 @@ Scientific name: [Aspidophoroides monopterygius](http://www.marinespecies.org/ap
  \newline
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/SS340_IDWMap-biomass.pdf} \\ 
+\includegraphics[width=5.5in]{../Figures-Actual/SS340_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Alligatorfish.}
 \end{minipage} 
 
 \begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=1.8in]{../Figures-Actual/SS340_Stratified-biomass.pdf} \\ 
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS340_Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS340_Distribution-usingbiomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS340_BDcorrelations.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Alligatorfish.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Alligatorfish.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS340_DepthDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS340_TemperatureDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS340_SalinityDist.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Alligatorfish.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS340_LengthFreq-NAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Alligatorfish.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS340_Condition4X4VW.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Alligatorfish.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS340_DDHSslopes.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Alligatorfish.}
 \end{minipage} 
 
 \clearpage
@@ -405,16 +1017,50 @@ Scientific name: [Lophius americanus](http://www.marinespecies.org/aphia.php?p=t
  \newline
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/SS400_IDWMap-biomass.pdf} \\ 
+\includegraphics[width=5.5in]{../Figures-Actual/SS400_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Monkfish.}
 \end{minipage} 
 
 \begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=1.8in]{../Figures-Actual/SS400_Stratified-biomass.pdf} \\ 
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS400_Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS400_Distribution-usingbiomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS400_BDcorrelations.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Monkfish.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Monkfish.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS400_DepthDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS400_TemperatureDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS400_SalinityDist.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Monkfish.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS400_LengthFreq-NAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Monkfish.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS400_Condition4X4VW.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Monkfish.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS400_DDHSslopes.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Monkfish.}
 \end{minipage} 
 
 \clearpage
@@ -427,16 +1073,50 @@ Scientific name: [Zoarces americanus](http://www.marinespecies.org/aphia.php?p=t
  \newline
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/SS640_IDWMap-biomass.pdf} \\ 
+\includegraphics[width=5.5in]{../Figures-Actual/SS640_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Ocean pout.}
 \end{minipage} 
 
 \begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=1.8in]{../Figures-Actual/SS640_Stratified-biomass.pdf} \\ 
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS640_Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS640_Distribution-usingbiomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS640_BDcorrelations.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Ocean pout.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Ocean pout.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS640_DepthDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS640_TemperatureDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS640_SalinityDist.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Ocean pout.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS640_LengthFreq-NAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Ocean pout.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS640_Condition4X4VW.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Ocean pout.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS640_DDHSslopes.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Ocean pout.}
 \end{minipage} 
 
 \clearpage
@@ -449,16 +1129,50 @@ Scientific name: [Amblyraja radiata](http://www.marinespecies.org/aphia.php?p=ta
  \newline
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/SS201_IDWMap-biomass.pdf} \\ 
+\includegraphics[width=5.5in]{../Figures-Actual/SS201_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Thorny skate.}
 \end{minipage} 
 
 \begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=1.8in]{../Figures-Actual/SS201_Stratified-biomass.pdf} \\ 
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS201_Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS201_Distribution-usingbiomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS201_BDcorrelations.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Thorny skate.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Thorny skate.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS201_DepthDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS201_TemperatureDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS201_SalinityDist.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Thorny skate.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS201_LengthFreq-NAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Thorny skate.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS201_Condition4X4VW.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Thorny skate.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS201_DDHSslopes.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Thorny skate.}
 \end{minipage} 
 
 \clearpage
@@ -471,16 +1185,50 @@ Scientific name: [Malacoraja senta](http://www.marinespecies.org/aphia.php?p=tax
  \newline
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/SS202_IDWMap-biomass.pdf} \\ 
+\includegraphics[width=5.5in]{../Figures-Actual/SS202_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Smooth skate.}
 \end{minipage} 
 
 \begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=1.8in]{../Figures-Actual/SS202_Stratified-biomass.pdf} \\ 
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS202_Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS202_Distribution-usingbiomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS202_BDcorrelations.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Smooth skate.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Smooth skate.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS202_DepthDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS202_TemperatureDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS202_SalinityDist.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Smooth skate.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS202_LengthFreq-NAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Smooth skate.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS202_Condition4X4VW.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Smooth skate.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS202_DDHSslopes.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Smooth skate.}
 \end{minipage} 
 
 \clearpage
@@ -493,16 +1241,50 @@ Scientific name: [Leucoraja ocellata](http://www.marinespecies.org/aphia.php?p=t
  \newline
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/SS204_IDWMap-biomass.pdf} \\ 
+\includegraphics[width=5.5in]{../Figures-Actual/SS204_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Winter skate.}
 \end{minipage} 
 
 \begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=1.8in]{../Figures-Actual/SS204_Stratified-biomass.pdf} \\ 
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS204_Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS204_Distribution-usingbiomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS204_BDcorrelations.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Winter skate.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Winter skate.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS204_DepthDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS204_TemperatureDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS204_SalinityDist.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Winter skate.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS204_LengthFreq-NAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Winter skate.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS204_Condition4X4VW.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Winter skate.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS204_DDHSslopes.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Winter skate.}
 \end{minipage} 
 
 \clearpage
@@ -515,16 +1297,50 @@ Scientific name: [Squalus acanthias](http://www.marinespecies.org/aphia.php?p=ta
  \newline
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/SS220_IDWMap-biomass.pdf} \\ 
+\includegraphics[width=5.5in]{../Figures-Actual/SS220_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Picked dogfish.}
 \end{minipage} 
 
 \begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=1.8in]{../Figures-Actual/SS220_Stratified-biomass.pdf} \\ 
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS220_Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS220_Distribution-usingbiomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS220_BDcorrelations.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Picked dogfish.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Picked dogfish.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS220_DepthDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS220_TemperatureDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS220_SalinityDist.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Picked dogfish.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS220_LengthFreq-NAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Picked dogfish.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS220_Condition4X4VW.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Picked dogfish.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS220_DDHSslopes.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Picked dogfish.}
 \end{minipage} 
 
 \clearpage
@@ -537,16 +1353,50 @@ Scientific name: [Illex illecebrosus](http://www.marinespecies.org/aphia.php?p=t
  \newline
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/SS4511_IDWMap-biomass.pdf} \\ 
+\includegraphics[width=5.5in]{../Figures-Actual/SS4511_IDWMap-biomass.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Northern shortfin squid.}
 \end{minipage} 
 
 \begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=1.8in]{../Figures-Actual/SS4511_Stratified-biomass.pdf} \\ 
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS4511_Stratified-biomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS4511_Distribution-usingbiomass.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS4511_BDcorrelations.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Northern shortfin squid.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Northern shortfin squid.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=1.8in]{../Figures-Actual/SS4511_DepthDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS4511_TemperatureDist.pdf} & 
+\includegraphics[width=1.8in]{../Figures-Actual/SS4511_SalinityDist.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Northern shortfin squid.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS4511_LengthFreq-NAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Northern shortfin squid.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS4511_Condition4X4VW.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Northern shortfin squid.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5in]{../Figures-Actual/SS4511_DDHSslopes.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Northern shortfin squid.}
 \end{minipage} 
 
 \clearpage

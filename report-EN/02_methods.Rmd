@@ -13,7 +13,7 @@ The basic sampling unit of the survey is a 30-minute fishing tow conducted at a 
 
 After each tow the catch is sorted by species and weighed. Each fish caught is then measured, and further sampling of individual fish weight, maturity status and age are performed for diﬀerent length classes. When catches exceed 300 individuals, a random sub-sample is used to obtain the length and weight measurements.
 
-## Taxonomic Levels
+## Taxonomic Levels {#taxo}
 
 Fish species caught during the surveys are identified by trained scientific personnel and their scientific name is determined. An internal species code used in the relational database is reported for each species [@LosierWaite1989].
 
@@ -21,9 +21,9 @@ By its nature as a bottom trawl, the fishing gear used in the survey catches cer
 
 We divided the species caught into five categories based on 1) their taxonomic classification, 2) the number of recorded observations, and 3) their period of valid identification. Category ”L”, for ”long”, was assigned to species that have more than 1000 records since 1970 and have been consistently identified since the onset of the survey. Category ”S”, for ”short”, was assigned to invertebrate species that were consistently sampled only since 1999 [@Tremblayetal:2007]. Category ”I”, for ”intermediate”, was assigned to species that had been 1000 and 200 catch records. Rare and elusive species (those with less than 200 catch records over the duration of the survey) are also reported but to a lower level of analytical details (Category ”LR”, for ”long rare”, and category ”SR”, for ”short rare”).
 
-The list of taxa covered in this document is presented in phylogenetic order [@Nelsonetal:2004] in Table 4. To ensure concordance with authoritative taxonomic information, the AphiaID from the World Register of Marine Species is also provided in Table 4 [@WoRMS].
+The list of taxa covered in this document is presented in phylogenetic order [@Nelsonetal:2004] in Table \@ref(tab:tabspecies). To ensure concordance with authoritative taxonomic information, the AphiaID from the World Register of Marine Species is also provided in Table \@ref(tab:tabspecies) [@WoRMS].
 
-(ref:spec-fig-cap) List of species included in the Atlas. The species reported here are listed in phylogenetic order as per @page:etal:7thedition.
+(ref:spec-fig-cap) List of species included in the Atlas. The species reported here are listed in phylogenetic order as per @page:etal:7thedition. For each taxonomic order and class, each species is listed in the table, its taxonomic family and scientific name is provided, along with its French and English common names, the species code used in the survey database, its AphiaID and a link to the World Registry of Marine Species, its number of catch records in the survey database and its classification category as defined in section \@ref(taxo).
 
 ```{r tabspecies}
 library(tidyverse)
@@ -37,8 +37,9 @@ knitr::kable(spec.tab[,vars], "latex", booktabs = TRUE, longtable = TRUE, align 
   kableExtra::landscape() %>%
   kableExtra::collapse_rows(1:3, row_group_label_position = 'stack') %>% 
   kableExtra::column_spec(4, italic=T, width="3cm") %>% 
-#  kableExtra::column_spec(5, italic=T, width="3cm") %>% 
-#  kableExtra::column_spec(6, italic=T, width="3cm") %>% 
+  kableExtra::column_spec(5, width="3cm") %>% 
+  kableExtra::column_spec(6, width="3cm") %>% 
+  kableExtra::column_spec(7, width="3cm") %>% 
   kableExtra::column_spec(7, link=sections) %>% 
   kableExtra::column_spec(8, link=urls) %>% 
   kableExtra::kable_styling(font_size = 9, latex_options = "repeat_header", repeat_header_text = "", repeat_header_method = "replace") %>%  

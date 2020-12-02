@@ -1,29 +1,30 @@
 ## script that handles a call for each species and generates the appropriate figures 
 ## 
 ## 
-## description
-## figure 1: a figure containing 9 maps of the survey area and showing the stratum-level stratified estimate of catch abundance
-## figure 2: cumulative distributions showing habitat preference of a species (as per Perry and Smith (1994)), this figure shows the distributions for depth
-## figure 3: cumulative distributions showing habitat preference of a species (as per Perry and Smith (1994)), this figure shows the distributions for bottom temperature
-## figure 4: cumulative distributions showing habitat preference of a species (as per Perry and Smith (1994)), this figure shows the distributions for bottom salinity
-## figure 5: time-series plots of distribution indices, includes the Gini index, D50, D75 and D95
-## figure 6: time-series plots of stratified random estimates of catch abundance and catch biomass
-## figure 7: length frequency distribution per 7-year period
-## figure 8: length-weight relationship plot
-## figure 9: timeseries of average fish condition
-## figure 10: a figure containing 9 maps of the survey area and showing a geostatistical interpolation of catch abundance (inverse distance weighted)
-## figure 11: same as figure 10, using catch biomass
-## figure 12: density-dependent habitat selection plot, beta vs. stratum-level density
-## figure 13: time-series plots of stratified random estimates of catch abundance (as per figure 6, but only abundance)
-## figure 14: time-series plots of stratified random estimates of catch biomass (as per figure 6, but only biomass)
-## figure 15: length frequency distribution per 7-year period, separately for NAFO 4X and NAFO 4VW (as per figure 7)
-## figure 16: a single map showing the occurences of a species, used for rare species with few records 
-## figure 17: correlation between abundance and distribution
-## figure 18: time-series plots of distribution indices, includes the Gini index, D50, D75 and D95 (as per Figure 5, but using biomass)
-## figure 19: correlation between biomass and distribution
-## figure 20: timeseries of average fish condition, separately for NAFO 4X and NAFO 4VW (as per figure 9) and including the estimated parameters of the length-weight relationship
-## figure 21: a figure containing 4 maps of the survey area and showing a geostatistical interpolation of catch abundance (inverse distance weighted), from 1999 for inverts 
-## figure 22: same as figure 21, using catch biomass
+## name and description of each figure
+## IDWabundance figure 1: a figure containing 9 maps of the survey area and showing the stratum-level stratified estimate of catch abundance
+## depthpref figure 2: cumulative distributions showing habitat preference of a species (as per Perry and Smith (1994)), this figure shows the distributions for depth
+## bottomtemppref figure 3: cumulative distributions showing habitat preference of a species (as per Perry and Smith (1994)), this figure shows the distributions for bottom temperature
+## salinitypref figure 4: cumulative distributions showing habitat preference of a species (as per Perry and Smith (1994)), this figure shows the distributions for bottom salinity
+## distribution-indices-usingN figure 5: time-series plots of distribution indices, includes the Gini index, D50, D75 and D95
+## stratified figure 6: time-series plots of stratified random estimates of catch abundance and catch biomass
+## lengthfreq figure 7: length frequency distribution per 7-year period
+## LW figure 8: length-weight relationship plot
+## condition figure 9: time series of average fish condition
+## IDWabundance figure 10: a figure containing 9 maps of the survey area and showing a geostatistical interpolation of catch abundance (inverse distance weighted)
+## IDWbiomass figure 11: same as figure 10, using catch biomass
+## DDHS figure 12: density-dependent habitat selection plot, beta vs. stratum-level density
+## stratifiedN  figure 13: time-series plots of stratified random estimates of catch abundance (as per figure 6, but only abundance)
+## stratifiedB figure 14: time-series plots of stratified random estimates of catch biomass (as per figure 6, but only biomass)
+## lengthfreqNAFO figure 15: length frequency distribution per 7-year period, separately for NAFO 4X and NAFO 4VW (as per figure 7)
+## presence figure 16: a single map showing the occurrences of a species, used for rare species with few records 
+## NvsD75corr figure 17: correlation between abundance and distribution
+## distribution-indices-usingB figure 18: time-series plots of distribution indices, includes the Gini index, D50, D75 and D95 (as per Figure 5, but using biomass)
+## BvsD75corr figure 19: correlation between biomass and distribution
+## conditionNAFO figure 20: timeseries of average fish condition, separately for NAFO 4X and NAFO 4VW (as per figure 9) and including the estimated parameters of the length-weight relationship
+## IDWabundanceSspecies figure 21: a figure containing 4 maps of the survey area and showing a geostatistical interpolation of catch abundance (inverse distance weighted), from 1999 for inverts 
+## IDWbiomassSspecies figure 22: same as figure 21, using catch biomass
+
 
 figures<-function(fig=c(1:10), spec.num=NA,
 		path.Data=NA, path.Map=NA,

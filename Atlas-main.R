@@ -106,6 +106,7 @@ print(paste("Script Atlas.R started: ", Sys.time()))
 	# sapply(species.numbers, function(i){figures(spec.num=i, fig=c(19))})
 	print(paste("End figures, L species: ", Sys.time()))
   
+	
   # GROUP : well identified species with DDHS fitting problems
   #species.numbers <- c(610,143)
   #sapply(species.numbers, function(i){data.extract(extract.num=c(1,2,3,4,6,7), spec.num=i)})

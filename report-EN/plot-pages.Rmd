@@ -1,6 +1,8 @@
 # Appendix
 <!-- This page has been automatically generated: do not edit by hand -->
 
+## Atlantic cod (Morue franche) - species code 10 (category L) {#sec:10} 
+
 \index{Morue franche} \index{Atlantic cod} \index{Gadus morhua} 
 
 \index{Gadidae!Gadus morhua} 
@@ -56,6 +58,8 @@ the figure for Atlantic cod.}
 \end{minipage} 
 
 \clearpage
+
+## Haddock (Aiglefin) - species code 11 (category L) {#sec:11} 
 
 \index{Aiglefin} \index{Haddock} \index{Melanogrammus aeglefinus} 
 
@@ -113,6 +117,8 @@ the figure for Haddock.}
 
 \clearpage
 
+## White hake (Merluche blanche) - species code 12 (category L) {#sec:12} 
+
 \index{Merluche blanche} \index{White hake} \index{Urophycis tenuis} 
 
 \index{Phycidae!Urophycis tenuis} 
@@ -168,6 +174,8 @@ the figure for White hake.}
 \end{minipage} 
 
 \clearpage
+
+## Red hake (Merluche écureuil) - species code 13 (category L) {#sec:13} 
 
 \index{Merluche écureuil} \index{Red hake} \index{Urophycis chuss} 
 
@@ -225,6 +233,8 @@ the figure for Red hake.}
 
 \clearpage
 
+## Silver hake (Merlu argenté) - species code 14 (category L) {#sec:14} 
+
 \index{Merlu argenté} \index{Silver hake} \index{Merluccius bilinearis} 
 
 \index{Merlucciidae!Merluccius bilinearis} 
@@ -280,6 +290,8 @@ the figure for Silver hake.}
 \end{minipage} 
 
 \clearpage
+
+## Pollock (Goberge) - species code 16 (category L) {#sec:16} 
 
 \index{Goberge} \index{Pollock} \index{Pollachius virens} 
 
@@ -337,6 +349,8 @@ the figure for Pollock.}
 
 \clearpage
 
+## Atlantic redfishes (Sébastes de l'Atlantique) - species code 23 (category L) {#sec:23} 
+
 \index{Sébastes de l'Atlantique} \index{Atlantic redfishes} \index{Sebastes} 
 
 \index{Sebastidae!Sebastes} 
@@ -392,6 +406,8 @@ the figure for Atlantic redfishes.}
 \end{minipage} 
 
 \clearpage
+
+## Atlantic halibut (Flétan de l'Atlantique) - species code 30 (category L) {#sec:30} 
 
 \index{Flétan de l'Atlantique} \index{Atlantic halibut} \index{Hippoglossus hippoglossus} 
 
@@ -449,6 +465,8 @@ the figure for Atlantic halibut.}
 
 \clearpage
 
+## American plaice (Plie canadienne) - species code 40 (category L) {#sec:40} 
+
 \index{Plie canadienne} \index{American plaice} \index{Hippoglossoides platessoides} 
 
 \index{Pleuronectidae!Hippoglossoides platessoides} 
@@ -504,6 +522,8 @@ the figure for American plaice.}
 \end{minipage} 
 
 \clearpage
+
+## Witch flounder (Plie grise) - species code 41 (category L) {#sec:41} 
 
 \index{Plie grise} \index{Witch flounder} \index{Glyptocephalus cynoglossus} 
 
@@ -561,6 +581,8 @@ the figure for Witch flounder.}
 
 \clearpage
 
+## Yellowtail flounder (Limande à queue jaune) - species code 42 (category L) {#sec:42} 
+
 \index{Limande à queue jaune} \index{Yellowtail flounder} \index{Limanda ferruginea} 
 
 \index{Pleuronectidae!Limanda ferruginea} 
@@ -616,6 +638,8 @@ the figure for Yellowtail flounder.}
 \end{minipage} 
 
 \clearpage
+
+## Winter flounder (Limande-plie rouge) - species code 43 (category L) {#sec:43} 
 
 \index{Limande-plie rouge} \index{Winter flounder} \index{Pseudopleuronectes americanus} 
 
@@ -673,6 +697,8 @@ the figure for Winter flounder.}
 
 \clearpage
 
+## Atlantic wolffish (Loup atlantique) - species code 50 (category L) {#sec:50} 
+
 \index{Loup atlantique} \index{Atlantic wolffish} \index{Anarhichas lupus} 
 
 \index{Anarhichadidae!Anarhichas lupus} 
@@ -728,6 +754,8 @@ the figure for Atlantic wolffish.}
 \end{minipage} 
 
 \clearpage
+
+## Atlantic herring (Hareng de l'Atlantique) - species code 60 (category L) {#sec:60} 
 
 \index{Hareng de l'Atlantique} \index{Atlantic herring} \index{Clupea harengus} 
 
@@ -785,6 +813,8 @@ the figure for Atlantic herring.}
 
 \clearpage
 
+## Longhorn sculpin (Chaboisseau à dix-huit épines) - species code 300 (category L) {#sec:300} 
+
 \index{Chaboisseau à dix-huit épines} \index{Longhorn sculpin} \index{Myoxocephalus octodecemspinosus} 
 
 \index{Cottidae!Myoxocephalus octodecemspinosus} 
@@ -840,6 +870,8 @@ the figure for Longhorn sculpin.}
 \end{minipage} 
 
 \clearpage
+
+## Moustache sculpin (Faux-trigle armé) - species code 304 (category L) {#sec:304} 
 
 \index{Faux-trigle armé} \index{Moustache sculpin} \index{Triglops murrayi} 
 
@@ -897,6 +929,8 @@ the figure for Moustache sculpin.}
 
 \clearpage
 
+## Sea raven (Hémitriptère atlantique) - species code 320 (category L) {#sec:320} 
+
 \index{Hémitriptère atlantique} \index{Sea raven} \index{Hemitripterus americanus} 
 
 \index{Hemitripteridae!Hemitripterus americanus} 
@@ -952,6 +986,8 @@ the figure for Sea raven.}
 \end{minipage} 
 
 \clearpage
+
+## Alligatorfish (Poisson-alligator atlantique) - species code 340 (category L) {#sec:340} 
 
 \index{Poisson-alligator atlantique} \index{Alligatorfish} \index{Aspidophoroides monopterygius} 
 
@@ -1009,6 +1045,8 @@ the figure for Alligatorfish.}
 
 \clearpage
 
+## Monkfish (Baudroie d'Amérique) - species code 400 (category L) {#sec:400} 
+
 \index{Baudroie d'Amérique} \index{Monkfish} \index{Lophius americanus} 
 
 \index{Lophiidae!Lophius americanus} 
@@ -1064,6 +1102,8 @@ the figure for Monkfish.}
 \end{minipage} 
 
 \clearpage
+
+## Ocean pout (Loquette d'Amérique) - species code 640 (category L) {#sec:640} 
 
 \index{Loquette d'Amérique} \index{Ocean pout} \index{Zoarces americanus} 
 
@@ -1121,6 +1161,8 @@ the figure for Ocean pout.}
 
 \clearpage
 
+## Thorny skate (Raie épineuse) - species code 201 (category L) {#sec:201} 
+
 \index{Raie épineuse} \index{Thorny skate} \index{Amblyraja radiata} 
 
 \index{Rajidae!Amblyraja radiata} 
@@ -1176,6 +1218,8 @@ the figure for Thorny skate.}
 \end{minipage} 
 
 \clearpage
+
+## Smooth skate (Raie lisse) - species code 202 (category L) {#sec:202} 
 
 \index{Raie lisse} \index{Smooth skate} \index{Malacoraja senta} 
 
@@ -1233,6 +1277,8 @@ the figure for Smooth skate.}
 
 \clearpage
 
+## Winter skate (Raie tachetée) - species code 204 (category L) {#sec:204} 
+
 \index{Raie tachetée} \index{Winter skate} \index{Leucoraja ocellata} 
 
 \index{Rajidae!Leucoraja ocellata} 
@@ -1288,6 +1334,8 @@ the figure for Winter skate.}
 \end{minipage} 
 
 \clearpage
+
+## Picked dogfish (Aiguillat commun) - species code 220 (category L) {#sec:220} 
 
 \index{Aiguillat commun} \index{Picked dogfish} \index{Squalus acanthias} 
 
@@ -1345,6 +1393,8 @@ the figure for Picked dogfish.}
 
 \clearpage
 
+## Northern shortfin squid (Encornet rouge nordique) - species code 4511 (category L) {#sec:4511} 
+
 \index{Encornet rouge nordique} \index{Northern shortfin squid} \index{Illex illecebrosus} 
 
 \index{Ommastrephidae!Illex illecebrosus} 
@@ -1397,6 +1447,792 @@ biomass of Northern shortfin squid.}
 \end{tabular} 
 \captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
 the figure for Northern shortfin squid.}
+\end{minipage} 
+
+\clearpage
+
+
+
+
+
+## Sea lamprey (Lamproie marine) - species code 240 (category LR) {#sec:240} 
+
+\index{Lamproie marine} \index{Sea lamprey} \index{Petromyzon marinus} 
+
+\index{Petromyzontidae!Petromyzon marinus} 
+
+Scientific name: [Petromyzon marinus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=101174) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS240_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Sea lamprey.}
+\end{minipage} 
+
+\clearpage
+
+## Atlantic tomcod (Poulamon atlantique) - species code 17 (category LR) {#sec:17} 
+
+\index{Poulamon atlantique} \index{Atlantic tomcod} \index{Microgadus tomcod} 
+
+\index{Gadidae!Microgadus tomcod} 
+
+Scientific name: [Microgadus tomcod](http://www.marinespecies.org/aphia.php?p=taxdetails&id=158928) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS17_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Atlantic tomcod.}
+\end{minipage} 
+
+\clearpage
+
+## Offshore silver hake (Merlu argenté du large) - species code 19 (category LR) {#sec:19} 
+
+\index{Merlu argenté du large} \index{Offshore silver hake} \index{Merluccius albidus} 
+
+\index{Merlucciidae!Merluccius albidus} 
+
+Scientific name: [Merluccius albidus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=158748) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS19_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Offshore silver hake.}
+\end{minipage} 
+
+\clearpage
+
+## Spotted wolffish (Loup tacheté) - species code 51 (category LR) {#sec:51} 
+
+\index{Loup tacheté} \index{Spotted wolffish} \index{Anarhichas minor} 
+
+\index{Anarhichadidae!Anarhichas minor} 
+
+Scientific name: [Anarhichas minor](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126759) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS51_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Spotted wolffish.}
+\end{minipage} 
+
+\clearpage
+
+## Northern wolffish (Loup à tête large) - species code 52 (category LR) {#sec:52} 
+
+\index{Loup à tête large} \index{Northern wolffish} \index{Anarhichas denticulatus} 
+
+\index{Anarhichadidae!Anarhichas denticulatus} 
+
+Scientific name: [Anarhichas denticulatus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126757) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS52_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Northern wolffish.}
+\end{minipage} 
+
+\clearpage
+
+## Rainbow smelt (Éperlan arc-en-ciel) - species code 63 (category LR) {#sec:63} 
+
+\index{Éperlan arc-en-ciel} \index{Rainbow smelt} \index{Osmerus mordax} 
+
+\index{Osmeridae!Osmerus mordax} 
+
+Scientific name: [Osmerus mordax](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126737) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS63_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Rainbow smelt.}
+\end{minipage} 
+
+\clearpage
+
+## Cunner (Tanche-tautogue) - species code 122 (category LR) {#sec:122} 
+
+\index{Tanche-tautogue} \index{Cunner} \index{Tautogolabrus adspersus} 
+
+\index{Labridae!Tautogolabrus adspersus} 
+
+Scientific name: [Tautogolabrus adspersus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=159785) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS122_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Cunner.}
+\end{minipage} 
+
+\clearpage
+
+## Fourspot flounder (Cardeau à quatre ocelles) - species code 142 (category LR) {#sec:142} 
+
+\index{Cardeau à quatre ocelles} \index{Fourspot flounder} \index{Hippoglossina oblonga} 
+
+\index{Paralichthyidae!Hippoglossina oblonga} 
+
+Scientific name: [Hippoglossina oblonga](http://www.marinespecies.org/aphia.php?p=taxdetails&id=158833) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS142_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Fourspot flounder.}
+\end{minipage} 
+
+\clearpage
+
+## Windowpane flounder (Turbot de sable) - species code 143 (category LR) {#sec:143} 
+
+\index{Turbot de sable} \index{Windowpane flounder} \index{Scophthalmus aquosus} 
+
+\index{Scophthalmidae!Scophthalmus aquosus} 
+
+Scientific name: [Scophthalmus aquosus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=158907) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS143_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Windowpane flounder.}
+\end{minipage} 
+
+\clearpage
+
+## Longnose greeneye (Oeil-vert à long nez) - species code 149 (category LR) {#sec:149} 
+
+\index{Oeil-vert à long nez} \index{Longnose greeneye} \index{Parasudis truculenta} 
+
+\index{Chlorophthalmidae!Parasudis truculenta} 
+
+Scientific name: [Parasudis truculenta](http://www.marinespecies.org/aphia.php?p=taxdetails&id=158868) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS149_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Longnose greeneye.}
+\end{minipage} 
+
+\clearpage
+
+## Lanternfishes (Poissons-lanternes) - species code 150 (category LR) {#sec:150} 
+
+\index{Poissons-lanternes} \index{Lanternfishes} \index{Myctophidae} 
+
+\index{Myctophidae!Myctophidae} 
+
+Scientific name: [Myctophidae](http://www.marinespecies.org/aphia.php?p=taxdetails&id=125498) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS150_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Lanternfishes.}
+\end{minipage} 
+
+\clearpage
+
+## Shortnose greeneye (Éperlan du large) - species code 156 (category LR) {#sec:156} 
+
+\index{Éperlan du large} \index{Shortnose greeneye} \index{Chlorophthalmus agassizi} 
+
+\index{Chlorophthalmidae!Chlorophthalmus agassizi} 
+
+Scientific name: [Chlorophthalmus agassizi](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126336) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS156_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Shortnose greeneye.}
+\end{minipage} 
+
+\clearpage
+
+## Silvery lightfish (Brossé améthyste) - species code 158 (category LR) {#sec:158} 
+
+\index{Brossé améthyste} \index{Silvery lightfish} \index{Maurolicus muelleri} 
+
+\index{Sternoptychidae!Maurolicus muelleri} 
+
+Scientific name: [Maurolicus muelleri](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127312) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS158_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Silvery lightfish.}
+\end{minipage} 
+
+\clearpage
+
+## Boa dragonfish (Dragon-boa) - species code 159 (category LR) {#sec:159} 
+
+\index{Dragon-boa} \index{Boa dragonfish} \index{Stomias boa} 
+
+\index{Stomiidae!Stomias boa} 
+
+Scientific name: [Stomias boa](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127374) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS159_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Boa dragonfish.}
+\end{minipage} 
+
+\clearpage
+
+## Shorthorn sculpin (Chaboisseau à épines courtes) - species code 301 (category LR) {#sec:301} 
+
+\index{Chaboisseau à épines courtes} \index{Shorthorn sculpin} \index{Myoxocephalus scorpius} 
+
+\index{Cottidae!Myoxocephalus scorpius} 
+
+Scientific name: [Myoxocephalus scorpius](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127203) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS301_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Shorthorn sculpin.}
+\end{minipage} 
+
+\clearpage
+
+## Grubby (Chaboisseau bronzé) - species code 303 (category LR) {#sec:303} 
+
+\index{Chaboisseau bronzé} \index{Grubby} \index{Myoxocephalus aenaeus} 
+
+\index{Cottidae!Myoxocephalus aenaeus} 
+
+Scientific name: [Myoxocephalus aenaeus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=159519) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS303_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Grubby.}
+\end{minipage} 
+
+\clearpage
+
+## Polar sculpin (Cotte polaire) - species code 307 (category LR) {#sec:307} 
+
+\index{Cotte polaire} \index{Polar sculpin} \index{Cottunculus microps} 
+
+\index{Psychrolutidae!Cottunculus microps} 
+
+Scientific name: [Cottunculus microps](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127235) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS307_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Polar sculpin.}
+\end{minipage} 
+
+\clearpage
+
+## Spatulate sculpin (Icèle spatulée) - species code 314 (category LR) {#sec:314} 
+
+\index{Icèle spatulée} \index{Spatulate sculpin} \index{Icelus spatula} 
+
+\index{Cottidae!Icelus spatula} 
+
+Scientific name: [Icelus spatula](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127200) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS314_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Spatulate sculpin.}
+\end{minipage} 
+
+\clearpage
+
+## Arctic alligatorfish (Poisson-alligator arctique) - species code 341 (category LR) {#sec:341} 
+
+\index{Poisson-alligator arctique} \index{Arctic alligatorfish} \index{Ulcina olrikii} 
+
+\index{Agonidae!Ulcina olrikii} 
+
+Scientific name: [Ulcina olrikii](http://www.marinespecies.org/aphia.php?p=taxdetails&id=274356) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS341_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Arctic alligatorfish.}
+\end{minipage} 
+
+\clearpage
+
+## Alligatorfishes (Poissons-alligator) - species code 351 (category LR) {#sec:351} 
+
+\index{Poissons-alligator} \index{Alligatorfishes} \index{Agonidae} 
+
+\index{Agonidae!Agonidae} 
+
+Scientific name: [Agonidae](http://www.marinespecies.org/aphia.php?p=taxdetails&id=125588) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS351_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Alligatorfishes.}
+\end{minipage} 
+
+\clearpage
+
+## Roughnose grenadier (Grenadier-scie) - species code 412 (category LR) {#sec:412} 
+
+\index{Grenadier-scie} \index{Roughnose grenadier} \index{Trachyrincus murrayi} 
+
+\index{Macrouridae!Trachyrincus murrayi} 
+
+Scientific name: [Trachyrincus murrayi](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126481) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS412_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Roughnose grenadier.}
+\end{minipage} 
+
+\clearpage
+
+## Roundnose grenadier (Grenadier de roche) - species code 414 (category LR) {#sec:414} 
+
+\index{Grenadier de roche} \index{Roundnose grenadier} \index{Coryphaenoides rupestris} 
+
+\index{Macrouridae!Coryphaenoides rupestris} 
+
+Scientific name: [Coryphaenoides rupestris](http://www.marinespecies.org/aphia.php?p=taxdetails&id=158960) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS414_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Roundnose grenadier.}
+\end{minipage} 
+
+\clearpage
+
+## Atlantic seasnail (Limace atlantique) - species code 503 (category LR) {#sec:503} 
+
+\index{Limace atlantique} \index{Atlantic seasnail} \index{Liparis atlanticus} 
+
+\index{Liparidae!Liparis atlanticus} 
+
+Scientific name: [Liparis atlanticus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=159524) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS503_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Atlantic seasnail.}
+\end{minipage} 
+
+\clearpage
+
+## Gelatinous snailfish (Limace gélatineuse) - species code 505 (category LR) {#sec:505} 
+
+\index{Limace gélatineuse} \index{Gelatinous snailfish} \index{Liparis fabricii} 
+
+\index{Liparidae!Liparis fabricii} 
+
+Scientific name: [Liparis fabricii](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127218) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS505_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Gelatinous snailfish.}
+\end{minipage} 
+
+\clearpage
+
+## Variegated snailfish (Limace marbée) - species code 512 (category LR) {#sec:512} 
+
+\index{Limace marbée} \index{Variegated snailfish} \index{Liparis gibbus} 
+
+\index{Liparidae!Liparis gibbus} 
+
+Scientific name: [Liparis gibbus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=159526) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS512_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Variegated snailfish.}
+\end{minipage} 
+
+\clearpage
+
+## Sea tadpole (Petite limace de mer) - species code 520 (category LR) {#sec:520} 
+
+\index{Petite limace de mer} \index{Sea tadpole} \index{Careproctus reinhardti} 
+
+\index{Liparidae!Careproctus reinhardti} 
+
+Scientific name: [Careproctus reinhardti](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127212) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS520_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Sea tadpole.}
+\end{minipage} 
+
+\clearpage
+
+## Wolf eelpout (Lycode à tête longue) - species code 603 (category LR) {#sec:603} 
+
+\index{Lycode à tête longue} \index{Wolf eelpout} \index{Lycenchelys verrillii} 
+
+\index{Zoarcidae!Lycenchelys verrillii} 
+
+Scientific name: [Lycenchelys verrillii](http://www.marinespecies.org/aphia.php?p=taxdetails&id=159258) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS603_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Wolf eelpout.}
+\end{minipage} 
+
+\clearpage
+
+## Slender snipe eel (Avocette ruban) - species code 604 (category LR) {#sec:604} 
+
+\index{Avocette ruban} \index{Slender snipe eel} \index{Nemichthys scolopaceus} 
+
+\index{Nemichthyidae!Nemichthys scolopaceus} 
+
+Scientific name: [Nemichthys scolopaceus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126306) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS604_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Slender snipe eel.}
+\end{minipage} 
+
+\clearpage
+
+## Newfoundland eelpout (Lycode du Labrador) - species code 619 (category LR) {#sec:619} 
+
+\index{Lycode du Labrador} \index{Newfoundland eelpout} \index{Lycodes terraenovae} 
+
+\index{Zoarcidae!Lycodes terraenovae} 
+
+Scientific name: [Lycodes terraenovae](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127117) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS619_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Newfoundland eelpout.}
+\end{minipage} 
+
+\clearpage
+
+## Newfoundland eelpout (Lycode du Labrador) - species code 620 (category LR) {#sec:620} 
+
+\index{Lycode du Labrador} \index{Newfoundland eelpout} \index{Lycodes lavalaei} 
+
+\index{Zoarcidae!Lycodes lavalaei} 
+
+Scientific name: [Lycodes lavalaei](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127107) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS620_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Newfoundland eelpout.}
+\end{minipage} 
+
+\clearpage
+
+## Rock gunnel (Sigouine de roche) - species code 621 (category LR) {#sec:621} 
+
+\index{Sigouine de roche} \index{Rock gunnel} \index{Pholis gunnellus} 
+
+\index{Pholidae!Pholis gunnellus} 
+
+Scientific name: [Pholis gunnellus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126996) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS621_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Rock gunnel.}
+\end{minipage} 
+
+\clearpage
+
+## Radiated shanny (Ulvaire deux-lignes) - species code 625 (category LR) {#sec:625} 
+
+\index{Ulvaire deux-lignes} \index{Radiated shanny} \index{Ulvaria subbifurcata} 
+
+\index{Stichaeidae!Ulvaria subbifurcata} 
+
+Scientific name: [Ulvaria subbifurcata](http://www.marinespecies.org/aphia.php?p=taxdetails&id=159821) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS625_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Radiated shanny.}
+\end{minipage} 
+
+\clearpage
+
+## Fourline snakeblenny (Quatre-lignes atlantique) - species code 626 (category LR) {#sec:626} 
+
+\index{Quatre-lignes atlantique} \index{Fourline snakeblenny} \index{Eumesogrammus praecisus} 
+
+\index{Stichaeidae!Eumesogrammus praecisus} 
+
+Scientific name: [Eumesogrammus praecisus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=159817) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS626_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Fourline snakeblenny.}
+\end{minipage} 
+
+\clearpage
+
+## Wrymouth (Terrassier tacheté) - species code 630 (category LR) {#sec:630} 
+
+\index{Terrassier tacheté} \index{Wrymouth} \index{Cryptacanthodes maculatus} 
+
+\index{Cryptacanthodidae!Cryptacanthodes maculatus} 
+
+Scientific name: [Cryptacanthodes maculatus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=159675) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS630_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Wrymouth.}
+\end{minipage} 
+
+\clearpage
+
+## Spotfin dragonet (Dragonnet tacheté) - species code 637 (category LR) {#sec:637} 
+
+\index{Dragonnet tacheté} \index{Spotfin dragonet} \index{Foetorepus agassizii} 
+
+\index{Callionymidae!Foetorepus agassizii} 
+
+Scientific name: [Foetorepus agassizii](http://www.marinespecies.org/aphia.php?p=taxdetails&id=276339) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS637_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Spotfin dragonet.}
+\end{minipage} 
+
+\clearpage
+
+## Arctic eelpout (Lycode arctique) - species code 641 (category LR) {#sec:641} 
+
+\index{Lycode arctique} \index{Arctic eelpout} \index{Lycodes reticulatus} 
+
+\index{Zoarcidae!Lycodes reticulatus} 
+
+Scientific name: [Lycodes reticulatus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127112) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS641_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Arctic eelpout.}
+\end{minipage} 
+
+\clearpage
+
+## Atlantic soft pout (Molasse atlantique) - species code 646 (category LR) {#sec:646} 
+
+\index{Molasse atlantique} \index{Atlantic soft pout} \index{Melanostigma atlanticum} 
+
+\index{Zoarcidae!Melanostigma atlanticum} 
+
+Scientific name: [Melanostigma atlanticum](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127120) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS646_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Atlantic soft pout.}
+\end{minipage} 
+
+\clearpage
+
+## Silvery John dory (Saint Pierre argenté) - species code 704 (category LR) {#sec:704} 
+
+\index{Saint Pierre argenté} \index{Silvery John dory} \index{Zenopsis conchifer} 
+
+\index{Zeidae!Zenopsis conchifer} 
+
+Scientific name: [Zenopsis conchifer](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127426) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS704_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Silvery John dory.}
+\end{minipage} 
+
+\clearpage
+
+## White barracudina (Lussion blanc) - species code 712 (category LR) {#sec:712} 
+
+\index{Lussion blanc} \index{White barracudina} \index{Arctozenus risso} 
+
+\index{Paralepididae!Arctozenus risso} 
+
+Scientific name: [Arctozenus risso](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126352) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS712_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for White barracudina.}
+\end{minipage} 
+
+\clearpage
+
+## Atlantic saury (Balaou atlantique) - species code 720 (category LR) {#sec:720} 
+
+\index{Balaou atlantique} \index{Atlantic saury} \index{Scomberesox saurus} 
+
+\index{Scomberesocidae!Scomberesox saurus} 
+
+Scientific name: [Scomberesox saurus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126392) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS720_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Atlantic saury.}
+\end{minipage} 
+
+\clearpage
+
+## Hatchetfishes (Haches d'argent) - species code 741 (category LR) {#sec:741} 
+
+\index{Haches d'argent} \index{Hatchetfishes} \index{Sternoptychidae} 
+
+\index{Sternoptychidae!Sternoptychidae} 
+
+Scientific name: [Sternoptychidae](http://www.marinespecies.org/aphia.php?p=taxdetails&id=125603) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS741_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Hatchetfishes.}
+\end{minipage} 
+
+\clearpage
+
+## Atlantic batfish (Malthe atlantique) - species code 742 (category LR) {#sec:742} 
+
+\index{Malthe atlantique} \index{Atlantic batfish} \index{Dibranchus atlanticus} 
+
+\index{Ogcocephalidae!Dibranchus atlanticus} 
+
+Scientific name: [Dibranchus atlanticus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126558) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS742_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Atlantic batfish.}
+\end{minipage} 
+
+\clearpage
+
+## Spottedfin tonguefish (Langue fil noir) - species code 816 (category LR) {#sec:816} 
+
+\index{Langue fil noir} \index{Spottedfin tonguefish} \index{Symphurus diomedeanus} 
+
+\index{Cynoglossidae!Symphurus diomedeanus} 
+
+Scientific name: [Symphurus diomedeanus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=159358) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS816_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Spottedfin tonguefish.}
+\end{minipage} 
+
+\clearpage
+
+## Black dogfish (Aiguillat noir) - species code 221 (category LR) {#sec:221} 
+
+\index{Aiguillat noir} \index{Black dogfish} \index{Centroscyllium fabricii} 
+
+\index{Etmopteridae!Centroscyllium fabricii} 
+
+Scientific name: [Centroscyllium fabricii](http://www.marinespecies.org/aphia.php?p=taxdetails&id=105906) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS221_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Black dogfish.}
+\end{minipage} 
+
+\clearpage
+
+## Longfin inshore squid (Calmar totam) - species code 4512 (category LR) {#sec:4512} 
+
+\index{Calmar totam} \index{Longfin inshore squid} \index{Doryteuthis pealeii} 
+
+\index{Loliginidae!Doryteuthis pealeii} 
+
+Scientific name: [Doryteuthis pealeii](http://www.marinespecies.org/aphia.php?p=taxdetails&id=574541) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS4512_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Longfin inshore squid.}
+\end{minipage} 
+
+\clearpage
+
+## Red deepsea crab (Crabe rouge) - species code 2532 (category SR) {#sec:2532} 
+
+\index{Crabe rouge} \index{Red deepsea crab} \index{Chaceon quinquedens} 
+
+\index{Geryonidae!Chaceon quinquedens} 
+
+Scientific name: [Chaceon quinquedens](http://www.marinespecies.org/aphia.php?p=taxdetails&id=158407) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/SS2532_Map-tows.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Red deepsea crab.}
 \end{minipage} 
 
 \clearpage

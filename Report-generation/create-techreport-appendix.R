@@ -8,12 +8,13 @@
 library(tidyverse)
 
 in.df <- readr::read_csv(file.path(here::here(), "species-list-for-report-APHIA.csv"))
+
+## first class tickets, L species
 taxo.final <- in.df
 names(taxo.final)[1:3] <- c("species.code","comm.english","comm.fr")
-
-## first class tickets
 taxo.final <- taxo.final[taxo.final$type %in% c("L"),]
 ## 
+
 
 temp <- lapply(taxo.final$species.code, function(x) {
   
@@ -41,10 +42,11 @@ temp <- lapply(taxo.final$species.code, function(x) {
   family_name <- taxo.final$family[taxo.final$species.code == x]
   worms_id <- taxo.final$AphiaID[taxo.final$species.code == x]
   worms_link <- taxo.final$url[taxo.final$species.code == x]
+  category <- taxo.final$type[taxo.final$species.code == x]
   
   i <- 1
-  out[[i]] <- paste0("## ", english_name, " (", french_name, ") - species code ", x," {#sec:", x, "} \n")
-  i <- 1
+  out[[i]] <- paste0("## ", english_name, " (", french_name, ") - species code ", x, " (category ", category, ")"," {#sec:", x, "} \n")
+  i <- i + 1
   out[[i]] <- paste0("\\index{", french_name, "} ",  "\\index{", english_name, "} ",  "\\index{", latin_name, "} \n")
   i <- i + 1
   out[[i]] <- paste0("\\index{", family_name, "!", latin_name, "} \n")
@@ -171,11 +173,160 @@ the figure for ", english_name,".}")
 
 temp <- lapply(temp, function(x) paste(x, collapse = "\n"))
 temp <- paste(temp, collapse = "\n")
-temp <- c("# Appendix\n<!-- This page has been automatically generated: do not edit by hand -->\n", temp, "\\printindex \n")
+
+
+## second class tickets, I species
+taxo.final <- in.df
+taxo.final <- taxo.final[taxo.final$type %in% c("I"),]
+names(taxo.final)[1:3] <- c("species.code","comm.english","comm.fr")
+
+
+tempI <- lapply(taxo.final$species.code, function(x) {
+  
+  out <- list()
+  ## figure files 
+  spp_file1 <- paste0("SS",x,"_IDWMap-biomass.pdf")
+  
+  spp_file2 <- paste0("SS",x,"_Stratified-biomass.pdf")
+  spp_file3 <- paste0("SS",x,"_Distribution-usingbiomass.pdf")
+  spp_file4 <- paste0("SS",x,"_BDcorrelations.pdf")
+  
+  latin_name <- taxo.final$scientificname[taxo.final$species.code == x]
+  english_name <- taxo.final$comm.english[taxo.final$species.code == x]
+  french_name <- taxo.final$comm.fr[taxo.final$species.code == x]
+  family_name <- taxo.final$family[taxo.final$species.code == x]
+  worms_id <- taxo.final$AphiaID[taxo.final$species.code == x]
+  worms_link <- taxo.final$url[taxo.final$species.code == x]
+  category <- taxo.final$type[taxo.final$species.code == x]
+  
+  i <- 1
+  out[[i]] <- paste0("## ", english_name, " (", french_name, ") - species code ", x, " (category ", category, ")"," {#sec:", x, "} \n")
+  i <- i + 1
+  out[[i]] <- paste0("\\index{", french_name, "} ",  "\\index{", english_name, "} ",  "\\index{", latin_name, "} \n")
+  i <- i + 1
+  out[[i]] <- paste0("\\index{", family_name, "!", latin_name, "} \n")
+  i <- i + 1
+  out[[i]] <- paste0(
+    "Scientific name: [", latin_name, "](",worms_link,") \n \\newline")
+  i <- i + 1
+  #Figure 1
+  out[[i]] <- "\\begin{minipage}{1.0\\textwidth}"
+  i <- i + 1
+  out[[i]] <- " \\begin{tabular}{c}"
+  i <- i + 1
+  out[[i]] <- paste0("\\includegraphics[width=5.5in]{../Figures-Actual/",
+                     spp_file1, "} \\\\ ")
+  i <- i + 1
+  out[[i]] <- "\\end{tabular} "
+  i <- i + 1
+  out[[i]] <- paste0("\\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for ", english_name,".}")
+  i <- i + 1
+  out[[i]] <- "\\end{minipage} \n"
+  i <- i + 1
+  #end of Figure 1
+  
+  #Figures 2,3 and 4
+  out[[i]] <- "\\begin{minipage}{1.0\\textwidth}"
+  i <- i + 1
+  out[[i]] <- " \\begin{tabular}{ccc}"
+  i <- i + 1
+  out[[i]] <- paste0("\\includegraphics[width=1.8in]{../Figures-Actual/",
+                     spp_file2, "} & ")
+  i <- i + 1
+  out[[i]] <- paste0("\\includegraphics[width=1.8in]{../Figures-Actual/",
+                     spp_file3, "} & ")
+  i <- i + 1
+  out[[i]] <- paste0("\\includegraphics[width=1.8in]{../Figures-Actual/",
+                     spp_file4, "} \\\\ ")
+  i <- i + 1
+  out[[i]] <- "\\end{tabular} "
+  i <- i + 1
+  out[[i]] <- paste0("\\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of ", english_name,".}")
+  i <- i + 1
+  out[[i]] <- "\\end{minipage} \n"
+  i <- i + 1
+  #end of Figure 2, 3 and 4
+  
+  #End of Figures:
+  out[[i]] <- "\\clearpage\n"
+  out
+})
+
+## 
+tempI <- lapply(tempI, function(x) paste(x, collapse = "\n"))
+tempI <- paste(tempI, collapse = "\n")
+
+## third class tickets, S species
+taxo.final <- in.df
+names(taxo.final)[1:3] <- c("species.code","comm.english","comm.fr")
+taxo.final <- taxo.final[taxo.final$type %in% c("S"),]
+
+tempS <- "\n"
+
+
+## fourth and fifth class tickets, LR and SR species
+taxo.final <- in.df
+names(taxo.final)[1:3] <- c("species.code","comm.english","comm.fr")
+taxo.final <- taxo.final[taxo.final$type %in% c("LR","SR"),]
+
+tempR <- lapply(taxo.final$species.code, function(x) {
+  
+  out <- list()
+  ## figure files 
+  spp_file1 <- paste0("SS",x,"_Map-tows.pdf")
+
+  latin_name <- taxo.final$scientificname[taxo.final$species.code == x]
+  english_name <- taxo.final$comm.english[taxo.final$species.code == x]
+  french_name <- taxo.final$comm.fr[taxo.final$species.code == x]
+  family_name <- taxo.final$family[taxo.final$species.code == x]
+  worms_id <- taxo.final$AphiaID[taxo.final$species.code == x]
+  worms_link <- taxo.final$url[taxo.final$species.code == x]
+  category <- taxo.final$type[taxo.final$species.code == x]
+  
+  i <- 1
+  out[[i]] <- paste0("## ", english_name, " (", french_name, ") - species code ", x, " (category ", category, ")"," {#sec:", x, "} \n")
+  i <- i + 1
+  out[[i]] <- paste0("\\index{", french_name, "} ",  "\\index{", english_name, "} ",  "\\index{", latin_name, "} \n")
+  i <- i + 1
+  out[[i]] <- paste0("\\index{", family_name, "!", latin_name, "} \n")
+  i <- i + 1
+  out[[i]] <- paste0(
+    "Scientific name: [", latin_name, "](",worms_link,") \n \\newline")
+  i <- i + 1
+  #Figure 1
+  out[[i]] <- "\\begin{minipage}{1.0\\textwidth}"
+  i <- i + 1
+  out[[i]] <- " \\begin{tabular}{c}"
+  i <- i + 1
+  out[[i]] <- paste0("\\includegraphics[width=5.5in]{../Figures-Actual/",
+                     spp_file1, "} \\\\ ")
+  i <- i + 1
+  out[[i]] <- "\\end{tabular} "
+  i <- i + 1
+  out[[i]] <- paste0("\\captionof{figure}{Catch distribution for ", english_name,".}")
+  i <- i + 1
+  out[[i]] <- "\\end{minipage} \n"
+  i <- i + 1
+  #end of Figure 1
+
+    #End of Figures:
+  out[[i]] <- "\\clearpage\n"
+  out
+})
+
+## 
+tempR <- lapply(tempR, function(x) paste(x, collapse = "\n"))
+tempR <- paste(tempR, collapse = "\n")
+
+tempI <- "\n"
+tempS <- "\n"
+
+## put the 5 tickets classes together and write to the report folder
+temp <- c("# Appendix\n<!-- This page has been automatically generated: do not edit by hand -->\n", temp, tempI, tempS, tempR, "\\printindex \n")
 if (!exists("N"))
-  #writeLines(temp, con = file.path("report-EN", "plot-pages.Rmd"), useBytes=T)
-  writeLines(temp, "plot-pages.Rmd", useBytes=T)
-## French Tech Report
+  writeLines(temp, con = file.path("report-EN", "plot-pages.Rmd"), useBytes=T)
+
 
 
 

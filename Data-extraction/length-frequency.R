@@ -145,7 +145,7 @@ all.df$realfreq <- all.df$Freq+all.df$freq
 rel.freq6 <- all.df$realfreq /sum(all.df$realfreq)
 
 
-final.df.all <- data.frame(lengths=length.breaks[2:length(length.breaks)], lf.1970=as.vector(rel.freq1), lf.1977=as.vector(rel.freq2), lf.1984=as.vector(rel.freq3), lf.1991=as.vector(rel.freq4), lf.1998=as.vector(rel.freq5), lf.2005=as.vector(rel.freq6))
+final.df.all <- data.frame(lengths=length.breaks[2:length(length.breaks)], lf.1970=as.vector(rel.freq1), lf.1978=as.vector(rel.freq2), lf.1986=as.vector(rel.freq3), lf.1994=as.vector(rel.freq4), lf.2002=as.vector(rel.freq5), lf.2010=as.vector(rel.freq6))
 
 ## now do the same but separately for NAFO 4X and for NAFO 4VW
 nafo.4vw.strat <- c('440','441','442','443','444','445','446','447','448','449','450','451','452','453','454','455','456','457','458','459','460','461','462','463','464','465','466','467','468','469')
@@ -238,7 +238,7 @@ all.df <- all.df[order(all.df$Var1),]
 all.df$realfreq <- all.df$Freq+all.df$freq
 rel.freq6 <- all.df$realfreq /sum(all.df$realfreq)
 
-final.df.4vw <- data.frame(lengths=length.breaks[2:length(length.breaks)], lf.1970=as.vector(rel.freq1), lf.1977=as.vector(rel.freq2), lf.1984=as.vector(rel.freq3), lf.1991=as.vector(rel.freq4), lf.1998=as.vector(rel.freq5), lf.2005=as.vector(rel.freq6))
+final.df.4vw <- data.frame(lengths=length.breaks[2:length(length.breaks)], lf.1970=as.vector(rel.freq1), lf.1978=as.vector(rel.freq2), lf.1986=as.vector(rel.freq3), lf.1994=as.vector(rel.freq4), lf.2002=as.vector(rel.freq5), lf.2010=as.vector(rel.freq6))
 
 ## replace NAs with zeroes
 final.df.4vw <- replace(final.df.4vw, is.na(final.df.4vw), 0)
@@ -316,7 +316,7 @@ all.df <- all.df[order(all.df$Var1),]
 all.df$realfreq <- all.df$Freq+all.df$freq
 rel.freq5 <- all.df$realfreq /sum(all.df$realfreq)
 
-## 2010 to 2019
+## 2010 to 2020
 time6.fsh.df <- subset(det.summer.df, STRAT %in% nafo.4x.strat & YEAR >= 2010 & YEAR < 2021 & !is.na(FSHNO)) # individual fish measurements
 time6.clen.df <- subset(det.summer.df, STRAT %in% nafo.4x.strat & YEAR >= 2010 & YEAR < 2021 & is.na(FSHNO)) # counts per length classes
 fsh.df <- data.frame(table(cut(time6.fsh.df$FLEN, length.breaks, right=TRUE)))
@@ -330,7 +330,7 @@ all.df <- all.df[order(all.df$Var1),]
 all.df$realfreq <- all.df$Freq+all.df$freq
 rel.freq6 <- all.df$realfreq /sum(all.df$realfreq)
 
-final.df.4x <- data.frame(lengths=length.breaks[2:length(length.breaks)], lf.1970=as.vector(rel.freq1), lf.1977=as.vector(rel.freq2), lf.1984=as.vector(rel.freq3), lf.1991=as.vector(rel.freq4), lf.1998=as.vector(rel.freq5), lf.2005=as.vector(rel.freq6))
+final.df.4x <- data.frame(lengths=length.breaks[2:length(length.breaks)], lf.1970=as.vector(rel.freq1), lf.1978=as.vector(rel.freq2), lf.1986=as.vector(rel.freq3), lf.1994=as.vector(rel.freq4), lf.2002=as.vector(rel.freq5), lf.2010=as.vector(rel.freq6))
 final.df.4x <- replace(final.df.4x, is.na(final.df.4x), 0)
 
 final.list <- list(all=final.df.all, nafo4vw=final.df.4vw, nafo4x=final.df.4x)

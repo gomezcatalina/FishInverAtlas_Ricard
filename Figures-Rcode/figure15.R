@@ -2,7 +2,7 @@
 
 figure15.fct <- function(list.in, cex.in, pos.ylabel=c(0,0)) {
 
-# list.in <- list(df.1=read.csv("C:/ATLAS_poissons_SS/Data/SS12_lf4x.csv", header=TRUE), df.2=read.csv("C:/ATLAS_poissons_SS/Data/SS12_lf4vw.csv", header=TRUE))
+# list.in <- list(df.1=read.csv("C:/Users/RicardD/Documents/GitHub/FishInverAtlas_Ricard/Figures-Data/SS12_lf4x.csv", header=TRUE), df.2=read.csv("C:/Users/RicardD/Documents/GitHub/FishInverAtlas_Ricard/Figures-Data/SS12_lf4vw.csv", header=TRUE))
 
 xx <- rbind(list.in[[1]][,1],list.in[[2]][,1])
 yy <- rbind(list.in[[1]][,2:7],list.in[[2]][,2:7])
@@ -37,7 +37,7 @@ dat.in <- list.in[[1]]
 	ylabel2 = "Frequ\u{E9}nce par trait"	
 	ylabel1 = "Frequency per tow"
 	#leg.label = c("1970 - 1974", "1975 - 1979", "1980 - 1984", "1985 - 1989", "1990 - 1994", "1995 - 1999", "2000 - 2004", "2005 - 2009", "2010 - 2014")
-	leg.label = c("1970 - 1977", "1978 - 1985", "1986 - 1993", "1994 - 2001", "2002 - 2009", "2010 - 2013", "2014 - 2019")
+	leg.label = c("1970 - 1977", "1978 - 1985", "1986 - 1993", "1994 - 2001", "2002 - 2009", "2010 - 2020")
 	
 	#my.cols <- c("#000000","#FFEDA0","#FED976","#FEB24C","#FD8D3C","#FC4E2A","#E31A1C","#BD0026","#800026") # obtained from color brewer
 	my.cols <- c("#000000","#FED976","#FEB24C","#FD8D3C","#F03B20","#BD0026","#5c0012") # obtained from color brewer

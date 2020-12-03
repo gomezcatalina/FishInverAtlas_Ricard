@@ -66,7 +66,7 @@ temp <- lapply(taxo.final$species.code, function(x) {
   i <- i + 1
   out[[i]] <- paste0("\\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for ", english_name,".}")
   i <- i + 1
-  out[[i]] <- "\\end{minipage} \n"
+  out[[i]] <- "\\end{minipage}  \n"
   i <- i + 1
   #end of Figure 1
   
@@ -323,7 +323,7 @@ tempI <- "\n"
 tempS <- "\n"
 
 ## put the 5 tickets classes together and write to the report folder
-temp <- c("# Appendix\n<!-- This page has been automatically generated: do not edit by hand -->\n", temp, tempI, tempS, tempR, "\\printindex \n")
+temp <- c("\\pagebreak \n # Appendix\n<!-- This page has been automatically generated: do not edit by hand -->\n \\pagebreak \n", temp, tempI, tempS, tempR, "\\printindex \n")
 if (!exists("N"))
   writeLines(temp, con = file.path("report-EN", "plot-pages.Rmd"), useBytes=T)
 

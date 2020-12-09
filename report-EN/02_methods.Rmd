@@ -52,7 +52,7 @@ knitr::kable(spec.tab[,vars], "latex", booktabs = TRUE, longtable = TRUE, align 
 
 The Oracle relational database where all data are stored was accessible from the Bedford Institute of Oceanography in Dartmouth, Nova Scotia. Structured Query Language (SQL) is used to extract the data from the production server and to create the data products used in all subsequent analyses. Catch records classified as ”valid” (i.e. a representative tow without damage to the net) are used in the current analyses. To make the available samples comparable, catch number and weight for each species was standardized for the distance towed.
 
-All data processing and analyses were conducted using the R software [@R:2013] using packages gstat [@R:package:gstat), PBSmapping [@R:package:PBSmapping], RODBC [@R:package:RODBC], spatstat [@R:package:spatstat],  maptools [@R:package:maptools], rgeos [@R:package:rgeos],classInt[@R:package:classInt],RColorBrewer[@R:package:RColorBrewer], xtable [@R:package:xtable], MASS [@R:package:MASS], worms [@R:package:worms], and [@R:Tidyverse]. 
+All data processing and analyses were conducted using the R software [@R:2020] using packages gstat [@R:package:gstat), PBSmapping [@R:package:PBSmapping], RODBC [@R:package:RODBC], spatstat [@R:package:spatstat],  maptools [@R:package:maptools], rgeos [@R:package:rgeos],classInt[@R:package:classInt],RColorBrewer[@R:package:RColorBrewer], MASS [@R:package:MASS], worms [@R:package:worms], and [@R:Tidyverse]. 
 
 ### Geographic distribution of catches
 
@@ -64,7 +64,7 @@ For each species, stratified random estimates of catch abundance and biomass [@S
 
 ### Distribution indices
 
-For each Category L, I and S fish species, the minimum area required to account for 75% and 95% of the total biomass or abundance were computed (D75% and D95%). These measures of distributions were computed for each year by using the Lorenz curve of mean stratum-level catch estimates and the area of occupied strata [@Swain:Sinclair:1994:cjfas, @Swain:Morin:1996:cjfas].
+For each Category L, I and S fish species, the minimum area required to account for 75% and 95% of the total biomass or abundance were computed (D75% and D95%). These measures of distributions were computed for each year by using the Lorenz curve of mean stratum-level catch estimates and the area of occupied strata [@Swain:Sinclair:1994:cjfas; @Swain:Morin:1996:cjfas].
 
 ### Length frequencies
 

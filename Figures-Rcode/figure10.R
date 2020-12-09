@@ -33,13 +33,13 @@ my.cols.palette <- c('white','#FEF0D9', '#FDCC8A', '#FC8D59', '#E34A33', '#B3000
 par(mar=c(0,0,3,0), las=1)
 #plot(xx.lon,rep(max(yy.lat), length(xx.lon)),axes=FALSE, type='n', xlab="",ylab="")
 plot(my.xlim,rep(my.ylim[2],2),axes=FALSE, type='n')
-axis(side=3, at=xx.lon, line=-1.75, labels=paste(360-xx.lon,"\u{B0}W",sep=""))
+axis(side=3, at=xx.lon, line=-3, labels=paste(360-xx.lon,"\u{B0}W",sep=""))
 
 # top left latitude
 par(mar=c(0,3,0,0),las=2)
 #plot(rep(min(xx.lon),length(yy.lat)),yy.lat,axes=FALSE,type='n')
 plot(rep(my.xlim[1],2),my.ylim,axes=FALSE,type='n')
-axis(side=2,at=yy.lat, line=-1.75, labels=paste(yy.lat,"\u{B0}N",sep=""))
+axis(side=2,at=yy.lat, line=-3, labels=paste(yy.lat,"\u{B0}N",sep=""))
 
 ## loop over 6-year periods
 for (i in 1:9) {
@@ -163,13 +163,13 @@ if(i==1 | i==9) {
 par(mar=c(0,0,0,2),las=2)
 #plot(rep(max(xx.lon),length(yy.lat)),yy.lat,axes=FALSE,type='n')
 plot(rep(my.xlim[2],2),my.ylim,axes=FALSE, type='n', xlab="",ylab="")
-axis(side=4,at=yy.lat, line=-2.75, labels=paste(yy.lat,"\u{B0}N",sep=""))
+axis(side=4,at=yy.lat, line=-4, labels=paste(yy.lat,"\u{B0}N",sep=""))
 
 # bottom right longitude axis
 par(mar=c(2,0,0,0),las=1)
 #plot(xx.lon,rep(min(yy.lat), length(xx.lon)),axes=FALSE, type='n', xlab="",ylab="")
 plot(my.xlim,rep(my.ylim[2],2),axes=FALSE,type='n')
-axis(side=1, at=xx.lon, line=-2.75, labels=paste(360-xx.lon,"\u{B0}O",sep=""))
+axis(side=1, at=xx.lon, line=-4, labels=paste(360-xx.lon,"\u{B0}O",sep=""))
 
 } # end function
 

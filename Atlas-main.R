@@ -102,7 +102,7 @@ print(paste("Script Atlas.R started: ", Sys.time()))
   	# Figures 10,11,20,21 also create shape files in the folder 'FGP' (Federal Geospatial Platform')
   	## DR: actually, I commented out the generation of shapefiles, I really don't think that's what should be published on FGP
     sapply(species.numbers, function(i){figures(spec.num=i, fig=c(2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,18,19,20))})
-	  sapply(species.L, function(i){figures(spec.num=i, fig=c(15))})
+	  sapply(species.L, function(i){figures(spec.num=i, fig=c(10,11))})
 	# sapply(species.numbers, function(i){figures(spec.num=i, fig=c(19))})
 	print(paste("End figures, L species: ", Sys.time()))
   

@@ -27,7 +27,7 @@ Computing history
 
 - 1980s: Basic on a Radio Shack computer (self-taught)
 - 1990s: DOS, Scheme, C++, Linux, LaTeX (McGill, UBC, Simon Fraser)
-- 2000s: R, SQL, postGIS, Perl (CSIRO, Dalhousie)
+- 2000s: SQL, R, postGIS, Perl (PRISMA, CSIRO, Dalhousie)
 - 2010s: R package development, git, csasdown (Dalhousie, HBU, DFO)
 
 Institutional context: as a student, you are on your own, you don't have a team to rely on, and you can't afford costly software
@@ -57,7 +57,7 @@ Hugo Bourdages from IML shared his code (used for [his Atlas](http://publication
 
 - Improved version of 2013 framework, based on what I learned since, learned from others (e.g. [Sean Anderson](https://www.dfo-mpo.gc.ca/csas-sccs/Publications/ResDocs-DocRech/2019/2019_041-eng.html)), and from recent software development
 
-- Solid draft document ready
+- Draft document ready
 
 
 ## Tools
@@ -85,10 +85,13 @@ Hugo Bourdages from IML shared his code (used for [his Atlas](http://publication
 ## Next steps
 Peer-review of Atlas methods and outputs - What is/are the deliverable(s), under a CSAS process?
 
+Integration of Mike McMahon's [ecosystem of R packages for the Maritimes](https://github.com/Maritimes/) in the Atlas
+
+Multi-species / functional groups analyses (e.g. fish diversity, trends in groups, ...)
+
 The methodology developed for the Maritimes Atlas could be expanded to include:
 
-- Georges Bank winter survey
-- other surveys of interest
-- other monitoring programs of interest
-- ... any yearly/routine data collection program can benefit from this approach
+- Georges Bank winter survey, deep strata in summer survey, historical surveys, ... other surveys of interest
+- other monitoring programs
+- ... any yearly/routine data collection program can benefit from this repeatable/reproducible approach
 

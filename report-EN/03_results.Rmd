@@ -7,7 +7,7 @@ The plots generated for each species are presented in the Appendix.
 ### Type A
 For Category L and S species: 
 
-Spatial distribution of catch-per unit of eﬀort, (CPUE, kilograms per tow) in July-August for the Bay of Fundy and Scotian Shelf in five-year periods. Spatial interpolation between tows was done using Inverse Distance Weight (IDW). The probability of occurrence (proportion of tows with catch records for a	given species) was also reported for each five-year period.
+Spatial distribution of catch-per unit of eﬀort, (CPUE, kilograms per tow) in July-August for the Bay of Fundy and Scotian Shelf in five-year periods. Spatial interpolation between tows was done using Inverse Distance Weight (IDW). The probability of occurrence (proportion of tows with catch records for a given species) was also reported for each five-year period.
 
 For Category LR and SR:
 

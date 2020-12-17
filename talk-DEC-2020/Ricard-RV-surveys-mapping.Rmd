@@ -1,0 +1,94 @@
+---
+title: "Mapping and analysing RV survey data"
+subtitle: "A personal analytical journey leading to the 2013 Atlas, and beyond"
+author: "Daniel Ricard, DFO Gulf Region"
+date: "December 17 2020"
+output: 
+  beamer_presentation:
+    theme: "Madrid"
+    colortheme: "whale"
+    fonttheme: "structurebold"
+    slide_level: 2
+urlcolor: blue
+---
+
+---
+header-includes:
+- \newcommand{\hideFromPandoc}[1]{#1}
+- \hideFromPandoc{
+    \let\Begin\begin
+    \let\End\end
+  }
+---
+
+
+## Background
+Computing history
+
+- 1980s: Basic on a Radio Shack computer (self-taught)
+- 1990s: DOS, Scheme, C++, Linux, LaTeX (McGill, UBC, Simon Fraser)
+- 2000s: R, SQL, postGIS, Perl (CSIRO, Dalhousie)
+- 2010s: R package development, git, csasdown (Dalhousie, HBU, DFO)
+
+Institutional context: as a student, you are on your own, you don't have a team to rely on, and you can't afford costly software
+
+
+## Ph.D. work at Dalhousie
+
+- DFO colleagues at BIO and SABS (Branton, Smith, Clark, Shackell, ...)
+- Participation in Georges Bank RV survey as a student
+- [ICES article](https://academic.oup.com/icesjms/article/67/4/638/680186) on OBIS version of Maritimes RV data
+- Thesis chapter on demographic consequences of changes in growth and maturation (using US and Maritimes survey data)
+- Thesis chapter on density-dependent habitat selection models (using US and Maritimes survey data)
+
+## Maritimes Atlas developed during 2012 casual contract, published in 2013
+- Published as a [Technical Report](http://publications.gc.ca/site/eng/9.589947/publication.html)
+- SQL queries to obtain SUMMER survey information directly from Oracle
+- R routines to analyse data and produce figures
+- make, Perl and LaTeX to assemble the Technical Report
+- start the script before you go home, come back the next morning to a fresh document, fix and improve things, repeat
+
+Hugo Bourdages from IML shared his code (used for [his Atlas](http://publications.gc.ca/site/eng/425663/publication.html)) with me and I used it as a starting point to develop the analytical framework required to produce the Atlas
+
+## 2020 collaboration with Maritimes to update Atlas
+- I am currently working on a similar document for the annual Gulf RV survey
+- A bit of self-promotion on my part perked Catalina's interest in the 2013 Atlas
+- A few conversations later and we had a collaborative platform established to update the 2013 Atlas
+
+- Improved version of 2013 framework, based on what I learned since, learned from others (e.g. [Sean Anderson](https://www.dfo-mpo.gc.ca/csas-sccs/Publications/ResDocs-DocRech/2019/2019_041-eng.html)), and from recent software development
+
+- Solid draft document ready
+
+
+## Tools
+
+- Moving beyond spreadsheets, use R
+- Moving beyond GIS graphical user interface, use R
+    - Example: analysis of lobster fishing effort in the Gulf of St. Lawrence
+- Moving beyond sending email attachments and using network drives, use git
+- Moving beyond Microsoft Word to produce documents, use csasdown
+
+## Recommendations / Lessons learned
+
+- Mapping products should be the starting point, not the end point
+
+- Nothing will ever replace sound statistical approaches
+
+- Reproducibility is not achievable if it involves ad-hoc clicking and sequential steps
+
+- while I love doing it, it is not necessary to build everything from the ground up every time, hence the separation of data extractions and generation of figures in the current Atlas
+
+- git (and its associated helpers like GitHub and GitLab) is the platform of choice for collaboration
+    - yes, it is intimidating
+    - but, knowing 5 commands (status, add, commit, push, pull) is enough to be functional
+
+## Next steps
+Peer-review of Atlas methods and outputs - What is/are the deliverable(s), under a CSAS process?
+
+The methodology developed for the Maritimes Atlas could be expanded to include:
+
+- Georges Bank winter survey
+- other surveys of interest
+- other monitoring programs of interest
+- ... any yearly/routine data collection program can benefit from this approach
+

@@ -1,11 +1,11 @@
 ---
 title: "Marine Fish and Invertebrate Atlas: Summarizing Geographic Distribution and Population Indices in the Scotian Shelf and Bay of Fundy (1970-2020)"
-year: 2020
+year: 2021
 report_number: nnn
 author: |
   Daniel Ricard ^1^ 
   Catalina Gomez ^2^ 
-author_list: "Ricard, D., Gomez, C."
+author_list: "Ricard, D. and Gomez, C."
 region: Maritimes Region
 isbn: ""
 address: |

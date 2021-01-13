@@ -68,12 +68,12 @@ csas_table(tows.strata.year.1,
 
 yrs <- 1992:2013
 ii <- which(substring(names(tows.strata.year),3,6) %in% as.character(yrs))
-tows.strata.year.1 <- tows.strata.year[,c(1,2,3,ii)]
-nr <- nrow(tows.strata.year.1)
+tows.strata.year.2 <- tows.strata.year[,c(1,2,3,ii)]
+nr <- nrow(tows.strata.year.2)
 ## blank the first two columns of the last row
-tows.strata.year.1[49,1:2] <- ""
+tows.strata.year.2[49,1:2] <- ""
 
-csas_table(tows.strata.year.1,
+csas_table(tows.strata.year.2,
   col.names=c("Stratum","NAFO Div.","Area (km2)",as.character(yrs)),
   caption = paste0("Number of representative tows conducted in each stratum during the period ",yrs[1]," to ",yrs[length(yrs)]),
   format = "latex", align=c("c",rep("r",15))
@@ -85,12 +85,12 @@ csas_table(tows.strata.year.1,
 
 yrs <- 2014:2020
 ii <- which(substring(names(tows.strata.year),3,6) %in% as.character(yrs))
-tows.strata.year.1 <- tows.strata.year[,c(1,2,3,ii)]
-nr <- nrow(tows.strata.year.1)
+tows.strata.year.3 <- tows.strata.year[,c(1,2,3,ii)]
+nr <- nrow(tows.strata.year.3)
 ## blank the first two columns of the last row
-tows.strata.year.1[49,1:2] <- ""
+tows.strata.year.3[49,1:2] <- ""
 
-csas_table(tows.strata.year.1,
+csas_table(tows.strata.year.3,
   col.names=c("Stratum","NAFO Div.","Area (km2)",as.character(yrs)),
   caption = paste0("Number of representative tows conducted in each stratum during the period ",yrs[1]," to ",yrs[length(yrs)]),
   format = "latex", align=c("c",rep("r",15))

@@ -111,8 +111,8 @@ df.to.fill <- data.frame(year=rep(-99,nn), D75=rep(-99,nn), D95=rep(-99,nn), Gin
 for(i in 1:length(yrs)){ # loop over years
 #for(i in 1:(yrs-1969)){ # loop over years
 #print(i)
-stratified.df <- as.data.frame(stratified.weighted.mat[,i])
-#stratified.df <- as.data.frame(stratified.weighted.mat[[i]])
+#stratified.df <- as.data.frame(stratified.weighted.mat[,i])
+stratified.df <- as.data.frame(stratified.weighted.mat[[i]])
 
 oo.desc <- rev(order(stratified.df)) # descending order, for Dx%
 oo.asc <- order(stratified.df) # ascending order, for Gini

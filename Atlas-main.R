@@ -133,7 +133,7 @@ print(paste("Script Atlas.R started: ", Sys.time()))
 	print(paste("Starting data extracts, I species: ", Sys.time()))
 	sapply(species.numbers, function(i){data.extract(extract.num=c(1,3,4), spec.num=i)}) # extract catch data and generate distribution indices
 	print(paste("End data extract, starting figures, I species: ", Sys.time()))
-	sapply(species.numbers, function(i){figures(spec.num=i, fig=c(5,6,10,13,14,17,19))}) 
+	sapply(species.numbers, function(i){figures(spec.num=i, fig=c(5,6,10,11,13,14,17,19))}) 
 	print(paste("End figures, I species: ", Sys.time()))
 
   #sapply(species.numbers, function(i){figures(spec.num=i, fig=c(13,14))})

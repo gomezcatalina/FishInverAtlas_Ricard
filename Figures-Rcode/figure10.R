@@ -12,10 +12,10 @@ my.legend <- ifelse(logic.abundant, "abundant","rare")
 my.xlim <- c(291.25,303.5)
 my.ylim <- c(41,47.5)
 
-#xx.lon<-pretty(my.xlim,n=5)
-#yy.lat<-pretty(my.ylim, n=4)
-xx.lon<-c(290,292,294,296,298,300,302,304)
-yy.lat<-c(40,42,44,46,48)
+xx.lon<-c(292,296,300)
+yy.lat<-c(42,44,46)
+xx.lon.labs <- paste(360-xx.lon,"\u{B0}W",sep="")
+yy.lat.labs <- paste(yy.lat,"\u{B0}N",sep="")
 
 mat.layout2 <- matrix(c(0,2,0,0,0,1,3,6,9,0,0,4,7,10,0,0,5,8,11,13,0,0,0,12,0),
                       nrow=5, ncol=5)
@@ -29,19 +29,15 @@ yrs.labels <- c("1970-1979","1980-1984","1985-1989","1990-1994","1995-1999","200
 my.cols.palette <- c('white','#FEF0D9', '#FDCC8A', '#FC8D59', '#E34A33', '#B30000', '#781212')
 
 ## layout and such, to allow for the axes
-# top left longitude axis
+# space for top left longitude axis
 par(mar=c(0,0,3,0), las=1)
-#plot(xx.lon,rep(max(yy.lat), length(xx.lon)),axes=FALSE, type='n', xlab="",ylab="")
-plot(my.xlim,rep(my.ylim[2],2),axes=FALSE, type='n')
-axis(side=3, at=xx.lon, line=-3, labels=paste(360-xx.lon,"\u{B0}W",sep=""))
+plot(1,1,type='n',axes=F)
 
-# top left latitude
+# space for top left latitude
 par(mar=c(0,3,0,0),las=2)
-#plot(rep(min(xx.lon),length(yy.lat)),yy.lat,axes=FALSE,type='n')
-plot(rep(my.xlim[1],2),my.ylim,axes=FALSE,type='n')
-axis(side=2,at=yy.lat, line=-3, labels=paste(yy.lat,"\u{B0}N",sep=""))
+plot(1,1,type='n',axes=F)
 
-## loop over 6-year periods
+## loop over 5-year periods
 for (i in 1:9) {
 #dx=0.285
 #dy=0.225
@@ -105,6 +101,10 @@ res <- lapply(getSpPpolygonsSlot(res), checkPolygonsHoles)
 R <- as.SpatialPolygons.PolygonsList(res)
 plotMap(worldLLhigh, my.xlim, my.ylim, col=grey(0.9),
         plt=c(0.0,1.0,0.0,1.0),border=grey(0.7),axes=FALSE,tckLab=FALSE,xlab="",ylab="")
+
+if(i==1){axis(side=3, at=xx.lon, labels=xx.lon.labs, las=1); axis(side=2, at=yy.lat, labels=yy.lat.labs)}
+if(i==9){axis(side=1, at=xx.lon, labels=xx.lon.labs, las=1); axis(side=4, at=yy.lat, labels=yy.lat.labs)}
+
 text(293.2,46.4,yrs.labels[i],bg='white',cex=1)
 text(293.2,45.9,paste("P(occ) = ",pr.occ,sep=""),cex=0.80)
 #addPolys(SUMMER.strata.mask)
@@ -138,6 +138,9 @@ text(293.2,45.9,paste("P(occ) = ",pr.occ,sep=""),cex=0.80)
 box()
 addPolys(SS.strata.mask.LL)
 
+if(i==1){axis(side=3, at=xx.lon, labels=xx.lon.labs, las=1); axis(side=2, at=yy.lat, labels=yy.lat.labs)}
+if(i==9){axis(side=1, at=xx.lon, labels=xx.lon.labs, las=1); axis(side=4, at=yy.lat, labels=yy.lat.labs)}
+
 }
 
 #plotMap(worldLLhigh, my.xlim, my.ylim, col=grey(0.9),plt=c(0.0,1.0,0.0,1.0),border=grey(0.7),axes=FALSE,tckLab=FALSE,xlab="",ylab="")
@@ -146,12 +149,12 @@ addPolys(SS.strata.mask.LL)
 if(i==1 | i==9) {
 	if(my.legend=="abundant"){
 							text(299.5,42,"n/tow",cex=0.8)
-							text(299.45,41.6,"n/trait",cex=0.8)
+							#text(299.45,41.6,"n/trait",cex=0.8)
 							legend('bottomright', c("0","<5","<20","<50","<100",">=100"), col='black', fill=my.cols.palette, bg='white',cex=0.65)
 							}
 	if(my.legend=="rare"){
 							text(299.5,42,"n/tow",cex=0.8)
-							text(299.45,41.6,"n/trait",cex=0.8)
+							#text(299.45,41.6,"n/trait",cex=0.8)
 							legend('bottomright', c("0","<0.1","<0.5","<1","<5",">=5"), col='black', fill=my.cols.palette, bg='white',cex=0.65)
 							}
 	}
@@ -159,17 +162,13 @@ if(i==1 | i==9) {
 
 } # end loop over 5-year periods
 
-# bottom right latitude
+# space for bottom right latitude
 par(mar=c(0,0,0,2),las=2)
-#plot(rep(max(xx.lon),length(yy.lat)),yy.lat,axes=FALSE,type='n')
-plot(rep(my.xlim[2],2),my.ylim,axes=FALSE, type='n', xlab="",ylab="")
-axis(side=4,at=yy.lat, line=-4, labels=paste(yy.lat,"\u{B0}N",sep=""))
+plot(1,1,type='n',axes=F)
 
-# bottom right longitude axis
+# space for bottom right longitude axis
 par(mar=c(2,0,0,0),las=1)
-#plot(xx.lon,rep(min(yy.lat), length(xx.lon)),axes=FALSE, type='n', xlab="",ylab="")
-plot(my.xlim,rep(my.ylim[2],2),axes=FALSE,type='n')
-axis(side=1, at=xx.lon, line=-4, labels=paste(360-xx.lon,"\u{B0}O",sep=""))
+plot(1,1,type='n',axes=F)
 
 } # end function
 

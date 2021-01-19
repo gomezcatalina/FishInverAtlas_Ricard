@@ -1,8 +1,7 @@
 ##
 ##
 distribution.usingbiomass.fct <- function(catch.df) {
-# catch.df <- read.csv("C:/ATLAS_poissons_SS/Data/SS13_catch.csv")
-# catch.df <- read.csv("C:/ATLAS_poissons_SS/Data/SS10_catch.csv")
+# catch.df <- read.csv(file.path(figdata.path, "/SS31_catch.csv"))
 
 #yrs<- seq(min(catch.df$YEAR),max(catch.df$YEAR))
 

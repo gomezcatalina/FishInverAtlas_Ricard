@@ -1619,68 +1619,6 @@ biomass of Cusk.}
 
 \setcounter{figure}{0} 
 
-## Greenland halibut (Flétan noir) - species code 31 (category I) {#sec:31} 
-
-\index{Flétan noir} \index{Greenland halibut} \index{Reinhardtius hippoglossoides} 
-
-\index{Pleuronectidae!Reinhardtius hippoglossoides} 
-
-Scientific name: [Reinhardtius hippoglossoides](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127144) 
- \newline
-\begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=5.5in]{../Figures-Actual/SS31_IDWMap-biomass.pdf} \\ 
-\end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Greenland halibut.}
-\end{minipage} 
-
-\begin{minipage}{1.0\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-Actual/SS31_Stratified-biomass.pdf} & 
-\includegraphics[width=1.8in]{../Figures-Actual/SS31_Distribution-usingbiomass.pdf} & 
-\includegraphics[width=1.8in]{../Figures-Actual/SS31_BDcorrelations.pdf} \\ 
-\end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
-biomass of Greenland halibut.}
-\end{minipage} 
-
-\clearpage
-
-\renewcommand\thefigure{\thesubsection\Alph{figure}} 
-
-\setcounter{figure}{0} 
-
-## Gulf Stream flounder (Plie du Gulf Stream) - species code 44 (category I) {#sec:44} 
-
-\index{Plie du Gulf Stream} \index{Gulf Stream flounder} \index{Citharichthys arctifrons} 
-
-\index{Paralichthyidae!Citharichthys arctifrons} 
-
-Scientific name: [Citharichthys arctifrons](http://www.marinespecies.org/aphia.php?p=taxdetails&id=158791) 
- \newline
-\begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=5.5in]{../Figures-Actual/SS44_IDWMap-biomass.pdf} \\ 
-\end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Gulf Stream flounder.}
-\end{minipage} 
-
-\begin{minipage}{1.0\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-Actual/SS44_Stratified-biomass.pdf} & 
-\includegraphics[width=1.8in]{../Figures-Actual/SS44_Distribution-usingbiomass.pdf} & 
-\includegraphics[width=1.8in]{../Figures-Actual/SS44_BDcorrelations.pdf} \\ 
-\end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
-biomass of Gulf Stream flounder.}
-\end{minipage} 
-
-\clearpage
-
-\renewcommand\thefigure{\thesubsection\Alph{figure}} 
-
-\setcounter{figure}{0} 
-
 ## American shad (Alose savoureuse) - species code 61 (category I) {#sec:61} 
 
 \index{Alose savoureuse} \index{American shad} \index{Alosa sapidissima} 
@@ -1805,37 +1743,6 @@ biomass of Atlantic mackerel.}
 
 \setcounter{figure}{0} 
 
-## Longfin hake (Merluche à longues nageoires) - species code 112 (category I) {#sec:112} 
-
-\index{Merluche à longues nageoires} \index{Longfin hake} \index{Phycis chesteri} 
-
-\index{Phycidae!Phycis chesteri} 
-
-Scientific name: [Phycis chesteri](http://www.marinespecies.org/aphia.php?p=taxdetails&id=158988) 
- \newline
-\begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=5.5in]{../Figures-Actual/SS112_IDWMap-biomass.pdf} \\ 
-\end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Longfin hake.}
-\end{minipage} 
-
-\begin{minipage}{1.0\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-Actual/SS112_Stratified-biomass.pdf} & 
-\includegraphics[width=1.8in]{../Figures-Actual/SS112_Distribution-usingbiomass.pdf} & 
-\includegraphics[width=1.8in]{../Figures-Actual/SS112_BDcorrelations.pdf} \\ 
-\end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
-biomass of Longfin hake.}
-\end{minipage} 
-
-\clearpage
-
-\renewcommand\thefigure{\thesubsection\Alph{figure}} 
-
-\setcounter{figure}{0} 
-
 ## Fourbeard rockling (Motelle à quatre barbillons) - species code 114 (category I) {#sec:114} 
 
 \index{Motelle à quatre barbillons} \index{Fourbeard rockling} \index{Enchelyopus cimbrius} 
@@ -1929,99 +1836,6 @@ biomass of Greater argentine.}
 
 \setcounter{figure}{0} 
 
-## Arctic hookear sculpin (Hameçon neigeux) - species code 306 (category I) {#sec:306} 
-
-\index{Hameçon neigeux} \index{Arctic hookear sculpin} \index{Artediellus uncinatus} 
-
-\index{Cottidae!Artediellus uncinatus} 
-
-Scientific name: [Artediellus uncinatus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127195) 
- \newline
-\begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=5.5in]{../Figures-Actual/SS306_IDWMap-biomass.pdf} \\ 
-\end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Arctic hookear sculpin.}
-\end{minipage} 
-
-\begin{minipage}{1.0\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-Actual/SS306_Stratified-biomass.pdf} & 
-\includegraphics[width=1.8in]{../Figures-Actual/SS306_Distribution-usingbiomass.pdf} & 
-\includegraphics[width=1.8in]{../Figures-Actual/SS306_BDcorrelations.pdf} \\ 
-\end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
-biomass of Arctic hookear sculpin.}
-\end{minipage} 
-
-\clearpage
-
-\renewcommand\thefigure{\thesubsection\Alph{figure}} 
-
-\setcounter{figure}{0} 
-
-## Atlantic poacher (Agone atlantique) - species code 350 (category I) {#sec:350} 
-
-\index{Agone atlantique} \index{Atlantic poacher} \index{Leptagonus decagonus} 
-
-\index{Agonidae!Leptagonus decagonus} 
-
-Scientific name: [Leptagonus decagonus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127191) 
- \newline
-\begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=5.5in]{../Figures-Actual/SS350_IDWMap-biomass.pdf} \\ 
-\end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic poacher.}
-\end{minipage} 
-
-\begin{minipage}{1.0\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-Actual/SS350_Stratified-biomass.pdf} & 
-\includegraphics[width=1.8in]{../Figures-Actual/SS350_Distribution-usingbiomass.pdf} & 
-\includegraphics[width=1.8in]{../Figures-Actual/SS350_BDcorrelations.pdf} \\ 
-\end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
-biomass of Atlantic poacher.}
-\end{minipage} 
-
-\clearpage
-
-\renewcommand\thefigure{\thesubsection\Alph{figure}} 
-
-\setcounter{figure}{0} 
-
-## Marlin-spike grenadier (Grenadier du Grand Banc) - species code 410 (category I) {#sec:410} 
-
-\index{Grenadier du Grand Banc} \index{Marlin-spike grenadier} \index{Nezumia bairdii} 
-
-\index{Macrouridae!Nezumia bairdii} 
-
-Scientific name: [Nezumia bairdii](http://www.marinespecies.org/aphia.php?p=taxdetails&id=183289) 
- \newline
-\begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=5.5in]{../Figures-Actual/SS410_IDWMap-biomass.pdf} \\ 
-\end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Marlin-spike grenadier.}
-\end{minipage} 
-
-\begin{minipage}{1.0\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-Actual/SS410_Stratified-biomass.pdf} & 
-\includegraphics[width=1.8in]{../Figures-Actual/SS410_Distribution-usingbiomass.pdf} & 
-\includegraphics[width=1.8in]{../Figures-Actual/SS410_BDcorrelations.pdf} \\ 
-\end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
-biomass of Marlin-spike grenadier.}
-\end{minipage} 
-
-\clearpage
-
-\renewcommand\thefigure{\thesubsection\Alph{figure}} 
-
-\setcounter{figure}{0} 
-
 ## Lumpfish (Lompe) - species code 501 (category I) {#sec:501} 
 
 \index{Lompe} \index{Lumpfish} \index{Cyclopterus lumpus} 
@@ -2045,37 +1859,6 @@ Scientific name: [Cyclopterus lumpus](http://www.marinespecies.org/aphia.php?p=t
 \end{tabular} 
 \captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
 biomass of Lumpfish.}
-\end{minipage} 
-
-\clearpage
-
-\renewcommand\thefigure{\thesubsection\Alph{figure}} 
-
-\setcounter{figure}{0} 
-
-## Atlantic spiny lumpsucker (Petite poule de mer atlantique) - species code 502 (category I) {#sec:502} 
-
-\index{Petite poule de mer atlantique} \index{Atlantic spiny lumpsucker} \index{Eumicrotremus spinosus} 
-
-\index{Cyclopteridae!Eumicrotremus spinosus} 
-
-Scientific name: [Eumicrotremus spinosus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127217) 
- \newline
-\begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=5.5in]{../Figures-Actual/SS502_IDWMap-biomass.pdf} \\ 
-\end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic spiny lumpsucker.}
-\end{minipage} 
-
-\begin{minipage}{1.0\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-Actual/SS502_Stratified-biomass.pdf} & 
-\includegraphics[width=1.8in]{../Figures-Actual/SS502_Distribution-usingbiomass.pdf} & 
-\includegraphics[width=1.8in]{../Figures-Actual/SS502_BDcorrelations.pdf} \\ 
-\end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
-biomass of Atlantic spiny lumpsucker.}
 \end{minipage} 
 
 \clearpage
@@ -2146,68 +1929,6 @@ biomass of Snakeblenny.}
 
 \setcounter{figure}{0} 
 
-## Daubed shanny (Lompénie tachetée) - species code 623 (category I) {#sec:623} 
-
-\index{Lompénie tachetée} \index{Daubed shanny} \index{Leptoclinus maculatus} 
-
-\index{Stichaeidae!Leptoclinus maculatus} 
-
-Scientific name: [Leptoclinus maculatus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127072) 
- \newline
-\begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=5.5in]{../Figures-Actual/SS623_IDWMap-biomass.pdf} \\ 
-\end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Daubed shanny.}
-\end{minipage} 
-
-\begin{minipage}{1.0\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-Actual/SS623_Stratified-biomass.pdf} & 
-\includegraphics[width=1.8in]{../Figures-Actual/SS623_Distribution-usingbiomass.pdf} & 
-\includegraphics[width=1.8in]{../Figures-Actual/SS623_BDcorrelations.pdf} \\ 
-\end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
-biomass of Daubed shanny.}
-\end{minipage} 
-
-\clearpage
-
-\renewcommand\thefigure{\thesubsection\Alph{figure}} 
-
-\setcounter{figure}{0} 
-
-## Vahl's eelpout (Lycode à carreaux) - species code 647 (category I) {#sec:647} 
-
-\index{Lycode à carreaux} \index{Vahl's eelpout} \index{Lycodes vahlii} 
-
-\index{Zoarcidae!Lycodes vahlii} 
-
-Scientific name: [Lycodes vahlii](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127118) 
- \newline
-\begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=5.5in]{../Figures-Actual/SS647_IDWMap-biomass.pdf} \\ 
-\end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Vahl's eelpout.}
-\end{minipage} 
-
-\begin{minipage}{1.0\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-Actual/SS647_Stratified-biomass.pdf} & 
-\includegraphics[width=1.8in]{../Figures-Actual/SS647_Distribution-usingbiomass.pdf} & 
-\includegraphics[width=1.8in]{../Figures-Actual/SS647_BDcorrelations.pdf} \\ 
-\end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
-biomass of Vahl's eelpout.}
-\end{minipage} 
-
-\clearpage
-
-\renewcommand\thefigure{\thesubsection\Alph{figure}} 
-
-\setcounter{figure}{0} 
-
 ## Atlantic butterfish (Stromaté fossette) - species code 701 (category I) {#sec:701} 
 
 \index{Stromaté fossette} \index{Atlantic butterfish} \index{Peprilus triacanthus} 
@@ -2231,37 +1952,6 @@ Scientific name: [Peprilus triacanthus](http://www.marinespecies.org/aphia.php?p
 \end{tabular} 
 \captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
 biomass of Atlantic butterfish.}
-\end{minipage} 
-
-\clearpage
-
-\renewcommand\thefigure{\thesubsection\Alph{figure}} 
-
-\setcounter{figure}{0} 
-
-## Atlantic hookear sculpin (Hameçon atlantique) - species code 880 (category I) {#sec:880} 
-
-\index{Hameçon atlantique} \index{Atlantic hookear sculpin} \index{Artediellus atlanticus} 
-
-\index{Cottidae!Artediellus atlanticus} 
-
-Scientific name: [Artediellus atlanticus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127193) 
- \newline
-\begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=5.5in]{../Figures-Actual/SS880_IDWMap-biomass.pdf} \\ 
-\end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic hookear sculpin.}
-\end{minipage} 
-
-\begin{minipage}{1.0\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=1.8in]{../Figures-Actual/SS880_Stratified-biomass.pdf} & 
-\includegraphics[width=1.8in]{../Figures-Actual/SS880_Distribution-usingbiomass.pdf} & 
-\includegraphics[width=1.8in]{../Figures-Actual/SS880_BDcorrelations.pdf} \\ 
-\end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
-biomass of Atlantic hookear sculpin.}
 \end{minipage} 
 
 \clearpage

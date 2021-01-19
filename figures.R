@@ -409,14 +409,10 @@ figures<-function(fig=c(1:10), spec.num=NA,
 						#par(mfrow=c(3,3), omi=c(0,0,0,0), mai=c(0.35, 0.5+pos.ylabel[1], 0.1, 0.1), ps=8, cex=1, xpd=TRUE, lheight=0.5, xaxs="r", yaxs="r")
 						#par(mfrow=c(3,3), omi=c(0,0,0,0), mai=c(0.35, 0.5+pos.ylabel[1], 0.1, 0.1), ps=16, cex=1, xpd=TRUE, lheight=0.5, xaxs="r", yaxs="r")
 						#par(mfrow=c(3,3), omi=c(0,0,0,0), mai=c(0.35, 0.5+pos.ylabel[1], 0.1, 0.1), ps=12, cex=1, xpd=TRUE, lheight=0.5, xaxs="r", yaxs="r")
-						par(mfrow=c(3,3), omi=c(0,0,0,0), mai=c(0.35, 0.5+pos.ylabel[1], 0.1, 0.1), ps=14, cex=1, xpd=TRUE, lheight=0.5, xaxs="r", yaxs="r")
-						
-						# text parameters
-						#cexF=list(title=1, axis=0.8,labels=0.9,legend=1, unit="in")
-						cexF=list(title=1, axis=1.0,labels=1.0,legend=1, unit="in")
+						par(omi=c(0,0,0,0), mai=c(0,0,0,0), ps=14, cex=1, xpd=FALSE, lheight=0.5, xaxs="r", yaxs="r")
 						
 						# call figure function
-						figure11.fct(catch.dat, cexF, pos.ylabel)
+						figure11.fct(catch.dat) #, cexF, pos.ylabel)
 						
 						# save the graphic device
 						if(save==TRUE) devSave(devName)

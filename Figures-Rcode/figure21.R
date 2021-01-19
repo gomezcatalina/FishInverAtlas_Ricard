@@ -11,8 +11,10 @@ my.legend <- ifelse(logic.abundant, "abundant","rare")
 my.xlim <- c(291.25,303.5)
 my.ylim <- c(41,47.5)
 
-xx.lon<-pretty(my.xlim,n=5)
-yy.lat<-pretty(my.ylim, n=4)
+xx.lon<-c(292,296,300)
+yy.lat<-c(42,44,46)
+xx.lon.labs <- paste(360-xx.lon,"\u{B0}W",sep="")
+yy.lat.labs <- paste(yy.lat,"\u{B0}N",sep="")
 
 mat.layout2 <- matrix(c(0,2,0,0,1,3,5,0,0,4,6,8,0,0,7,0),nrow=4, ncol=4)
 ll <- layout(mat.layout2, widths=3*c(2,6.5,6.5,2), heights=3*c(2,4.8,4.8,2), respect=TRUE)
@@ -25,14 +27,12 @@ my.cols.palette <- c('white','#FEF0D9', '#FDCC8A', '#FC8D59', '#E34A33', '#B3000
 ## layout and such, to allow for the axes
 # top left longitude axis
 par(mar=c(0,0,3,0), las=1)
-plot(xx.lon,rep(max(yy.lat), length(xx.lon)),axes=FALSE, type='n', xlab="",ylab="")
-axis(side=3, at=xx.lon, line=-5.5, labels=paste(360-xx.lon,"\u{B0}W",sep=""))
+plot(1,1,type='n',axes=F)
 
 
 # top left latitude
 par(mar=c(0,3,0,0),las=2)
-plot(rep(min(xx.lon),length(yy.lat)),yy.lat,axes=FALSE,type='n')
-axis(side=2,at=yy.lat, line=-5.5, labels=paste(yy.lat,"\u{B0}N",sep=""))
+plot(1,1,type='n',axes=F)
 
 
 ## loop over -year periods
@@ -94,6 +94,9 @@ res <- lapply(getSpPpolygonsSlot(res), checkPolygonsHoles)
 R <- as.SpatialPolygons.PolygonsList(res)
 	
 plotMap(worldLLhigh, my.xlim, my.ylim, col=grey(0.9),plt=c(0.0,1.0,0.0,1.0),border=grey(0.7),axes=FALSE,tckLab=FALSE,xlab="",ylab="")
+if(i==1){axis(side=3, at=xx.lon, labels=xx.lon.labs, las=1); axis(side=2, at=yy.lat, labels=yy.lat.labs)}
+if(i==4){axis(side=1, at=xx.lon, labels=xx.lon.labs, las=1); axis(side=4, at=yy.lat, labels=yy.lat.labs)}
+
 text(293.2,46.4,yrs.labels[i],bg='white',cex=0.95)
 text(293.2,45.9,paste("P(occ) = ",pr.occ,sep=""),cex=0.75)
 #addPolys(SUMMER.strata.mask)
@@ -128,12 +131,12 @@ addPolys(SS.strata.mask.LL)
 if(i==1 | i==4) {
 	if(my.legend=="abundant"){
 							text(299.5,42,"n/tow",cex=0.75)
-							text(299.45,41.6,"n/trait",cex=0.75)
+							#text(299.45,41.6,"n/trait",cex=0.75)
 							legend('bottomright', c("0","<5","<20","<50","<100",">=100"), col='black', fill=my.cols.palette, bg='white',cex=0.95)
 							}
 	if(my.legend=="rare"){
 							text(299.5,42,"n/tow",cex=0.75)
-							text(299.45,41.6,"n/trait",cex=0.75)
+							#text(299.45,41.6,"n/trait",cex=0.75)
 							legend('bottomright', c("0","<0.1","<0.5","<1","<5",">=5"), col='black', fill=my.cols.palette, bg='white',cex=0.95)
 						}
 	}
@@ -142,11 +145,9 @@ if(i==1 | i==4) {
 
 # bottom right latitude
 par(mar=c(0,0,0,2),las=2)
-plot(rep(max(xx.lon),length(yy.lat)),yy.lat,axes=FALSE,type='n')
-axis(side=4,at=yy.lat, line=-6.5, labels=paste(yy.lat,"\u{B0}N",sep=""))
+plot(1,1,type='n',axes=F)
 # bottom right longitude axis
 par(mar=c(2,0,0,0),las=1)
-plot(xx.lon,rep(min(yy.lat), length(xx.lon)),axes=FALSE, type='n', xlab="",ylab="")
-axis(side=1, at=xx.lon, line=-6.5, labels=paste(360-xx.lon,"\u{B0}O",sep=""))
+plot(1,1,type='n',axes=F)
 
 } # end function

@@ -1,7 +1,7 @@
 ## distribution indices timeseries plots, using biomass
 
 figure18.fct <- function(dat.in, cex.in, pos.ylabel=c(0,0), which.measure=c('areaocc','D','Gini')) {
-# dat.in <- read.csv(file.path(path.ATLAS,"Data/SS10_distribution.csv"))
+# dat.in <- read.csv(file.path(figdata.path,"SS10_distribution-usingbiomass.csv"))
 
 	xlabel = "Year / Ann\u{E9}e"
 

@@ -1,8 +1,7 @@
 ##
 ##
 distribution.usingbiomass.fct <- function(catch.df) {
-# catch.df <- read.csv("C:/ATLAS_poissons_SS/Data/SS13_catch.csv")
-# catch.df <- read.csv("C:/ATLAS_poissons_SS/Data/SS10_catch.csv")
+# catch.df <- read.csv(file.path(figdata.path, "/SS31_catch.csv"))
 
 #yrs<- seq(min(catch.df$YEAR),max(catch.df$YEAR))
 
@@ -112,8 +111,8 @@ df.to.fill <- data.frame(year=rep(-99,nn), D75=rep(-99,nn), D95=rep(-99,nn), Gin
 for(i in 1:length(yrs)){ # loop over years
 #for(i in 1:(yrs-1969)){ # loop over years
 #print(i)
-stratified.df <- as.data.frame(stratified.weighted.mat[,i])
-#stratified.df <- as.data.frame(stratified.weighted.mat[[i]])
+#stratified.df <- as.data.frame(stratified.weighted.mat[,i])
+stratified.df <- as.data.frame(stratified.weighted.mat[[i]])
 
 oo.desc <- rev(order(stratified.df)) # descending order, for Dx%
 oo.asc <- order(stratified.df) # ascending order, for Gini

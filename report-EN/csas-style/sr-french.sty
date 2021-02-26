@@ -6,6 +6,14 @@
 
 %% ------------------------------------------------------------------------------
 \usepackage{natbib}
+%% add PDF metadata
+\AtBeginDocument{%
+  \hypersetup{%
+    pdftitle={\rdTitle{}},%
+    pdfauthor={Pêches et Océans Canada. Secrétariat canadien de consultation scientifique.},%
+    pdfkeywords={Pêches et Océans Canada; Secrétariat canadien de consultation scientifique; Réponse des Sciences},
+  }%
+}
 
 %% ------------------------------------------------------------------------------
 %% Load hyperlink package and set up link colors
@@ -50,8 +58,10 @@
             left=1in,
             right=1in,
             includefoot,
-            footskip=20pt]
+            footskip=27pt]
            {geometry}
+
+\setlength{\headsep}{25pt}
 %% ------------------------------------------------------------------------------
 
 %% ------------------------------------------------------------------------------

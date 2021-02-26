@@ -6,7 +6,6 @@
 the following French/English translation. For a French document, set the following header to: # Références Citées  {-} -->
 
 \clearpage
-
 # References
 
 <!-- The following sets the appropriate indentation for the references -->
@@ -15,3 +14,4 @@ the following French/English translation. For a French document, set the followi
 \setlength{\parindent}{-0.2in}
 \setlength{\leftskip}{0.2in}
 \setlength{\parskip}{8pt}
+<div id="refs"></div>

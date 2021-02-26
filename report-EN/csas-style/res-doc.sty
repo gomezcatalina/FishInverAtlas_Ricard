@@ -2,12 +2,20 @@
 %%  Science Advisory Secretariat Research Documents.
 
 \usepackage{tabularx}
+\usepackage[all]{nowidow}
 
 %% ------------------------------------------------------------------------------
 %% Use the resDoc.bst file for bibliography style.
 \usepackage{natbib}
 %% ------------------------------------------------------------------------------
-
+%% add PDF metadata
+\AtBeginDocument{%
+  \hypersetup{%
+    pdftitle={\rdTitle{}},%
+    pdfauthor={\rdAuth{}},%
+    pdfkeywords={Fisheries and Oceans Canada; Canadian Science Advisory Secretariat; Research Document},
+  }%
+}
 %% ------------------------------------------------------------------------------
 %% Load hyperlink package and set up link colors
 \usepackage[breaklinks=true,

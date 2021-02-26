@@ -51,12 +51,12 @@ print(paste("Script Atlas.R started: ", Sys.time()))
   
   #source(file.path(main.path, "taxonomic-classification-APHIA-ID.R")) ## this creates "species-list-for-report-APHIA.csv"
   
-  
-  ## generate maps that won't change over time, e.g. strata maps
-  source(file.path(mapping.path, "Maritimes-SUMMER-strata-map.R")) ## strata map, nothing there yet
-
   # source the file that defines the strata mask used in the IDW maps
   source(file.path(mapping.path, "SUMMER-strata.R"))
+  
+  ## generate maps for tech report
+  source(file.path(mapping.path, "Maritimes-SUMMER-strata-map.R"))
+
   
   # source the code that defines the data extraction functions
 	source(file.path(main.path, "data-and-stats.R"))

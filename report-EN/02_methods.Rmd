@@ -1,17 +1,44 @@
 # Methods
 ## Survey Description
-The survey is conducted annually in July-August. It normally involves two separate two-week trips on board a trawl fishing vessel from the Canadian Coast Guard.
+The survey is conducted annually in July-August and covers the Scotian Shelf and the Bay of Fundy (Figure \@ref(fig:map1)). It normally involves two separate two-week trips on board an offshore fisheries vessel from the Canadian Coast Guard.
 
 A number of changes in fishing gear type and vessels used occurred since the onset of sampling activities [@ClarkEmberley2011].
 
-## Sampling Design
-The summer survey covers divisions 4V, 4W and 4X of the Northwest Atlantic Fisheries Organization (NAFO) which includes the Scotian Shelf and the Bay of Fundy. The eastern limit of the survey is the Laurentian Channel and the western limit is the Fundian Channel (Figure 1).
+(ref:caption-map1) Map of the Scotian Shelf and Bay of Fundy. 
 
-The survey follows a stratified random design [@DoubledayRivard1981; @Lohr1999]. The number of tows conducted in each stratum is approximately proportional to its surface area.
+```{r map1, fig.cap="(ref:caption-map1)"}
+knitr::include_graphics("../Mapping/annotated-map-NAFO.png")
+```
+
+
+
+
+
+## Sampling Design
+The summer survey covers divisions 4V, 4W and 4X of the Northwest Atlantic Fisheries Organization (NAFO) which includes the Scotian Shelf and the Bay of Fundy. The eastern limit of the survey is the Laurentian Channel and the western limit is the Fundian Channel (Figure \@ref(fig:map1)).
+
+The survey follows a stratified random design [@DoubledayRivard1981; @Lohr1999] (Figure \@ref(fig:map2)). The number of tows conducted in each stratum is approximately proportional to its surface area.
+
+(ref:caption-map2) Map of the Summer survey strata. 
+
+```{r map2, fig.cap="(ref:caption-map2)"}
+knitr::include_graphics("../Mapping/SUMMER-strata-map.png")
+```
+
 
 The basic sampling unit of the survey is a 30-minute fishing tow conducted at a speed of 3.5 knots. This yields a distance towed of 1.75 nautical miles.
 
 After each tow the catch is sorted by species and weighed. Each fish caught is then measured, and further sampling of individual fish weight, maturity status and age are performed for diﬀerent length classes. When catches exceed 300 individuals, a random sub-sample is used to obtain the length and weight measurements.
+
+The location of representative tows appears in Figure \@ref(fig:map3).
+
+(ref:caption-map3) Map of the Summer survey tows. 
+
+```{r map3, fig.cap="(ref:caption-map3)"}
+knitr::include_graphics("../Mapping/SUMMER-tows-map.png")
+```
+
+
 
 ## Taxonomic Levels {#taxo}
 
@@ -19,7 +46,27 @@ Fish species caught during the surveys are identified by trained scientific pers
 
 By its nature as a bottom trawl, the fishing gear used in the survey catches certain species better than others. To ensure that meaningful ecological information can be extracted from catch samples, we report the catch records for the subset of species that are caught reliably by the gear. To appear in this atlas, a species must have had a minimum of 10 observations over the duration of the survey activities. While both catch abundance and weight are recorded, the weight of species that appear at low abundances is often recorded as zero in the earlier parts of the survey when scales of appropriate precision were not available.
 
-We divided the species caught into five categories based on 1) their taxonomic classification, 2) the number of recorded observations, and 3) their period of valid identification. Category ”L”, for ”long”, was assigned to species that have more than 1000 records since 1970 and have been consistently identified since the onset of the survey. Category ”S”, for ”short”, was assigned to invertebrate species that were consistently sampled only since 1999 [@Tremblayetal:2007]. Category ”I”, for ”intermediate”, was assigned to species that had been 1000 and 200 catch records. Rare and elusive species (those with less than 200 catch records over the duration of the survey) are also reported but to a lower level of analytical details (Category ”LR”, for ”long rare”, and category ”SR”, for ”short rare”).
+We divided the species caught into five categories based on 1) their taxonomic classification, 2) the number of recorded observations, and 3) their period of valid identification (Table \@ref(tab:taxocat)). Category ”L”, for ”long”, was assigned to species that have more than 1000 records since 1970 and have been consistently identified since the onset of the survey. Category ”S”, for ”short”, was assigned to invertebrate species that were consistently sampled only since 1999 [@Tremblayetal:2007]. Category ”I”, for ”intermediate”, was assigned to species that had between 1000 and 200 catch records. Rare and elusive species (those with less than 200 catch records over the duration of the survey) are also reported but to a lower level of analytical details (Category ”LR”, for ”long rare”, and category ”SR”, for ”short rare”).
+
+\begin{table}
+\begin{tabular}{p{0.1\textwidth}|p{0.2\textwidth}|p{0.7\textwidth}}
+\toprule
+\bfseries{Category} & \bfseries{Name} & \bfseries{Description} \\
+\midrule
+L & long & species that have more than 1000 records since 1970 and have been consistently identified since the onset of the survey \\
+\midrule
+S & short & invertebrate species that were consistently sampled only since 1999 \\
+\midrule
+I & intermediate & species that had between 1000 and 200 catch records \\
+\midrule
+LR & long rare & species with less than 200 catch records over the duration of the survey and that have been consistently identified since the onset of the survey\\
+\midrule
+SR & short rare & species with less than 200 catch records and that were consistently sampled only since 1999\\
+\bottomrule
+\end{tabular}
+\caption{Taxonomic levels}
+\label{tab:taxocat}
+\end{table}
 
 The list of taxa covered in this document is presented in phylogenetic order [@Nelsonetal:2004] in Table \@ref(tab:tabspecies). To ensure concordance with authoritative taxonomic information, the AphiaID from the World Register of Marine Species is also provided in Table \@ref(tab:tabspecies) [@WoRMS].
 
@@ -52,7 +99,7 @@ knitr::kable(spec.tab[,vars], "latex", booktabs = TRUE, longtable = TRUE, align 
 
 The Oracle relational database where all data are stored was accessible from the Bedford Institute of Oceanography in Dartmouth, Nova Scotia. Structured Query Language (SQL) is used to extract the data from the production server and to create the data products used in all subsequent analyses. Catch records classified as ”valid” (i.e. a representative tow without damage to the net) are used in the current analyses. To make the available samples comparable, catch number and weight for each species was standardized for the distance towed.
 
-All data processing and analyses were conducted using the R software [@R:2020] using packages gstat [@R:package:gstat), PBSmapping [@R:package:PBSmapping], RODBC [@R:package:RODBC], spatstat [@R:package:spatstat],  maptools [@R:package:maptools], rgeos [@R:package:rgeos],classInt[@R:package:classInt],RColorBrewer[@R:package:RColorBrewer], MASS [@R:package:MASS], worms [@R:package:worms], and tidyverse [@R:Tidyverse]. 
+All data processing and analyses were conducted using the R software [@R:2020] using packages gstat [@R:package:gstat], PBSmapping [@R:package:PBSmapping], RODBC [@R:package:RODBC], spatstat [@R:package:spatstat],  maptools [@R:package:maptools], rgeos [@R:package:rgeos], classInt[@R:package:classInt], RColorBrewer[@R:package:RColorBrewer], MASS [@R:package:MASS], worms [@R:package:worms], and tidyverse [@R:Tidyverse]. 
 
 ### Geographic distribution of catches
 
